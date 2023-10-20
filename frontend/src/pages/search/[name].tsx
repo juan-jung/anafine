@@ -1,4 +1,4 @@
-// pages/search/[name].tsx
+// 검색 결과 페이지
 
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
@@ -12,9 +12,9 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SSAFY A403 FREE PROJECT</title>
-        <meta name="description" content="SSAFY A403 FREE PROJECT" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>SSAFY A403 자율프로젝트</title>
+        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
@@ -25,7 +25,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
 };
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context
+  context,
 ) => {
   const { name } = context.params as { name: string };
 

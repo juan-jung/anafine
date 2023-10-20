@@ -1,4 +1,4 @@
-// pages/info/index.tsx
+// 비급여 소개 페이지
 
 import type { NextPage } from "next";
 import Head from "next/head";

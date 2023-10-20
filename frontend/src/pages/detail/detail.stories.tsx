@@ -1,4 +1,4 @@
-import Detail from "../../pages/detail/[name]";
+import Detail from "./[name]";
 
 export default {
   title: "Pages/Detail",

@@ -1,4 +1,4 @@
-// pages/info/service.tsx
+// 서비스 소개 페이지
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";

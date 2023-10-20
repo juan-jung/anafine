@@ -1,4 +1,4 @@
-import Search from "../../pages/search/[name]";
+import Search from "./[name]";
 
 export default {
   title: "Pages/Search",

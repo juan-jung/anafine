@@ -1,4 +1,4 @@
-import Info from "../../pages/info/index";
+import Info from "./index";
 
 export default {
   title: "Pages/Info",

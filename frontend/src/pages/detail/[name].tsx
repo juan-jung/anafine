@@ -1,4 +1,4 @@
-// pages/detail/[name].tsx
+// 검색 결과 상세 페이지
 
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
@@ -25,7 +25,7 @@ const DetailPage: NextPage<DetailPageProps> = ({ name }) => {
 };
 
 export const getServerSideProps: GetServerSideProps<DetailPageProps> = async (
-  context
+  context,
 ) => {
   const { name } = context.params as { name: string };
 

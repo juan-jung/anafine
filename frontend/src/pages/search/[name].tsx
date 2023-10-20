@@ -1,4 +1,4 @@
-// pages/search/[name].tsx
+// 검색 결과 페이지
 
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
@@ -25,7 +25,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
 };
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context
+  context,
 ) => {
   const { name } = context.params as { name: string };
 

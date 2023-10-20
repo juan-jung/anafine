@@ -1,4 +1,4 @@
-import Main from "../../pages/index";
+import Main from "./index";
 
 export default {
   title: "Pages/Main",

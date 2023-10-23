@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import CategoryIcon from "components/atoms/CategoryIcon/CategoryIcon";
+import Icon from "components/atoms/Icon/Icon";
 
 const meta = {
-  title: "Atoms/CategoryIcon",
-  component: CategoryIcon,
+  title: "Atoms/Icon",
+  component: Icon,
   tags: ["autodocs"],
   argTypes: {
     shape: {
@@ -47,7 +47,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof CategoryIcon>;
+} satisfies Meta<typeof Icon>;
 
 export default meta;
 

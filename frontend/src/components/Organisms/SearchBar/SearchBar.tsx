@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FormEvent } from "react";
+import "./SearchBar.css";
 
 interface SearchBarProps {
   value: string;

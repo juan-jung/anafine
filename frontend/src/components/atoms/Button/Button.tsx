@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+import "./Button.css";
 
 interface ButtonProps {
   primary?: boolean;
@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+// 버튼
 export const Button = ({
   primary = false,
   size = "medium",

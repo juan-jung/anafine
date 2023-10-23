@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 
-const ServiceInfoPage: NextPage = () => {
+const ServicePage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,4 +19,4 @@ const ServiceInfoPage: NextPage = () => {
   );
 };
 
-export default ServiceInfoPage;
+export default ServicePage;

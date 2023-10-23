@@ -1,6 +1,6 @@
 import "./Icon.css";
-import Image, { ImageProps } from "next/image";
 import styled from "@emotion/styled";
+import Image, { ImageProps } from "next/image";
 
 type IconShape = "square" | "circle";
 type ShapeCellProps = ImageProps & { shape?: IconShape };

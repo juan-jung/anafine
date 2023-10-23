@@ -8,8 +8,8 @@ import Map from "components/Organisms/Map/Map";
 type SearchPageProps = {
   name: string;
 };
-const myLatitude = 123.456;
-const myLongitude = 789.012;
+const myLatitude = 37.566381;
+const myLongitude = 126.977717;
 
 const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
   return (
@@ -29,7 +29,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
 };
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context
+  context,
 ) => {
   const { name } = context.params as { name: string };
 

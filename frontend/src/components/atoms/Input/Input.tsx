@@ -1,20 +1,34 @@
-import React from "react";
-import "./Input.css";
-import Image, { ImageProps } from "next/image";
-import styled from "@emotion/styled";
+import React, { ChangeEvent } from "react";
 
-type IconShape = "square" | "circle";
-type ShapeCellProps = ImageProps & { shape?: IconShape };
+interface InputProps {
+  value: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
+  disabled?: boolean;
+  id?: string;
+  name?: string;
+}
 
-const CategoryIconShape = styled(Image)<{ shape?: IconShape }>`
-  border-radius: ${({ shape }) => (shape === "square" ? "0" : "50")};
-`;
-
-// Icon
-const Input = (props: ShapeCellProps) => {
-  const { shape, ...ImageProps } = props;
-
-  return <CategoryIconShape shape={shape} {...ImageProps} />;
+// Input
+const Input: React.FC<InputProps> = ({
+  value,
+  onChange,
+  placeholder,
+  disabled,
+  id,
+  name,
+}) => {
+  return (
+    <input
+      type="text"
+      value={value}
+      onChange={onChange}
+      placeholder={placeholder}
+      disabled={disabled}
+      id={id}
+      name={name}
+    />
+  );
 };
 
 export default Input;

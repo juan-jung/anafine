@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Icon from "./Icon";
+import Icon from "components/atoms/Icon/Icon";
 
 const meta = {
   title: "Atoms/Icon",
@@ -47,7 +47,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Icon>;
+};
 
 export default meta;
 
@@ -56,6 +56,16 @@ type Story = StoryObj<typeof meta>;
 export const square: Story = {
   args: {
     shape: "square",
+    src: "/favicon.png",
+    alt: "카테고리 아이콘 이미지",
+    width: 300,
+    height: 300,
+  },
+};
+
+export const circle: Story = {
+  args: {
+    shape: "circle",
     src: "/favicon.png",
     alt: "카테고리 아이콘 이미지",
     width: 300,

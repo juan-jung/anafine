@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Input from "./Input";
+import Input from "components/atoms/Input/Input";
 
-const meta = {
+const meta: Meta = {
   title: "Atoms/Input",
   component: Input,
   tags: ["autodocs"],
@@ -14,12 +14,14 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Input>;
+};
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const square: Story = {
-  args: { shape: "square", src: "/favicon.png", alt: "카테고리 아이콘 이미지" },
+  args: {
+    placeholder: "입력 창입니다.",
+  },
 };

@@ -8,6 +8,8 @@ import Map from "components/Organisms/Map/Map";
 type SearchPageProps = {
   name: string;
 };
+const myLatitude = 123.456;
+const myLongitude = 789.012;
 
 const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
   return (
@@ -19,6 +21,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
       </Head>
 
       <main className={styles.main}>
+        <Map latitude={myLatitude} longitude={myLongitude} />
         <p>{name} 검색 결과입니다.</p>
       </main>
     </div>
@@ -26,7 +29,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
 };
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context,
+  context
 ) => {
   const { name } = context.params as { name: string };
 

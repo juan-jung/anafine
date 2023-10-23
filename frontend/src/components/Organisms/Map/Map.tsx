@@ -1,5 +1,5 @@
+import styled from "@emotion/styled";
 import { useEffect } from "react";
-import styled from "styled-components";
 
 declare global {
   interface Window {

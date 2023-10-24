@@ -29,6 +29,7 @@
     "@babel/plugin-transform-private-methods": "^7.22.5",
     "@babel/plugin-transform-private-property-in-object": "^7.22.11",
     "@emotion/babel-plugin": "^11.11.0",
+    "@iconify/react": "^4.1.1",
     "@mdx-js/react": "^2.3.0",
     "@storybook/addon-essentials": "7.5.0",
     "@storybook/addon-interactions": "7.5.0",

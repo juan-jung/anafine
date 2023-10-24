@@ -1,9 +1,9 @@
-// 위치기반 서비스 이용약관 페이지
+// 개인정보 처리방침 페이지
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 
-const LocationRulePage: NextPage = () => {
+const PrivacyPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,10 +13,10 @@ const LocationRulePage: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <p>위치기반 서비스 이용약관 페이지 입니다.</p>
+        <p>개인정보 처리방침 페이지 입니다.</p>
       </main>
     </div>
   );
 };
 
-export default LocationRulePage;
+export default PrivacyPage;

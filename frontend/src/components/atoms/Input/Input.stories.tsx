@@ -20,7 +20,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const square: Story = {
+export const text: Story = {
   args: {
     placeholder: "입력 창입니다.",
   },

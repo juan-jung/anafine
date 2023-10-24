@@ -6,7 +6,7 @@ type IconShape = "square" | "circle";
 type ShapeCellProps = ImageProps & { shape?: IconShape };
 
 const CategoryIconShape = styled(Image)<{ shape?: IconShape }>`
-  border-radius: ${({ shape }) => (shape === "square" ? "0" : "50")};
+  border-radius: ${({ shape }) => (shape === "circle" ? "50%" : "0")};
 `;
 
 // 아이콘

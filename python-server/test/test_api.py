@@ -11,7 +11,7 @@ api_name = "getNonPaymentItemHospDtlList"
 service_key = os.environ.get('PUBLIC_DATA_API_KEY')
 
 def get_api_url(page_no:int, num_of_rows=10000):
-    return base_url + api_name + f"?serviceKey={service_key}&pageNo={page_no}&numOfRows={num_of_rows}"
+    return base_url + api_name + f"?serviceKey={service_key}&numOfRows={num_of_rows}&pageNo={page_no}"
 
 
 def get_xml_data(page_no):
@@ -32,7 +32,6 @@ def write_csv(page_no, xml_data) -> bool: # throws
         error_code = root.find(".//resultCode").text
     except AttributeError: # resultCode가 없으면 returnReasonCode를 받는다.
         error_code = root.find(".//returnReasonCode").text
-
     if error_code != '00':
         raise Exception(f"API response Error: {error_code}")
     
@@ -44,7 +43,6 @@ def write_csv(page_no, xml_data) -> bool: # throws
     # 해당 경로가 없으면 경로먼저 만들기
     if not os.path.exists('res/pre_converted'):
         os.makedirs('res/pre_converted')
-        
     with open(f'res/pre_converted/converted_{page_no}.csv', 'w', newline='', encoding='utf-8') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter='|')
         
@@ -52,7 +50,7 @@ def write_csv(page_no, xml_data) -> bool: # throws
         first_item = items[0]
         headers = [elem.tag for elem in first_item]
         csvwriter.writerow(headers)
-        
+            
         # 아이템 데이터 작성
         for item in items:
             row_data = [item.find(tag).text if item.find(tag) is not None else '' for tag in headers]
@@ -83,4 +81,4 @@ if __name__ == '__main__':
                     next(reader)
                 for row in reader:
                     writer.writerow(row)
-    print('All pages are written.')
+    print('Final converted page are written.')

@@ -17,7 +17,8 @@ const Input: React.FC<InputProps> = ({
   disabled,
   id,
   name,
-}) => {
+  ...props
+}: InputProps) => {
   return (
     <input
       type="text"
@@ -27,6 +28,7 @@ const Input: React.FC<InputProps> = ({
       disabled={disabled}
       id={id}
       name={name}
+      {...props}
     />
   );
 };

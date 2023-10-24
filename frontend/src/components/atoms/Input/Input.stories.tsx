@@ -6,11 +6,14 @@ const meta: Meta = {
   component: Input,
   tags: ["autodocs"],
   argTypes: {
-    placeholder: {
-      control: { type: "text" },
-      description: "입력 창",
+    hasBorder: {
+      control: { type: "boolean" },
+      defaultValue: true,
+      description: "보더",
       table: {
-        type: { summary: "string" },
+        type: {
+          summary: "boolean",
+        },
       },
     },
   },

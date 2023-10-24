@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FormEvent } from "react";
 import "./SearchBar.css";
+import Input from "components/atoms/Input/Input";
 
 interface SearchBarProps {
   value: string;
@@ -17,9 +18,6 @@ const SearchBar: React.FC<SearchBarProps> = ({
   onChange,
   onSubmit,
   placeholder,
-  disabled = false,
-  id,
-  name,
 }) => {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
@@ -32,16 +30,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <input
-        type="text"
-        value={value}
-        onChange={handleInputChange}
-        placeholder={placeholder}
-        disabled={disabled}
-        id={id}
-        name={name}
-      />
-      <button type="submit">검색</button>
+      <Input value={value} placeholder={placeholder}></Input>
     </form>
   );
 };

@@ -1,8 +1,8 @@
 // 메인 페이지
 import type { NextPage } from "next";
-import { Main } from "next/document";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Footer from "components/Organisms/Footer/Footer";
 
 const MainPage: NextPage = () => {
   return (
@@ -15,6 +15,7 @@ const MainPage: NextPage = () => {
       <main className={styles.main}>
         <p>메인 페이지 입니다.</p>
       </main>
+      <Footer />
     </div>
   );
 };

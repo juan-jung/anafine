@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 declare global {
   interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     kakao: any;
   }
 }
@@ -14,15 +15,14 @@ interface MapProps {
 
 function Map({ latitude, longitude }: MapProps) {
   useEffect(() => {
-    const mapScript = document.createElement("script");
+    // 동적으로 Kakao Map 스크립트 로드 및 초기화
+    const script = document.createElement("script");
+    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY}&autoload=false`;
+    script.async = true;
 
-    mapScript.async = true;
-    mapScript.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY}&autoload=false`;
-
-    document.head.appendChild(mapScript);
-
-    const onLoadKakaoMap = () => {
+    script.onload = () => {
       window.kakao.maps.load(() => {
+        // 지도 초기화 및 표시 로직
         const container = document.getElementById("map");
         const options = {
           center: new window.kakao.maps.LatLng(latitude, longitude),
@@ -30,7 +30,7 @@ function Map({ latitude, longitude }: MapProps) {
         const map = new window.kakao.maps.Map(container, options);
         const markerPosition = new window.kakao.maps.LatLng(
           latitude,
-          longitude
+          longitude,
         );
         const marker = new window.kakao.maps.Marker({
           position: markerPosition,
@@ -38,12 +38,11 @@ function Map({ latitude, longitude }: MapProps) {
         marker.setMap(map);
       });
     };
-    mapScript.addEventListener("load", onLoadKakaoMap);
 
-    return () => mapScript.removeEventListener("load", onLoadKakaoMap);
+    document.head.appendChild(script);
   }, [latitude, longitude]);
 
-  return <MapContainer id="map" style={{ width: "400px", height: "300px" }} />;
+  return <MapContainer id="map" style={{ width: "800px", height: "600px" }} />;
 }
 
 const MapContainer = styled.div`

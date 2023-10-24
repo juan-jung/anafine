@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Icon from "components/atoms/Icon/Icon";
 
-const meta = {
+const meta: Meta = {
   title: "Atoms/Icon",
   component: Icon,
   tags: ["autodocs"],
@@ -12,7 +12,7 @@ const meta = {
       defaultValue: "square",
       description: "카테고리 아이콘의 형태",
       table: {
-        type: { summary: "string" },
+        type: { summary: "square | circle" },
         defaultValue: { summary: "square" },
       },
     },
@@ -41,7 +41,7 @@ const meta = {
     height: {
       control: { type: "number" },
       defaultValue: 320,
-      description: "너비",
+      description: "높이",
       table: {
         type: { summary: "number" },
       },
@@ -57,7 +57,7 @@ export const square: Story = {
   args: {
     shape: "square",
     src: "/favicon.png",
-    alt: "카테고리 아이콘 이미지",
+    alt: "카테고리 아이콘",
     width: 300,
     height: 300,
   },
@@ -67,7 +67,7 @@ export const circle: Story = {
   args: {
     shape: "circle",
     src: "/favicon.png",
-    alt: "카테고리 아이콘 이미지",
+    alt: "카테고리 아이콘",
     width: 300,
     height: 300,
   },

@@ -1,36 +1,30 @@
-import React, { ChangeEvent, FormEvent } from "react";
+import React, { useState } from "react";
 import "./SearchBar.css";
 import Input from "components/atoms/Input/Input";
-
-interface SearchBarProps {
-  value: string;
-  onChange: (value: string) => void;
-  onSubmit: (value: string) => void;
-  placeholder: string;
-  disabled?: boolean;
-  id?: string;
-  name?: string;
-}
+import { Icon } from "@iconify/react";
+import { useRouter } from "next/router";
 
 // SearchBar
-const SearchBar: React.FC<SearchBarProps> = ({
-  value,
-  onChange,
-  onSubmit,
-  placeholder,
-}) => {
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.value);
-  };
+const SearchBar: React.FC = () => {
+  const [value, setValue] = useState("");
+  const router = useRouter();
 
-  const handleFormSubmit = (e: FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(value);
+    router.push(`/search/${value}`);
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <Input value={value} placeholder={placeholder}></Input>
+    <form className="search-form" onSubmit={handleFormSubmit}>
+      <Input
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="검색어를 입력해주세요"
+        className="input--search"
+      />
+      <button className="search-button" type="submit">
+        <Icon icon="ic:baseline-search" width={30} height={30} />
+      </button>
     </form>
   );
 };

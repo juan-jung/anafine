@@ -1,18 +1,19 @@
 import React, { ChangeEvent } from "react";
+import styles from "./Input.module.css";
 
 interface InputProps {
   value: string;
   placeholder?: string;
-  id?: string;
-  name?: string;
+  className?: string;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 // Input
 const Input: React.FC<InputProps> = ({
   value,
   placeholder,
-  id,
-  name,
+  className = "input",
+  onChange,
   ...props
 }: InputProps) => {
   return (
@@ -20,8 +21,8 @@ const Input: React.FC<InputProps> = ({
       type="text"
       value={value}
       placeholder={placeholder}
-      id={id}
-      name={name}
+      className={className}
+      onChange={onChange}
       {...props}
     />
   );

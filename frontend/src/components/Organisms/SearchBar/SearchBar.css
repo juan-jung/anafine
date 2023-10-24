@@ -1,1 +1,21 @@
 /* SearchBar.css */
+.search-button {
+  border: none;
+}
+
+.search-input {
+  border: none;
+  width: 350px;
+  height: 30px;
+}
+
+.search-form {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 30px;
+}

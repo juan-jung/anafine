@@ -6,13 +6,21 @@ const meta: Meta = {
   component: Input,
   tags: ["autodocs"],
   argTypes: {
-    hasBorder: {
-      control: { type: "boolean" },
-      defaultValue: true,
-      description: "보더",
+    id: {
+      control: { type: "text" },
+      description: "id",
       table: {
         type: {
-          summary: "boolean",
+          summary: "string",
+        },
+      },
+    },
+    name: {
+      control: { type: "text" },
+      description: "name",
+      table: {
+        type: {
+          summary: "string",
         },
       },
     },
@@ -26,5 +34,12 @@ type Story = StoryObj<typeof meta>;
 export const text: Story = {
   args: {
     placeholder: "입력 창입니다.",
+  },
+};
+
+export const search: Story = {
+  args: {
+    placeholder: "입력 창입니다.",
+    className: "input--search",
   },
 };

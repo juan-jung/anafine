@@ -72,6 +72,33 @@ a {
   height: 40px;
 }
 
+/* header 관련 css */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #f5f6f7;
+  align-items: center;
+  padding-left: 20px;
+  height: 60px;
+}
+.header-image {
+  flex: 8;
+  display: block;
+  justify-content: center;
+}
+.header-link {
+  flex: 1;
+}
+.header-link a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
 /* footer 관련 css */
 .footer {
   display: block;

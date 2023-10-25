@@ -43,3 +43,17 @@ def merge_csvs(merged_file_path, file_paths:list):
                 for row in reader:
                     writer.writerow(row)
     print('Final converted page are written.')
+    
+def get_values_from_csv(filepath, column_names):
+    with open(filepath, 'r', newline='', encoding='utf-8') as f_in:
+        reader = csv.reader(f_in, delimiter='|')
+        
+        headers = next(reader)
+        indexs = [headers.index(index_name) for index_name in column_names]
+        
+        result = dict({name:[] for name in column_names})
+        for row in reader:
+            for index, name in zip(indexs, column_names):
+                result[name].append(row[index])
+        
+        return result

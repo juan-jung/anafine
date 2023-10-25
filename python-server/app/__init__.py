@@ -10,4 +10,4 @@ api_root = Api(app, version='0.1.0 alpha', title="anafine's Python Server", desc
 
 
 # API 라우트 임포트
-from app.api import clinic, hospital
+import app.api as api

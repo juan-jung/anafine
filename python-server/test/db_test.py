@@ -1,5 +1,8 @@
 import pymysql
 import os
+from dotenv import load_dotenv
+load_dotenv(verbose=True)
+
 
 SERVER_URL = os.environ.get('SERVER_URL')
 DB_PORT = int(os.environ.get('DB_PORT'))

@@ -2,7 +2,7 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
-from app.util.csv_util import xml_to_csv, merge_csvs, get_values_from_csv
+from app.util.csv_util import xml_to_csv, merge_csvs
 from app.util.request_util import get_response
 from app.domain import Session
 from app.domain.entity import Hospital, Price, PriceHistory, Treatment
@@ -35,6 +35,21 @@ def __get_xml_items(xml_data:str):
     if not items:
         return False
     return items
+
+
+def __get_values_from_csv(filepath, names):
+        with open(filepath, 'r', newline='', encoding='utf-8') as f_in:
+            reader = csv.reader(f_in, delimiter='|')
+            
+            headers = next(reader)
+            indexs = [headers.index(index_name) for index_name in names]
+            
+            result = dict({name:[] for name in names})
+            for row in reader:
+                for index, name in zip(indexs, names):
+                    result[name].append(row[index])
+            
+            return result
 
 
 class HospitalService:
@@ -74,30 +89,43 @@ class HospitalService:
     
     def update_hospital_db(self):
         
-        values = get_values_from_csv(final_file_path, ['ykiho', 'npayCd', 'curAmt'])
-        ykiho_list = values['ykiho']
-        npay_cd_list = values['npayCd']
-        cur_amt_list = values['curAmt']
+        #csv 파일을 열어서
+        with open(final_file_path, 'r', newline='', encoding='utf-8') as f_in:
+            reader = csv.reader(f_in, delimiter='|')
+            
+            #첫 줄에서 ykiho, npayCd, curAmt 의 index를 찾는다.
+            headers = next(reader)
+            ykiho_index = headers.index('ykiho')
+            npayCd_index = headers.index('npayCd')
+            curAmt_index = headers.index('curAmt')
+            
+            #두 번째 줄부터 ykiho, npayCd, curAmt를 읽어서 저장한다
+            ykiho_list = []
+            npay_cd_list = []
+            cur_amt_list = []
+            for row in reader:
+                ykiho_list.append(row[ykiho_index])
+                npay_cd_list.append(row[npayCd_index])
+                cur_amt_list.append(row[curAmt_index])
         
         session = Session()
         new_entities = set()
         create_at = datetime.datetime.now()
         
         #쿼리문 hospital_repo에서 가져와야함
-        #TODO : 현재는 ykiho로 찾으려고 했을 때 반드시 하나가 나오도록 되어있음. 없는 경우를 고려해야 함.
         hospital_id_list = [hospital.hospital_id for hospital in session.query(Hospital).filter(Hospital.ykiho.in_(ykiho_list)).all()]
-        for hospital_id, npay_cd, cur_amt in zip(hospital_id_list, npay_cd_list, cur_amt_list):
+        for hospital_id, npayCd, curAmt in zip(hospital_id_list, npay_cd_list, cur_amt_list):
             #common_repo에서 가져와야 함
-            price = find_or_create_if_not_exist(session, Price, treatment_id=npay_cd, hospital_id=hospital_id)
-            price.max_price = max(price.max_price, cur_amt)
-            price.min_price = min(price.min_price, cur_amt)
+            price = find_or_create_if_not_exist(session, Price, treatment_id=npayCd, hospital_id=hospital_id)
+            price.max_price = max(price.max_price, curAmt)
+            price.min_price = min(price.min_price, curAmt)
             
             price_id = price.price_id
             #price_history_repo에서 가져와야 함
             session.query(PriceHistory).update({PriceHistory.is_latest: False}).filter_by(price_id=price_id, is_latest=True)
             
             #price_history_repo에서 가져와야 함
-            new_price_history = PriceHistory(price_id=price_id, cur_amt=cur_amt, create_at=create_at)
+            new_price_history = PriceHistory(price_id=price_id, cur_amt=curAmt, create_at=create_at)
             new_entities.add(new_price_history)
         session.add_all(new_entities)
 

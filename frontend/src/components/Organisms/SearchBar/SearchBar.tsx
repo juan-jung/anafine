@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./SearchBar.css";
-import Input from "components/atoms/Input/Input";
-import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
+import Input from "components/atoms/Input/Input";
+import { Button } from "components/atoms/Button/Button";
+import { Icon } from "@iconify/react";
 
 // SearchBar
 const SearchBar: React.FC = () => {
@@ -11,7 +11,10 @@ const SearchBar: React.FC = () => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push(`/search/${value}`);
+    if (value === "") {
+    } else {
+      router.push(`/search/${value}`);
+    }
   };
 
   return (
@@ -22,9 +25,9 @@ const SearchBar: React.FC = () => {
         placeholder="검색어를 입력해주세요"
         className="input--search"
       />
-      <button className="search-button" type="submit">
+      <Button ver="search" type="submit">
         <Icon icon="ic:baseline-search" width={30} height={30} />
-      </button>
+      </Button>
     </form>
   );
 };

@@ -1,5 +1,4 @@
 import React, { ChangeEvent, Children } from "react";
-import "./TextArea.css";
 
 interface TextProps {
   children: React.ReactNode;

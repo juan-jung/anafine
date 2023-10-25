@@ -1,4 +1,3 @@
-import "./ShapeImage.css";
 import styled from "@emotion/styled";
 import Image, { ImageProps } from "next/image";
 

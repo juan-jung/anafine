@@ -23,5 +23,8 @@ public class HospitalTreatment {
     private Hospital hospital;
 
     @Column
-    private Long currentPrice;
+    private Long maxPrice;
+
+    @Column
+    private Long minPrice;
 }

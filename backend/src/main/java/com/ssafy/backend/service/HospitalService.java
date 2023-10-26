@@ -2,10 +2,12 @@ package com.ssafy.backend.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ssafy.backend.controller.dto.HospitalDetailInfoDto;
 import com.ssafy.backend.controller.dto.HospitalInfoDto;
 import com.ssafy.backend.domain.entity.HospitalTreatment;
 import com.ssafy.backend.domain.repository.HospitalTreatmentRepository;
@@ -19,8 +21,26 @@ import lombok.RequiredArgsConstructor;
 public class HospitalService {
 
 	// repo 불러오기
-	private final TreatmentRepository treatmentRepository;
 	private final HospitalTreatmentRepository hospitalTreatmentRepository;
+
+	@Transactional
+	public HospitalDetailInfoDto getHospitalDetail(Long hospitalTreatmentId) {
+		// 검색한 비급여를 가지고 있는 병원들 추출
+		HospitalTreatment hospitalTreatment = hospitalTreatmentRepository.findByHospitalTreatmentId(hospitalTreatmentId).orElse(null);
+
+		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
+			hospitalId(hospitalTreatment.getHospital().getHospitalId()).
+			hospitalName(hospitalTreatment.getHospital().getName()).
+			address(hospitalTreatment.getHospital().getAddress()).
+			maxPrice(hospitalTreatment.getMaxPrice()).
+			minPrice(hospitalTreatment.getMinPrice()).
+			homePage(hospitalTreatment.getHospital().getHomePage()).
+			modifiedAt(hospitalTreatment.getHospital().getModifiedAt()).
+			treatmentName(hospitalTreatment.getTreatment().getName()).
+			build();
+
+		return hospitalDetailInfoDto;
+	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
 	@Transactional
@@ -35,6 +55,8 @@ public class HospitalService {
 			// 경도
 			double lon = hospitalTreatment.getHospital().getLongitude();
 			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
+
+			// 거리 저장
 			hospitalTreatment.getHospital().setDistance(dis);
 			if(dis<=disLimit){
 				HospitalInfoDto hospitalInfoDto =HospitalInfoDto.builder().
@@ -50,19 +72,7 @@ public class HospitalService {
 					build();
 				hospitalInfoDtos.add(hospitalInfoDto);
 			}
-
-			// MissionDetailDto.builder()
-			// 	.missionId(mission.getId())
-			// 	.missionName(mission.getMissionName())
-			// 	.childName(mission.getChildUser().getNickname())
-			// 	.missionDescription(mission.getMissionDescription())
-			// 	.missionPoint(mission.getMissionPoint())
-			// 	.missionStatus(mission.getMissionStatus())
-			// 	.missionTerminateDate(mission.getMissionTerminateDate())
-			// 	.build();
 		}
-		// 이 병원들의 정보에는 위도와 경도가 있고, 이를 계산 후 짧은 거리 순 or 가격순 으로 보여준다.
-		// 아니면 짧은 거리순 10개에 대해 가격순으로 정렬하여 보여준다.
 		return hospitalInfoDtos;
 
 	}

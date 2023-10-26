@@ -5,6 +5,30 @@ import styles from "../styles/Home.module.css";
 import Footer from "components/Organisms/Footer/Footer";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
+import CategoryIconBox from "components/Organisms/CategoryIconBox/CategoryIconBox";
+
+const category = [
+  "약물",
+  "의료용품",
+  "진단검사",
+  "도수치료",
+  "MRI",
+  "약물",
+  "의료용품",
+  "진단검사",
+  "도수치료",
+  "MRI",
+  "약물",
+  "의료용품",
+  "진단검사",
+  "도수치료",
+  "MRI",
+  "약물",
+  "의료용품",
+  "진단검사",
+  "도수치료",
+  "MRI",
+];
 
 const MainPage: NextPage = () => {
   return (
@@ -17,7 +41,9 @@ const MainPage: NextPage = () => {
       <Header />
       <main className={styles.main}>
         <SearchBar />
-        <p>메인 페이지 입니다.</p>
+        <div className="main-category">
+          <CategoryIconBox category={category} categoryWidth={700} />
+        </div>
       </main>
       <Footer />
     </div>

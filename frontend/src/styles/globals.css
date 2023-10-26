@@ -82,6 +82,10 @@ a {
   align-items: center;
   padding-left: 20px;
   height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .header-image {
   flex: 8;
@@ -143,4 +147,38 @@ a {
 .button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+
+/* 메인 페이지 css */
+.main-category {
+  padding-top: 10vh;
+}
+
+/* 검색 페이지 css */
+.search-result-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5vh;
+  overflow: auto;
+}
+
+.search-map {
+  display: flex;
+  width: 35vw;
+}
+.search-result {
+  display: flex;
+  width: 50vw;
+}
+.hospital-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.hospital-table th,
+.hospital-table td {
+  text-align: center;
+  height: 20px;
+  border: 1px solid #000;
+  padding: 8px;
 }

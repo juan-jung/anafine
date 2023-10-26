@@ -44,4 +44,15 @@ public class Hospital {
 
     @Column
     private String ykiho;
+
+    @Column
+    private String city;
+
+    @Column
+    private String detailCity;
+
+    @Column
+    private Double distance;
+
+
 }

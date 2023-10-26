@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "./Footer.module.css";
 import Link from "next/link";
 
 //푸터
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footer}>
+    <footer>
       <div className="footer">
         <div className="footer-link">
           <Link href="/rule">
@@ -22,8 +21,11 @@ const Footer: React.FC = () => {
             <a>개인정보 처리방침</a>
           </Link>
         </div>
-        <p>SSAFY 9기 A403</p>
-        <p>서울 강남구 테헤란로 212 멀티캠퍼스 1202호</p>
+        <p>
+          SSAFY 9기 A403
+          <br />
+          서울 강남구 테헤란로 212 멀티캠퍼스 1202호
+        </p>
         <p>Copyright A403 &copy; Corps. All rights reserved.</p>
       </div>
     </footer>

@@ -1,6 +1,7 @@
 package com.ssafy.backend.domain.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -12,4 +13,5 @@ public interface HospitalTreatmentRepository extends JpaRepository<HospitalTreat
 
 	// findByHospitalTreatment_TreatmentId JPA문법 맞는지 확인 : 객체의 PK
 	List<HospitalTreatment> findByTreatment_TreatmentId(String treatmentId);
+	Optional<HospitalTreatment> findByHospitalTreatmentId(Long hospitalTreatmentId);
 }

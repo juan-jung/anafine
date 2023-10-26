@@ -8,13 +8,17 @@ const Header: React.FC = () => {
     <header>
       <div className="header">
         <div className="header-image">
-          <ShapeImage
-            shape={"circle"}
-            src={"/favicon.png"}
-            alt={"카테고리 아이콘"}
-            width={50}
-            height={50}
-          />
+          <Link href="/">
+            <a>
+              <ShapeImage
+                shape={"circle"}
+                src={"/favicon.png"}
+                alt={"카테고리 아이콘"}
+                width={50}
+                height={50}
+              />
+            </a>
+          </Link>
         </div>
         <div className="header-link">
           <Link href="/info">

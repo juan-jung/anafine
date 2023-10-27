@@ -1,33 +1,29 @@
-import "./Button.css";
-
 interface ButtonProps {
-  primary?: boolean;
+  type?: "button" | "submit";
   backgroundColor?: string;
-  size?: "small" | "medium" | "large";
-  label: string;
+  ver?: "small" | "medium" | "large" | "search";
+  label?: string;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
 // 버튼
 export const Button = ({
-  primary = false,
-  size = "medium",
+  type = "button",
   backgroundColor,
+  ver = "medium",
   label,
+  children,
   ...props
 }: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
   return (
     <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
+      type={type}
+      className={["button", `button--${ver}`].join(" ")}
       {...props}
     >
       {label}
+      {children}
       <style jsx>{`
         button {
           background-color: ${backgroundColor};

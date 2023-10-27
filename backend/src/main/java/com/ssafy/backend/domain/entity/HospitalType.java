@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
@@ -12,8 +14,9 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class HospitalType {
     @Id
-    private Long hospitalTypeId;
+    private Byte hospitalTypeId;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String name;
 }

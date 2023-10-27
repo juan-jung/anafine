@@ -34,11 +34,7 @@ public class HospitalService {
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
-<<<<<<< 540ed0503517aa39a456d15dc08d2c399877e0ef
 			homePage_url(price.getHospital().getHomepageUrl()).
-=======
-			homePage_url(price.getHospital().getHomePage_url()).
->>>>>>> 8c44e214812639aeaada6278fef6115c5473ea1a
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -48,7 +44,8 @@ public class HospitalService {
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
 	@Transactional
-	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude, Double userLongitude) {
+	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
 		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentId(
 			treatmentId);
@@ -56,10 +53,6 @@ public class HospitalService {
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 		for (Price price : prices) {
-<<<<<<< 540ed0503517aa39a456d15dc08d2c399877e0ef
-			log.info("11111111111111111111");
-=======
->>>>>>> 8c44e214812639aeaada6278fef6115c5473ea1a
 			// 위도
 			double lat = price.getHospital().getLatitude();
 			// 경도
@@ -67,8 +60,8 @@ public class HospitalService {
 			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
 
 			// 거리 저장
-			if(dis<=disLimit){
-				HospitalInfoDto hospitalInfoDto =HospitalInfoDto.builder().
+			if (dis <= disLimit) {
+				HospitalInfoDto hospitalInfoDto = HospitalInfoDto.builder().
 					hospitalId(price.getHospital().getHospitalId()).
 					hospitalName(price.getHospital().getName()).
 					latitude(price.getHospital().getLatitude()).

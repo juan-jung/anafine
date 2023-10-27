@@ -4,27 +4,33 @@ import lombok.*;
 
 import javax.persistence.*;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class HospitalTreatment {
+public class Price {
     @Id
-    private Long hospitalTreatmentId;
+    private Long priceId;
 
     @ManyToOne
     @JoinColumn
+    @NotNull
     private Treatment treatment;
 
     @ManyToOne
     @JoinColumn
+    @NotNull
     private Hospital hospital;
 
-    @Column
-    private Long maxPrice;
+    @Column(columnDefinition = "integer default 0")
+    @NotNull
+    private Integer maxPrice;
 
-    @Column
-    private Long minPrice;
+    @Column(columnDefinition = "integer default 0")
+    @NotNull
+    private Integer minPrice;
 }

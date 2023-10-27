@@ -15,7 +15,7 @@ import lombok.Data;
 @Builder
 public class HospitalInfoDto {
 
-	private Long hospitalId;
+	private Integer hospitalId;
 
 	private String hospitalName;
 
@@ -23,11 +23,11 @@ public class HospitalInfoDto {
 
 	private Double longitude;
 
-	private Long hospitalTreatmentId;
+	private Long priceId;
 
-	private Long maxPrice;
+	private Integer maxPrice;
 
-	private Long minPrice;
+	private Integer minPrice;
 
 	private Double distance;
 

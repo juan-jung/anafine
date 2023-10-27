@@ -17,12 +17,12 @@ public class Price {
     private Long priceId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "treatment_id")
     @NotNull
     private Treatment treatment;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "hospital_id")
     @NotNull
     private Hospital hospital;
 

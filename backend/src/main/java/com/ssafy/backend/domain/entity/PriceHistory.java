@@ -5,6 +5,8 @@ import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
@@ -18,11 +20,21 @@ public class PriceHistory {
 
     @ManyToOne
     @JoinColumn
-    private HospitalTreatment hospitalTreatment;
+    @NotNull
+    private Price price;
+
+    @Column(columnDefinition = "integer default 0")
+    @NotNull
+    private Long cost;
 
     @Column
-    private Long price;
-
-    @Column
+    @NotNull
     private LocalDateTime createdAt;
+
+    @Column(length = 255)
+    private String significant;
+
+    @Column
+    @NotNull
+    private Boolean isLatest;
 }

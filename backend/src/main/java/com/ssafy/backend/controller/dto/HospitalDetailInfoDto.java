@@ -8,17 +8,17 @@ import lombok.Data;
 @Data
 @Builder
 public class HospitalDetailInfoDto {
-	private Long hospitalId;
+	private Integer hospitalId;
 
 	private String hospitalName;
 
 	private String address;
 
-	private Long maxPrice;
+	private Integer maxPrice;
 
-	private Long minPrice;
+	private Integer minPrice;
 
-	private String homePage;
+	private String homePage_url;
 
 	private LocalDateTime modifiedAt;
 

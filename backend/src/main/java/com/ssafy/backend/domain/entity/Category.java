@@ -18,7 +18,7 @@ public class Category {
     private String categoryId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name= "parent_category_id")
     private Category parentCategory;
 
     @Column(length = 255)
@@ -28,7 +28,7 @@ public class Category {
     @Column(length = 2000)
     private String info;
 
-    @Column
+    @Column(name ="isleaf")
     @NotNull
     private Boolean isLeaf;
 }

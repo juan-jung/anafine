@@ -30,7 +30,7 @@ function Map({ latitude, longitude }: MapProps) {
         const map = new window.kakao.maps.Map(container, options);
         const markerPosition = new window.kakao.maps.LatLng(
           latitude,
-          longitude,
+          longitude
         );
         const marker = new window.kakao.maps.Marker({
           position: markerPosition,
@@ -42,7 +42,7 @@ function Map({ latitude, longitude }: MapProps) {
     document.head.appendChild(script);
   }, [latitude, longitude]);
 
-  return <MapContainer id="map" style={{ width: "800px", height: "600px" }} />;
+  return <MapContainer id="map" style={{ width: "35vw", height: "50vh" }} />;
 }
 
 const MapContainer = styled.div`

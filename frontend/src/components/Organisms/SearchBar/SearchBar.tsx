@@ -1,47 +1,33 @@
-import React, { ChangeEvent, FormEvent } from "react";
-import "./SearchBar.css";
-
-interface SearchBarProps {
-  value: string;
-  onChange: (value: string) => void;
-  onSubmit: (value: string) => void;
-  placeholder: string;
-  disabled?: boolean;
-  id?: string;
-  name?: string;
-}
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import Input from "components/atoms/Input/Input";
+import { Button } from "components/atoms/Button/Button";
+import { Icon } from "@iconify/react";
 
 // SearchBar
-const SearchBar: React.FC<SearchBarProps> = ({
-  value,
-  onChange,
-  onSubmit,
-  placeholder,
-  disabled = false,
-  id,
-  name,
-}) => {
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.value);
-  };
+const SearchBar: React.FC = () => {
+  const [value, setValue] = useState("");
+  const router = useRouter();
 
-  const handleFormSubmit = (e: FormEvent) => {
+  const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSubmit(value);
+    if (value === "") {
+    } else {
+      router.push(`/search/${value}`);
+    }
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <input
-        type="text"
+    <form className="search-form" onSubmit={handleFormSubmit}>
+      <Input
         value={value}
-        onChange={handleInputChange}
-        placeholder={placeholder}
-        disabled={disabled}
-        id={id}
-        name={name}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="검색어를 입력해주세요"
+        className="input--search"
       />
-      <button type="submit">검색</button>
+      <Button ver="search" type="submit">
+        <Icon icon="ic:baseline-search" width={30} height={30} />
+      </Button>
     </form>
   );
 };

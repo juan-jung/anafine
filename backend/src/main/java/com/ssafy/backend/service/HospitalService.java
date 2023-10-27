@@ -34,7 +34,11 @@ public class HospitalService {
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
+<<<<<<< 540ed0503517aa39a456d15dc08d2c399877e0ef
 			homePage_url(price.getHospital().getHomepageUrl()).
+=======
+			homePage_url(price.getHospital().getHomePage_url()).
+>>>>>>> 8c44e214812639aeaada6278fef6115c5473ea1a
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -52,7 +56,10 @@ public class HospitalService {
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 		for (Price price : prices) {
+<<<<<<< 540ed0503517aa39a456d15dc08d2c399877e0ef
 			log.info("11111111111111111111");
+=======
+>>>>>>> 8c44e214812639aeaada6278fef6115c5473ea1a
 			// 위도
 			double lat = price.getHospital().getLatitude();
 			// 경도

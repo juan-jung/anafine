@@ -44,5 +44,6 @@ type Story = StoryObj<typeof meta>;
 export const textarea: Story = {
   args: {
     children: "test text",
+    selected: false,
   },
 };

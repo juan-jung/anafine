@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
@@ -12,18 +14,22 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Treatment {
     @Id
+    @Column(length = 10)
     private String treatmentId;
 
     @ManyToOne
     @JoinColumn
+    @NotNull
     private Category category;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String name;
 
-    @Column
+    @Column(length = 2000)
     private String info;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String path;
 }

@@ -2,16 +2,14 @@ package com.ssafy.backend.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ssafy.backend.controller.dto.HospitalDetailInfoDto;
 import com.ssafy.backend.controller.dto.HospitalInfoDto;
-import com.ssafy.backend.domain.entity.HospitalTreatment;
+import com.ssafy.backend.domain.entity.Price;
 import com.ssafy.backend.domain.repository.HospitalTreatmentRepository;
-import com.ssafy.backend.domain.repository.TreatmentRepository;
 
 import lombok.RequiredArgsConstructor;
 
@@ -24,19 +22,19 @@ public class HospitalService {
 	private final HospitalTreatmentRepository hospitalTreatmentRepository;
 
 	@Transactional
-	public HospitalDetailInfoDto getHospitalDetail(Long hospitalTreatmentId) {
+	public HospitalDetailInfoDto getHospitalDetail(Long priceId) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		HospitalTreatment hospitalTreatment = hospitalTreatmentRepository.findByHospitalTreatmentId(hospitalTreatmentId).orElse(null);
+		Price price = hospitalTreatmentRepository.findByPriceId(priceId).orElse(null);
 
 		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
-			hospitalId(hospitalTreatment.getHospital().getHospitalId()).
-			hospitalName(hospitalTreatment.getHospital().getName()).
-			address(hospitalTreatment.getHospital().getAddress()).
-			maxPrice(hospitalTreatment.getMaxPrice()).
-			minPrice(hospitalTreatment.getMinPrice()).
-			homePage(hospitalTreatment.getHospital().getHomePage()).
-			modifiedAt(hospitalTreatment.getHospital().getModifiedAt()).
-			treatmentName(hospitalTreatment.getTreatment().getName()).
+			hospitalId(price.getHospital().getHospitalId()).
+			hospitalName(price.getHospital().getName()).
+			address(price.getHospital().getAddress()).
+			maxPrice(price.getMaxPrice()).
+			minPrice(price.getMinPrice()).
+			homePage_url(price.getHospital().getHomePage_url()).
+			modifiedAt(price.getHospital().getModifiedAt()).
+			treatmentName(price.getTreatment().getName()).
 			build();
 
 		return hospitalDetailInfoDto;
@@ -46,29 +44,28 @@ public class HospitalService {
 	@Transactional
 	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude, Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<HospitalTreatment> hospitalTreatments = hospitalTreatmentRepository.findByTreatment_TreatmentId(
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentId(
 			treatmentId);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
-		for (HospitalTreatment hospitalTreatment : hospitalTreatments) {
+		for (Price price : prices) {
 			// 위도
-			double lat = hospitalTreatment.getHospital().getLatitude();
+			double lat = price.getHospital().getLatitude();
 			// 경도
-			double lon = hospitalTreatment.getHospital().getLongitude();
+			double lon = price.getHospital().getLongitude();
 			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
 
 			// 거리 저장
-			hospitalTreatment.getHospital().setDistance(dis);
 			if(dis<=disLimit){
 				HospitalInfoDto hospitalInfoDto =HospitalInfoDto.builder().
-					hospitalId(hospitalTreatment.getHospital().getHospitalId()).
-					hospitalName(hospitalTreatment.getHospital().getName()).
-					latitude(hospitalTreatment.getHospital().getLatitude()).
-					longitude(hospitalTreatment.getHospital().getLongitude()).
-					hospitalTreatmentId(hospitalTreatment.getHospitalTreatmentId()).
-					maxPrice(hospitalTreatment.getMaxPrice()).
-					minPrice(hospitalTreatment.getMinPrice()).
-					distance(hospitalTreatment.getHospital().getDistance()).
-					treatmentName(hospitalTreatment.getTreatment().getName()).
+					hospitalId(price.getHospital().getHospitalId()).
+					hospitalName(price.getHospital().getName()).
+					latitude(price.getHospital().getLatitude()).
+					longitude(price.getHospital().getLongitude()).
+					priceId(price.getPriceId()).
+					maxPrice(price.getMaxPrice()).
+					minPrice(price.getMinPrice()).
+					distance(dis).
+					treatmentName(price.getTreatment().getName()).
 					build();
 				hospitalInfoDtos.add(hospitalInfoDto);
 			}

@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import csv
 import os
-
+import pandas as pd
 
 def __create_directory_if_not_exists(file_path):
     # 해당 경로가 없으면 경로먼저 만들기
@@ -76,7 +76,6 @@ def change_encoding_of_csv(filepath, new_filepath, origin_encoding, target_encod
                 writer.writerow(row)
 
 # xlsx 파일을 csv 파일로 변환하는 함수
-import pandas as pd
 def xlsx_to_csv(filepath, new_filepath, sheet_name=0, delimiter=','):
     df = pd.read_excel(filepath, sheet_name=sheet_name)
     df.to_csv(new_filepath, sep=delimiter, index=False, quotechar='"', quoting=csv.QUOTE_NONNUMERIC)

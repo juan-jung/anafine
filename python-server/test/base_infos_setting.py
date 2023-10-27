@@ -20,3 +20,21 @@ csv_infos_dict_list = [asdict(info) for info in csv_infos]
 import json
 with open("res/db_base/csv_infos.json", "w", encoding="utf-8") as f:
     json.dump(csv_infos_dict_list, f, ensure_ascii=False, indent=4)
+    
+    
+    
+    
+from dataclasses import dataclass
+@dataclass
+class EntityInfo:
+    entity_name:str
+    origin_file_name:str
+    entity_column_map:dict()
+
+db_base_dir = "resource/data/db_base/"
+
+data_infos = []
+data_infos.append(EntityInfo("Category", "category.csv", {"category_id":"category_id", "parent_id":"parent_category_id", "name":"name", "info":"info", "isLeaf":"isleaf"}))
+data_infos.append(EntityInfo("Treatment", "treatment.csv", {"treatment_id":"treatment_id", "category_id":"category_id", "name":"name", "info":"info", "path":"path"}))
+data_infos.append(EntityInfo("HospitalType", "hospital_type.csv", {"hospital_type_id":"hospital_type_id", "name":"name"}))
+data_infos.append(EntityInfo("Hospital", "hospital.csv", {"종별코드":"hospital_type_id", "암호화요양기호":"ykiho", "요양기관명":"name", "주소":"address", "좌표(X)":"latitude", "좌표(Y)":"longitude", "전화번호":"tel","병원홈페이지":"homepage_url"}))

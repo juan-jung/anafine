@@ -13,7 +13,10 @@ base_url = "http://apis.data.go.kr/B551182/nonPaymentDamtInfoService/"
 api_name = "getNonPaymentItemHospDtlList"
 service_key = os.environ.get('PUBLIC_DATA_API_KEY')
 num_of_rows = 10000
-final_file_path = 'res/hospital/merged/merged_hospital_price.csv'
+
+base_directory = 'resource/data/price' 
+before_merge_file_directory = f'{base_directory}/before_merge' #res/price/before_merge/page_{page_no}.csv
+final_file_path = f'{base_directory}/recent_price.csv'
 
 
 def get_api_url(page_no:int):
@@ -37,18 +40,25 @@ def get_xml_items(xml_data:str):
     return items
 
 
-class HospitalService:
+class PriceService:
+    
+    
+    _instance = None
+    
+    def __new__(cls):
+        if cls._instance is None:  # 인스턴스가 아직 생성되지 않았다면
+            cls._instance = super(PriceService, cls).__new__(cls)  # 새 인스턴스 생성
+        return cls._instance  # 인스턴스 반환
 
     def __init__(self):
         pass
     
-    
-    def update_hospital_data_file(self):
+    def update_price_data_file(self):
         write_index = 1
         file_paths = []
         end = False
         while not end:
-            file_path = f'res/hospital/before_merge/page_{write_index}.csv'
+            file_path = f'{before_merge_file_directory}/page_{write_index}.csv'
             api_url = get_api_url(write_index)
             
             try :
@@ -72,7 +82,7 @@ class HospitalService:
         return {"message":"success"}
                 
     
-    def update_hospital_db(self):
+    def update_price_db(self):
         
         values = get_values_from_csv(final_file_path, ['ykiho', 'npayCd', 'curAmt'])
         ykiho_list = values['ykiho']
@@ -104,8 +114,5 @@ class HospitalService:
         session.commit()
         session.close()
         return {"message":"success"}
-
-
-
 
 

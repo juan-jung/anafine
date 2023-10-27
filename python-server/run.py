@@ -1,11 +1,8 @@
-#.env 파일 속 PUBLIC_DATA_API_KEY 불러오기
-from dotenv import load_dotenv
-load_dotenv(verbose=True)
+from app import create_app
 
 
-from app import app
-
+app = create_app()
 
 if __name__ == '__main__':
-    app.run(debug=True, threaded=True)
+    app.run(debug=False, threaded=True)
 

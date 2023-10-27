@@ -18,7 +18,7 @@ public class Treatment {
     private String treatmentId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name = "category_id")
     @NotNull
     private Category category;
 

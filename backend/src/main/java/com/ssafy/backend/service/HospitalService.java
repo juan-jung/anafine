@@ -12,10 +12,12 @@ import com.ssafy.backend.domain.entity.Price;
 import com.ssafy.backend.domain.repository.HospitalTreatmentRepository;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @Transactional
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class HospitalService {
 
 	// repo 불러오기
@@ -32,7 +34,7 @@ public class HospitalService {
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
-			homePage_url(price.getHospital().getHomePage_url()).
+			homePage_url(price.getHospital().getHomepageUrl()).
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -46,8 +48,11 @@ public class HospitalService {
 		// 검색한 비급여를 가지고 있는 병원들 추출
 		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentId(
 			treatmentId);
+
+		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 		for (Price price : prices) {
+			log.info("11111111111111111111");
 			// 위도
 			double lat = price.getHospital().getLatitude();
 			// 경도

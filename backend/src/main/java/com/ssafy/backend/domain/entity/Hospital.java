@@ -20,7 +20,7 @@ public class Hospital {
     private Integer hospitalId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name ="hospital_type_id")
     @NotNull
     private HospitalType hospitalType;
 
@@ -47,18 +47,11 @@ public class Hospital {
     @NotNull
     private LocalDateTime modifiedAt;
 
-    @Column(length = 255)
-    private String homePage_url;
+    @Column(length = 255,name = "homepage_url")
+    private String homepageUrl;
 
     @Column(length = 255)
     @NotNull
     private String ykiho;
 
-    @Column
-    @NotNull
-    private String city;
-
-    @Column
-    @NotNull
-    private String detailCity;
 }

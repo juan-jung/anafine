@@ -35,7 +35,11 @@ public class HospitalMapInfoController {
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}
 
+<<<<<<< 540ed0503517aa39a456d15dc08d2c399877e0ef
+	@GetMapping("/detail/{priceId}")
+=======
 	@GetMapping("/detail/{hospitalTreatmentId}")
+>>>>>>> 8c44e214812639aeaada6278fef6115c5473ea1a
 	public ResponseEntity<?> getHospitalDetail(@PathVariable Long priceId){
 		HospitalDetailInfoDto hospitalDetailInfoDto = hospitalService.getHospitalDetail(priceId);
 		return ResponseEntity.ok().body(hospitalDetailInfoDto);

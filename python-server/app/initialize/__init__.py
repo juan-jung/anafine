@@ -1,0 +1,1 @@
+from app.initialize.db_initialize import init_db

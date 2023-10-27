@@ -27,3 +27,5 @@ public class Category {
     @Column
     private Boolean isLeaf;
 }
+
+

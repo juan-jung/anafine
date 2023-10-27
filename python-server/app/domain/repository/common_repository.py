@@ -5,4 +5,5 @@ def find_or_create_if_not_exist(session, model, **kwargs):
     else:
         instance = model(**kwargs)
         session.add(instance)
+        session.flush()
         return instance

@@ -44,4 +44,6 @@ public class Hospital {
 
     @Column
     private String ykiho;
+
+
 }

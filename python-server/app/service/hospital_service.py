@@ -16,11 +16,11 @@ num_of_rows = 10000
 final_file_path = 'res/hospital/merged/merged_hospital_price.csv'
 
 
-def __get_api_url(page_no:int):
+def get_api_url(page_no:int):
     return base_url + api_name + f"?serviceKey={service_key}&numOfRows={num_of_rows}&pageNo={page_no}"
 
 
-def __get_xml_items(xml_data:str):
+def get_xml_items(xml_data:str):
     root = ET.fromstring(xml_data)
     
     error_code = None
@@ -49,11 +49,11 @@ class HospitalService:
         end = False
         while not end:
             file_path = f'res/hospital/before_merge/page_{write_index}.csv'
-            api_url = __get_api_url(write_index)
+            api_url = get_api_url(write_index)
             
             try :
                 xml_data = get_response(api_url)
-                xml_items = __get_xml_items(xml_data) 
+                xml_items = get_xml_items(xml_data) 
             except Exception as e:
                 print(f'Page {write_index} is not written. Error: {e}')
                 print("retrying...")
@@ -81,7 +81,7 @@ class HospitalService:
         
         session = Session()
         new_entities = set()
-        create_at = datetime.datetime.now()
+        created_at = datetime.datetime.now()
         
         #쿼리문 hospital_repo에서 가져와야함
         #TODO : 현재는 ykiho로 찾으려고 했을 때 반드시 하나가 나오도록 되어있음. 없는 경우를 고려해야 함.
@@ -89,15 +89,15 @@ class HospitalService:
         for hospital_id, npay_cd, cur_amt in zip(hospital_id_list, npay_cd_list, cur_amt_list):
             #common_repo에서 가져와야 함
             price = find_or_create_if_not_exist(session, Price, treatment_id=npay_cd, hospital_id=hospital_id)
-            price.max_price = max(price.max_price, cur_amt)
-            price.min_price = min(price.min_price, cur_amt)
+            price.max_price = max(price.max_price, int(cur_amt))
+            price.min_price = min(price.min_price, int(cur_amt))
             
             price_id = price.price_id
             #price_history_repo에서 가져와야 함
-            session.query(PriceHistory).update({PriceHistory.is_latest: False}).filter_by(price_id=price_id, is_latest=True)
+            session.query(PriceHistory).filter_by(price_id=price_id, is_latest=True).update({PriceHistory.is_latest: False})
             
             #price_history_repo에서 가져와야 함
-            new_price_history = PriceHistory(price_id=price_id, cur_amt=cur_amt, create_at=create_at)
+            new_price_history = PriceHistory(price_id=price_id, price=int(cur_amt), created_at=created_at)
             new_entities.add(new_price_history)
         session.add_all(new_entities)
 

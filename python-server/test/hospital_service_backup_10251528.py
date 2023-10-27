@@ -9,6 +9,7 @@ from app.domain.entity import Hospital, Price, PriceHistory, Treatment
 from app.domain.repository.common_repository import find_or_create_if_not_exist
 import datetime
 
+
 base_url = "http://apis.data.go.kr/B551182/nonPaymentDamtInfoService/"
 api_name = "getNonPaymentItemHospDtlList"
 service_key = os.environ.get('PUBLIC_DATA_API_KEY')

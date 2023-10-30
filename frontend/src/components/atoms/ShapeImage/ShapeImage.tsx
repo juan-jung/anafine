@@ -6,6 +6,7 @@ type ShapeImageProps = ImageProps & { shape?: ImageShape };
 
 const ImageWithShape = styled(Image)<{ shape?: ImageShape }>`
   border-radius: ${({ shape }) => (shape === "circle" ? "50%" : "0")};
+  margin: 10px;
 `;
 
 // 이미지 형태

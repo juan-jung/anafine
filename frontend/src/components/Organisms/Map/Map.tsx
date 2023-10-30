@@ -42,7 +42,7 @@ function Map({ latitude, longitude }: MapProps) {
     document.head.appendChild(script);
   }, [latitude, longitude]);
 
-  return <MapContainer id="map" style={{ width: "35vw", height: "50vh" }} />;
+  return <MapContainer id="map" style={{ width: "35vw", height: "60vh" }} />;
 }
 
 const MapContainer = styled.div`

@@ -4,6 +4,8 @@ import lombok.*;
 
 import javax.persistence.*;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
@@ -12,19 +14,22 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Category {
     @Id
+    @Column(length = 10)
     private String categoryId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name= "parent_category_id")
     private Category parentCategory;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String name;
 
-    @Column
+    @Column(length = 2000)
     private String info;
 
-    @Column
+    @Column(name ="isleaf")
+    @NotNull
     private Boolean isLeaf;
 }
 

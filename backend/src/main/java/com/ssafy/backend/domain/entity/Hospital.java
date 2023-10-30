@@ -5,6 +5,8 @@ import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Getter
 @Setter
@@ -15,35 +17,41 @@ import java.time.LocalDateTime;
 public class Hospital {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long hospitalId;
+    private Integer hospitalId;
 
     @ManyToOne
-    @JoinColumn
+    @JoinColumn(name ="hospital_type_id")
+    @NotNull
     private HospitalType hospitalType;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String name;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String address;
 
-    @Column
+    @Column(length = 255)
     private String tel;
 
     @Column
+    @NotNull
     private Double latitude;
 
     @Column
+    @NotNull
     private Double longitude;
 
     @Column
+    @NotNull
     private LocalDateTime modifiedAt;
 
-    @Column
-    private String homePage;
+    @Column(length = 255,name = "homepage_url")
+    private String homepageUrl;
 
-    @Column
+    @Column(length = 255)
+    @NotNull
     private String ykiho;
-
 
 }

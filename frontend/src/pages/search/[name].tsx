@@ -4,6 +4,10 @@ import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Map from "components/Organisms/Map/Map";
+import SearchCell from "components/Organisms/SearchCell/SearchCell";
+import SearchBar from "components/Organisms/SearchBar/SearchBar";
+import Header from "components/Organisms/Header/Header";
+import Footer from "components/Organisms/Footer/Footer";
 
 type SearchPageProps = {
   name: string;
@@ -19,17 +23,25 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
         <meta name="description" content="SSAFY A403 자율프로젝트" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
+      <Header />
       <main className={styles.main}>
-        <Map latitude={myLatitude} longitude={myLongitude} />
-        <p>{name} 검색 결과입니다.</p>
+        <SearchBar />
+        <div className="search-result-container">
+          <div className="search-map">
+            <Map latitude={myLatitude} longitude={myLongitude} />
+          </div>
+          <div className="search-result">
+            <SearchCell />
+          </div>
+        </div>
       </main>
+      <Footer />
     </div>
   );
 };
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context,
+  context
 ) => {
   const { name } = context.params as { name: string };
 

@@ -19,29 +19,30 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
-  args: {
-    primary: true,
-    label: "Button",
-  },
-};
-
-export const Secondary: Story = {
-  args: {
-    label: "Button",
-  },
-};
-
 export const Large: Story = {
   args: {
-    size: "large",
+    ver: "large",
+    label: "Button",
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    ver: "medium",
     label: "Button",
   },
 };
 
 export const Small: Story = {
   args: {
-    size: "small",
+    ver: "small",
+    label: "Button",
+  },
+};
+
+export const Search: Story = {
+  args: {
+    ver: "search",
     label: "Button",
   },
 };

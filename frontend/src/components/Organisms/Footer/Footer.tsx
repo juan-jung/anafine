@@ -16,11 +16,6 @@ const Footer: React.FC = () => {
             <a>위치기반 서비스 이용약관</a>
           </Link>
         </div>
-        <div className="footer-link">
-          <Link href="/privacy">
-            <a>개인정보 처리방침</a>
-          </Link>
-        </div>
         <p>
           SSAFY 9기 A403
           <br />

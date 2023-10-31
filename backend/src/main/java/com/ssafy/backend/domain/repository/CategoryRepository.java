@@ -15,7 +15,7 @@ public interface CategoryRepository extends JpaRepository<Category, String> {
     List<Category> findLargeCategory();
 
     // 중분류 이하 출력
-    @Query(value = "select c from Category c where c.parentCategory.categoryId = :parentCategoryId and c.parentCategory is not null")
+    @Query(value = "select c from Category c where c.parentCategory.id = :parentCategoryId and c.parentCategory is not null")
     List<Category> findCategoryByParentCategoryId(@Param("parentCategoryId") String parentCategoryId);
 
 //    List<Category> findByCategoryId(String categoryId);

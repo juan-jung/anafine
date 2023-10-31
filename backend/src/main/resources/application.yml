@@ -26,7 +26,7 @@ spring:
     password: ssafy
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
     show-sql: true
 
 ---

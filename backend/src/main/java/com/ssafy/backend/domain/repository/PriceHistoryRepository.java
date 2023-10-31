@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface PriceHistoryRepository extends JpaRepository<PriceHistory, Long> {
 
-    List<PriceHistory> findByHospitalTreatmentId(Long hospitalTreatmentId);
+//    List<PriceHistory> findByHospitalTreatmentId(Long hospitalTreatmentId);
 
 //    @Query(value = "SELECT ph FROM PriceHistory ph WHERE ph.ho")
 //    PriceHistory findLatestPrice(Long hospitalTreatmentId)

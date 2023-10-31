@@ -8,15 +8,12 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "hospital_type")
 public class HospitalType {
     @Id
-    private Byte hospitalTypeId;
+    @Column(name = "hospital_type_id")
+    private Short id;
 
-    @Column(length = 255)
     @NotNull
     private String name;
 }

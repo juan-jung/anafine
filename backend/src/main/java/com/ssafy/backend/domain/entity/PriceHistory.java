@@ -9,32 +9,26 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "price_history")
 public class PriceHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long priceHistoryId;
+    @Column(name = "price_history_id")
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "price_id")
     @NotNull
     private Price price;
 
-    @Column(columnDefinition = "integer default 0")
     @NotNull
     private Long cost;
 
-    @Column
     @NotNull
     private LocalDateTime createdAt;
 
-    @Column(length = 255)
     private String significant;
 
-    @Column
     @NotNull
     private Boolean isLatest;
 }

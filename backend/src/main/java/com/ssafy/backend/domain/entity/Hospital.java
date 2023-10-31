@@ -9,49 +9,39 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@Data
-@NoArgsConstructor
+@Table(name = "hospital")
 public class Hospital {
     @Id
+    @Column(name = "hospital_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer hospitalId;
+    private Integer id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name ="hospital_type_id")
     @NotNull
     private HospitalType hospitalType;
 
-    @Column(length = 255)
     @NotNull
     private String name;
 
-    @Column(length = 255)
     @NotNull
     private String address;
 
-    @Column(length = 255)
     private String tel;
 
-    @Column
     @NotNull
     private Double latitude;
 
-    @Column
     @NotNull
     private Double longitude;
 
-    @Column
     @NotNull
     private LocalDateTime modifiedAt;
 
-    @Column(length = 255,name = "homepage_url")
     private String homepageUrl;
 
-    @Column(length = 255)
     @NotNull
+    @Column(unique = true)
     private String ykiho;
 
 }

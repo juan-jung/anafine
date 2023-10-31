@@ -10,5 +10,5 @@ class HospitalType(Base):
     name = Column(String(255), nullable=False)
     
     #One to Many
-    hospitals = relationship('Hospital', back_populates='hospital_type')
+    hospitals = relationship('Hospital', back_populates='hospital_type', lazy='joined')
     

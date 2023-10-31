@@ -107,7 +107,7 @@ class PriceService:
             session.query(PriceHistory).filter_by(price_id=price_id, is_latest=True).update({PriceHistory.is_latest: False})
             
             #price_history_repo에서 가져와야 함
-            new_price_history = PriceHistory(price_id=price_id, price=int(cur_amt), created_at=created_at)
+            new_price_history = PriceHistory(price_id=price_id, cost=int(cur_amt), created_at=created_at)
             new_entities.add(new_price_history)
         session.add_all(new_entities)
 

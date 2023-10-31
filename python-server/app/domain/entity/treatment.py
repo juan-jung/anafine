@@ -6,15 +6,14 @@ class Treatment(Base):
     __tablename__ = 'treatment'
     
     treatment_id = Column(String(10), primary_key=True)
-    
-    category_id = Column(String(10), ForeignKey('category.category_id'))
+    category_id = Column(String(10), ForeignKey('category.category_id'), nullable=False)
     
     name = Column(String(255), nullable=False, index=True)
     path = Column(String(255), nullable=False)
-    info = Column(String(2000), nullable=True, default=None)
+    info = Column(String(2000))
     
     #Many to One
-    category = relationship('Category', back_populates='treatments')
+    category = relationship('Category', back_populates='treatments', lazy='joined')
     #One to Many
-    prices = relationship('Price', back_populates='treatment')
+    prices = relationship('Price', back_populates='treatment', lazy='joined')
     

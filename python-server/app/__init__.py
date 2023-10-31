@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 #TODO: config 파일 분리해서 os.environ.get 가져오도록 설정하기
 def create_app():
     global api_root
-    print("create_app실행")
     load_dotenv(verbose=True) #환경변수 로드
     app = Flask(__name__)
     CORS(app)
@@ -35,5 +34,5 @@ def initialize():
         init_db_base()
         from app.service.price_service import PriceService
         price_service = PriceService()
-        price_service.update_price_data_file()
+        # price_service.update_price_data_file()
         price_service.update_price_db()

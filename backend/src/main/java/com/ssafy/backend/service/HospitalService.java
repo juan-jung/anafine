@@ -26,7 +26,7 @@ public class HospitalService {
 
 	public HospitalDetailInfoDto getHospitalDetail(Long priceId) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		Price price = hospitalTreatmentRepository.findByPriceId(priceId).orElse(null);
+		Price price = hospitalTreatmentRepository.findById(priceId).orElse(null);
 
 		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
 			hospitalId(price.getHospital().getHospitalId()).

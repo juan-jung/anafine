@@ -11,7 +11,7 @@ import com.ssafy.backend.domain.entity.Price;
 @Repository
 public interface HospitalTreatmentRepository extends JpaRepository<Price, Long> {
 
-	// findByHospitalTreatment_TreatmentId JPA문법 맞는지 확인 : 객체의 PK
-	List<Price> findByTreatment_TreatmentId(String treatmentId);
-	Optional<Price> findByPriceId(Long priceId);
+	//TODO: findByHospitalTreatment_TreatmentId JPA문법 맞는지 확인 : 객체의 PK
+	List<Price> findByTreatment_TreatmentIdOrderByMinPriceAsc(String treatmentId);
+
 }

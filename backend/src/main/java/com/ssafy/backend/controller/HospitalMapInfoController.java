@@ -25,18 +25,30 @@ public class HospitalMapInfoController {
 
 	private final HospitalService hospitalService;
 
-	@GetMapping("/info")
-	public ResponseEntity<?> getHospitalMapInfo(
+	@GetMapping("/sortByDistInfo")
+	public ResponseEntity<?> getSortByDistHospitalInfo(
 		@RequestParam String treatmentId,
 		@RequestParam Double disLimit,
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude) {
-		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance( treatmentId, disLimit, userLatitude, userLongitude);
+		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance(treatmentId, disLimit, userLatitude,
+			userLongitude);
+		return ResponseEntity.ok().body(hospitalInfoDtos);
+	}
+
+	@GetMapping("/sortByPriceInfo")
+	public ResponseEntity<?> getSortByPriceHospitalInfo(
+		@RequestParam String treatmentId,
+		@RequestParam Double disLimit,
+		@RequestParam Double userLatitude,
+		@RequestParam Double userLongitude) {
+		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(treatmentId, disLimit, userLatitude,
+			userLongitude);
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}
 
 	@GetMapping("/detail/{priceId}")
-	public ResponseEntity<?> getHospitalDetail(@PathVariable Long priceId){
+	public ResponseEntity<?> getHospitalDetail(@PathVariable Long priceId) {
 		HospitalDetailInfoDto hospitalDetailInfoDto = hospitalService.getHospitalDetail(priceId);
 		return ResponseEntity.ok().body(hospitalDetailInfoDto);
 	}

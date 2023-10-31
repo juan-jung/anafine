@@ -8,29 +8,26 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "price")
 public class Price {
     @Id
-    private Long priceId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "price_id")
+    private Long id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "treatment_id")
     @NotNull
     private Treatment treatment;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "hospital_id")
     @NotNull
     private Hospital hospital;
 
-    @Column(columnDefinition = "integer default 0")
     @NotNull
     private Integer maxPrice;
 
-    @Column(columnDefinition = "integer default 0")
     @NotNull
     private Integer minPrice;
 }

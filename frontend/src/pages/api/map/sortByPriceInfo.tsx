@@ -3,14 +3,14 @@ import axiosInstance from "pages/axios";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const { treatmentId, disLimit, userLatitude, userLongitude } = req.body;
+    const { name, disLimit, userLatitude, userLongitude } = req.body;
 
-    if (!treatmentId || !disLimit || !userLatitude || !userLongitude) {
+    if (!name || !disLimit || !userLatitude || !userLongitude) {
       res.status(400).json({ error: "모든 필수 데이터를 제공해야 합니다." });
       return;
     }
 
-    const response = await axiosInstance.get("/map/info", {
+    const response = await axiosInstance.get("/map/sortByPriceInfo", {
       params: req.body,
     });
 

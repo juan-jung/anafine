@@ -1,21 +1,39 @@
-// 검색 결과 페이지
-
+import { useState } from "react";
+import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
-import Map from "components/Organisms/Map/Map";
-import SearchCell from "components/Organisms/SearchCell/SearchCell";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
 import Footer from "components/Organisms/Footer/Footer";
+import axiosInstance from "pages/axios";
 
 type SearchPageProps = {
   name: string;
+  initialData: any;
 };
+
 const myLatitude = 37.566381;
 const myLongitude = 126.977717;
 
-const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
+const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
+  const [mapCenter, setMapCenter] = useState({
+    latitude: myLatitude,
+    longitude: myLongitude,
+  });
+
+  // 함수를 사용하여 중심 좌표를 업데이트
+  const updateMapCenter = (newLatitude: number, newLongitude: number) => {
+    setMapCenter({ latitude: newLatitude, longitude: newLongitude });
+  };
+
+  // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
+  const DynamicMap = dynamic(() => import("components/Organisms/Map/Map"));
+  const DynamicSearchCell = dynamic(
+    () => import("components/Organisms/SearchCell/SearchCell")
+  );
+
+  console.log(initialData);
   return (
     <div className={styles.container}>
       <Head>
@@ -28,10 +46,13 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
         <SearchBar />
         <div className="search-result-container">
           <div className="search-map">
-            <Map latitude={myLatitude} longitude={myLongitude} />
+            <DynamicMap
+              latitude={mapCenter.latitude}
+              longitude={mapCenter.longitude}
+            />
           </div>
           <div className="search-result">
-            <SearchCell />
+            <DynamicSearchCell data={initialData} />
           </div>
         </div>
       </main>
@@ -40,16 +61,37 @@ const SearchPage: NextPage<SearchPageProps> = ({ name }) => {
   );
 };
 
+export default SearchPage;
+
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
   const { name } = context.params as { name: string };
 
-  return {
-    props: {
-      name,
-    },
-  };
-};
+  try {
+    console.log("sortByPriceInfo API 요청");
+    const { data } = await axiosInstance.get("/map/sortByPriceInfo", {
+      params: {
+        treatmentId: "ABZ010001",
+        disLimit: 50000000,
+        userLatitude: 37.576026,
+        userLongitude: 126.9768428,
+      },
+    });
 
-export default SearchPage;
+    return {
+      props: {
+        name,
+        initialData: data,
+      },
+    };
+  } catch (error) {
+    console.error("API 요청 중 오류 발생:", error);
+    return {
+      props: {
+        name,
+        initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
+      },
+    };
+  }
+};

@@ -1,4 +1,4 @@
-package com.ssafy.backend.controller.dto;
+package com.ssafy.backend.dto;
 
 import java.time.LocalDateTime;
 
@@ -18,7 +18,7 @@ public class HospitalDetailInfoDto {
 
 	private Integer minPrice;
 
-	private String homePage_url;
+	private String homePageUrl;
 
 	private LocalDateTime modifiedAt;
 

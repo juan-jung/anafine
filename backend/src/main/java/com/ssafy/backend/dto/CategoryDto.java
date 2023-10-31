@@ -1,4 +1,4 @@
-package com.ssafy.backend.controller.dto;
+package com.ssafy.backend.dto;
 
 import com.ssafy.backend.domain.entity.Category;
 import lombok.Builder;

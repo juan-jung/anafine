@@ -1,15 +1,11 @@
 package com.ssafy.backend.controller;
 
 
-import com.ssafy.backend.controller.dto.CategoryDto;
-import com.ssafy.backend.controller.dto.HospitalInfoDto;
 import com.ssafy.backend.service.CategoryService;
-import com.ssafy.backend.service.HospitalService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor

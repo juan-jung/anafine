@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/map")
-public class HospitalMapInfoController {
+public class HospitalController {
 
 	private final HospitalService hospitalService;
 

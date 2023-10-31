@@ -29,7 +29,7 @@ public class HospitalInfoDto {
 
 	private Integer minPrice;
 
-	private Double distance;
+	private Long distance;
 
 	private String treatmentName;
 }

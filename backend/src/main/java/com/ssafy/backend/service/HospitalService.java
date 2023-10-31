@@ -7,8 +7,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ssafy.backend.controller.dto.HospitalDetailInfoDto;
-import com.ssafy.backend.controller.dto.HospitalInfoDto;
+import com.ssafy.backend.dto.HospitalDetailInfoDto;
+import com.ssafy.backend.dto.HospitalInfoDto;
 import com.ssafy.backend.domain.entity.Price;
 import com.ssafy.backend.domain.repository.HospitalTreatmentRepository;
 
@@ -29,12 +29,12 @@ public class HospitalService {
 		Price price = hospitalTreatmentRepository.findById(priceId).orElse(null);
 
 		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
-			hospitalId(price.getHospital().getHospitalId()).
+			hospitalId(price.getHospital().getId()).
 			hospitalName(price.getHospital().getName()).
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
-			homePage_url(price.getHospital().getHomepageUrl()).
+			homePageUrl(price.getHospital().getHomepageUrl()).
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -46,7 +46,7 @@ public class HospitalService {
 	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentIdOrderByMinPriceAsc(
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
 			treatmentId);
 
 		// List<Price;> prices = null;
@@ -61,11 +61,11 @@ public class HospitalService {
 			// 거리 저장
 			if (dis <= disLimit) {
 				HospitalInfoDto hospitalInfoDto = HospitalInfoDto.builder().
-					hospitalId(price.getHospital().getHospitalId()).
+					hospitalId(price.getHospital().getId()).
 					hospitalName(price.getHospital().getName()).
 					latitude(price.getHospital().getLatitude()).
 					longitude(price.getHospital().getLongitude()).
-					priceId(price.getPriceId()).
+					priceId(price.getId()).
 					maxPrice(price.getMaxPrice()).
 					minPrice(price.getMinPrice()).
 					distance(dis).
@@ -81,7 +81,7 @@ public class HospitalService {
 	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentIdOrderByMinPriceAsc(
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
 			treatmentId);
 
 		// List<Price;> prices = null;
@@ -96,11 +96,11 @@ public class HospitalService {
 			// 거리 저장
 			if (dis <= disLimit) {
 				HospitalInfoDto hospitalInfoDto = HospitalInfoDto.builder().
-					hospitalId(price.getHospital().getHospitalId()).
+					hospitalId(price.getHospital().getId()).
 					hospitalName(price.getHospital().getName()).
 					latitude(price.getHospital().getLatitude()).
 					longitude(price.getHospital().getLongitude()).
-					priceId(price.getPriceId()).
+					priceId(price.getId()).
 					maxPrice(price.getMaxPrice()).
 					minPrice(price.getMinPrice()).
 					distance(dis).

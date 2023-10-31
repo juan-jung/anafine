@@ -1,13 +1,14 @@
 package com.ssafy.backend.service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ssafy.backend.controller.dto.HospitalDetailInfoDto;
-import com.ssafy.backend.controller.dto.HospitalInfoDto;
+import com.ssafy.backend.dto.HospitalDetailInfoDto;
+import com.ssafy.backend.dto.HospitalInfoDto;
 import com.ssafy.backend.domain.entity.Price;
 import com.ssafy.backend.domain.repository.HospitalTreatmentRepository;
 
@@ -23,18 +24,17 @@ public class HospitalService {
 	// repo 불러오기
 	private final HospitalTreatmentRepository hospitalTreatmentRepository;
 
-	@Transactional
 	public HospitalDetailInfoDto getHospitalDetail(Long priceId) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		Price price = hospitalTreatmentRepository.findByPriceId(priceId).orElse(null);
+		Price price = hospitalTreatmentRepository.findById(priceId).orElse(null);
 
 		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
-			hospitalId(price.getHospital().getHospitalId()).
+			hospitalId(price.getHospital().getId()).
 			hospitalName(price.getHospital().getName()).
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
-			homePage_url(price.getHospital().getHomepageUrl()).
+			homePageUrl(price.getHospital().getHomepageUrl()).
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -43,11 +43,10 @@ public class HospitalService {
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
-	@Transactional
-	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_TreatmentId(
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
 			treatmentId);
 
 		// List<Price;> prices = null;
@@ -62,11 +61,11 @@ public class HospitalService {
 			// 거리 저장
 			if (dis <= disLimit) {
 				HospitalInfoDto hospitalInfoDto = HospitalInfoDto.builder().
-					hospitalId(price.getHospital().getHospitalId()).
+					hospitalId(price.getHospital().getId()).
 					hospitalName(price.getHospital().getName()).
 					latitude(price.getHospital().getLatitude()).
 					longitude(price.getHospital().getLongitude()).
-					priceId(price.getPriceId()).
+					priceId(price.getId()).
 					maxPrice(price.getMaxPrice()).
 					minPrice(price.getMinPrice()).
 					distance(dis).
@@ -75,6 +74,42 @@ public class HospitalService {
 				hospitalInfoDtos.add(hospitalInfoDto);
 			}
 		}
+		return hospitalInfoDtos;
+
+	}
+
+	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+		Double userLongitude) {
+		// 검색한 비급여를 가지고 있는 병원들 추출
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
+			treatmentId);
+
+		// List<Price;> prices = null;
+		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
+		for (Price price : prices) {
+			// 위도
+			double lat = price.getHospital().getLatitude();
+			// 경도
+			double lon = price.getHospital().getLongitude();
+			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
+
+			// 거리 저장
+			if (dis <= disLimit) {
+				HospitalInfoDto hospitalInfoDto = HospitalInfoDto.builder().
+					hospitalId(price.getHospital().getId()).
+					hospitalName(price.getHospital().getName()).
+					latitude(price.getHospital().getLatitude()).
+					longitude(price.getHospital().getLongitude()).
+					priceId(price.getId()).
+					maxPrice(price.getMaxPrice()).
+					minPrice(price.getMinPrice()).
+					distance(dis).
+					treatmentName(price.getTreatment().getName()).
+					build();
+				hospitalInfoDtos.add(hospitalInfoDto);
+			}
+		}
+		hospitalInfoDtos.sort(Comparator.comparingDouble(HospitalInfoDto::getDistance));
 		return hospitalInfoDtos;
 
 	}

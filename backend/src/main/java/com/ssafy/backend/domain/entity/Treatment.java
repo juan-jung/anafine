@@ -8,28 +8,22 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "treatment")
 public class Treatment {
     @Id
-    @Column(length = 10)
-    private String treatmentId;
+    @Column(name = "treatment_id")
+    private String id;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     @NotNull
     private Category category;
 
-    @Column(length = 255)
     @NotNull
     private String name;
 
-    @Column(length = 2000)
     private String info;
 
-    @Column(length = 255)
     @NotNull
     private String path;
 }

@@ -8,27 +8,21 @@ import com.sun.istack.NotNull;
 
 @Entity
 @Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Table(name = "category")
 public class Category {
     @Id
-    @Column(length = 10)
-    private String categoryId;
+    @Column(name = "category_id")
+    private String id;
 
-    @ManyToOne
-    @JoinColumn(name= "parent_category_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "parent_category_id")
     private Category parentCategory;
 
-    @Column(length = 255)
     @NotNull
     private String name;
 
-    @Column(length = 2000)
     private String info;
 
-    @Column(name ="isleaf")
     @NotNull
     private Boolean isLeaf;
 }

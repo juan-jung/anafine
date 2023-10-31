@@ -23,7 +23,7 @@ const hospitalData = [
   },
 ];
 
-const SearchCell = () => {
+const SearchCell: React.FC = () => {
   return (
     <table className="hospital-table">
       <thead>

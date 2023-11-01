@@ -31,7 +31,7 @@ class Hospital(Base):
     def set_coordinate(self, latitude, longitude):
         if not latitude or not longitude:
             latitude, longitude = (0,0)
-        self.coordinate = WKTElement(f'POINT({longitude} {latitude})', srid=4326)
+        self.coordinate = WKTElement(f'POINT({latitude} {longitude})', srid=4326)
         
     def __init__(self, **kwargs):
         latitude = kwargs.pop('latitude', None)

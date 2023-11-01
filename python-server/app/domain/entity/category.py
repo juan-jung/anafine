@@ -10,7 +10,7 @@ class Category(Base):
     
     name = Column(String(255), nullable=False)
     info = Column(String(2000))
-    isleaf = Column(Boolean, nullable=False, default=True)
+    is_leaf = Column(Boolean, nullable=False, default=True)
     
     #Many to One
     parent_category = relationship('Category', remote_side=[category_id], back_populates='sub_categories', lazy='joined')

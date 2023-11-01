@@ -16,6 +16,7 @@ def install_pip():
 
 def install_dependencies():
     print("install start")
+    
     if not is_pip_installed():
         install_pip()
 

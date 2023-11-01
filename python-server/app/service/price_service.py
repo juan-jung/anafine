@@ -112,6 +112,7 @@ class PriceService:
         session.add_all(new_entities)
 
         session.commit()
+        print('price, price_history session commited')
         session.close()
         return {"message":"success"}
 

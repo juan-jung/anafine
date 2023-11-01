@@ -17,3 +17,6 @@ def to_json(data, type="default") -> str:
     return to_json(res_list)
 
 
+def load_json_from_file(file_path: str, encoding='utf-8') :
+    with open(file_path, 'r', encoding=encoding) as f:
+        return json.load(f)

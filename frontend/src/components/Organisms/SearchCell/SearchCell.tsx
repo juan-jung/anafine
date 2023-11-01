@@ -1,29 +1,18 @@
-const hospitalData = [
-  {
-    hospitalId: 1,
-    hospitalName: "가톨릭대학교인천성모병원",
-    latitude: 37.4848309,
-    longitude: 126.7248987,
-    hospitalTreatmentId: 1,
-    maxPrice: 50000,
-    minPrice: 30000,
-    distance: 24420.285104385523,
-    treatmentName: "1인실",
-  },
-  {
-    hospitalId: 2,
-    hospitalName: "서울시청",
-    latitude: 37.566381,
-    longitude: 126.977717,
-    hospitalTreatmentId: 2,
-    maxPrice: 70000,
-    minPrice: 50000,
-    distance: 1075.1872155916478,
-    treatmentName: "1인실",
-  },
-];
+import React from "react";
 
-const SearchCell: React.FC = () => {
+type initialData = {
+  hospitalId: string;
+  hospitalName: string;
+  maxPrice: number;
+  minPrice: number;
+  treatmentName: string;
+};
+
+type SearchCellProps = {
+  data: initialData[];
+};
+
+const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
   return (
     <table className="hospital-table">
       <thead>
@@ -35,7 +24,7 @@ const SearchCell: React.FC = () => {
         </tr>
       </thead>
       <tbody>
-        {hospitalData.map((hospital) => (
+        {data.map((hospital) => (
           <tr key={hospital.hospitalId}>
             <td>{hospital.hospitalName}</td>
             <td>{hospital.maxPrice}</td>

@@ -18,7 +18,7 @@ public class HospitalDetailInfoDto {
 
 	private Integer minPrice;
 
-	private String homePageUrl;
+	private String homepageUrl;
 
 	private LocalDateTime modifiedAt;
 

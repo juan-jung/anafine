@@ -3,9 +3,14 @@ package com.ssafy.backend.domain.entity;
 import lombok.*;
 
 import javax.persistence.*;
+
+import java.awt.*;
 import java.time.LocalDateTime;
 
+import org.springframework.data.geo.Point;
+
 import com.sun.istack.NotNull;
+import com.sun.xml.bind.v2.runtime.Coordinator;
 
 @Entity
 @Getter
@@ -28,6 +33,9 @@ public class Hospital {
     private String address;
 
     private String tel;
+
+    // @NotNull
+    // private Point coordinate;
 
     @NotNull
     private Double latitude;

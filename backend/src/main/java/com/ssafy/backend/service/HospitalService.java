@@ -34,7 +34,7 @@ public class HospitalService {
 			address(price.getHospital().getAddress()).
 			maxPrice(price.getMaxPrice()).
 			minPrice(price.getMinPrice()).
-			homePageUrl(price.getHospital().getHomepageUrl()).
+			homepageUrl(price.getHospital().getHomepageUrl()).
 			modifiedAt(price.getHospital().getModifiedAt()).
 			treatmentName(price.getTreatment().getName()).
 			build();
@@ -43,11 +43,11 @@ public class HospitalService {
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
-	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByPrice(String name, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
-			treatmentId);
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_NameOrderByMinPriceAsc(
+			name);
 
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
@@ -56,7 +56,7 @@ public class HospitalService {
 			double lat = price.getHospital().getLatitude();
 			// 경도
 			double lon = price.getHospital().getLongitude();
-			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
+			int dis = locationDistance(userLatitude, userLongitude, lat, lon);
 
 			// 거리 저장
 			if (dis <= disLimit) {
@@ -78,11 +78,11 @@ public class HospitalService {
 
 	}
 
-	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByDistance(String name, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
-			treatmentId);
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_NameOrderByMinPriceAsc(
+			name);
 
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
@@ -91,7 +91,7 @@ public class HospitalService {
 			double lat = price.getHospital().getLatitude();
 			// 경도
 			double lon = price.getHospital().getLongitude();
-			double dis = locationDistance(userLatitude, userLongitude, lat, lon);
+			int dis = locationDistance(userLatitude, userLongitude, lat, lon);
 
 			// 거리 저장
 			if (dis <= disLimit) {
@@ -114,7 +114,7 @@ public class HospitalService {
 
 	}
 
-	private static double locationDistance(double lat1, double lon1, double lat2, double lon2) {
+	private static int locationDistance(double lat1, double lon1, double lat2, double lon2) {
 		double theta = lon1 - lon2;
 		double dist =
 			Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2))
@@ -123,7 +123,7 @@ public class HospitalService {
 		dist = rad2deg(dist);
 		dist = dist * 60 * 1.1515 * 1609.344;
 
-		return dist; //단위 meter
+		return (int) dist; //단위 meter
 	}
 
 	//10진수를 radian(라디안)으로 변환

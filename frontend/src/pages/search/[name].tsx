@@ -5,7 +5,7 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
-import axiosInstance from "pages/axios";
+import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
   name: string;
@@ -20,6 +20,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
     latitude: myLatitude,
     longitude: myLongitude,
   });
+  console.log(name);
 
   // 함수를 사용하여 중심 좌표를 업데이트
   const updateMapCenter = (newLatitude: number, newLongitude: number) => {
@@ -59,25 +60,24 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   );
 };
 
+export default SearchPage;
+
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
   const { name } = context.params as { name: string };
-
+  const encodedName = encodeURIComponent(name);
   try {
-    console.log("sortByPriceInfo API 요청");
-    const { data } = await axiosInstance.get("/map/sortByPriceInfo", {
-      params: {
-        treatmentId: "ABZ010001",
-        disLimit: 20000000,
-        userLatitude: myLatitude,
-        userLongitude: myLongitude,
-      },
-    });
+    const data = await handlerSortByPriceInfo(
+      encodedName,
+      100000,
+      myLatitude,
+      myLongitude
+    );
 
     return {
       props: {
-        name,
+        name: encodedName,
         initialData: data,
       },
     };
@@ -85,11 +85,9 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        name,
+        name: encodedName,
         initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };
   }
 };
-
-export default SearchPage;

@@ -15,8 +15,9 @@ const TextArea: React.FC<TextProps> = ({
   ...props
 }: TextProps) => {
   const textStyles: React.CSSProperties = {
-    backgroundColor: selected ? "blue" : "white",
+    backgroundColor: selected ? "#0099ff" : "white",
     color: selected ? "white" : "black",
+    fontWeight: selected ? "bold" : "normal",
   };
   return (
     <p style={textStyles} {...props}>

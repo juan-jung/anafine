@@ -2,8 +2,9 @@ import axiosInstance from "pages/axios";
 
 const hanlderCategoryDetail = async (id: string) => {
   console.log("hanlderCategoryDetail");
+  console.log(id);
 
-  const serverUrl = `/category/large/${id}`;
+  const serverUrl = `/category/${id}`;
 
   try {
     const response = await axiosInstance.get(serverUrl);

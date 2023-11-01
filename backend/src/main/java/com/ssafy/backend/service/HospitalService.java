@@ -114,7 +114,6 @@ public class HospitalService {
 
 	}
 
-
 	private static int locationDistance(double lat1, double lon1, double lat2, double lon2) {
 		double theta = lon1 - lon2;
 		double dist =

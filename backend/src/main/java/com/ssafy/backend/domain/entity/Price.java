@@ -15,12 +15,12 @@ public class Price {
     @Column(name = "price_id")
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "treatment_id")
     @NotNull
     private Treatment treatment;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "hospital_id")
     @NotNull
     private Hospital hospital;

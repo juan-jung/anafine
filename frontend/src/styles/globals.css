@@ -57,8 +57,8 @@ a {
 /* 검색 관련 css */
 .search-input {
   border: none;
-  width: 350px;
-  height: 30px;
+  width: 58vh;
+  height: 5vh;
 }
 
 .search-form {
@@ -68,8 +68,8 @@ a {
   font-size: 18px;
   display: flex;
   align-items: center;
-  width: 400px;
-  height: 40px;
+  width: 60vh;
+  height: 6vh;
 }
 
 /* header 관련 css */
@@ -175,27 +175,37 @@ a {
   display: flex;
   flex-direction: row;
   padding-top: 5vh;
-  overflow: auto;
 }
 
 .search-map {
-  display: flex;
-  width: 35vw;
+  display: block;
 }
+
 .search-result {
   display: flex;
   width: 50vw;
+  height: 60vh;
+  overflow: auto;
 }
+
 .hospital-table {
   border-collapse: collapse;
   width: 100%;
+  height: 100%;
 }
 
-.hospital-table th,
+.hospital-table th {
+  text-align: center;
+  height: 6vh;
+  border: 1px solid #d0d0d0;
+  padding: 8px;
+  background-color: #ededed;
+}
+
 .hospital-table td {
   text-align: center;
-  height: 20px;
-  border: 1px solid #000;
+  height: 6vh;
+  border: 1px solid #d0d0d0;
   padding: 8px;
 }
 
@@ -206,7 +216,7 @@ a {
   justify-content: left;
 }
 
-/* 지도 관련 css */
+/* 커스텀 레이아웃 관련 css */
 .wrap {
   position: absolute;
   left: 0;

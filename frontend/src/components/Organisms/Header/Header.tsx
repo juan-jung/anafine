@@ -34,11 +34,11 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
-
 //SSR랜더링을 위한 빈 데이터 객체 반환
 export async function getServerSideProps() {
   return {
     props: {},
   };
 }
+
+export default Header;

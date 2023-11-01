@@ -23,7 +23,7 @@ const SearchBar: React.FC = () => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="검색어를 입력해주세요"
-        className="input--search"
+        className="search-input"
       />
       <Button ver="search" type="submit">
         <Icon icon="ic:baseline-search" width={30} height={30} />

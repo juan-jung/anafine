@@ -5,7 +5,6 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
-import Footer from "components/Organisms/Footer/Footer";
 import axiosInstance from "pages/axios";
 
 type SearchPageProps = {
@@ -13,8 +12,8 @@ type SearchPageProps = {
   initialData: any;
 };
 
-const myLatitude = 37.566381;
-const myLongitude = 126.977717;
+const myLatitude = 37.50130213612427;
+const myLongitude = 127.03945482599437;
 
 const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   const [mapCenter, setMapCenter] = useState({
@@ -56,12 +55,9 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };
-
-export default SearchPage;
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
@@ -73,9 +69,9 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     const { data } = await axiosInstance.get("/map/sortByPriceInfo", {
       params: {
         treatmentId: "ABZ010001",
-        disLimit: 50000000,
-        userLatitude: 37.576026,
-        userLongitude: 126.9768428,
+        disLimit: 20000000,
+        userLatitude: myLatitude,
+        userLongitude: myLongitude,
       },
     });
 
@@ -95,3 +91,5 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     };
   }
 };
+
+export default SearchPage;

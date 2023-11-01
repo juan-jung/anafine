@@ -43,11 +43,11 @@ public class HospitalService {
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
-	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByPrice(String name, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
-			treatmentId);
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_NameOrderByMinPriceAsc(
+			name);
 
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
@@ -78,11 +78,11 @@ public class HospitalService {
 
 	}
 
-	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByDistance(String name, Double disLimit, Double userLatitude,
 		Double userLongitude) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
-		List<Price> prices = hospitalTreatmentRepository.findByTreatment_IdOrderByMinPriceAsc(
-			treatmentId);
+		List<Price> prices = hospitalTreatmentRepository.findByTreatment_NameOrderByMinPriceAsc(
+			name);
 
 		// List<Price;> prices = null;
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();

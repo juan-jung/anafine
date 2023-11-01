@@ -24,22 +24,22 @@ public class HospitalController {
 
 	@GetMapping("/sortByDistInfo")
 	public ResponseEntity<?> getSortByDistHospitalInfo(
-		@RequestParam String treatmentId,
+		@RequestParam String name,
 		@RequestParam Double disLimit,
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude) {
-		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance(treatmentId, disLimit, userLatitude,
+		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance(name, disLimit, userLatitude,
 			userLongitude);
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}
 
 	@GetMapping("/sortByPriceInfo")
 	public ResponseEntity<?> getSortByPriceHospitalInfo(
-		@RequestParam String treatmentId,
+		@RequestParam String name,
 		@RequestParam Double disLimit,
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude) {
-		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(treatmentId, disLimit, userLatitude,
+		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(name, disLimit, userLatitude,
 			userLongitude);
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}

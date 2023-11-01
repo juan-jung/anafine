@@ -1,11 +1,11 @@
-// 메인 페이지
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Footer from "components/Organisms/Footer/Footer";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
 import CategoryIconBox from "components/Organisms/CategoryIconBox/CategoryIconBox";
+import axiosInstance from "./axios";
 
 const category = [
   "약물",
@@ -49,5 +49,11 @@ const MainPage: NextPage = () => {
     </div>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
 
 export default MainPage;

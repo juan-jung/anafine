@@ -14,7 +14,7 @@ public class Treatment {
     @Column(name = "treatment_id")
     private String id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "category_id")
     @NotNull
     private Category category;

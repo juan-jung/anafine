@@ -3,3 +3,8 @@
 *.iml
 *.idea
 *.pyc
+*.env
+*.csv
+*.xlsx
+*.sql
+*.json

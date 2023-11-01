@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import ShapeImage from "components/atoms/ShapeImage/ShapeImage";
 
-//헤더
 const Header: React.FC = () => {
   return (
     <header>
@@ -34,5 +33,12 @@ const Header: React.FC = () => {
     </header>
   );
 };
+
+//SSR랜더링을 위한 빈 데이터 객체 반환
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}
 
 export default Header;

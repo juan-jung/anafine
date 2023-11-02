@@ -21,10 +21,13 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
   const [categoryDetail1, setCategoryDetail1] = useState([]);
   const [categoryDetail2, setCategoryDetail2] = useState([]);
   const [categoryDetail3, setCategoryDetail3] = useState([]);
+  const [selectedCategoryId, setSelectedCategoryId] = useState("");
 
   const onCategoryDetailClick1 = async (categoryId: string) => {
     try {
+      setIsBoxVisible1(false);
       const categoryDetailData = await hanlderCategoryDetail(categoryId);
+      setSelectedCategoryId(categoryId);
       setCategoryDetail1(categoryDetailData);
       setIsBoxVisible1(true);
       setIsBoxVisible2(false);
@@ -78,6 +81,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
           <CategoryIconBox
             category={category}
             onCategoryDetailClick={onCategoryDetailClick1}
+            selectedCategoryId={selectedCategoryId}
           />
         </div>
         <div className="category-container">

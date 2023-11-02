@@ -210,6 +210,14 @@ a {
   padding: 15px 10px;
 }
 
+.category-item {
+  background-color: #fff;
+}
+
+.category-item.selected {
+  background-color: #0099ff;
+}
+
 /* 검색 페이지 css */
 .search-result-container {
   display: flex;

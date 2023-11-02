@@ -6,6 +6,8 @@ import javax.persistence.*;
 
 import java.awt.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.data.geo.Point;
 
@@ -52,4 +54,6 @@ public class Hospital {
     @Column(unique = true)
     private String ykiho;
 
+    @OneToMany(mappedBy = "hospital", fetch = FetchType.LAZY)
+    private final List<Price> prices = new ArrayList<>();
 }

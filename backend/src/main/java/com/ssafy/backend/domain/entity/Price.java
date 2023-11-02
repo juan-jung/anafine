@@ -6,6 +6,9 @@ import javax.persistence.*;
 
 import com.sun.istack.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Getter
 @Table(name = "price")
@@ -30,4 +33,7 @@ public class Price {
 
     @NotNull
     private Integer minPrice;
+
+    @OneToMany(mappedBy = "price", fetch = FetchType.LAZY)
+    private final List<PriceHistory> priceHistories = new ArrayList<>();
 }

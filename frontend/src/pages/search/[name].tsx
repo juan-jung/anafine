@@ -47,6 +47,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
             <DynamicMap
               latitude={mapCenter.latitude}
               longitude={mapCenter.longitude}
+              data={initialData.content}
             />
           </div>
           <div className="search-result">
@@ -67,7 +68,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   try {
     const data = await handlerSortByPriceInfo(
       name,
-      100000,
+      10000,
       myLatitude,
       myLongitude,
       2,

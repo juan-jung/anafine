@@ -29,7 +29,9 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
           >
             <ShapeImage
               shape={"square"}
-              src={`/category/${icon.categoryId}.png`}
+              src={`/category/${icon.categoryId}${
+                icon.categoryId === selectedCategoryId ? "color" : ""
+              }.png`}
               alt={`${icon.name}`}
               width={80}
               height={80}
@@ -48,7 +50,9 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
           >
             <ShapeImage
               shape={"square"}
-              src={`/category/${icon.categoryId}.png`}
+              src={`/category/${icon.categoryId}${
+                icon.categoryId === selectedCategoryId ? "color" : ""
+              }.png`}
               alt={`${icon.name}`}
               width={80}
               height={80}

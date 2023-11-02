@@ -16,7 +16,7 @@ public class ElasticSearchConfig extends AbstractElasticsearchConfiguration {
 
         final ClientConfiguration clientConfiguration = ClientConfiguration.builder()
                 .connectedTo("k9a403a.p.ssafy.io:9200")
-                .build();
+                .withBasicAuth("elastic","wonhee").build();
 
         return RestClients.create(clientConfiguration).rest();
     }

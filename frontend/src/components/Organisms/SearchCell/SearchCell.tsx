@@ -13,6 +13,9 @@ type SearchCellProps = {
 };
 
 const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
+  if (!data) {
+    data = [];
+  }
   return (
     <table className="hospital-table">
       <thead>
@@ -24,8 +27,8 @@ const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((hospital) => (
-          <tr key={hospital.hospitalId}>
+        {data.map((hospital, index) => (
+          <tr key={index}>
             <td>{hospital.hospitalName}</td>
             <td>{hospital.maxPrice}</td>
             <td>{hospital.minPrice}</td>

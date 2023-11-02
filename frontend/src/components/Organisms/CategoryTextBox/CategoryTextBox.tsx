@@ -3,7 +3,7 @@ import TextArea from "components/atoms/TextArea/TextArea";
 
 interface CategoryProps {
   category: { name: string; categoryId: string }[];
-  onCategoryDetailClick?: (categoryId: string) => void;
+  onCategoryDetailClick?: (categoryId: string, name: string) => void;
 }
 
 // 카테고리 아이콘 박스
@@ -13,9 +13,13 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
 }) => {
   const [selectedTextArea, setSelectedTextArea] = useState<number | null>(null);
 
-  const handleTextAreaClick = (index: number, categoryId: string) => {
+  const handleTextAreaClick = (
+    index: number,
+    categoryId: string,
+    name: string
+  ) => {
     if (onCategoryDetailClick !== undefined) {
-      onCategoryDetailClick(categoryId);
+      onCategoryDetailClick(categoryId, name);
     }
     setSelectedTextArea(index);
   };
@@ -29,7 +33,9 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
             key={index}
             children={<span>{text.name}</span>}
             selected={selectedTextArea === index}
-            onClick={() => handleTextAreaClick(index, text.categoryId)}
+            onClick={() =>
+              handleTextAreaClick(index, text.categoryId, text.name)
+            }
           />
         ))}
       </div>

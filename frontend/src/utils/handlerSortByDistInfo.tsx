@@ -4,13 +4,15 @@ const handlerSortByDistInfo = async (
   name: string,
   disLimit: number,
   userLatitude: number,
-  userLongitude: number
+  userLongitude: number,
+  pageNum: number,
+  pageSize: number
 ) => {
   console.log("handlerSortByDistInfo");
 
   const serverUrl = "/map/sortByDistInfo";
 
-  const queryParams = `?name=${name}&disLimit=${disLimit}&userLatitude=${userLatitude}&userLongitude=${userLongitude}`;
+  const queryParams = `?name=${name}&disLimit=${disLimit}&userLatitude=${userLatitude}&userLongitude=${userLongitude}&pageNum=${pageNum}&pageSize=${pageSize}`;
 
   try {
     const response = await axiosInstance.get(serverUrl + queryParams);

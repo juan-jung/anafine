@@ -13,6 +13,9 @@ type SearchCellProps = {
 };
 
 const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
+  if (!data) {
+    data = [];
+  }
   return (
     <table className="hospital-table">
       <thead>

@@ -36,7 +36,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
     <div className={styles.container}>
       <Head>
         <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <meta name="description" content="비급여 비용 검색 결과 페이지" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
@@ -68,11 +68,11 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   try {
     const data = await handlerSortByPriceInfo(
       name,
-      10000,
+      100000,
       myLatitude,
       myLongitude,
       2,
-      10
+      9
     );
 
     return {

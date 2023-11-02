@@ -49,14 +49,6 @@ function Map({ latitude, longitude, data }: MapProps) {
           markerImageOptions
         );
 
-        // 마커 생성 및 표시
-        var markerPosition = new window.kakao.maps.LatLng(latitude, longitude);
-        var marker = new window.kakao.maps.Marker({
-          position: markerPosition,
-          image: markerImage,
-          map: map,
-        });
-
         // 커스텀 오버레이를 생성하고 지도에 표시한다
         var customOverlay = new window.kakao.maps.CustomOverlay({
           map: map,
@@ -85,6 +77,9 @@ function Map({ latitude, longitude, data }: MapProps) {
           yAnchor: 0, // 컨텐츠의 y 위치
         });
 
+        if (!data) {
+          data = [];
+        }
         data.forEach((item) => {
           const markerPosition = new window.kakao.maps.LatLng(
             item.latitude,

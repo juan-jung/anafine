@@ -66,8 +66,12 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
       setState({ ...state, isBoxVisible2: false });
       const categoryDetailData = await hanlderCategoryDetail(categoryId);
       if (categoryDetailData.length === 0) {
-        setState({ ...state, searchName: name, isSearchVisible: true });
-
+        setState({
+          ...state,
+          categoryDetail2: categoryDetailData,
+          searchName: name,
+          isSearchVisible: true,
+        });
         console.error("카테고리 상세 정보가 없습니다.");
       } else {
         setState({
@@ -91,7 +95,12 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
       setState({ ...state, isBoxVisible3: false });
       const categoryDetailData = await hanlderCategoryDetail(categoryId);
       if (categoryDetailData.length === 0) {
-        setState({ ...state, searchName: name, isSearchVisible: true });
+        setState({
+          ...state,
+          categoryDetail3: categoryDetailData,
+          searchName: name,
+          isSearchVisible: true,
+        });
         console.error("카테고리 상세 정보가 없습니다.");
       } else {
         setState({
@@ -117,7 +126,10 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
     <div className={styles.container}>
       <Head>
         <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <meta
+          name="description"
+          content="비급여 항목 검색을 위한 검색 페이지"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

@@ -9,7 +9,7 @@ import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
   name: string;
-  initialData: any;
+  initialData?: any;
 };
 
 const myLatitude = 37.50130213612427;
@@ -20,7 +20,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
     latitude: myLatitude,
     longitude: myLongitude,
   });
-  console.log(name);
+  console.log(initialData);
 
   // 함수를 사용하여 중심 좌표를 업데이트
   const updateMapCenter = (newLatitude: number, newLongitude: number) => {
@@ -32,8 +32,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   const DynamicSearchCell = dynamic(
     () => import("components/Organisms/SearchCell/SearchCell")
   );
-
-  console.log(initialData);
   return (
     <div className={styles.container}>
       <Head>
@@ -52,7 +50,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
             />
           </div>
           <div className="search-result">
-            <DynamicSearchCell data={initialData} />
+            <DynamicSearchCell data={initialData.content} />
           </div>
         </div>
       </main>
@@ -66,18 +64,19 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
   const { name } = context.params as { name: string };
-  const encodedName = encodeURIComponent(name);
   try {
     const data = await handlerSortByPriceInfo(
-      encodedName,
+      name,
       100000,
       myLatitude,
-      myLongitude
+      myLongitude,
+      2,
+      10
     );
 
     return {
       props: {
-        name: encodedName,
+        name: name,
         initialData: data,
       },
     };
@@ -85,7 +84,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        name: encodedName,
+        name: name,
         initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };

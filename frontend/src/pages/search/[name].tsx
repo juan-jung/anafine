@@ -5,11 +5,11 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
-import axiosInstance from "pages/axios";
+import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
   name: string;
-  initialData: any;
+  initialData?: any;
 };
 
 const myLatitude = 37.50130213612427;
@@ -20,6 +20,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
     latitude: myLatitude,
     longitude: myLongitude,
   });
+  console.log(initialData);
 
   // 함수를 사용하여 중심 좌표를 업데이트
   const updateMapCenter = (newLatitude: number, newLongitude: number) => {
@@ -31,13 +32,11 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   const DynamicSearchCell = dynamic(
     () => import("components/Organisms/SearchCell/SearchCell")
   );
-
-  console.log(initialData);
   return (
     <div className={styles.container}>
       <Head>
         <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <meta name="description" content="비급여 비용 검색 결과 페이지" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
@@ -48,10 +47,11 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
             <DynamicMap
               latitude={mapCenter.latitude}
               longitude={mapCenter.longitude}
+              data={initialData.content}
             />
           </div>
           <div className="search-result">
-            <DynamicSearchCell data={initialData} />
+            <DynamicSearchCell data={initialData.content} />
           </div>
         </div>
       </main>
@@ -59,25 +59,25 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   );
 };
 
+export default SearchPage;
+
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
   const { name } = context.params as { name: string };
-
   try {
-    console.log("sortByPriceInfo API 요청");
-    const { data } = await axiosInstance.get("/map/sortByPriceInfo", {
-      params: {
-        treatmentId: "ABZ010001",
-        disLimit: 20000000,
-        userLatitude: myLatitude,
-        userLongitude: myLongitude,
-      },
-    });
+    const data = await handlerSortByPriceInfo(
+      name,
+      100000,
+      myLatitude,
+      myLongitude,
+      2,
+      9
+    );
 
     return {
       props: {
-        name,
+        name: name,
         initialData: data,
       },
     };
@@ -85,11 +85,9 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        name,
+        name: name,
         initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };
   }
 };
-
-export default SearchPage;

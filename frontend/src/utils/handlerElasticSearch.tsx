@@ -1,11 +1,11 @@
 import axiosInstance from "pages/axios";
 
-const handlerElasticSearch = async (text: string) => {
+const handlerElasticSearch = async (keyword: string) => {
   console.log("handlerElasticSearch");
 
   const serverUrl = "/search/recommend";
 
-  const queryParams = `?text=${text}`;
+  const queryParams = `?keyword=${keyword}`;
 
   try {
     const response = await axiosInstance.get(serverUrl + queryParams);

@@ -134,49 +134,57 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <SearchBar />
-        <div className="main-category">
-          <CategoryIconBox
-            category={category}
-            onCategoryDetailClick={onCategoryDetailClick1}
-            selectedCategoryId={selectedCategoryId}
-          />
-        </div>
-        <div className="category-container">
-          <div className="category-list">
-            {isBoxVisible1 && (
-              <CategoryTextBox
-                category={categoryDetail1}
-                onCategoryDetailClick={onCategoryDetailClick2}
+        <div className="main-wrapper">
+          <div className="main-first">
+            <SearchBar />
+            <div className="main-category">
+              <CategoryIconBox
+                category={category}
+                onCategoryDetailClick={onCategoryDetailClick1}
+                selectedCategoryId={selectedCategoryId}
+                width={90}
+                height={90}
               />
-            )}
+            </div>
           </div>
-          <div className="category-list">
-            {isBoxVisible2 && (
-              <CategoryTextBox
-                category={categoryDetail2}
-                onCategoryDetailClick={onCategoryDetailClick3}
-              />
-            )}
+          <div className="main-second">
+            <div className="category-container">
+              <div className="category-list">
+                {isBoxVisible1 && (
+                  <CategoryTextBox
+                    category={categoryDetail1}
+                    onCategoryDetailClick={onCategoryDetailClick2}
+                  />
+                )}
+              </div>
+              <div className="category-list">
+                {isBoxVisible2 && (
+                  <CategoryTextBox
+                    category={categoryDetail2}
+                    onCategoryDetailClick={onCategoryDetailClick3}
+                  />
+                )}
+              </div>
+              <div className="category-list">
+                {isBoxVisible3 && (
+                  <CategoryTextBox
+                    category={categoryDetail3}
+                    onCategoryDetailClick={onCategoryDetailClick4}
+                  />
+                )}
+              </div>
+            </div>
+            <div className="main-search-button">
+              {isSearchVisible && (
+                <Button
+                  children={<span>검색하기</span>}
+                  onClick={() => {
+                    window.location.href = `/search/${searchName}`;
+                  }}
+                />
+              )}
+            </div>
           </div>
-          <div className="category-list">
-            {isBoxVisible3 && (
-              <CategoryTextBox
-                category={categoryDetail3}
-                onCategoryDetailClick={onCategoryDetailClick4}
-              />
-            )}
-          </div>
-        </div>
-        <div className="main-search-button">
-          {isSearchVisible && (
-            <Button
-              children={<span>검색하기</span>}
-              onClick={() => {
-                window.location.href = `/search/${searchName}`;
-              }}
-            />
-          )}
         </div>
       </main>
       <Footer />

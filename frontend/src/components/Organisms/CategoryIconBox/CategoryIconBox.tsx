@@ -5,6 +5,8 @@ interface CategoryProps {
   category: { categoryId: string; name: string }[];
   onCategoryDetailClick: (categoryId: string) => void;
   selectedCategoryId: string;
+  width: number;
+  height: number;
 }
 
 // 카테고리 아이콘 박스
@@ -12,6 +14,8 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
   category,
   onCategoryDetailClick,
   selectedCategoryId,
+  width,
+  height,
 }) => {
   const middleIndex = Math.ceil(category.length / 2);
   console.log(category);
@@ -33,12 +37,13 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
                 icon.categoryId === selectedCategoryId ? "color" : ""
               }.png`}
               alt={`${icon.name}`}
-              width={80}
-              height={80}
+              width={width}
+              height={height}
             />
           </div>
         ))}
       </div>
+
       <div className="main-row">
         {category.slice(middleIndex).map((icon, index) => (
           <div
@@ -54,8 +59,8 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
                 icon.categoryId === selectedCategoryId ? "color" : ""
               }.png`}
               alt={`${icon.name}`}
-              width={80}
-              height={80}
+              width={width}
+              height={height}
             />
           </div>
         ))}

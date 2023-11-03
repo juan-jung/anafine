@@ -35,6 +35,10 @@ dependencies {
 
     implementation 'org.locationtech.jts:jts-core:1.18.1'
     implementation 'org.hibernate:hibernate-spatial'
+
+    //es
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+
 }
 
 tasks.named('test') {

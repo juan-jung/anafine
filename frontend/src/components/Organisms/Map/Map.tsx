@@ -8,15 +8,15 @@ declare global {
   }
 }
 
-/**
- * Map 컴포넌트의 props 정의
- */
+// Map 컴포넌트의 props 정의
 interface MapProps {
   latitude: number; // 위도
   longitude: number; // 경도
+  data: any[];
 }
 
-function Map({ latitude, longitude }: MapProps) {
+function Map({ latitude, longitude, data }: MapProps) {
+  console.log(data);
   useEffect(() => {
     const script = document.createElement("script");
     script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY}&autoload=false`;
@@ -36,22 +36,10 @@ function Map({ latitude, longitude }: MapProps) {
         const zoomControl = new window.kakao.maps.ZoomControl();
         map.addControl(zoomControl, window.kakao.maps.ControlPosition.RIGHT);
 
-        // 이벤트 리스너 등록
-        window.kakao.maps.event.addListener(map, "idle", function () {
-          var message =
-            "지도의 중심좌표는 " +
-            map.getCenter().toString() +
-            " 이고," +
-            "확대 레벨은 " +
-            map.getLevel() +
-            " 레벨 입니다.";
-          console.log(message);
-        });
-
         // 마커 이미지 설정
         var markerImageUrl =
           "https://t1.daumcdn.net/localimg/localimages/07/2012/img/marker_p.png";
-        var markerImageSize = new window.kakao.maps.Size(40, 42);
+        var markerImageSize = new window.kakao.maps.Size(30, 30);
         var markerImageOptions = {
           offset: new window.kakao.maps.Point(20, 42),
         };
@@ -60,14 +48,6 @@ function Map({ latitude, longitude }: MapProps) {
           markerImageSize,
           markerImageOptions
         );
-
-        // 마커 생성 및 표시
-        var markerPosition = new window.kakao.maps.LatLng(latitude, longitude);
-        var marker = new window.kakao.maps.Marker({
-          position: markerPosition,
-          image: markerImage,
-          map: map,
-        });
 
         // 커스텀 오버레이를 생성하고 지도에 표시한다
         var customOverlay = new window.kakao.maps.CustomOverlay({
@@ -92,13 +72,29 @@ function Map({ latitude, longitude }: MapProps) {
             </div>
           </div>
           `,
-          position: new window.kakao.maps.LatLng(37.56682, 126.97864), // 커스텀 오버레이를 표시할 좌표
+          position: new window.kakao.maps.LatLng(latitude, longitude),
           xAnchor: 0, // 컨텐츠의 x 위치
-          yAnchor: 1, // 컨텐츠의 y 위치
+          yAnchor: 0, // 컨텐츠의 y 위치
         });
-        // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
-        window.kakao.maps.event.addListener(marker, "click", function () {
-          customOverlay.setMap(map);
+
+        if (!data) {
+          data = [];
+        }
+        data.forEach((item) => {
+          const markerPosition = new window.kakao.maps.LatLng(
+            item.latitude,
+            item.longitude
+          );
+          const marker = new window.kakao.maps.Marker({
+            position: markerPosition,
+            image: markerImage,
+            map: map,
+          });
+
+          // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
+          window.kakao.maps.event.addListener(marker, "click", function () {
+            customOverlay.setMap(map);
+          });
         });
 
         // 커스텀 오버레이를 닫기 위해 호출되는 함수입니다

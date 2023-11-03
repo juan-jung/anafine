@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ssafy.backend.domain.entity.Price;
 import com.ssafy.backend.dto.HospitalDetailInfoDto;
 import com.ssafy.backend.dto.HospitalInfoDto;
 import com.ssafy.backend.dto.HospitalResponseDto;
@@ -31,14 +32,10 @@ public class HospitalController {
 		@RequestParam String name,
 		@RequestParam Double disLimit,
 		@RequestParam Double userLatitude,
-		@RequestParam Double userLongitude,
-		@RequestParam int pageNum,
-		@RequestParam int pageSize) {
-		HospitalResponseDto hospitalResponseDto = hospitalService.showByDistance(name, disLimit, userLatitude,
+		@RequestParam Double userLongitude, @RequestParam int pageNum, @RequestParam int pageSize) {
+		List<HospitalInfoDto> prices = hospitalService.showByDistance(name, disLimit, userLatitude,
 			userLongitude, pageNum, pageSize);
-		// return ResponseEntity.ok().body(hospitalService.showByDistance(name, disLimit, userLatitude,
-		// 	userLongitude, pageNum, pageSize).map(price -> price.getId()));
-		return ResponseEntity.ok().body(hospitalResponseDto);
+		return ResponseEntity.ok().body(prices);
 	}
 
 	@GetMapping("/sortByPriceInfo")
@@ -47,11 +44,9 @@ public class HospitalController {
 		@RequestParam Double disLimit,
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude, @RequestParam int pageNum, @RequestParam int pageSize) {
-		// Page<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(name, disLimit, userLatitude,
-		// 	userLongitude, pageNum, pageSize);
-		HospitalResponseDto hospitalResponseDto = hospitalService.showByPrice(name, disLimit, userLatitude,
+		List<HospitalInfoDto> prices = hospitalService.showByPrice(name, disLimit, userLatitude,
 			userLongitude, pageNum, pageSize);
-		return ResponseEntity.ok().body(hospitalResponseDto);
+		return ResponseEntity.ok().body(prices);
 	}
 
 	@GetMapping("/detail/{priceId}")

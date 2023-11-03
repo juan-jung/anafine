@@ -210,6 +210,20 @@ a {
   padding: 15px 10px;
 }
 
+.text-container {
+  display: block;
+  width: 100%;
+}
+.icon-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon-container {
+  display: block;
+  align-self: center;
+}
+
 .category-item {
   background-color: #fff;
 }

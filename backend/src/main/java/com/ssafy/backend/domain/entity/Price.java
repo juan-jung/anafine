@@ -17,8 +17,8 @@ import com.sun.istack.NotNull;
 	query = "SELECT " +
 		"h.hospital_id, " +
 		"h.hospital_name, " +
-		"ST_X(h.coordinate) as latitude, " +
-		"ST_Y(h.coordinate) as longitude, " +
+		"ST_X(h.coordinate) as longitude, " +
+		"ST_Y(h.coordinate) as latitude, " +
 		"p.price_id, " +
 		"p.max_price, " +
 		"p.min_price, " +
@@ -49,8 +49,8 @@ import com.sun.istack.NotNull;
 		columns = {
 			@ColumnResult(name = "hospital_id", type = Integer.class),
 			@ColumnResult(name = "hospital_name", type = String.class),
-			@ColumnResult(name = "latitude", type = Double.class),
 			@ColumnResult(name = "longitude", type = Double.class),
+			@ColumnResult(name = "latitude", type = Double.class),
 			@ColumnResult(name = "price_id", type = Long.class),
 			@ColumnResult(name = "max_price", type = Integer.class),
 			@ColumnResult(name = "min_price", type = Integer.class),

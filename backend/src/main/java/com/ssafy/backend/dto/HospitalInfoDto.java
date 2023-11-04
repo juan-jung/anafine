@@ -15,9 +15,9 @@ public class HospitalInfoDto {
 
 	private String hospitalName;
 
-	private Double longitude;
-
 	private Double latitude;
+
+	private Double longitude;
 
 	private Long priceId;
 

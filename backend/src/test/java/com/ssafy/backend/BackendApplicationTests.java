@@ -19,12 +19,7 @@ class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
-		hospitalRepository.findById(1).ifPresent(hospital -> {
-			System.out.println(hospital.getName());
-			System.out.println(hospital.getCoordinate());
-			System.out.println(hospital.getLatitude());
-			System.out.println(hospital.getLongitude());
-		});
+		priceRepository.findNearby("도수치료", 1000000, 37.5666103, 126.9783882  );
 
 
 	}

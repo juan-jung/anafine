@@ -46,7 +46,7 @@ public class HospitalService {
 	public List<HospitalInfoDto> showByPrice(String name, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
-		List<Object[]> objects = priceRepository.findNearby(userLatitude, userLongitude, disLimit, name);
+		List<Object[]> objects = priceRepository.findNearby(name,disLimit,userLatitude, userLongitude);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {
@@ -59,7 +59,7 @@ public class HospitalService {
 	public List<HospitalInfoDto> showByDistance(String name, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
-		List<Object[]> objects = priceRepository.findNearby(userLatitude, userLongitude, disLimit, name);
+		List<Object[]> objects = priceRepository.findNearby(name,disLimit,userLatitude, userLongitude);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {

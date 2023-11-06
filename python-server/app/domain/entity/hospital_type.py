@@ -7,7 +7,7 @@ class HospitalType(Base):
     
     hospital_type_id = Column(SmallInteger, primary_key=True, autoincrement=True)
     
-    name = Column(String(255), nullable=False)
+    hospital_type_name = Column(String(255), nullable=False)
     
     #One to Many
     hospitals = relationship('Hospital', back_populates='hospital_type', lazy='joined')

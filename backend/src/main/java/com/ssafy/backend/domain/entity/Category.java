@@ -19,6 +19,7 @@ public class Category {
     private Category parentCategory;
 
     @NotNull
+    @Column(name = "category_name")
     private String name;
 
     private String info;

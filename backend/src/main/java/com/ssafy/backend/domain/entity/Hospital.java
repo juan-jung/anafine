@@ -30,6 +30,7 @@ public class Hospital {
     private HospitalType hospitalType;
 
     @NotNull
+    @Column(name = "hospital_name")
     private String name;
 
     @NotNull

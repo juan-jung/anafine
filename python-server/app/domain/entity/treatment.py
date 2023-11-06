@@ -8,7 +8,7 @@ class Treatment(Base):
     treatment_id = Column(String(10), primary_key=True)
     category_id = Column(String(10), ForeignKey('category.category_id'), nullable=False)
     
-    name = Column(String(255), nullable=False, index=True)
+    treatment_name = Column(String(255), nullable=False, index=True)
     path = Column(String(255), nullable=False)
     info = Column(String(2000))
     

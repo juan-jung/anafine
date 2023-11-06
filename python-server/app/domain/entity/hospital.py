@@ -13,7 +13,7 @@ class Hospital(Base):
     hospital_type_id = Column(SmallInteger, ForeignKey('hospital_type.hospital_type_id'), nullable=False)
     
     ykiho = Column(String(255), unique=True, nullable=False, index=True)
-    name = Column(String(255), nullable=False, index=True)
+    hospital_name = Column(String(255), nullable=False, index=True)
     address = Column(String(255), nullable=False)
     coordinate = Column(Geometry(geometry_type='POINT', srid=4326), nullable=False, index=True)
     tel = Column(String(255)) #없는 경우 존재

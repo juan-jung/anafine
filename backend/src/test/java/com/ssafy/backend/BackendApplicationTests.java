@@ -19,7 +19,7 @@ class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
-		priceRepository.findNearby("도수치료", 1000000, 37.5666103, 126.9783882  );
+
 
 
 	}

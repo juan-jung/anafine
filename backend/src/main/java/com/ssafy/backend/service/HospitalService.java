@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -43,10 +45,12 @@ public class HospitalService {
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
-	public List<HospitalInfoDto> showByPrice(String name, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
-		List<Object[]> objects = priceRepository.findNearby(name,disLimit,userLatitude, userLongitude);
+		Pageable pageable = PageRequest.of(pageNum, pageSize);
+
+		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude,pageable);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {
@@ -56,10 +60,11 @@ public class HospitalService {
 		return hospitalInfoDtos;
 
 	}
-	public List<HospitalInfoDto> showByDistance(String name, Double disLimit, Double userLatitude,
+	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
-		List<Object[]> objects = priceRepository.findNearby(name,disLimit,userLatitude, userLongitude);
+		Pageable pageable = PageRequest.of(pageNum, pageSize);
+		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude, pageable);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {

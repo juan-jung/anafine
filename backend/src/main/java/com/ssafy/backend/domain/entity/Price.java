@@ -53,7 +53,7 @@ import com.sun.istack.NotNull;
                 "ST_Distance_Sphere(h.coordinate, ST_PointFromText(CONCAT('POINT(', :latitude, ' ', :longitude, ')'), 4326)), " +
                 "NULL" +
                 ") <= :distance " +
-                "AND t.treatment_name = :name " +
+                "AND t.treatment_id = :treatmentId " +
                 "ORDER BY p.min_price",
         resultSetMapping = "HospitalInfoDtoMapping"
 )

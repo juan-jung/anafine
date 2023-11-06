@@ -12,8 +12,8 @@ type SearchPageProps = {
   initialData?: any;
 };
 
-const myLatitude = 37.50130213612427;
-const myLongitude = 127.03945482599437;
+const myLatitude = 37.566381;
+const myLongitude = 126.9768428;
 
 const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   const [mapCenter, setMapCenter] = useState({
@@ -68,7 +68,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   try {
     const data = await handlerSortByPriceInfo(
       name,
-      100000,
+      15000,
       myLatitude,
       myLongitude,
       2,

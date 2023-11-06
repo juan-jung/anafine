@@ -17,5 +17,6 @@ public class HospitalType {
     private Short id;
 
     @NotNull
+    @Column(name = "hospital_type_name")
     private String name;
 }

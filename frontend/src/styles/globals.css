@@ -163,7 +163,9 @@ a {
 }
 .button--small {
   font-size: 12px;
-  padding: 10px 16px;
+  border: none;
+  background-color: #f5f6f7;
+  padding: 1px 2px;
 }
 .button--medium {
   font-size: 14px;
@@ -247,8 +249,12 @@ a {
   justify-content: space-between;
 }
 .icon-container {
-  display: block;
-  align-self: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-width: 50px;
+  justify-content: right;
+  align-items: center;
 }
 
 .category-item {
@@ -300,9 +306,7 @@ a {
 
 .main-search-button {
   display: flex;
-  width: 60vw;
   justify-content: right;
-  padding-bottom: 3vh;
 }
 
 /* 이용약관 페이지 관련 css */

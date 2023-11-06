@@ -5,4 +5,4 @@ export default {
   component: Search,
 };
 
-export const SearchPage = () => <Search name="SampleName" />;
+export const SearchPage = () => <Search name="SampleName" initialData={undefined} />;

@@ -5,4 +5,4 @@ export default {
   component: Main,
 };
 
-export const MainPage = () => <Main />;
+export const MainPage = () => <Main category={undefined} />;

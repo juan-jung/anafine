@@ -24,7 +24,6 @@ public class Category {
     private String info;
 
     @NotNull
-    @Column(name = "isleaf")
     private Boolean isLeaf;
 }
 

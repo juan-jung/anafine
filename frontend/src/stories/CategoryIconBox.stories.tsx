@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import CategoryIconBox from "components/Organisms/CategoryIconBox/CategoryIconBox";
+import CategoryIconBox from "components/Organisms/CategoryIconBox";
 
 const meta: Meta = {
   title: "Organisms/CategoryIconBox",

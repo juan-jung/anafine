@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Input from "components/atoms/Input/Input";
-import { Button } from "components/atoms/Button/Button";
+import Input from "components/atoms/Input";
+import { Button } from "components/atoms/Button";
 import { Icon } from "@iconify/react";
 
 // SearchDetailBar

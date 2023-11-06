@@ -7,8 +7,11 @@ import javax.persistence.*;
 import java.awt.*;
 import java.time.LocalDateTime;
 
-import org.springframework.data.geo.Point;
-
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+import org.locationtech.jts.geom.Point;
+import com.fasterxml.jackson.annotation.JsonTypeId;
+import com.ssafy.backend.dto.HospitalInfoDto;
 import com.sun.istack.NotNull;
 import com.sun.xml.bind.v2.runtime.Coordinator;
 
@@ -27,6 +30,7 @@ public class Hospital {
     private HospitalType hospitalType;
 
     @NotNull
+    @Column(name = "hospital_name")
     private String name;
 
     @NotNull
@@ -34,14 +38,8 @@ public class Hospital {
 
     private String tel;
 
-    // @NotNull
-    // private Point coordinate;
-
     @NotNull
-    private Double latitude;
-
-    @NotNull
-    private Double longitude;
+    private Point coordinate;
 
     @NotNull
     private LocalDateTime modifiedAt;
@@ -51,5 +49,13 @@ public class Hospital {
     @NotNull
     @Column(unique = true)
     private String ykiho;
+
+    public double getLatitude() {
+    	return coordinate.getY();
+    }
+
+    public double getLongitude() {
+    	return coordinate.getX();
+    }
 
 }

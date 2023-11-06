@@ -1,5 +1,5 @@
 import React from "react";
-import ShapeImage from "components/atoms/ShapeImage/ShapeImage";
+import ShapeImage from "components/atoms/ShapeImage";
 
 interface CategoryProps {
   category: { categoryId: string; name: string }[];

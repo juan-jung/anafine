@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import CategoryTextBox from "components/Organisms/CategoryTextBox/CategoryTextBox";
+import CategoryTextBox from "components/Organisms/CategoryTextBox";
 
 const meta: Meta = {
   title: "Organisms/CategoryTextBox",

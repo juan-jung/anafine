@@ -2,6 +2,7 @@ import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Footer from "components/Organisms/Footer/Footer";
+import SearchBar from "components/Organisms/SearchBar/SearchBar";
 import Header from "components/Organisms/Header/Header";
 import CategoryIconBox from "components/Organisms/CategoryIconBox/CategoryIconBox";
 import CategoryTextBox from "components/Organisms/CategoryTextBox/CategoryTextBox";
@@ -135,13 +136,16 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
       <main className={styles.main}>
         <div className="main-wrapper">
           <div className="main-first">
-            <CategoryIconBox
-              category={category}
-              onCategoryDetailClick={onCategoryDetailClick1}
-              selectedCategoryId={selectedCategoryId}
-              width={100}
-              height={100}
-            />
+            <SearchBar />
+            <div className="main-category">
+              <CategoryIconBox
+                category={category}
+                onCategoryDetailClick={onCategoryDetailClick1}
+                selectedCategoryId={selectedCategoryId}
+                width={90}
+                height={90}
+              />
+            </div>
           </div>
           <div className="main-second">
             <div className="category-container">

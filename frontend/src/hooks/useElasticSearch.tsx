@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import handlerElasticSearch from "utils/handlerElasticSearch";
 
 const useElasticSearch = (

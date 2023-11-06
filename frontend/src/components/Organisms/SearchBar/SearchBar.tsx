@@ -8,7 +8,8 @@ import useElasticSearch from "hooks/useElasticSearch";
 // SearchBar
 const SearchBar: React.FC = () => {
   const [value, setValue] = useState<string>("");
-  const [searchResults, setSearchResults] = useState<{ path: string }[]>([]);
+  const [searchID, setSearchID] = useState<string>("");
+  const [searchResults, setSearchResults] = useState<string[]>([]);
   const router = useRouter();
 
   useElasticSearch(value, setSearchResults);

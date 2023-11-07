@@ -5,6 +5,7 @@ interface InputProps {
   placeholder?: string;
   className?: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  tabIndex?: number;
 }
 
 // Input
@@ -13,6 +14,7 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   className = "input",
   onChange,
+  tabIndex,
   ...props
 }: InputProps) => {
   return (

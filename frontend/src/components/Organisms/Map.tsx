@@ -38,10 +38,10 @@ function Map({ latitude, longitude, data }: MapProps) {
 
         // 마커 이미지 설정
         var markerImageUrl =
-          "https://t1.daumcdn.net/localimg/localimages/07/2012/img/marker_p.png";
+          "https://cdn2.iconfinder.com/data/icons/bitsies/128/Location-256.png";
         var markerImageSize = new window.kakao.maps.Size(30, 30);
         var markerImageOptions = {
-          offset: new window.kakao.maps.Point(20, 42),
+          offset: new window.kakao.maps.Point(13, 41),
         };
         var markerImage = new window.kakao.maps.MarkerImage(
           markerImageUrl,
@@ -111,7 +111,7 @@ function Map({ latitude, longitude, data }: MapProps) {
 }
 const MapContainer = styled.div`
   width: 35vw;
-  height: 60vh;
+  height: 75vh;
 `;
 
 export default Map;

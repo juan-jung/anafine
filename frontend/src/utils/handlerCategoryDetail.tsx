@@ -2,7 +2,6 @@ import axiosInstance from "../api/axios";
 
 const hanlderCategoryDetail = async (id: string) => {
   console.log("hanlderCategoryDetail");
-  console.log(id);
 
   const serverUrl = `/category/${id}`;
 

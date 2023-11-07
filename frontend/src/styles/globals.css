@@ -35,6 +35,14 @@ a {
   }
 }
 
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* input창 관련 css */
 .input {
   padding: 10px;
@@ -109,9 +117,15 @@ a {
 
 /* header 검색 관련 css */
 .search-input {
+  font-family: omyu_pretty, sans-serif;
+  font-size: 16px;
   border: none;
   width: 58vh;
   height: 5vh;
+}
+
+.search-input:focus {
+  outline: none;
 }
 
 .search-form {
@@ -122,8 +136,30 @@ a {
   background-color: white;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60vh;
   height: 6vh;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translateX(-52%);
+  margin-top: 3vh;
+  width: 58vh;
+  background-color: white;
+}
+
+.search-result-text {
+  border: 1px solid #eaeaea;
+  text-align: left;
+  font-family: omyu_pretty, sans-serif;
+  font-size: 16px;
+  padding: 8px;
 }
 
 /* footer 관련 css */
@@ -226,12 +262,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-family: omyu_pretty, sans-serif;
+  font-size: 15px;
   background-color: #ffffff;
   border-bottom: 1px solid #eaeaea;
 }
 
-.category-text-box p {
+.text-container {
+  display: block;
+  width: 100%;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border: 1px solid #eaeaea;
   width: 100%;
   text-align: left;
@@ -239,15 +284,6 @@ a {
   padding: 10px 10px;
 }
 
-.text-container {
-  display: block;
-  width: 100%;
-}
-.icon-text-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
 .icon-container {
   display: flex;
   flex-direction: row;
@@ -270,6 +306,10 @@ a {
   display: flex;
   flex-direction: row;
   padding-top: 5vh;
+  height: 75vh;
+}
+.search-result-text.selected {
+  background-color: lightblue;
 }
 
 .search-map {
@@ -279,7 +319,7 @@ a {
 .search-result {
   display: flex;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   overflow: auto;
 }
 
@@ -307,6 +347,11 @@ a {
 .main-search-button {
   display: flex;
   justify-content: right;
+}
+
+.selected-text {
+  background-color: #0099ff;
+  color: white;
 }
 
 /* 이용약관 페이지 관련 css */

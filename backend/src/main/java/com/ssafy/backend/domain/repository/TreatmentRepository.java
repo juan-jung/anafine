@@ -19,4 +19,6 @@ public interface TreatmentRepository extends JpaRepository<Price, String> {
 
     // 치료 항목 아이디와 일치하는 정보 출력하기
 //    List<Price> findByTreatment_IdOrderByMinPriceAsc(String treatmentId);
+
+
 }

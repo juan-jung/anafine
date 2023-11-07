@@ -27,9 +27,9 @@ spring:
       on-profile: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/anafine
-    username: root
-    password: ssafy
+    url: jdbc:mysql://anafine.com:3306/anafine
+    username: A403
+    password: ssafy!A403
   jpa:
     hibernate:
       ddl-auto: none

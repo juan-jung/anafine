@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <springProperty name="profile" source="spring.profiles.active" defaultValue=""/>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="logback-spring-${profile}.xml" />
+</configuration>

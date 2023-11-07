@@ -28,4 +28,6 @@ public class HospitalInfoDto {
 	private double distance;
 
 	private String treatmentName;
+
+	private String path;
 }

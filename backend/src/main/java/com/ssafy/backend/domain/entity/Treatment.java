@@ -20,6 +20,7 @@ public class Treatment {
     private Category category;
 
     @NotNull
+    @Column(name = "treatment_name")
     private String name;
 
     private String info;

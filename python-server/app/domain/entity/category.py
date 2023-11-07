@@ -8,7 +8,7 @@ class Category(Base):
     category_id = Column(String(10), primary_key=True)
     parent_category_id = Column(String(10), ForeignKey('category.category_id'))
     
-    name = Column(String(255), nullable=False)
+    category_name = Column(String(255), nullable=False)
     info = Column(String(2000))
     is_leaf = Column(Boolean, nullable=False, default=True)
     

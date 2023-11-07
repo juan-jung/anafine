@@ -45,7 +45,7 @@ def merge_csvs(merged_file_path, file_paths:list, origin_delimiter=',', delimite
     print('Final converted page are written.')
     
 
-ex_set = dict({"":None, "False":False, "True":True, "FALSE":False, "TRUE":True})    
+ex_set = dict({"":None, "\\n":None, " \\n":None, "\\n\\n":None," \\n\\n":None, "#NAME?":None, "False":False, "True":True, "FALSE":False, "TRUE":True})    
 def get_values_from_csv(filepath, column_names, db_column_names = None, delimiter=','):
     if db_column_names is None:
         db_column_names = column_names

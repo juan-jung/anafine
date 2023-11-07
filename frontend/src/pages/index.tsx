@@ -116,7 +116,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
     }
   };
 
-  const onCategoryDetailClick4 = async (categoryId: string, name: string) => {
+  const onCategoryDetailClick4 = async (name: string) => {
     setState({ ...state, searchName: name, isSearchVisible: true });
   };
 
@@ -138,7 +138,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
               category={category}
               onCategoryDetailClick={onCategoryDetailClick1}
               selectedCategoryId={selectedCategoryId}
-              width={100}
+              width={120}
               height={100}
             />
           </div>

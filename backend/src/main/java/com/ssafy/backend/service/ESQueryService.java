@@ -27,6 +27,7 @@ public class ESQueryService {
 
     public List<SearchRecommendDto> recommend(String keyword) {
         BoolQueryBuilder bqb = QueryBuilders.boolQuery();
+        bqb.should(QueryBuilders.termQuery("path",keyword));
         bqb.should(QueryBuilders.termQuery("path.partial",keyword));
         bqb.should(QueryBuilders.termQuery("engtokor.partial",keyword));
         bqb.should(QueryBuilders.termQuery("chosung.partial",keyword));

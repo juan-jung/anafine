@@ -1,4 +1,4 @@
-import axiosInstance from "pages/axios";
+import axiosInstance from "../api/axios";
 
 const handlerSortByDistInfo = async (
   name: string,

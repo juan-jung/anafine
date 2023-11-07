@@ -1,4 +1,4 @@
-import axiosInstance from "pages/axios";
+import axiosInstance from "../api/axios";
 
 const hanlderCategoryDetail = async (id: string) => {
   console.log("hanlderCategoryDetail");

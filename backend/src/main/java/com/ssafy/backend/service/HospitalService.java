@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -45,7 +47,7 @@ public class HospitalService {
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌
-	public List<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
+	public Page<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
 		Pageable pageable = PageRequest.of(pageNum, pageSize);
@@ -57,10 +59,10 @@ public class HospitalService {
 			HospitalInfoDto hospitalInfo = (HospitalInfoDto)result[0];
 			hospitalInfoDtos.add(hospitalInfo);
 		}
-		return hospitalInfoDtos;
+		return new PageImpl<>(hospitalInfoDtos, pageable, hospitalInfoDtos.size());
 
 	}
-	public List<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
+	public Page<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
 		Pageable pageable = PageRequest.of(pageNum, pageSize);
@@ -72,7 +74,8 @@ public class HospitalService {
 			hospitalInfoDtos.add(hospitalInfo);
 		}
 		hospitalInfoDtos.sort(Comparator.comparingDouble(HospitalInfoDto::getDistance));
-		return hospitalInfoDtos;
+		return new PageImpl<>(hospitalInfoDtos, pageable, hospitalInfoDtos.size());
+		// return hospitalInfoDtos;
 
 	}
 }

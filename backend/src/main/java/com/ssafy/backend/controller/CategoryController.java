@@ -24,4 +24,9 @@ public class CategoryController {
     public ResponseEntity<?> getCategoryList(@PathVariable String parentCategoryId){
         return ResponseEntity.ok(categoryService.getCategoryList(parentCategoryId));
     }
+
+    @GetMapping("/{treatmentId}")
+    public ResponseEntity<?> getTreatmentListAndPath(){
+        return ResponseEntity.ok(categoryService.getTreatmentListAndPath());
+    }
 }

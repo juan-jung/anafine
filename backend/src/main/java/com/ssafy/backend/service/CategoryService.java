@@ -1,8 +1,10 @@
 package com.ssafy.backend.service;
 
+import com.ssafy.backend.domain.entity.Treatment;
 import com.ssafy.backend.dto.CategoryDto;
 import com.ssafy.backend.domain.entity.Category;
 import com.ssafy.backend.domain.repository.CategoryRepository;
+import com.ssafy.backend.dto.TreatmentDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -38,5 +40,17 @@ public class CategoryService {
             categoryDtoList.add(categoryDto);
         }
         return categoryDtoList;
+    }
+
+    @Transactional
+    public List<TreatmentDto> getTreatmentListAndPath() {
+        List<Treatment> treatments = categoryRepository.findTreatmentByLeaf();
+
+        List<TreatmentDto> treatmentDtoList = new ArrayList<>();
+        for (Treatment treatment: treatments) {
+            TreatmentDto treatmentDto = TreatmentDto.entityToDto(treatment);
+            treatmentDtoList.add(treatmentDto);
+        }
+        return treatmentDtoList;
     }
 }

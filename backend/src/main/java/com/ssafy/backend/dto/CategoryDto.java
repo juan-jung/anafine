@@ -1,6 +1,7 @@
 package com.ssafy.backend.dto;
 
 import com.ssafy.backend.domain.entity.Category;
+import com.ssafy.backend.domain.entity.Treatment;
 import lombok.Builder;
 import lombok.Data;
 
@@ -35,5 +36,4 @@ public class CategoryDto {
 
         return categoryDto;
     }
-
 }

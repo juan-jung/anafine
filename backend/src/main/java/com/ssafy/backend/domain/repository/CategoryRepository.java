@@ -19,9 +19,13 @@ public interface  CategoryRepository extends JpaRepository<Category, String> {
     @Query(value = "select c from Category c where c.parentCategory.id = :parentCategoryId and c.parentCategory is not null")
     List<Category> findCategoryByParentCategoryId(@Param("parentCategoryId") String parentCategoryId);
 
-    // 말단 노드일 경우 path와 treatmentId 가져오기.
-    @Query(value = "select c, t from Category c, Treatment t where c = t.category and c.isLeaf = true")
-    List<Treatment> findTreatmentByLeaf();
+//    // 말단 노드일 경우 path와 treatmentId 가져오기.
+//    @Query(value = "select t from Treatment t where t.category.id = :categoryId and t.category.isLeaf = true")
+//    List<Treatment> findTreatmentByLeaf(@Param("categoryId") String categoryId);
+
+    @Query(value = "select c, t from Category c, Treatment t where t.category.id = :categoryId")
+    List<Object[]> findTreatmentInfoByCategoryId(@Param("categoryId") String categoryId);
+
 
 //    List<Category> findByCategoryId(String categoryId);
 

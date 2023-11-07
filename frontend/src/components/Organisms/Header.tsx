@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import ShapeImage from "components/atoms/ShapeImage/ShapeImage";
+import ShapeImage from "components/atoms/ShapeImage";
+import SearchBar from "./SearchBar";
 
 const Header: React.FC = () => {
   return (
@@ -18,6 +19,9 @@ const Header: React.FC = () => {
               />
             </a>
           </Link>
+        </div>
+        <div className="header-search">
+          <SearchBar />
         </div>
         <div className="header-link">
           <Link href="/info">

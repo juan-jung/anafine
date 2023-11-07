@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import SearchBar from "components/Organisms/SearchBar/SearchBar";
+import SearchCell from "components/Organisms/SearchCell";
 
 const meta: Meta = {
-  title: "Organisms/SearchBar",
-  component: SearchBar,
+  title: "Organisms/SearchCell",
+  component: SearchCell,
   tags: ["autodocs"],
   argTypes: {},
 };

@@ -1,15 +1,13 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Footer from "components/Organisms/Footer/Footer";
-import SearchBar from "components/Organisms/SearchBar/SearchBar";
-import Header from "components/Organisms/Header/Header";
-import CategoryIconBox from "components/Organisms/CategoryIconBox/CategoryIconBox";
-import CategoryTextBox from "components/Organisms/CategoryTextBox/CategoryTextBox";
+import Footer from "components/Organisms/Footer";
+import Header from "components/Organisms/Header";
+import CategoryIconBox from "components/Organisms/CategoryIconBox";
+import CategoryTextBox from "components/Organisms/CategoryTextBox";
 import { useState } from "react";
 import hanlderCategoryLarge from "utils/handlerCategoryLarge";
 import hanlderCategoryDetail from "utils/handlerCategoryDetail";
-import { Button } from "components/atoms/Button/Button";
 
 type MainPageProps = {
   category: any;
@@ -136,16 +134,13 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
       <main className={styles.main}>
         <div className="main-wrapper">
           <div className="main-first">
-            <SearchBar />
-            <div className="main-category">
-              <CategoryIconBox
-                category={category}
-                onCategoryDetailClick={onCategoryDetailClick1}
-                selectedCategoryId={selectedCategoryId}
-                width={90}
-                height={90}
-              />
-            </div>
+            <CategoryIconBox
+              category={category}
+              onCategoryDetailClick={onCategoryDetailClick1}
+              selectedCategoryId={selectedCategoryId}
+              width={100}
+              height={100}
+            />
           </div>
           <div className="main-second">
             <div className="category-container">
@@ -173,16 +168,6 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
                   />
                 )}
               </div>
-            </div>
-            <div className="main-search-button">
-              {isSearchVisible && (
-                <Button
-                  children={<span>검색하기</span>}
-                  onClick={() => {
-                    window.location.href = `/search/${searchName}`;
-                  }}
-                />
-              )}
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
-import SearchBar from "components/Organisms/SearchBar/SearchBar";
-import Header from "components/Organisms/Header/Header";
+import SearchBar from "components/Organisms/SearchBar";
+import Header from "components/Organisms/Header";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
@@ -28,9 +28,9 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
   };
 
   // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
-  const DynamicMap = dynamic(() => import("components/Organisms/Map/Map"));
+  const DynamicMap = dynamic(() => import("components/Organisms/Map"));
   const DynamicSearchCell = dynamic(
-    () => import("components/Organisms/SearchCell/SearchCell")
+    () => import("components/Organisms/SearchCell")
   );
   return (
     <div className={styles.container}>
@@ -41,7 +41,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <SearchBar />
         <div className="search-result-container">
           <div className="search-map">
             <DynamicMap

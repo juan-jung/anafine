@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Input from "components/atoms/Input/Input";
-import { Button } from "components/atoms/Button/Button";
+import Input from "components/atoms/Input";
+import { Button } from "components/atoms/Button";
 import { Icon } from "@iconify/react";
 import useElasticSearch from "hooks/useElasticSearch";
 
 // SearchBar
 const SearchBar: React.FC = () => {
   const [value, setValue] = useState<string>("");
-  const [searchID, setSearchID] = useState<string>("");
-  const [searchResults, setSearchResults] = useState<string[]>([]);
+  const [searchResults, setSearchResults] = useState<{ path: string }[]>([]);
   const router = useRouter();
 
   useElasticSearch(value, setSearchResults);

@@ -4,11 +4,15 @@ import Input from "components/atoms/Input";
 import { Button } from "components/atoms/Button";
 import { Icon } from "@iconify/react";
 import useElasticSearch from "hooks/useElasticSearch";
+import TextArea from "components/atoms/TextArea";
 
 // SearchBar
 const SearchBar: React.FC = () => {
   const [value, setValue] = useState<string>("");
-  const [searchResults, setSearchResults] = useState<{ path: string }[]>([]);
+  const [selectSearch, setSelectSearch] = useState<string>("");
+  const [searchResults, setSearchResults] = useState<
+    { path: string; treatmentId: string }[]
+  >([]);
   const router = useRouter();
 
   useElasticSearch(value, setSearchResults);
@@ -17,8 +21,12 @@ const SearchBar: React.FC = () => {
     e.preventDefault();
     if (value === "") {
     } else {
-      router.push(`/search/${value}`);
+      router.push(`/search/?id=${selectSearch}`);
     }
+  };
+
+  const onClick = (treatmentId: string) => {
+    router.push(`/search/?id=${treatmentId}`);
   };
 
   return (
@@ -34,9 +42,14 @@ const SearchBar: React.FC = () => {
           <Icon icon="ic:baseline-search" width={30} height={30} />
         </Button>
       </form>
-      <div>
+      <div className="search-results">
         {searchResults.map((result, index) => (
-          <div key={index}>{result.path}</div>
+          <TextArea
+            key={index}
+            className="search-result-text"
+            children={result.path}
+            onClick={() => onClick(result.treatmentId)}
+          ></TextArea>
         ))}
       </div>
     </div>

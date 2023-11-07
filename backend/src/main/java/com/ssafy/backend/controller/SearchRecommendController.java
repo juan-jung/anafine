@@ -12,7 +12,7 @@ import java.util.Collection;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/search")
+@RequestMapping("/search")
 @Slf4j
 @CrossOrigin(origins = "*")
 public class SearchRecommendController {

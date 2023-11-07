@@ -2,6 +2,7 @@ package com.ssafy.backend.controller;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,7 +31,7 @@ public class HospitalController {
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude, @RequestParam int pageNum, @RequestParam int pageSize) {
 		if(pageNum<0) throw new CustomException(ExceptionEnum.PAGEINDEX_ERROR);
-		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance(treatmentId, disLimit, userLatitude,
+		Page<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByDistance(treatmentId, disLimit, userLatitude,
 			userLongitude, pageNum, pageSize);
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}
@@ -42,7 +43,7 @@ public class HospitalController {
 		@RequestParam Double userLatitude,
 		@RequestParam Double userLongitude, @RequestParam int pageNum, @RequestParam int pageSize) {
 		if(pageNum<0) throw new CustomException(ExceptionEnum.PAGEINDEX_ERROR);
-		List<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(treatmentId, disLimit, userLatitude,
+		Page<HospitalInfoDto> hospitalInfoDtos = hospitalService.showByPrice(treatmentId, disLimit, userLatitude,
 			userLongitude, pageNum, pageSize);
 		return ResponseEntity.ok().body(hospitalInfoDtos);
 	}

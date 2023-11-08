@@ -10,8 +10,8 @@ interface CategoryProps {
     name: string;
     categoryId: string;
     isLeaf: boolean;
-    treatmentId: string;
-    path: string;
+    treatmentId?: string;
+    path?: string;
     info: string;
   }[];
   onCategoryDetailClick?: (categoryId: string, name: string) => void;
@@ -47,10 +47,6 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                           children={<span>검색</span>}
                           ver={"small"}
                           onClick={() => {
-                            sessionStorage.setItem(
-                              "treatmentId",
-                              text.treatmentId
-                            );
                             window.location.href = `/search/?id=${text.treatmentId}`;
                           }}
                         />

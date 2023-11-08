@@ -162,6 +162,10 @@ a {
   padding: 8px;
 }
 
+.search-result-text .selected {
+  background-color: lightblue;
+}
+
 /* footer 관련 css */
 .footer {
   display: block;

@@ -19,12 +19,18 @@ public class CategoryDto {
 
     private Boolean isLeaf;
 
+    private String treatmentId;
+
+    private String path;
+
     public static CategoryDto entityToDto(Category category) {
         CategoryDto categoryDto = CategoryDto.builder()
                 .categoryId(category.getId())
                 .name(category.getName())
                 .info(category.getInfo())
                 .isLeaf(category.getIsLeaf())
+                .treatmentId(builder().treatmentId)
+                .path(builder().path)
                 .build();
 
         if (category.getParentCategory() != null) {

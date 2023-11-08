@@ -291,10 +291,14 @@ a {
 .icon-container {
   display: flex;
   flex-direction: row;
-  position: relative;
-  min-width: 50px;
+  min-width: 20px;
   justify-content: right;
   align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
 .category-item {

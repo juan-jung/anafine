@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import TextArea from "components/atoms/TextArea";
 import { Icon } from "@iconify/react";
 import { Button } from "components/atoms/Button";
+import { Tooltip } from "@mui/material";
 
 interface CategoryProps {
   category: {
@@ -55,14 +56,14 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                     &nbsp;
                     {text.info && (
                       <div className="icon-wrapper">
-                        <Icon
-                          icon="fluent:info-20-regular"
-                          color="#888888"
-                          width="15"
-                          height="15"
-                        >
-                          <span className="tooltip-text">{text.info}</span>
-                        </Icon>
+                        <Tooltip title={text.info} placement="bottom">
+                          <Icon
+                            icon="fluent:info-20-regular"
+                            color="#888888"
+                            width="15"
+                            height="15"
+                          />
+                        </Tooltip>
                       </div>
                     )}
                   </div>

@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import TextArea from "components/atoms/TextArea";
 import { Icon } from "@iconify/react";
 import { Button } from "components/atoms/Button";
-import { Tooltip } from "@mui/material";
+import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import { styled } from "@mui/material";
 
 interface CategoryProps {
   category: {
@@ -17,6 +18,23 @@ interface CategoryProps {
   }[];
   onCategoryDetailClick?: (categoryId: string, name: string) => void;
 }
+
+// 툴팁 커스터마이징
+const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: theme.palette.common.white,
+    color: "rgba(0, 0, 0, 0.87)",
+    boxShadow: theme.shadows[1],
+    border: "1px solid #dadde9",
+    fontSize: 12,
+    padding: "10px 10px",
+  },
+  [`& .${tooltipClasses.arrow}`]: {
+    color: theme.palette.common.white,
+  },
+}));
 
 // 카테고리 아이콘 박스
 const CategoryTextBox: React.FC<CategoryProps> = ({
@@ -56,14 +74,19 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                     &nbsp;
                     {text.info && (
                       <div className="icon-wrapper">
-                        <Tooltip title={text.info} placement="bottom">
+                        <CustomTooltip
+                          className="tooltip"
+                          title={text.info}
+                          placement="bottom"
+                          arrow
+                        >
                           <Icon
                             icon="fluent:info-20-regular"
                             color="#888888"
                             width="15"
                             height="15"
                           />
-                        </Tooltip>
+                        </CustomTooltip>
                       </div>
                     )}
                   </div>

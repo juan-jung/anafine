@@ -9,7 +9,6 @@ import TextArea from "components/atoms/TextArea";
 // SearchBar
 const SearchBar: React.FC = () => {
   const [searchValue, setSearchValue] = useState<string>(""); // 입력된 검색어
-  const [selectSearch, setSelectSearch] = useState<string>(""); // 선택된 검색어
   const [searchResults, setSearchResults] = useState<
     { path: string; treatmentId: string }[]
   >([]); // 추천 검색어 리스트
@@ -26,6 +25,9 @@ const SearchBar: React.FC = () => {
       return;
     } else {
       router.push(`/search/?id=${searchResults[selectIdx].treatmentId}`);
+      setSearchValue("");
+      setSearchResults([]);
+      setSelectIdx(0);
     }
   };
 

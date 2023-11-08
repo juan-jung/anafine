@@ -11,8 +11,9 @@ type SearchPageProps = {
   initialData?: any;
 };
 
-const myLatitude = 37.566381;
-const myLongitude = 126.9768428;
+// 기본 위치를 멀티캠퍼스 역삼으로 설정
+const myLatitude = 37.50130213612427;
+const myLongitude = 127.03945482599437;
 
 const SearchPage: NextPage<SearchPageProps> = ({ initialData }) => {
   const [mapCenter, setMapCenter] = useState({

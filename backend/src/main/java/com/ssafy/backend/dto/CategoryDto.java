@@ -36,8 +36,6 @@ public class CategoryDto {
         if (category.getParentCategory() != null) {
             categoryDto.setParentCategory(category.getParentCategory().getId());
         } else {
-            // parentCategory가 null인 경우에 대한 예외 처리 또는 로깅을 수행할 수 있습니다.
-            // 예: categoryDto.setParentCategory("N/A") 또는 로깅 메시지 출력
         }
 
         return categoryDto;

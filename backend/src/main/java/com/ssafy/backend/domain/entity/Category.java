@@ -26,6 +26,13 @@ public class Category {
 
     @NotNull
     private Boolean isLeaf;
+
+    @Override
+    public String toString() {
+        return "Category [id=" + id + ", info=" + info + ", isLeaf=" + isLeaf + ", name=" + name + ", parentCategory="
+                + parentCategory + "]";
+    }
+
 }
 
 

@@ -12,18 +12,20 @@ const SearchBar: React.FC = () => {
   const [selectSearch, setSelectSearch] = useState<string>(""); // 선택된 검색어
   const [searchResults, setSearchResults] = useState<
     { path: string; treatmentId: string }[]
-  >([]); // 검색 결과
+  >([]); // 추천 검색어 리스트
   const [selectIdx, setSelectIdx] = useState<number>(0); // 선택된 추천 검색어 인덱스
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
   useElasticSearch(searchValue, setSearchResults);
 
+  // 검색어 입력
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchValue === "") {
+    if (searchResults.length === 0) {
+      return;
     } else {
-      router.push(`/search/?id=${selectSearch}`);
+      router.push(`/search/?id=${searchResults[selectIdx].treatmentId}`);
     }
   };
 
@@ -49,12 +51,8 @@ const SearchBar: React.FC = () => {
   }, [selectIdx, searchResults]);
 
   // 키보드 키 입력
-  const handleKeyPress = (e: KeyboardEvent) => {
-    console.log("handleKeyPress");
-    console.log(e.key);
-    console.log(inputRef);
-    console.log(inputRef.current);
-    console.log(document.activeElement);
+  const handleKeyDown = (e: KeyboardEvent) => {
+    console.log("handleKeyDown");
     if (e.key === "ArrowUp" && inputRef.current === document.activeElement) {
       e.preventDefault();
       handleArrowUp();
@@ -68,9 +66,9 @@ const SearchBar: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleKeyPress);
+    window.addEventListener("keydown", handleKeyDown);
     return () => {
-      window.removeEventListener("keydown", handleKeyPress);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, [handleArrowUp, handleArrowDown]);
 

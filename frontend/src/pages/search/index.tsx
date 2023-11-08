@@ -45,11 +45,11 @@ const SearchPage: NextPage<SearchPageProps> = ({ initialData }) => {
             <DynamicMap
               latitude={mapCenter.latitude}
               longitude={mapCenter.longitude}
-              data={initialData}
+              data={initialData.content}
             />
           </div>
           <div className="search-result">
-            <DynamicSearchCell data={initialData} />
+            <DynamicSearchCell data={initialData.content} />
           </div>
         </div>
       </main>

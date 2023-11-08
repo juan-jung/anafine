@@ -19,7 +19,6 @@ const CategoryIconBox: React.FC<CategoryProps> = ({
 }) => {
   const middleIndex = Math.ceil(category.length / 3);
   const middleIndex1 = Math.ceil((category.length * 2) / 3);
-  console.log(category);
 
   return (
     <div>

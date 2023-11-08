@@ -140,7 +140,7 @@ a {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60vh;
+  width: 30vw;
   height: 6vh;
 }
 
@@ -150,7 +150,7 @@ a {
   position: absolute;
   transform: translateX(-52%);
   margin-top: 3vh;
-  width: 58vh;
+  width: 29vw;
   background-color: white;
 }
 

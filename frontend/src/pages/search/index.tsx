@@ -3,19 +3,19 @@ import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
-import SearchBar from "components/Organisms/SearchBar";
 import Header from "components/Organisms/Header";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
-  name: string;
+  treatmentId: string;
   initialData?: any;
 };
 
-const myLatitude = 37.566381;
-const myLongitude = 126.9768428;
+// 기본 위치를 멀티캠퍼스 역삼으로 설정
+const myLatitude = 37.50130213612427;
+const myLongitude = 127.03945482599437;
 
-const SearchPage: NextPage<SearchPageProps> = ({ name, initialData }) => {
+const SearchPage: NextPage<SearchPageProps> = ({ initialData }) => {
   const [mapCenter, setMapCenter] = useState({
     latitude: myLatitude,
     longitude: myLongitude,
@@ -63,20 +63,21 @@ export default SearchPage;
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
-  const { name } = context.params as { name: string };
+  const { id } = context.query as { id: string };
+
   try {
     const data = await handlerSortByPriceInfo(
-      name,
-      15000,
+      id,
+      150000,
       myLatitude,
       myLongitude,
-      2,
+      1,
       9
     );
 
     return {
       props: {
-        name: name,
+        treatmentId: id,
         initialData: data,
       },
     };
@@ -84,7 +85,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        name: name,
+        treatmentId: id,
         initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };

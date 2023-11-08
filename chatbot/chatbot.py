@@ -1,6 +1,5 @@
 import os
 from dotenv import load_dotenv
-
 # .env 파일 불러오기
 load_dotenv()
 
@@ -9,6 +8,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 serpapi_api_key = os.getenv('SERPAPI_API_KEY')
 papago_client_id = os.getenv('PAPAGO_CLIENT_ID')
 papago_client_secret = os.getenv('PAPAGO_CLIENT_SECRET')
+
 
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
@@ -106,4 +106,3 @@ llm_response = agent.run({"input": preprocessed_prompt})
 
 # 최종적으로 분석된 결과 출력
 print(llm_response)
-

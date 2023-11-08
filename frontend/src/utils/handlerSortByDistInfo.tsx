@@ -1,7 +1,7 @@
 import axiosInstance from "../api/axios";
 
 const handlerSortByDistInfo = async (
-  name: string,
+  treatmentId: string,
   disLimit: number,
   userLatitude: number,
   userLongitude: number,
@@ -12,7 +12,7 @@ const handlerSortByDistInfo = async (
 
   const serverUrl = "/map/sortByDistInfo";
 
-  const queryParams = `?name=${name}&disLimit=${disLimit}&userLatitude=${userLatitude}&userLongitude=${userLongitude}&pageNum=${pageNum}&pageSize=${pageSize}`;
+  const queryParams = `?treatmentId=${treatmentId}&disLimit=${disLimit}&userLatitude=${userLatitude}&userLongitude=${userLongitude}&pageNum=${pageNum}&pageSize=${pageSize}`;
 
   try {
     const response = await axiosInstance.get(serverUrl + queryParams);

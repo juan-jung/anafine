@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent, forwardRef, Ref } from "react";
 
 interface InputProps {
   value: string;
@@ -7,24 +7,23 @@ interface InputProps {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-// Input
-const Input: React.FC<InputProps> = ({
-  value,
-  placeholder,
-  className = "input",
-  onChange,
-  ...props
-}: InputProps) => {
-  return (
-    <input
-      type="text"
-      value={value}
-      placeholder={placeholder}
-      className={className}
-      onChange={onChange}
-      {...props}
-    />
-  );
-};
+const Input = forwardRef(
+  (
+    { value, placeholder, className = "input", onChange, ...props }: InputProps,
+    ref: Ref<HTMLInputElement>
+  ) => {
+    return (
+      <input
+        type="text"
+        value={value}
+        placeholder={placeholder}
+        className={className}
+        onChange={onChange}
+        ref={ref}
+        {...props}
+      />
+    );
+  }
+);
 
 export default Input;

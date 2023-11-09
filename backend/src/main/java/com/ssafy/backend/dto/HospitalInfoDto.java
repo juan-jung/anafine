@@ -30,4 +30,6 @@ public class HospitalInfoDto {
 	private String treatmentName;
 
 	private String path;
+
+	private String address;
 }

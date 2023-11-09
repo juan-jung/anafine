@@ -16,24 +16,24 @@ const SearchBar: React.FC = () => {
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  useElasticSearch(searchValue, setSearchResults);
+  useElasticSearch(searchValue, setSearchResults, setSelectIdx);
 
   // 검색어 입력
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (searchResults.length === 0) {
-      return;
-    } else {
-      router.push(`/search/?id=${searchResults[selectIdx].treatmentId}`);
+    if (searchResults.length !== 0) {
+      router.push(
+        `/search/?path=${searchResults[selectIdx].path}&id=${searchResults[selectIdx].treatmentId}`
+      );
       setSearchValue("");
-      setSearchResults([]);
-      setSelectIdx(0);
     }
+    setSearchResults([]);
+    setSelectIdx(0);
   };
 
   // 추천 검색어 클릭
-  const onClick = (treatmentId: string) => {
-    router.push(`/search/?id=${treatmentId}`);
+  const onClick = (treatmentId: string, path: string) => {
+    router.push(`/search/?path=${path}&id=${treatmentId}`);
   };
 
   // 화살표 위로 이동
@@ -96,7 +96,7 @@ const SearchBar: React.FC = () => {
               index === selectIdx ? "selected" : ""
             }`}
             children={result.path}
-            onClick={() => onClick(result.treatmentId)}
+            onClick={() => onClick(result.treatmentId, result.path)}
           ></TextArea>
         ))}
       </div>

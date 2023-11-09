@@ -3,7 +3,8 @@ import handlerElasticSearch from "utils/handlerElasticSearch";
 
 const useElasticSearch = (
   value: string,
-  setSearchResults: (results: { path: string; treatmentId: string }[]) => void
+  setSearchResults: (results: { path: string; treatmentId: string }[]) => void,
+  setSelectIdx: (idx: number) => void
 ) => {
   useEffect(() => {
     let timeoutId: number | undefined = undefined;
@@ -12,6 +13,7 @@ const useElasticSearch = (
       try {
         const results = await handlerElasticSearch(value);
         setSearchResults(results);
+        setSelectIdx(0);
       } catch (error) {
         console.error("검색 중 오류 발생:", error);
       }
@@ -21,8 +23,10 @@ const useElasticSearch = (
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
-
       timeoutId = window.setTimeout(search, 100);
+    } else {
+      setSearchResults([]);
+      setSelectIdx(0);
     }
 
     return () => {

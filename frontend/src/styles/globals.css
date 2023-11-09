@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:
+    omyu_pretty,
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
@@ -117,7 +118,7 @@ a {
 
 /* header 검색 관련 css */
 .search-input {
-  font-family: omyu_pretty, sans-serif;
+  font-family: omyu_pretty;
   font-size: 16px;
   border: none;
   width: 58vh;
@@ -157,7 +158,6 @@ a {
 .search-result-text {
   border: 1px solid #eaeaea;
   text-align: left;
-  font-family: omyu_pretty, sans-serif;
   font-size: 16px;
   padding: 8px;
 }
@@ -266,7 +266,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: omyu_pretty, sans-serif;
   font-size: 15px;
   background-color: #ffffff;
   border-bottom: 1px solid #eaeaea;
@@ -313,9 +312,18 @@ a {
 .search-result-container {
   display: flex;
   flex-direction: row;
-  padding-top: 5vh;
-  height: 75vh;
 }
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vh;
+}
+
+.search-title {
+  font-size: 20px;
+}
+
 .search-result-text.selected {
   background-color: lightblue;
 }
@@ -333,6 +341,7 @@ a {
 
 .hospital-table {
   border-collapse: collapse;
+  font-size: 18px;
   width: 100%;
   height: 100%;
 }

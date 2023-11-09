@@ -30,7 +30,8 @@ import com.sun.istack.NotNull;
 		"NULL" +
 		") AS distance, " +
 		"t.treatment_name, " +
-        "t.path " +
+        "t.path, " +
+		"h.address " +
 		"FROM Hospital h " +
 		"JOIN Price p ON p.hospital_id = h.hospital_id " +
 		"JOIN Treatment t ON p.treatment_id = t.treatment_id " +
@@ -75,7 +76,8 @@ import com.sun.istack.NotNull;
 			@ColumnResult(name = "min_price", type = Integer.class),
 			@ColumnResult(name = "distance", type = Double.class),
 			@ColumnResult(name = "treatment_name", type = String.class),
-            @ColumnResult(name = "path", type = String.class)
+            @ColumnResult(name = "path", type = String.class),
+			@ColumnResult(name = "address", type = String.class)
 		}
 	)
 )

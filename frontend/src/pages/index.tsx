@@ -42,6 +42,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
     try {
       setState({ ...state, isBoxVisible1: false });
       const categoryDetailData = await hanlderCategoryDetail(categoryId);
+      console.log(categoryDetailData);
       setState({
         ...state,
         selectedCategoryId: categoryId,

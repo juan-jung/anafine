@@ -22,7 +22,7 @@ const useElasticSearch = (
         clearTimeout(timeoutId);
       }
 
-      timeoutId = window.setTimeout(search, 300);
+      timeoutId = window.setTimeout(search, 100);
     }
 
     return () => {

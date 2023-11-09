@@ -140,7 +140,7 @@ a {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60vh;
+  width: 30vw;
   height: 6vh;
 }
 
@@ -150,7 +150,7 @@ a {
   position: absolute;
   transform: translateX(-52%);
   margin-top: 3vh;
-  width: 58vh;
+  width: 29vw;
   background-color: white;
 }
 
@@ -160,6 +160,10 @@ a {
   font-family: omyu_pretty, sans-serif;
   font-size: 16px;
   padding: 8px;
+}
+
+.search-result-text .selected {
+  background-color: lightblue;
 }
 
 /* footer 관련 css */
@@ -287,10 +291,14 @@ a {
 .icon-container {
   display: flex;
   flex-direction: row;
-  position: relative;
-  min-width: 50px;
+  min-width: 20px;
   justify-content: right;
   align-items: center;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
 }
 
 .category-item {
@@ -432,7 +440,7 @@ a {
 
 /* 스크롤바 css */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {

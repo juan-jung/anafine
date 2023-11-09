@@ -22,23 +22,18 @@ public class PathDto {
     // TreatmentDto
     private String treatmentId;
 
-//    private String categoryId;
-
-//    private String name;
-
-//    private String info;
 
     private String path;
 
     public static PathDto entityToDto(Category category, Treatment treatment) {
         PathDto pathDto = PathDto.builder()
-                .categoryId(category.getId())
-                .name(category.getName())
-                .info(category.getInfo())
-                .isLeaf(category.getIsLeaf())
-                .treatmentId(treatment.getId())
-                .path(treatment.getPath())
-                .build();
+            .categoryId(category.getId())
+            .name(category.getName())
+            .info(category.getInfo())
+            .isLeaf(category.getIsLeaf())
+            .treatmentId(treatment == null ? null : treatment.getId())
+            .path(treatment == null ? null : treatment.getPath())
+            .build();
 
         return pathDto;
     }

@@ -17,6 +17,19 @@ from langchain.llms import OpenAI
 from langchain.chains import ConversationChain
 from transformers import pipeline
 from langchain.chains.conversation.memory import ConversationBufferMemory
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.chat_models import ChatOpenAI
+from langchain.chains.summarize import load_summarize_chain
+from langchain.schema import Document
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.chains.mapreduce import MapReduceChain
+from langchain import OpenAI, PromptTemplate, LLMChain
+from langchain.chains.summarize import load_summarize_chain
+import textwrap
+
+
 
 llm = OpenAI(temperature=0)
 
@@ -92,7 +105,7 @@ while True:
     # 원인과, 의심되는 병으로 나누어서 구글 검색
     user_input_cause = f"{user_age}세, {user_sex},  {user_pain_area},  {user_symptoms}, 원인"
     user_input_disease = f"{user_age}세, {user_sex},  {user_pain_area},  {user_symptoms}, 의심 병"
-    user_input_doubt = f"{user_age}세, {user_sex},  {user_pain_area},  {user_symptoms}, 검사"
+    user_input_doubt = f"{user_age}세, {user_sex},  {user_pain_area},  {user_symptoms}, 일 때 받아야 할 검사"
 
     translated_input_cause = translate_text(user_input_cause, "ko", "en", papago_client_id, papago_client_secret)
     translated_input_disease = translate_text(user_input_disease, "ko", "en", papago_client_id, papago_client_secret)
@@ -117,19 +130,113 @@ while True:
     korean_results_text_cause = ' '.join([result['snippet'] for result in korean_search_results_cause.get('organic_results', [])])
     korean_results_text_disease = ' '.join([result['snippet'] for result in korean_search_results_disease.get('organic_results', [])])
     korean_results_text_doubt = ' '.join([result['snippet'] for result in korean_search_results_doubt.get('organic_results', [])])
+
+
+    # Summary 템플릿 정의
+    prompt_template_english_results_text_cause = """
+    summary {english_results_text_cause}, in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+    prompt_template_english_results_text_disease = """
+    summary {english_results_text_disease}, in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+    prompt_template_english_results_text_doubt = """
+    summary {english_results_text_doubt}, in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+    prompt_template_korean_results_text_cause= """
+    summary {korean_results_text_cause}, in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+    prompt_template_korean_results_text_disease = """
+    summary {korean_results_text_disease} in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+    prompt_template_korean_results_text_doubt = """
+    summary {korean_results_text_doubt} in a sentence
+    Write a concise bullet point summary of the following:
+    {text}
+
+    CONCISE SUMMARY IN BULLET POINTS:
+    """
+
+
+    # Text Splitter 및 Summarization Chain 초기화
+    text_splitter = CharacterTextSplitter()
+    english_results_text_cause_docs = text_splitter.create_documents(english_results_text_cause)[:4]
+    english_results_text_disease_docs = text_splitter.create_documents(english_results_text_disease)[:4]
+    english_results_text_doubt_docs = text_splitter.create_documents(english_results_text_doubt)[:4]
+    korean_results_text_cause_docs = text_splitter.create_documents(korean_results_text_cause)[:4]
+    korean_results_text_disease_docs = text_splitter.create_documents(korean_results_text_disease)[:4]
+    korean_results_text_doubt_docs = text_splitter.create_documents(korean_results_text_doubt)[:4]
+
+    BULLET_POINT_PROMPT_english_results_text_cause = PromptTemplate(template=prompt_template_english_results_text_cause, input_variables=["text"])
+    BULLET_POINT_PROMPT_english_results_text_disease = PromptTemplate(template=prompt_template_english_results_text_disease, input_variables=["text"])
+    BULLET_POINT_PROMPT_english_results_text_doubt = PromptTemplate(template=prompt_template_english_results_text_doubt, input_variables=["text"])
+    BULLET_POINT_PROMPT_korean_results_text_cause = PromptTemplate(template=prompt_template_korean_results_text_cause, input_variables=["text"])
+    BULLET_POINT_PROMPT_korean_results_text_disease = PromptTemplate(template=prompt_template_korean_results_text_disease, input_variables=["text"])
+    BULLET_POINT_PROMPT_korean_results_text_doubt = PromptTemplate(template=prompt_template_korean_results_text_doubt, input_variables=["text"])
     
+    chain_english_results_text_cause= load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_english_results_text_cause)
+    chain_english_results_text_disease = load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_english_results_text_disease)
+    chain_english_results_text_doubt = load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_english_results_text_doubt)
+    chain_korean_results_text_cause = load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_korean_results_text_cause)
+    chain_korean_results_text_disease = load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_korean_results_text_disease)
+    chain_korean_results_text_doubt = load_summarize_chain(llm, chain_type="stuff", prompt=BULLET_POINT_PROMPT_korean_results_text_doubt)
+
+
+    # Summarization 실행
+    output_summary_english_results_text_cause = chain_english_results_text_cause.run({'english_results_text_cause': english_results_text_cause, 'input_documents': english_results_text_cause_docs})
+    output_summary_english_results_text_disease = chain_english_results_text_disease.run({'english_results_text_disease': english_results_text_disease, 'input_documents': english_results_text_disease_docs})
+    output_summary_english_results_text_doubt = chain_english_results_text_doubt.run({'english_results_text_doubt': english_results_text_doubt, 'input_documents': english_results_text_doubt_docs})
+    output_summary_korean_results_text_cause = chain_korean_results_text_cause.run({'korean_results_text_cause': korean_results_text_cause, 'input_documents': korean_results_text_cause_docs})
+    output_summary_korean_results_text_disease = chain_korean_results_text_disease.run({'korean_results_text_disease': korean_results_text_disease, 'input_documents': korean_results_text_disease_docs})
+    output_summary_korean_results_text_doubt = chain_korean_results_text_doubt.run({'korean_results_text_doubt': korean_results_text_doubt, 'input_documents': korean_results_text_doubt_docs})
+
+    # 결과 출력
+    wrapped_text_english_results_text_cause = textwrap.fill(output_summary_english_results_text_cause, width=100, break_long_words=False, replace_whitespace=False)
+    wrapped_text_english_results_text_disease = textwrap.fill(output_summary_english_results_text_disease, width=100, break_long_words=False, replace_whitespace=False)
+    wrapped_text_english_results_text_doubt = textwrap.fill(output_summary_english_results_text_doubt, width=100, break_long_words=False, replace_whitespace=False)
+    wrapped_text_korean_results_text_cause = textwrap.fill(output_summary_korean_results_text_cause, width=100, break_long_words=False, replace_whitespace=False)
+    wrapped_text_korean_results_text_disease = textwrap.fill(output_summary_korean_results_text_disease, width=100, break_long_words=False, replace_whitespace=False)
+    wrapped_text_korean_results_text_doubt = textwrap.fill(output_summary_korean_results_text_doubt, width=100, break_long_words=False, replace_whitespace=False)
+    # print(wrapped_text_english)
+    # print(wrapped_text_korean)
+
+
     # 검색 결과를 통합 후 LLM에게 전달
-    combined_results_disease = korean_results_text_disease + " " + english_results_text_disease 
+    combined_results_disease = wrapped_text_english_results_text_disease + " " + wrapped_text_korean_results_text_disease 
     preprocessed_prompt_disease = preprocess_prompt(combined_results_disease)
     disease_prompt = f"이 증상으로 인한 예상되는 질병은 무엇입니까? 몇가지 알려주세요. 한국어로 답해주세요. \n\n{preprocessed_prompt_disease}"
     llm_response_disease = agent.run({"input": disease_prompt})
 
-    combined_results_cause = korean_results_text_cause + " " +  english_results_text_cause
+    combined_results_cause = wrapped_text_english_results_text_cause + " " +  wrapped_text_korean_results_text_cause
     preprocessed_prompt_cause = preprocess_prompt(combined_results_cause)
     cause_prompt = f"이 증상의 예상되는 원인은 무엇입니까? 한국어로 답해주세요. \n\n{preprocessed_prompt_cause}"
     llm_response_cause = agent.run({"input": cause_prompt})
 
-    combined_results_doubt = korean_results_text_doubt + " " +  english_results_text_doubt
+    combined_results_doubt = wrapped_text_english_results_text_doubt + " " +  wrapped_text_korean_results_text_doubt
     preprocessed_prompt_doubt = preprocess_prompt(combined_results_doubt)
     doubt_prompt = f"어떤 병원에서 어떤 검사를 받아보는 것이 좋을까요? 몇가지 추천해주시고 한국어로 답해주세요. \n\n{preprocessed_prompt_doubt}"
     llm_response_doubt = agent.run({"input": doubt_prompt})

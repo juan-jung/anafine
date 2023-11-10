@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family:
+    omyu_pretty,
     -apple-system,
     BlinkMacSystemFont,
     Segoe UI,
@@ -117,7 +118,7 @@ a {
 
 /* header 검색 관련 css */
 .search-input {
-  font-family: omyu_pretty, sans-serif;
+  font-family: omyu_pretty;
   font-size: 16px;
   border: none;
   width: 58vh;
@@ -157,7 +158,6 @@ a {
 .search-result-text {
   border: 1px solid #eaeaea;
   text-align: left;
-  font-family: omyu_pretty, sans-serif;
   font-size: 16px;
   padding: 8px;
 }
@@ -266,7 +266,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: omyu_pretty, sans-serif;
   font-size: 15px;
   background-color: #ffffff;
   border-bottom: 1px solid #eaeaea;
@@ -291,7 +290,7 @@ a {
 .icon-container {
   display: flex;
   flex-direction: row;
-  min-width: 20px;
+  min-width: 50px;
   justify-content: right;
   align-items: center;
 }
@@ -313,9 +312,19 @@ a {
 .search-result-container {
   display: flex;
   flex-direction: row;
-  padding-top: 5vh;
-  height: 75vh;
 }
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-title {
+  font-size: 24px;
+  padding-left: 5px;
+  padding-bottom: 15px;
+}
+
 .search-result-text.selected {
   background-color: lightblue;
 }
@@ -333,6 +342,7 @@ a {
 
 .hospital-table {
   border-collapse: collapse;
+  font-size: 18px;
   width: 100%;
   height: 100%;
 }
@@ -369,73 +379,51 @@ a {
   justify-content: left;
 }
 
-/* 커스텀 레이아웃 관련 css */
-.wrap {
+/* 커스텀 오버레이 관련 css */
+.overlay-wrap {
   position: absolute;
   left: 0;
   bottom: 40px;
   width: 288px;
-  height: 132px;
   margin-left: -144px;
   text-align: left;
-  overflow: hidden;
-  font-size: 12px;
-  font-family: "Malgun Gothic", dotum, "돋움", sans-serif;
-  line-height: 1.5;
 }
 
-.info {
-  width: 286px;
-  height: 120px;
+.overlay-info {
   border-radius: 5px;
   border-bottom: 2px solid #ccc;
   border-right: 1px solid #ccc;
-  overflow: hidden;
   background: #fff;
 }
 
-.title {
-  padding: 5px 0 0 10px;
+.overlay-title {
+  padding: 5px 5px 5px 10px;
   height: 30px;
   background: #eee;
   border-bottom: 1px solid #ddd;
+  font-family: "omyu_pretty";
   font-size: 18px;
   font-weight: bold;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #888;
-  width: 17px;
-  height: 17px;
-  background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png);
-}
-
-.body {
-  display: block;
+.overlay-body {
+  display: flex;
   position: relative;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: visible;
+  white-space: pre-wrap;
+  font-family: "omyu_pretty";
+  font-size: 18px;
+  padding: 10px 0px 5px 10px;
+  flex-grow: 1;
 }
 
-.img {
-  position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 73px;
-  height: 71px;
-  border: 1px solid #ddd;
-  color: #888;
-  overflow: hidden;
-}
-
-.desc {
-  position: relative;
-  margin: 13px 0 0 90px;
-  height: 75px px;
+.overlay-desc {
+  display: flex;
+  justify-content: left;
+  font-family: "omyu_pretty";
+  font-size: 16px;
+  padding-left: 10px;
+  color: #888888;
 }
 
 /* 스크롤바 css */

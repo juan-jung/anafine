@@ -7,7 +7,7 @@ import Header from "components/Organisms/Header";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
-  treatmentId: string;
+  path: string;
   initialData?: any;
 };
 
@@ -15,7 +15,7 @@ type SearchPageProps = {
 const myLatitude = 37.50130213612427;
 const myLongitude = 127.03945482599437;
 
-const SearchPage: NextPage<SearchPageProps> = ({ initialData }) => {
+const SearchPage: NextPage<SearchPageProps> = ({ path, initialData }) => {
   const [mapCenter, setMapCenter] = useState({
     latitude: myLatitude,
     longitude: myLongitude,
@@ -41,16 +41,19 @@ const SearchPage: NextPage<SearchPageProps> = ({ initialData }) => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <div className="search-result-container">
-          <div className="search-map">
-            <DynamicMap
-              latitude={mapCenter.latitude}
-              longitude={mapCenter.longitude}
-              data={initialData.content}
-            />
-          </div>
-          <div className="search-result">
-            <DynamicSearchCell data={initialData.content} />
+        <div className="search-container">
+          <div className="search-title">{path} 검색 결과</div>
+          <div className="search-result-container">
+            <div className="search-map">
+              <DynamicMap
+                latitude={mapCenter.latitude}
+                longitude={mapCenter.longitude}
+                data={initialData.content}
+              />
+            </div>
+            <div className="search-result">
+              <DynamicSearchCell data={initialData.content} />
+            </div>
           </div>
         </div>
       </main>
@@ -63,7 +66,7 @@ export default SearchPage;
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
-  const { id } = context.query as { id: string };
+  const { path, id } = context.query as { path: string; id: string };
 
   try {
     const data = await handlerSortByPriceInfo(
@@ -77,7 +80,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
 
     return {
       props: {
-        treatmentId: id,
+        path: path,
         initialData: data,
       },
     };
@@ -85,7 +88,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        treatmentId: id,
+        path: path,
         initialData: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };

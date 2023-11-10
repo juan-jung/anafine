@@ -1,10 +1,8 @@
 import { motion, useScroll } from "framer-motion";
-import Link from "next/link";
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
-import { Button } from "components/atoms/Button";
 import ShapeImage from "components/atoms/ShapeImage";
 
 const InfoPage: NextPage = () => {

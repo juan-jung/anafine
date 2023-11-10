@@ -66,7 +66,7 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                           children={<span>검색</span>}
                           ver={"small"}
                           onClick={() => {
-                            window.location.href = `/search/?id=${text.treatmentId}`;
+                            window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}`;
                           }}
                         />
                       </div>

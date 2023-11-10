@@ -126,6 +126,3 @@ while True:
     keep_going = input("계속하시겠습니까? : ")
     if(keep_going == "아니오"):
         break
-
-
-

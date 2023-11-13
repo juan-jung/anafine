@@ -13,6 +13,9 @@ content_item = ns.model('UserInput', {
     'symptoms': fields.String(required=True, description='증상')
 })
 
+content_item_normal = ns.model('UserInput', {
+    'message': fields.String(required=True, description='User message')
+})
 
 @ns.route('/chatbot')
 class HealthAnalysis(Resource):
@@ -24,6 +27,7 @@ class HealthAnalysis(Resource):
     
 @ns.route('/chatbot/normal')
 class NormalChat(Resource):
+    @ns.expect(content_item_normal)
     def post(self):
         data = request.json
         response_data = chatbot.play_normal_chat(data)
@@ -33,11 +37,6 @@ class NormalChat(Resource):
 class HTTPOK(Resource):
     def get(self):
         return "200"
-
-@ns.route('/chatbot/health')
-class HTTPOK(Resource):
-    def post(self):
-        return Response(status=200)
 
 
 from app import api_root

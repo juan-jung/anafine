@@ -1,15 +1,15 @@
 .chatbot-container {
-  background: rgb(92, 130, 255);
+  /* background: rgb(92, 130, 255); */
   background: linear-gradient(
     90deg,
     rgba(157, 92, 255, 1) 0%,
     rgba(92, 130, 255, 1) 100%
   );
   position: fixed;
-  bottom: 20px;
+  bottom: 0px;
   right: 20px;
-  width: 340px; /* 적절한 너비 설정 */
-  max-height: 800px; /* 적절한 최대 높이 설정 */
+  width: 65vh; /* 적절한 너비 설정 */
+  height: 80vh; /* 적절한 최대 높이 설정 */
 
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(150, 37, 37, 0.1);
@@ -22,6 +22,7 @@
   justify-content: center;
   align-items: center;
   font-size: large;
+  padding: 15px 0px;
 }
 
 .ri-close-line,
@@ -68,8 +69,32 @@
   border: none;
   padding: 10px;
   border-top: 1px solid #ddd;
+  width: 58vh;
 }
 
 .chatbot-button {
   display: none;
+}
+
+.chatbot-popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(92, 130, 255);
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px; /* 적절한 너비 설정 */
+  height: 50px; /* 적절한 최대 높이 설정 */
+  font-size: 24px;
+
+  border-radius: 25px;
+  box-shadow: 0 2px 10px rgba(150, 37, 37, 0.1);
+  overflow: hidden;
+  z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
+
+.chatbot-button {
+  height: 10px;
 }

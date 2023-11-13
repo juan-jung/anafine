@@ -6,7 +6,7 @@ const handlerSortByDistInfo = async (
   userLatitude: number,
   userLongitude: number,
   pageNum: number,
-  pageSize: number
+  pageSize: number,
 ) => {
   console.log("handlerSortByDistInfo");
 
@@ -20,7 +20,7 @@ const handlerSortByDistInfo = async (
   } catch (error) {
     console.error(
       "거리순으로 데이터를 불러오던 중 오류가 발생했습니다.",
-      error
+      error,
     );
     throw error;
   }

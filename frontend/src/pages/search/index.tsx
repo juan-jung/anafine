@@ -1,12 +1,12 @@
-import { useState } from "react";
-import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
-import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
-import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 import Pagination from "components/Organisms/Pagination";
+import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 
 type SearchPageProps = {
   id: string;
@@ -44,7 +44,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
   // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
   const DynamicMap = dynamic(() => import("components/Organisms/Map"));
   const DynamicSearchCell = dynamic(
-    () => import("components/Organisms/SearchCell")
+    () => import("components/Organisms/SearchCell"),
   );
 
   console.log("현재 페이지는" + pageNum + "입니다.");
@@ -86,7 +86,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 export default SearchPage;
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context
+  context,
 ) => {
   const { path, id, page } = context.query as {
     path: string;
@@ -101,7 +101,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
       myLatitude,
       myLongitude,
       Number(page),
-      9
+      9,
     );
 
     return {

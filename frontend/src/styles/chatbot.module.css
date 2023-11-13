@@ -105,6 +105,37 @@
   background-color: #0056b3;
 }
 
+.chatbot-head-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+}
+
+.chatbot-header-normal {
+  background-color: white(131, 30, 30);
+  border: 1px solid #ddd;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+}
+
+.chatbot-messages-normal {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: large;
+}
+
+.chatbot-input {
+  border: none;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
 .chatbot-popup-container {
   display: flex;
   justify-content: center;

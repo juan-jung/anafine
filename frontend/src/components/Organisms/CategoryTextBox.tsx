@@ -1,11 +1,11 @@
 // CategoryTextBox.tsx
 
-import React, { useState } from "react";
-import TextArea from "components/atoms/TextArea";
 import { Icon } from "@iconify/react";
-import { Button } from "components/atoms/Button";
-import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material";
+import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import React, { useState } from "react";
+import { Button } from "components/atoms/Button";
+import TextArea from "components/atoms/TextArea";
 
 interface CategoryProps {
   category: {

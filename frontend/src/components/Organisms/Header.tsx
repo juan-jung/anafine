@@ -1,7 +1,7 @@
-import React from "react";
 import Link from "next/link";
-import ShapeImage from "components/atoms/ShapeImage";
+import React from "react";
 import SearchBar from "./SearchBar";
+import ShapeImage from "components/atoms/ShapeImage";
 
 const Header: React.FC = () => {
   return (

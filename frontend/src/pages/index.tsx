@@ -1,13 +1,14 @@
 import type { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import Footer from "components/Organisms/Footer";
-import Header from "components/Organisms/Header";
 import CategoryIconBox from "components/Organisms/CategoryIconBox";
 import CategoryTextBox from "components/Organisms/CategoryTextBox";
-import { useState } from "react";
-import hanlderCategoryLarge from "utils/handlerCategoryLarge";
+import Footer from "components/Organisms/Footer";
+import Header from "components/Organisms/Header";
 import hanlderCategoryDetail from "utils/handlerCategoryDetail";
+import hanlderCategoryLarge from "utils/handlerCategoryLarge";
+import Chatbot from "components/Organisms/Chatbot";
 
 type MainPageProps = {
   category: any;
@@ -174,6 +175,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
         </div>
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 };

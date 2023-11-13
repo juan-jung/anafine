@@ -39,9 +39,12 @@ def init_db_base():
             for column_name, column_value in db_value_map.items() :
                 options.update({column_name:column_value[row]})
             new_entity = entity.__dict__[base_info.entity_name](**options)
-            session.add(new_entity)
-            session.flush()
-        
+            try:
+                session.add(new_entity)
+            except Exception as e:
+                session.flush()
+                session.add(new_entity)
+
         session.commit()
         print(base_info.entity_name, " session commited")
     session.close()

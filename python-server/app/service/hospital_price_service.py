@@ -40,20 +40,20 @@ def get_hosprice_xml_items(xml_data:str):
     return items
 
 
-class PriceService:
+class HospitalPriceService:
     
     
     _instance = None
     
     def __new__(cls):
-        if cls._instance is None:  # 인스턴스가 아직 생성되지 않았다면
-            cls._instance = super(PriceService, cls).__new__(cls)  # 새 인스턴스 생성
+        if cls._instance is None:   # 인스턴스가 아직 생성되지 않았다면
+            cls._instance = super(HospitalPriceService, cls).__new__(cls)  # 새 인스턴스 생성
         return cls._instance  # 인스턴스 반환
 
     def __init__(self):
         pass
     
-    def update_price_data_file(self):
+    def update_hospital_price_data_file(self):
         write_index = 1
         file_paths = []
         end = False
@@ -82,37 +82,53 @@ class PriceService:
         return {"message":"success"}
                 
     
-    def update_price_db(self):
+    def update_hospital_price_db(self):
         
-        values = get_values_from_csv(final_file_path, ['ykiho', 'npayCd', 'curAmt'])
+        values = get_values_from_csv(final_file_path, ['ykiho', 'npayCd', 'curAmt', 'yadmNpayCdNm'])
         ykiho_list = values['ykiho']
         npay_cd_list = values['npayCd']
         cur_amt_list = values['curAmt']
+        yadm_npay_cd_nm_list = values['yadmNpayCdNm']
         
-        session = Session()
-        new_entities = set()
-        created_at = datetime.datetime.now()
-        
-        #쿼리문 hospital_repo에서 가져와야함
-        hospital_id_list = [hospital.hospital_id for hospital in session.query(Hospital).filter(Hospital.ykiho.in_(ykiho_list)).all()]
-        for hospital_id, npay_cd, cur_amt in zip(hospital_id_list, npay_cd_list, cur_amt_list):
-            #common_repo에서 가져와야 함
-            price = find_or_create_if_not_exist(session, Price, treatment_id=npay_cd, hospital_id=hospital_id)
-            price.max_price = max(price.max_price, int(cur_amt))
-            price.min_price = min(price.min_price, int(cur_amt))
+        with Session() as session:
+            new_entities = set()
+            created_at = datetime.datetime.now()
             
-            price_id = price.price_id
-            #price_history_repo에서 가져와야 함
-            session.query(PriceHistory).filter_by(price_id=price_id, is_latest=True).update({PriceHistory.is_latest: False})
+            #쿼리문 hospital_repo에서 가져와야함
+            hospitals = session.query(Hospital).filter(Hospital.ykiho.in_(ykiho_list)).all()
+            hospital_dict = {hospital.ykiho: hospital for hospital in hospitals}
+            hospital_id_list = [hospital_dict[ykiho].hospital_id if ykiho in hospital_dict else None for ykiho in ykiho_list ]
             
-            #price_history_repo에서 가져와야 함
-            new_price_history = PriceHistory(price_id=price_id, cost=int(cur_amt), created_at=created_at)
-            new_entities.add(new_price_history)
-        session.add_all(new_entities)
+            updated_prices = set()
+            max_len = len(hospital_id_list)
+            i = 0
+            for hospital_id, npay_cd, cur_amt, yadm_npay_cd_nm in zip(hospital_id_list, npay_cd_list, cur_amt_list, yadm_npay_cd_nm_list):
+                i += 1
+                if i % 10000 == 0:
+                    spent_time = (datetime.datetime.now() - created_at).total_seconds()
+                    print(f'{i/max_len*100:.2f}% done... time : {spent_time:.1f} sec, expected_left_time : {spent_time/i*(max_len-i):.1f} sec, expected_total_time : {spent_time/i*(max_len):.1f} sec')
+                if not hospital_id:
+                    continue
+                
+                #common_repo에서 가져와야 함
+                price = find_or_create_if_not_exist(session, Price, treatment_id=npay_cd, hospital_id=hospital_id)
+                price.max_price = max(price.max_price, int(cur_amt))
+                price.min_price = min(price.min_price, int(cur_amt))
+                
+                price_id = price.price_id
+                updated_prices.add(price_id)
+                
+                new_price_history = PriceHistory(price_id=price_id, cost=int(cur_amt), significant=yadm_npay_cd_nm, created_at=created_at)
+                new_entities.add(new_price_history)
+            session.query(PriceHistory)\
+                    .filter(PriceHistory.price_id.in_(updated_prices))\
+                    .filter(PriceHistory.is_latest == True)\
+                    .update({PriceHistory.is_latest: False})
+            session.add_all(new_entities)
 
-        session.commit()
-        print('price, price_history session commited')
-        session.close()
+            session.commit()
+            print('hospital -- price, price_history session commited')
+            
         return {"message":"success"}
 
 

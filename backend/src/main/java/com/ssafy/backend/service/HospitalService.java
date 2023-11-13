@@ -50,23 +50,27 @@ public class HospitalService {
 	public Page<HospitalInfoDto> showByPrice(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
+
 		Pageable pageable = PageRequest.of(pageNum, pageSize);
 
-		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude,pageable);
+		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {
 			HospitalInfoDto hospitalInfo = (HospitalInfoDto)result[0];
 			hospitalInfoDtos.add(hospitalInfo);
 		}
-		return new PageImpl<>(hospitalInfoDtos, pageable, hospitalInfoDtos.size());
+		int start = pageNum * pageSize;
+		int end = Math.min(start + pageSize, hospitalInfoDtos.size());
+		List<HospitalInfoDto> resultDto = hospitalInfoDtos.subList(start, end);
+		return new PageImpl<>(resultDto, pageable, hospitalInfoDtos.size());
 
 	}
 	public Page<HospitalInfoDto> showByDistance(String treatmentId, Double disLimit, Double userLatitude,
 		Double userLongitude, int pageNum, int pageSize) {
 
 		Pageable pageable = PageRequest.of(pageNum, pageSize);
-		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude, pageable);
+		List<Object[]> objects = priceRepository.findNearby(treatmentId,disLimit,userLatitude, userLongitude);
 		List<HospitalInfoDto> hospitalInfoDtos = new ArrayList<>();
 
 		for (Object[] result : objects) {
@@ -74,8 +78,10 @@ public class HospitalService {
 			hospitalInfoDtos.add(hospitalInfo);
 		}
 		hospitalInfoDtos.sort(Comparator.comparingDouble(HospitalInfoDto::getDistance));
-		return new PageImpl<>(hospitalInfoDtos, pageable, hospitalInfoDtos.size());
-		// return hospitalInfoDtos;
+		int start = pageNum * pageSize;
+		int end = Math.min(start + pageSize, hospitalInfoDtos.size());
+		List<HospitalInfoDto> resultDto = hospitalInfoDtos.subList(start, end);
+		return new PageImpl<>(resultDto, pageable, hospitalInfoDtos.size());
 
 	}
 }

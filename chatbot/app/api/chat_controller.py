@@ -22,6 +22,11 @@ class HealthAnalysis(Resource):
         response_data = chatbot.play_chat(data)
         return jsonify(response_data)
 
+@ns.route('/chatbot/health')
+class HTTPOK(Resource):
+    def post(self):
+        return Response(status=200)
+
 
 from app import api_root
 api_root.add_namespace(ns)

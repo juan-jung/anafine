@@ -90,6 +90,7 @@ const Chatbot: React.FC = () => {
     //   console.error("챗봇 요청 처리 중 오류 발생", error);
     // }
   };
+  // 일반 대화 호출도
 
   return (
     <div className={styles["chatbot-container"]}>
@@ -110,7 +111,6 @@ const Chatbot: React.FC = () => {
       {chatMode === "diseasePrediction" ? (
         <>
           <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
-
           <div className={styles["chatbot-header"]}>
             <div className={styles["chatbot-messages"]}>
               {messages.map((msg, index) => (
@@ -132,7 +132,20 @@ const Chatbot: React.FC = () => {
           </div>
         </>
       ) : (
-        <div>얍</div>
+        <>
+          <h3 className={styles["chatbot-head-normal"]}>대화</h3>
+          <div className={styles["chatbot-header-normal"]}>
+            <div className={styles["chatbot-messages-normal"]}></div>
+          </div>
+          <input
+            className={styles["chatbot-input-normal"]}
+            type="text"
+            placeholder="답변을 입력하세요"
+            value={userInput}
+            // onChange={handleUserInput}
+            // onKeyPress={handleKeyPress}
+          />
+        </>
       )}
     </div>
   );

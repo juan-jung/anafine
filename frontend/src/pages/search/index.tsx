@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
 import { useRouter } from "next/router";
@@ -25,12 +25,16 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
     longitude: myLongitude,
   });
   const router = useRouter();
-  const [pageNum, setPageNum] = useState(page);
+  const pageNum = page;
   console.log("페이지넘버" + pageNum);
+  console.log("데이터" + JSON.stringify(data, null, 2));
   const [initialData, setInitialData] = useState<any>(data);
-  console.log(initialData);
 
-  const handlePageChange = (page: number) => {
+  useEffect(() => {
+    setInitialData(data);
+  }, [data]);
+
+  const onPageChange = (page: number) => {
     if (0 < page && page < initialData.totalPages + 1) {
       router.push(`/search/?path=${path}&id=${id}&page=${page}`);
     }
@@ -73,7 +77,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
               <Pagination
                 pageNum={pageNum}
                 totalPages={initialData.totalPages}
-                handlePageChange={handlePageChange}
+                onPageChange={onPageChange}
               />
             </div>
           </div>

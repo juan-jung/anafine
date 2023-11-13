@@ -29,6 +29,24 @@ const Chatbot: React.FC = () => {
     setChatMode(mode);
   };
 
+  const [popupVisible, setPopupVisible] = useState(true);
+
+  const togglePopup = () => {
+    setPopupVisible(false);
+  };
+
+  const togglePopdown = () => {
+    setPopupVisible(true);
+  };
+
+  const handleOpenChatbot = () => {
+    togglePopup();
+  };
+
+  const handleOpenChatbotDown = () => {
+    togglePopdown();
+  };
+
   useEffect(() => {
     // 컴포넌트가 마운트될 때 첫 번째 메시지를 추가
     setMessages([{ text: questions[0], sender: "bot" }]);
@@ -93,59 +111,71 @@ const Chatbot: React.FC = () => {
   // 일반 대화 호출도
 
   return (
-    <div className={styles["chatbot-container"]}>
-      <div className={styles["chatbot-buttons"]}>
-        <button
-          className={styles["chatbot-button-normal"]}
-          onClick={() => handleModeChange("normal")}
+    <div>
+      {popupVisible ? (
+        <div
+          className={styles["chatbot-popup-container"]}
+          onClick={handleOpenChatbot}
         >
-          대화
-        </button>
-        <button
-          className={styles["chatbot-button"]}
-          onClick={() => handleModeChange("diseasePrediction")}
-        >
-          질병 예측
-        </button>
-      </div>
-      {chatMode === "diseasePrediction" ? (
-        <>
-          <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
-          <div className={styles["chatbot-header"]}>
-            <div className={styles["chatbot-messages"]}>
-              {messages.map((msg, index) => (
-                <div key={index} className={`message ${msg.sender}`}>
-                  {msg.text}
+          chat
+        </div>
+      ) : (
+        <div className={styles["chatbot-container"]}>
+          <div className={styles["chatbot-buttons"]}>
+            <button
+              className={styles["chatbot-button-normal"]}
+              onClick={() => handleModeChange("normal")}
+            >
+              대화
+            </button>
+            <button
+              className={styles["chatbot-button"]}
+              onClick={() => handleModeChange("diseasePrediction")}
+            >
+              질병 예측
+            </button>
+          </div>
+          {chatMode === "diseasePrediction" ? (
+            <>
+              <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
+
+              <div className={styles["chatbot-header"]}>
+                <div className={styles["chatbot-messages"]}>
+                  {messages.map((msg, index) => (
+                    <div key={index} className={`message ${msg.sender}`}>
+                      {msg.text}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-            {currentStep < questions.length && (
+                {currentStep < questions.length && (
+                  <input
+                    className={styles["chatbot-input"]}
+                    type="text"
+                    placeholder="답변을 입력하세요"
+                    value={userInput}
+                    onChange={handleUserInput}
+                    onKeyPress={handleKeyPress}
+                  />
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              <h3 className={styles["chatbot-head-normal"]}>대화</h3>
+              <div className={styles["chatbot-header-normal"]}>
+                <div className={styles["chatbot-messages-normal"]}></div>
+              </div>
               <input
-                className={styles["chatbot-input"]}
+                className={styles["chatbot-input-normal"]}
                 type="text"
                 placeholder="답변을 입력하세요"
                 value={userInput}
-                onChange={handleUserInput}
-                onKeyPress={handleKeyPress}
+                // onChange={handleUserInput}
+                // onKeyPress={handleKeyPress}
               />
-            )}
-          </div>
-        </>
-      ) : (
-        <>
-          <h3 className={styles["chatbot-head-normal"]}>대화</h3>
-          <div className={styles["chatbot-header-normal"]}>
-            <div className={styles["chatbot-messages-normal"]}></div>
-          </div>
-          <input
-            className={styles["chatbot-input-normal"]}
-            type="text"
-            placeholder="답변을 입력하세요"
-            value={userInput}
-            // onChange={handleUserInput}
-            // onKeyPress={handleKeyPress}
-          />
-        </>
+            </>
+          )}
+        </div>
       )}
     </div>
   );

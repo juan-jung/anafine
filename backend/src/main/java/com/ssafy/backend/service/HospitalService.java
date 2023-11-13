@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ssafy.backend.domain.entity.PriceHistory;
 import com.ssafy.backend.domain.repository.PriceHistoryRepository;
+import com.ssafy.backend.dto.HospitalDetailDto;
 import com.ssafy.backend.dto.HospitalDetailInfoDto;
 import com.ssafy.backend.dto.HospitalInfoDto;
 import com.ssafy.backend.domain.entity.Price;
@@ -31,27 +32,31 @@ public class HospitalService {
 	private final PriceRepository priceRepository;
 	private final PriceHistoryRepository priceHistoryRepository;
 
-	public List<HospitalDetailInfoDto> getHospitalDetail(Long priceId) {
+	public HospitalDetailInfoDto getHospitalDetail(Long priceId) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
 		Price price = priceRepository.findById(priceId).orElse(null);
 		List<PriceHistory> priceHistories = priceHistoryRepository.findByPriceId(priceId);
-		List<HospitalDetailInfoDto> hospitalDetailInfoDtos = new ArrayList<>();
+		List<HospitalDetailDto> hospitalDetailDtos = new ArrayList<>();
 		for (PriceHistory priceHistory : priceHistories) {
-			hospitalDetailInfoDtos.add(HospitalDetailInfoDto.builder().
-				hospitalId(price.getHospital().getId()).
-				hospitalName(price.getHospital().getName()).
-				address(price.getHospital().getAddress()).
-				maxPrice(price.getMaxPrice()).
-				minPrice(price.getMinPrice()).
-				homepageUrl(price.getHospital().getHomepageUrl()).
-				modifiedAt(price.getHospital().getModifiedAt()).
-				treatmentName(price.getTreatment().getName()).
-				cost(priceHistory.getCost()).
-				significant(priceHistory.getSignificant()).
-				info(priceHistory.getInfo()).
-				build());
+			HospitalDetailDto hospitalDetailDto = HospitalDetailDto.builder()
+				.cost(priceHistory.getCost())
+				.significant(priceHistory.getSignificant())
+				.info(priceHistory.getInfo())
+				.build();
+			hospitalDetailDtos.add(hospitalDetailDto);
 		}
-		return hospitalDetailInfoDtos;
+		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder()
+			.hospitalId(price.getHospital().getId())
+			.hospitalName(price.getHospital().getName())
+			.address(price.getHospital().getAddress())
+			.maxPrice(price.getMaxPrice())
+			.minPrice(price.getMinPrice())
+			.homepageUrl(price.getHospital().getHomepageUrl())
+			.modifiedAt(price.getHospital().getModifiedAt())
+			.treatmentName(price.getTreatment().getName())
+			.hospitalDetailDtos(hospitalDetailDtos)
+			.build();
+		return hospitalDetailInfoDto;
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌

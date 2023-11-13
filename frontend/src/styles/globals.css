@@ -548,6 +548,7 @@ a {
 
 .service-div1 {
   width: 100%;
+  height: 100%;
   /* color: #C7E3D7; */
   /* position: relative; */
 
@@ -556,8 +557,8 @@ a {
   align-items: center;
 }
 .service-img1 {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   vertical-align: middle;
 }
@@ -708,16 +709,19 @@ a {
 
 .service-section {
   width: 100%;
+  height: 100%;
   /* margin-bottom: 5%; */
 }
 
 .service-section3 {
   width: 100%;
+  height: 100%;
   background-color: #f5f6f7;
 }
 
 .service-div2 {
   width: 100%;
+  height: 100%;
   /* color: #C7E3D7; */
   /* position: relative; */
 
@@ -728,6 +732,7 @@ a {
 
 .service-div3 {
   width: 100%;
+  height: 100%;
   /* color: #C7E3D7; */
   /* position: relative; */
 
@@ -738,6 +743,7 @@ a {
 
 .service-div4 {
   width: 100%;
+  height: 100%;
   /* color: #C7E3D7; */
   /* position: relative; */
 

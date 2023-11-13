@@ -15,7 +15,7 @@ const ServicePage: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <section className={"service-section"}>
+        {/* <section className={"service-section"}> */}
           <div className={"service-div1"}>
             <div className={"animation"}>
               <span className={"one_text"}>A.Na.Fine 서비스는</span>
@@ -32,7 +32,7 @@ const ServicePage: NextPage = () => {
               // objectPosition="center"
             />
           </div>
-        </section>
+        {/* </section> */}
         <section className={"service-section"}>
           <div className={"service-div2"}>
             <img className={"service-img2"}

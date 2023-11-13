@@ -22,6 +22,12 @@ const Chatbot: React.FC = () => {
   const [symptoms, setSymptoms] = useState("");
   const [userInput, setUserInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
+  const [chatMode, setChatMode] = useState("normal");
+
+  // 버튼 클릭 핸들러
+  const handleModeChange = (mode: string) => {
+    setChatMode(mode);
+  };
 
   useEffect(() => {
     // 컴포넌트가 마운트될 때 첫 번째 메시지를 추가
@@ -87,26 +93,47 @@ const Chatbot: React.FC = () => {
 
   return (
     <div className={styles["chatbot-container"]}>
-      <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
-      <div className={styles["chatbot-header"]}>
-        <div className={styles["chatbot-messages"]}>
-          {messages.map((msg, index) => (
-            <div key={index} className={`message ${msg.sender}`}>
-              {msg.text}
-            </div>
-          ))}
-        </div>
-        {currentStep < questions.length && (
-          <input
-            className={styles["chatbot-input"]}
-            type="text"
-            placeholder="답변을 입력하세요"
-            value={userInput}
-            onChange={handleUserInput}
-            onKeyPress={handleKeyPress}
-          />
-        )}
+      <div className={styles["chatbot-buttons"]}>
+        <button
+          className={styles["chatbot-button-normal"]}
+          onClick={() => handleModeChange("normal")}
+        >
+          대화
+        </button>
+        <button
+          className={styles["chatbot-button"]}
+          onClick={() => handleModeChange("diseasePrediction")}
+        >
+          질병 예측
+        </button>
       </div>
+      {chatMode === "diseasePrediction" ? (
+        <>
+          <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
+
+          <div className={styles["chatbot-header"]}>
+            <div className={styles["chatbot-messages"]}>
+              {messages.map((msg, index) => (
+                <div key={index} className={`message ${msg.sender}`}>
+                  {msg.text}
+                </div>
+              ))}
+            </div>
+            {currentStep < questions.length && (
+              <input
+                className={styles["chatbot-input"]}
+                type="text"
+                placeholder="답변을 입력하세요"
+                value={userInput}
+                onChange={handleUserInput}
+                onKeyPress={handleKeyPress}
+              />
+            )}
+          </div>
+        </>
+      ) : (
+        <div>얍</div>
+      )}
     </div>
   );
 };

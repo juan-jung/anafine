@@ -22,7 +22,7 @@ public class PriceHistory {
     private Price price;
 
     @NotNull
-    private Long cost;
+    private Integer cost;
 
     @NotNull
     private LocalDateTime createdAt;
@@ -31,4 +31,6 @@ public class PriceHistory {
 
     @NotNull
     private Boolean isLatest;
+
+    private String info;
 }

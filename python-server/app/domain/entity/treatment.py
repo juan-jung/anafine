@@ -9,7 +9,7 @@ class Treatment(Base):
     category_id = Column(String(10), ForeignKey('category.category_id'), nullable=False)
     
     treatment_name = Column(String(255), nullable=False, index=True)
-    path = Column(String(255), nullable=False)
+    path = Column(String(255), nullable=False, index=True)
     info = Column(String(2000))
     
     #Many to One

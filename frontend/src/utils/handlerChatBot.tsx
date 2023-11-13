@@ -2,9 +2,9 @@ import axiosInstance from "../api/axios";
 
 const handlerChatBot = async (
   sex: string,
-  age: number,
+  age: string,
   pain_area: string,
-  symptoms: string
+  symptoms: string,
 ): Promise<ResponseType> => {
   console.log("handlerChatBot");
 

@@ -4,7 +4,7 @@ import handlerElasticSearch from "utils/handlerElasticSearch";
 const useElasticSearch = (
   value: string,
   setSearchResults: (results: { path: string; treatmentId: string }[]) => void,
-  setSelectIdx: (idx: number) => void
+  setSelectIdx: (idx: number) => void,
 ) => {
   useEffect(() => {
     let timeoutId: number | undefined = undefined;

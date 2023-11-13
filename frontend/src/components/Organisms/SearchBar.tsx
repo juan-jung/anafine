@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
-import Input from "components/atoms/Input";
-import { Button } from "components/atoms/Button";
 import { Icon } from "@iconify/react";
-import useElasticSearch from "hooks/useElasticSearch";
+import { useRouter } from "next/router";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { Button } from "components/atoms/Button";
+import Input from "components/atoms/Input";
 import TextArea from "components/atoms/TextArea";
+import useElasticSearch from "hooks/useElasticSearch";
 
 // SearchBar
 const SearchBar: React.FC = () => {
@@ -23,7 +23,7 @@ const SearchBar: React.FC = () => {
     e.preventDefault();
     if (searchResults.length !== 0) {
       router.push(
-        `/search/?path=${searchResults[selectIdx].path}&id=${searchResults[selectIdx].treatmentId}&page=1`
+        `/search/?path=${searchResults[selectIdx].path}&id=${searchResults[selectIdx].treatmentId}&page=1`,
       );
       setSearchValue("");
     }

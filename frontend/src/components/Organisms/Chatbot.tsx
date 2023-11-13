@@ -29,6 +29,24 @@ const Chatbot: React.FC = () => {
     setChatMode(mode);
   };
 
+  const [popupVisible, setPopupVisible] = useState(true);
+
+  const togglePopup = () => {
+    setPopupVisible(false);
+  };
+
+  const togglePopdown = () => {
+    setPopupVisible(true);
+  };
+
+  const handleOpenChatbot = () => {
+    togglePopup();
+  };
+
+  const handleOpenChatbotDown = () => {
+    togglePopdown();
+  };
+
   useEffect(() => {
     // 컴포넌트가 마운트될 때 첫 번째 메시지를 추가
     setMessages([{ text: questions[0], sender: "bot" }]);
@@ -92,25 +110,22 @@ const Chatbot: React.FC = () => {
   };
 
   return (
-    <div className={styles["chatbot-container"]}>
-      <div className={styles["chatbot-buttons"]}>
-        <button
-          className={styles["chatbot-button-normal"]}
-          onClick={() => handleModeChange("normal")}
+    <div>
+      {popupVisible ? (
+        <div
+          className={styles["chatbot-popup-container"]}
+          onClick={handleOpenChatbot}
         >
-          대화
-        </button>
-        <button
-          className={styles["chatbot-button"]}
-          onClick={() => handleModeChange("diseasePrediction")}
-        >
-          질병 예측
-        </button>
-      </div>
-      {chatMode === "diseasePrediction" ? (
-        <>
-          <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
-
+          chat
+        </div>
+      ) : (
+        <div className={styles["chatbot-container"]}>
+          <div
+            className={styles["chatbot-head"]}
+            onClick={handleOpenChatbotDown}
+          >
+            AI 질병 예측
+          </div>
           <div className={styles["chatbot-header"]}>
             <div className={styles["chatbot-messages"]}>
               {messages.map((msg, index) => (
@@ -119,6 +134,8 @@ const Chatbot: React.FC = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className={styles["chatbot-bottom"]}>
             {currentStep < questions.length && (
               <input
                 className={styles["chatbot-input"]}
@@ -130,9 +147,7 @@ const Chatbot: React.FC = () => {
               />
             )}
           </div>
-        </>
-      ) : (
-        <div>얍</div>
+        </div>
       )}
     </div>
   );

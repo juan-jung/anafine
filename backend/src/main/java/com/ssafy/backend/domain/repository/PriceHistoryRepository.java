@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface PriceHistoryRepository extends JpaRepository<PriceHistory, Long> {
-	List<PriceHistory> findByPriceId(Long priceId);
+	List<PriceHistory> findByPriceIdOrderByCost(Long priceId);
 }

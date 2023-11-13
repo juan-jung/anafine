@@ -27,7 +27,7 @@ const Pagination: React.FC<PaginationProps> = ({
       <div>
         {Array.from(
           { length: endPage - startPage + 1 },
-          (_, i) => startPage + i
+          (_, i) => startPage + i,
         ).map((page, index) => (
           <span
             key={index}

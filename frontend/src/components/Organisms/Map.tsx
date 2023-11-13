@@ -46,13 +46,13 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
           const markerImage = new window.kakao.maps.MarkerImage(
             markerImageUrl,
             markerImageSize,
-            markerImageOptions
+            markerImageOptions,
           );
 
           data.forEach((item) => {
             const markerPosition = new window.kakao.maps.LatLng(
               item.latitude,
-              item.longitude
+              item.longitude,
             );
 
             const marker = new window.kakao.maps.Marker({
@@ -91,14 +91,14 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
               "mouseover",
               function () {
                 customOverlay.setMap(map);
-              }
+              },
             );
             window.kakao.maps.event.addListener(
               marker,
               "mouseout",
               function () {
                 customOverlay.setMap(null);
-              }
+              },
             );
           });
         });

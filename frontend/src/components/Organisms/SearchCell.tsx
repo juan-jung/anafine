@@ -1,3 +1,4 @@
+import { NextRouter } from "next/router";
 import React from "react";
 
 type initialData = {
@@ -11,6 +12,7 @@ type initialData = {
 
 type SearchCellProps = {
   data: initialData[];
+  router: NextRouter;
 };
 
 function makeNewAddress(address: string) {
@@ -23,10 +25,15 @@ function formatMoney(number: number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
+const SearchCell: React.FC<SearchCellProps> = ({ data, router }) => {
   if (!data) {
     data = [];
   }
+
+  const onClick = (hospitalName: string, hospitalId: string) => {
+    router.push(`/detail/${hospitalName}?id=${hospitalId}`);
+  };
+
   return (
     <table className="hospital-table">
       <thead>
@@ -35,6 +42,7 @@ const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
           <th>소재지</th>
           <th>최저금액</th>
           <th>최고금액</th>
+          <th>상세</th>
         </tr>
       </thead>
       <tbody>
@@ -51,6 +59,14 @@ const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
               <td>{makeNewAddress(hospital.address)}</td>
               <td>{formatMoney(hospital.maxPrice)}원</td>
               <td>{formatMoney(hospital.minPrice)}원</td>
+              <td
+                className="detail-cell"
+                onClick={() =>
+                  onClick(hospital.hospitalName, hospital.hospitalId)
+                }
+              >
+                상세
+              </td>
             </tr>
           ))
         )}

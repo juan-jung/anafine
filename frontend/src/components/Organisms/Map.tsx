@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NextRouter } from "next/router";
 import { useEffect } from "react";
 
 declare global {
@@ -11,9 +12,10 @@ interface MapProps {
   latitude: number;
   longitude: number;
   data: any[];
+  router: NextRouter;
 }
 
-export default function Map({ latitude, longitude, data }: MapProps) {
+export default function Map({ latitude, longitude, data, router }: MapProps) {
   console.log(data);
   useEffect(() => {
     const loadKakaoMap = () => {
@@ -81,7 +83,7 @@ export default function Map({ latitude, longitude, data }: MapProps) {
             customOverlay.setMap(null);
 
             window.kakao.maps.event.addListener(marker, "click", function () {
-              alert("마커를 클릭했습니다!");
+              router.push(`/detail/${item.hospitalName}?id=${item.hospitalId}`);
             });
 
             window.kakao.maps.event.addListener(

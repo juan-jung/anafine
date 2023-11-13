@@ -21,7 +21,7 @@ class HealthAnalysis(Resource):
         data = request.json
         response_data = chatbot.play_chat(data)
         return jsonify(response_data)
-    
+
 @ns.route('/chatbot/normal')
 class NormalChat(Resource):
     def post(self):

@@ -1,9 +1,11 @@
 from sqlalchemy import Column, DECIMAL, Double, String, BigInteger, Integer, SmallInteger, Boolean, ForeignKey, DateTime
+from sqlalchemy.schema import Index
 from sqlalchemy.orm import relationship
 from app.domain import Base
 
 class Price(Base):
     __tablename__ = 'price'
+    __table_args__ = (Index('ix_treatment_id_hospital_id', 'treatment_id', 'hospital_id'),)
     
     price_id = Column(BigInteger, primary_key=True, autoincrement=True)
     treatment_id = Column(String(10), ForeignKey('treatment.treatment_id'), nullable=False)

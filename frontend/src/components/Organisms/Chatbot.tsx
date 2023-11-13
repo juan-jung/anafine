@@ -22,6 +22,12 @@ const Chatbot: React.FC = () => {
   const [symptoms, setSymptoms] = useState("");
   const [userInput, setUserInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
+  const [chatMode, setChatMode] = useState("normal");
+
+  // 버튼 클릭 핸들러
+  const handleModeChange = (mode: string) => {
+    setChatMode(mode);
+  };
 
   const [popupVisible, setPopupVisible] = useState(true);
 

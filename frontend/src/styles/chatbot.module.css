@@ -13,7 +13,7 @@
 
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(150, 37, 37, 0.1);
-  overflow: hidden;
+  overflow: visible;
   z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
 }
 
@@ -73,7 +73,36 @@
 }
 
 .chatbot-button {
-  display: none;
+  position: absolute;
+  top: 0px;
+  left: -90px; /* 적절한 위치 조정 */
+  background-color: #007bff;
+  color: white;
+  padding: 5px 20px; /* 패딩 조정 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-button-normal {
+  position: absolute;
+  top: 30px;
+  left: -60px; /* 적절한 위치 조정 */
+  background-color: #dd8f22;
+  color: white;
+  padding: 5px 20px; /* 패딩 조정 */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-button-normal:hover {
+  background-color: #f59207;
+}
+.chatbot-button:hover {
+  background-color: #0056b3;
 }
 
 .chatbot-popup-container {

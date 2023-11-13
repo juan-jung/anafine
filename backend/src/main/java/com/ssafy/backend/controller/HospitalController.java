@@ -50,7 +50,7 @@ public class HospitalController {
 
 	@GetMapping("/detail/{priceId}")
 	public ResponseEntity<?> getHospitalDetail(@PathVariable Long priceId) {
-		HospitalDetailInfoDto hospitalDetailInfoDto = hospitalService.getHospitalDetail(priceId);
+		List<HospitalDetailInfoDto> hospitalDetailInfoDto = hospitalService.getHospitalDetail(priceId);
 		return ResponseEntity.ok().body(hospitalDetailInfoDto);
 	}
 }

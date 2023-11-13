@@ -24,4 +24,10 @@ public class HospitalDetailInfoDto {
 
 	private String treatmentName;
 
+	private Integer cost;
+
+	private String significant;
+
+	private String info;
+
 }

@@ -11,6 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.ssafy.backend.domain.entity.PriceHistory;
+import com.ssafy.backend.domain.repository.PriceHistoryRepository;
 import com.ssafy.backend.dto.HospitalDetailInfoDto;
 import com.ssafy.backend.dto.HospitalInfoDto;
 import com.ssafy.backend.domain.entity.Price;
@@ -27,23 +29,29 @@ public class HospitalService {
 
 	// repo 불러오기
 	private final PriceRepository priceRepository;
+	private final PriceHistoryRepository priceHistoryRepository;
 
-	public HospitalDetailInfoDto getHospitalDetail(Long priceId) {
+	public List<HospitalDetailInfoDto> getHospitalDetail(Long priceId) {
 		// 검색한 비급여를 가지고 있는 병원들 추출
 		Price price = priceRepository.findById(priceId).orElse(null);
-
-		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder().
-			hospitalId(price.getHospital().getId()).
-			hospitalName(price.getHospital().getName()).
-			address(price.getHospital().getAddress()).
-			maxPrice(price.getMaxPrice()).
-			minPrice(price.getMinPrice()).
-			homepageUrl(price.getHospital().getHomepageUrl()).
-			modifiedAt(price.getHospital().getModifiedAt()).
-			treatmentName(price.getTreatment().getName()).
-			build();
-
-		return hospitalDetailInfoDto;
+		List<PriceHistory> priceHistories = priceHistoryRepository.findByPriceId(priceId);
+		List<HospitalDetailInfoDto> hospitalDetailInfoDtos = new ArrayList<>();
+		for (PriceHistory priceHistory : priceHistories) {
+			hospitalDetailInfoDtos.add(HospitalDetailInfoDto.builder().
+				hospitalId(price.getHospital().getId()).
+				hospitalName(price.getHospital().getName()).
+				address(price.getHospital().getAddress()).
+				maxPrice(price.getMaxPrice()).
+				minPrice(price.getMinPrice()).
+				homepageUrl(price.getHospital().getHomepageUrl()).
+				modifiedAt(price.getHospital().getModifiedAt()).
+				treatmentName(price.getTreatment().getName()).
+				cost(priceHistory.getCost()).
+				significant(priceHistory.getSignificant()).
+				info(priceHistory.getInfo()).
+				build());
+		}
+		return hospitalDetailInfoDtos;
 	}
 
 	// distance로 정렬된 병원 정보를 return하는 함수 => 거리 제한을 통해 제한된 거리 내에서만 보내줌

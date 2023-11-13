@@ -90,7 +90,25 @@ def preprocess_prompt(prompt):
         # 초과하지 않는다면 그대로 반환
         return prompt
 
+
+
 class ChatService:
+    def play_normal_chat(self, data):
+        # 사용자 입력을 텍스트로 변환
+        user_input = data.get('message', '')
+
+        # OpenAI GPT 모델을 사용하여 대답 생성
+        response = llm.Completion.create(
+            engine="davinci",
+            prompt=user_input,
+            max_tokens=150
+        )
+
+        # 생성된 응답의 텍스트 추출
+        gpt_response = response.choices[0].text.strip()
+
+        return {'response': gpt_response}
+
     def play_chat(self,data):
         #사용자 성별 입력 받기
         user_sex = data['sex']

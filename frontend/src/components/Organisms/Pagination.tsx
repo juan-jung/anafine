@@ -2,13 +2,13 @@
 interface PaginationProps {
   pageNum: number;
   totalPages: number;
-  handlePageChange: (page: number) => void;
+  onPageChange: (page: number) => void;
 }
 
 const Pagination: React.FC<PaginationProps> = ({
   pageNum,
   totalPages,
-  handlePageChange,
+  onPageChange,
 }) => {
   const isPrevButtonDisabled = pageNum <= 1;
   const isNextButtonDisabled = pageNum >= totalPages;
@@ -20,7 +20,7 @@ const Pagination: React.FC<PaginationProps> = ({
     <div className="pagination-container">
       <span
         className={`pagination-arrow ${isPrevButtonDisabled ? "disabled" : ""}`}
-        onClick={() => handlePageChange(pageNum - 1)}
+        onClick={() => onPageChange(pageNum - 1)}
       >
         &lt;
       </span>
@@ -34,7 +34,7 @@ const Pagination: React.FC<PaginationProps> = ({
             className={`pagination-number ${
               startPage + index === pageNum ? "selected" : ""
             }`}
-            onClick={() => handlePageChange(page)}
+            onClick={() => onPageChange(page)}
           >
             {page}
           </span>
@@ -42,7 +42,7 @@ const Pagination: React.FC<PaginationProps> = ({
       </div>
       <span
         className={`pagination-arrow ${isNextButtonDisabled ? "disabled" : ""}`}
-        onClick={() => handlePageChange(pageNum + 1)}
+        onClick={() => onPageChange(pageNum + 1)}
       >
         &gt;
       </span>

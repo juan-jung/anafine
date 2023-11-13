@@ -15,7 +15,7 @@ const ServicePage: NextPage = () => {
       </Head>
       <Header />
       <main className={styles.main}>
-        <section className={"info-section1"}>
+        <section className={"service-section"}>
           <div className={"service-div1"}>
             <div className={"animation"}>
               <span className={"one_text"}>A.Na.Fine 서비스는</span>
@@ -33,8 +33,8 @@ const ServicePage: NextPage = () => {
             />
           </div>
         </section>
-        <section className={"info-section1"}>
-          <div className={"info-content"}>
+        <section className={"service-section"}>
+          <div className={"service-div2"}>
             <img className={"service-img2"}
               // shape={"square"}
               src={"/servicePic/serviceImage2.png"}
@@ -45,8 +45,8 @@ const ServicePage: NextPage = () => {
             <div className={"service-textbox2"}><h1>566가지 비급여 진료 정보를 한 번에 비교</h1></div>
           </div>
         </section>
-        <section className={"info-section1"}>
-          <div className={"info-content"}>
+        <section className={"service-section3"}>
+          <div className={"service-div3"}>
           <div className={"service-textbox3"}><h1>병원 정보와 위치까지 한 번에</h1></div>
             <img className={"service-img3"}
               // shape={"square"}
@@ -57,8 +57,8 @@ const ServicePage: NextPage = () => {
             />
           </div>
         </section>
-        <section className={"info-section1"}>
-          <div className={"info-content"}>
+        <section className={"service-section"}>
+          <div className={"service-div4"}>
             <img className={"service-img5"}
               // shape={"square"}
               src={"/servicePic/serviceImage5.png"}

@@ -19,6 +19,11 @@ type SearchPageProps = {
 const myLatitude = 37.50130213612427;
 const myLongitude = 127.03945482599437;
 
+const DynamicMap = dynamic(() => import("components/Organisms/Map"));
+const DynamicSearchCell = dynamic(
+  () => import("components/Organisms/SearchCell")
+);
+
 const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
   const [mapCenter, setMapCenter] = useState({
     latitude: myLatitude,
@@ -26,8 +31,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
   });
   const router = useRouter();
   const pageNum = page;
-  console.log("페이지넘버" + pageNum);
-  console.log("데이터" + JSON.stringify(data, null, 2));
   const [initialData, setInitialData] = useState<any>(data);
 
   useEffect(() => {
@@ -39,19 +42,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
       router.push(`/search/?path=${path}&id=${id}&page=${page}`);
     }
   };
-
-  // 함수를 사용하여 중심 좌표를 업데이트
-  const updateMapCenter = (newLatitude: number, newLongitude: number) => {
-    setMapCenter({ latitude: newLatitude, longitude: newLongitude });
-  };
-
-  // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
-  const DynamicMap = dynamic(() => import("components/Organisms/Map"));
-  const DynamicSearchCell = dynamic(
-    () => import("components/Organisms/SearchCell")
-  );
-
-  console.log("현재 페이지는" + pageNum + "입니다.");
 
   return (
     <div className={styles.container}>
@@ -70,10 +60,11 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
                 latitude={mapCenter.latitude}
                 longitude={mapCenter.longitude}
                 data={initialData.content}
+                router={router}
               />
             </div>
             <div className="search-result">
-              <DynamicSearchCell data={initialData.content} />
+              <DynamicSearchCell data={initialData.content} router={router} />
               <Pagination
                 pageNum={pageNum}
                 totalPages={initialData.totalPages}
@@ -104,14 +95,14 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
       150000,
       myLatitude,
       myLongitude,
-      Number(page),
+      Number(page) - 1,
       9
     );
 
     return {
       props: {
-        id: id,
         path: path,
+        id: id,
         page: Number(page),
         data: data,
       },
@@ -120,8 +111,8 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        id: id,
         path: path,
+        id: id,
         page: Number(page),
         data: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },

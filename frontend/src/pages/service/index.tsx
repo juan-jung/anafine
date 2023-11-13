@@ -4,8 +4,17 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import ShapeImage from "components/atoms/ShapeImage";
+import { useRouter } from "next/router";
+
+
 
 const ServicePage: NextPage = () => {
+  const router = useRouter();
+
+  const onClick = () => {
+    router.push(`/`);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -71,10 +80,10 @@ const ServicePage: NextPage = () => {
             />
             <div className={"text-and-button"}>
             <div className={"service-textbox4"}><h1>A.Na.Fine</h1></div>
-            <div className={"start-button"}>
-              <p className={"start-button-text"}><a href="/">A.Na.Fine</a></p>
-              <div className={"start-button2"}>  
-                <p className={"start-button-text2"}><a href="/">시작하기!</a></p>
+            <div className={"start-button"} onClick={onClick}>
+              <p className={"start-button-text"}>A.Na.Fine</p>
+              <div className={"start-button2"} >  
+                <p className={"start-button-text2"}>시작하기!</p>
               </div>
             </div>
           </div>

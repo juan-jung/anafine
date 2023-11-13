@@ -32,9 +32,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 
   const handlePageChange = (page: number) => {
     if (0 < page && page < initialData.totalPages + 1) {
-      router.push(`/search/?path=${path}&id=${id}&page=${page}`, undefined, {
-        shallow: false,
-      });
+      router.push(`/search/?path=${path}&id=${id}&page=${page}`);
     }
   };
 

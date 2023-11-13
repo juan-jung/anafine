@@ -19,10 +19,10 @@ def initialize():
         from app.initializer.db_initializer import init_db_base
         init_db_base()
         
-        from app.service.price_service import PriceService, final_file_path as price_file_path
-        price_service = PriceService()
+        from app.service.hospital_price_service import HospitalPriceService, final_file_path as price_file_path
+        hospital_price_service = HospitalPriceService()
         
         if FILE_OVERWRITE or not os.path.exists(price_file_path):
-            price_service.update_price_data_file()
+            hospital_price_service.update_hospital_price_data_file()
             
-        price_service.update_price_db()
+        hospital_price_service.update_hospital_price_db()

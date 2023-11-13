@@ -21,11 +21,18 @@ class HealthAnalysis(Resource):
         data = request.json
         response_data = chatbot.play_chat(data)
         return jsonify(response_data)
+    
+@ns.route('/chatbot/normal')
+class NormalChat(Resource):
+    def post(self):
+        data = request.json
+        response_data = chatbot.play_normal_chat(data)
+        return jsonify(response_data)
 
 @ns.route('/chatbot/health')
 class HTTPOK(Resource):
-    def post(self):
-        return Response(status=200)
+    def get(self):
+        return "200"
 
 
 from app import api_root

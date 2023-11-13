@@ -23,7 +23,7 @@ const SearchBar: React.FC = () => {
     e.preventDefault();
     if (searchResults.length !== 0) {
       router.push(
-        `/search/?path=${searchResults[selectIdx].path}&id=${searchResults[selectIdx].treatmentId}`
+        `/search/?path=${searchResults[selectIdx].path}&id=${searchResults[selectIdx].treatmentId}&page=1`
       );
       setSearchValue("");
     }
@@ -33,7 +33,7 @@ const SearchBar: React.FC = () => {
 
   // 추천 검색어 클릭
   const onClick = (treatmentId: string, path: string) => {
-    router.push(`/search/?path=${path}&id=${treatmentId}`);
+    router.push(`/search/?path=${path}&id=${treatmentId}&page=1`);
   };
 
   // 화살표 위로 이동

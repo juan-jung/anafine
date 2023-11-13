@@ -335,9 +335,10 @@ a {
 
 .search-result {
   display: flex;
+  flex-direction: column;
   width: 50vw;
   height: 70vh;
-  overflow: auto;
+  padding-left: 10px;
 }
 
 .hospital-table {
@@ -351,8 +352,18 @@ a {
   text-align: center;
   height: 6vh;
   border: 1px solid #d0d0d0;
+  border-top: 1px solid #000000;
   padding: 8px;
+  font-size: 20px;
   background-color: #ededed;
+}
+
+.hospital-table th:first-child {
+  border-left: none;
+}
+
+.hospital-table th:last-child {
+  border-right: none;
 }
 
 .hospital-table td {
@@ -360,6 +371,19 @@ a {
   height: 6vh;
   border: 1px solid #d0d0d0;
   padding: 8px;
+  font-size: 18px;
+}
+
+.hospital-table td:first-child {
+  border-left: none;
+}
+
+.hospital-table td:last-child {
+  border-right: none;
+}
+
+.no-result {
+  font-size: 28px;
 }
 
 .main-search-button {
@@ -372,11 +396,36 @@ a {
   color: white;
 }
 
-/* 이용약관 페이지 관련 css */
-.rule-text {
+/* 페이지네이션 관련 css */
+.pagination-container {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.pagination-arrow.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-number {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination-number.selected {
+  font-weight: bold;
+  color: #007bff;
 }
 
 /* 커스텀 오버레이 관련 css */
@@ -424,6 +473,13 @@ a {
   font-size: 16px;
   padding-left: 10px;
   color: #888888;
+}
+
+/* 이용약관 페이지 관련 css */
+.rule-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
 }
 
 /* 스크롤바 css */
@@ -491,6 +547,7 @@ a {
   margin-left: var(--t);
   place-self: end;
 }
+
 /* 말풍선 배치 css */
 .info-section1 {
   display: flex;

@@ -38,14 +38,22 @@ const SearchCell: React.FC<SearchCellProps> = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((hospital, index) => (
-          <tr key={index}>
-            <td>{hospital.hospitalName}</td>
-            <td>{makeNewAddress(hospital.address)}</td>
-            <td>{formatMoney(hospital.maxPrice)}원</td>
-            <td>{formatMoney(hospital.minPrice)}원</td>
+        {data.length === 0 ? (
+          <tr>
+            <td className="no-result" colSpan={4}>
+              범위 내 검색 결과가 없습니다.
+            </td>
           </tr>
-        ))}
+        ) : (
+          data.map((hospital, index) => (
+            <tr key={index}>
+              <td>{hospital.hospitalName}</td>
+              <td>{makeNewAddress(hospital.address)}</td>
+              <td>{formatMoney(hospital.maxPrice)}원</td>
+              <td>{formatMoney(hospital.minPrice)}원</td>
+            </tr>
+          ))
+        )}
       </tbody>
     </table>
   );

@@ -61,14 +61,13 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                   {text.name}
                   <div className="icon-container">
                     {text.isLeaf && (
-                      <div className="main-search-button">
-                        <Button
-                          children={<span>검색</span>}
-                          ver={"small"}
-                          onClick={() => {
-                            window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}&page=1`;
-                          }}
-                        />
+                      <div
+                        className="main-search-text"
+                        onClick={() => {
+                          window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}`;
+                        }}
+                      >
+                        검색
                       </div>
                     )}
                     &nbsp;

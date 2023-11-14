@@ -1,17 +1,17 @@
-import { GetServerSideProps, NextPage } from "next";
+import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
+import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { useState } from "react";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import Pagination from "components/Organisms/Pagination";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
+import handlerSortByDistInfo from "utils/handlerSortByDistInfo";
+import HospitalDetail from "components/Organisms/HospitalDetail";
 
 type SearchPageProps = {
   id: string;
   path: string;
-  page: number;
   data?: any;
 };
 
@@ -19,35 +19,113 @@ type SearchPageProps = {
 const myLatitude = 37.50130213612427;
 const myLongitude = 127.03945482599437;
 
-const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
+// CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
+const DynamicMap = dynamic(() => import("components/Organisms/Map"));
+const DynamicSearchCell = dynamic(
+  () => import("components/Organisms/SearchCell")
+);
+
+const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   const [mapCenter, setMapCenter] = useState({
     latitude: myLatitude,
     longitude: myLongitude,
   });
-  const router = useRouter();
-  const [pageNum, setPageNum] = useState(page);
-  console.log("페이지넘버" + pageNum);
+  const [pageNum, setPageNum] = useState(1);
   const [initialData, setInitialData] = useState<any>(data);
-  console.log(initialData);
+  const [detailVisible, setDetailVisible] = useState(false);
+  const [hospitalId, setHospitalId] = useState("");
+  const [selectedDist, setSelectedDist] = useState("5000");
+  const [selectedSort, setSelectedSort] = useState("cost");
+  console.log(selectedSort);
 
-  const handlePageChange = (page: number) => {
+  useEffect(() => {
+    setInitialData(data);
+  }, [data]);
+
+  const onPageChange = (page: number) => {
     if (0 < page && page < initialData.totalPages + 1) {
-      router.push(`/search/?path=${path}&id=${id}&page=${page}`);
+      setPageNum(page);
+      if (selectedSort === "cost") {
+        handlerSortByPriceInfo(
+          id,
+          Number(selectedDist),
+          myLatitude,
+          myLongitude,
+          page - 1,
+          12
+        ).then((data) => setInitialData(data));
+      } else {
+        handlerSortByDistInfo(
+          id,
+          Number(selectedDist),
+          myLatitude,
+          myLongitude,
+          page - 1,
+          12
+        ).then((data) => setInitialData(data));
+      }
     }
   };
 
-  // 함수를 사용하여 중심 좌표를 업데이트
-  const updateMapCenter = (newLatitude: number, newLongitude: number) => {
-    setMapCenter({ latitude: newLatitude, longitude: newLongitude });
+  const onClick = (id: string, latitude: number, longitude: number) => {
+    setHospitalId(id);
+    setMapCenter({ latitude, longitude });
+    setDetailVisible(true);
   };
 
-  // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
-  const DynamicMap = dynamic(() => import("components/Organisms/Map"));
-  const DynamicSearchCell = dynamic(
-    () => import("components/Organisms/SearchCell"),
-  );
+  const onCloseClick = () => {
+    setDetailVisible(false);
+  };
 
-  console.log("현재 페이지는" + pageNum + "입니다.");
+  const handleSelectDistChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setSelectedDist(event.target.value);
+    if (selectedSort === "cost") {
+      handlerSortByPriceInfo(
+        id,
+        Number(event.target.value),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    } else {
+      handlerSortByDistInfo(
+        id,
+        Number(event.target.value),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    }
+  };
+
+  const handleSelectSortChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setSelectedSort(event.target.value);
+    if (event.target.value === "cost") {
+      handlerSortByPriceInfo(
+        id,
+        Number(selectedDist),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    } else {
+      handlerSortByDistInfo(
+        id,
+        Number(selectedDist),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -66,16 +144,50 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
                 latitude={mapCenter.latitude}
                 longitude={mapCenter.longitude}
                 data={initialData.content}
+                onClick={onClick}
               />
             </div>
-            <div className="search-result">
-              <DynamicSearchCell data={initialData.content} />
-              <Pagination
-                pageNum={pageNum}
-                totalPages={initialData.totalPages}
-                handlePageChange={handlePageChange}
+            {detailVisible ? (
+              <HospitalDetail
+                path={path}
+                id={hospitalId}
+                onCloseClick={onCloseClick}
               />
-            </div>
+            ) : (
+              <div className="search-result">
+                <div className="search-select">
+                  반경 선택 :
+                  <select
+                    id="selectDist"
+                    value={selectedDist}
+                    onChange={handleSelectDistChange}
+                  >
+                    <option value="1000">1km</option>
+                    <option value="5000">5km</option>
+                    <option value="10000">10km</option>
+                    <option value="50000">50km</option>
+                  </select>
+                  &nbsp;&nbsp;&nbsp;정렬 기준 :
+                  <select
+                    id="selectSort"
+                    value={selectedSort}
+                    onChange={handleSelectSortChange}
+                  >
+                    <option value="cost">가격 순</option>
+                    <option value="distance">거리 순</option>
+                  </select>
+                </div>
+                <DynamicSearchCell
+                  data={initialData.content}
+                  onClick={onClick}
+                />
+                <Pagination
+                  pageNum={pageNum}
+                  totalPages={initialData.totalPages}
+                  onPageChange={onPageChange}
+                />
+              </div>
+            )}
           </div>
         </div>
       </main>
@@ -86,29 +198,27 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 export default SearchPage;
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context,
+  context
 ) => {
-  const { path, id, page } = context.query as {
+  const { path, id } = context.query as {
     path: string;
     id: string;
-    page: string;
   };
 
   try {
     const data = await handlerSortByPriceInfo(
       id,
-      150000,
+      5000,
       myLatitude,
       myLongitude,
-      Number(page),
-      9,
+      0,
+      12
     );
 
     return {
       props: {
-        id: id,
         path: path,
-        page: Number(page),
+        id: id,
         data: data,
       },
     };
@@ -116,9 +226,8 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
     console.error("API 요청 중 오류 발생:", error);
     return {
       props: {
-        id: id,
         path: path,
-        page: Number(page),
+        id: id,
         data: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };

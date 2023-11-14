@@ -11,9 +11,9 @@ interface MapProps {
   latitude: number;
   longitude: number;
   data: any[];
+  onClick: (id: string, latitude: number, longitude: number) => void;
 }
-
-export default function Map({ latitude, longitude, data }: MapProps) {
+const Map: React.FC<MapProps> = ({ latitude, longitude, data, onClick }) => {
   console.log(data);
   useEffect(() => {
     const loadKakaoMap = () => {
@@ -44,13 +44,13 @@ export default function Map({ latitude, longitude, data }: MapProps) {
           const markerImage = new window.kakao.maps.MarkerImage(
             markerImageUrl,
             markerImageSize,
-            markerImageOptions,
+            markerImageOptions
           );
 
           data.forEach((item) => {
             const markerPosition = new window.kakao.maps.LatLng(
               item.latitude,
-              item.longitude,
+              item.longitude
             );
 
             const marker = new window.kakao.maps.Marker({
@@ -81,7 +81,8 @@ export default function Map({ latitude, longitude, data }: MapProps) {
             customOverlay.setMap(null);
 
             window.kakao.maps.event.addListener(marker, "click", function () {
-              alert("마커를 클릭했습니다!");
+              console.log(item);
+              onClick(item.priceId, item.latitude, item.longitude);
             });
 
             window.kakao.maps.event.addListener(
@@ -89,14 +90,14 @@ export default function Map({ latitude, longitude, data }: MapProps) {
               "mouseover",
               function () {
                 customOverlay.setMap(map);
-              },
+              }
             );
             window.kakao.maps.event.addListener(
               marker,
               "mouseout",
               function () {
                 customOverlay.setMap(null);
-              },
+              }
             );
           });
         });
@@ -109,9 +110,11 @@ export default function Map({ latitude, longitude, data }: MapProps) {
   }, [latitude, longitude, data]);
 
   return <MapContainer id="map" />;
-}
+};
 
 const MapContainer = styled.div`
   width: 35vw;
   height: 75vh;
 `;
+
+export default Map;

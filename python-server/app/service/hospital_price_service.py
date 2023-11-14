@@ -120,10 +120,11 @@ class HospitalPriceService:
                 
                 new_price_history = PriceHistory(price_id=price_id, cost=int(cur_amt), significant=yadm_npay_cd_nm, created_at=created_at)
                 new_entities.add(new_price_history)
-            session.query(PriceHistory)\
-                    .filter(PriceHistory.price_id.in_(updated_prices))\
-                    .filter(PriceHistory.is_latest == True)\
-                    .update({PriceHistory.is_latest: False})
+            if updated_prices:
+                session.query(PriceHistory)\
+                        .filter(PriceHistory.price_id.in_(updated_prices))\
+                        .filter(PriceHistory.is_latest == True)\
+                        .update({PriceHistory.is_latest: False})
             session.add_all(new_entities)
 
             session.commit()

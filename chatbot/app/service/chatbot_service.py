@@ -1,4 +1,5 @@
 import os
+import openai
 from dotenv import load_dotenv
 # .env 파일 불러오기
 load_dotenv()
@@ -8,7 +9,6 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 serpapi_api_key = os.getenv('SERPAPI_API_KEY')
 papago_client_id = os.getenv('PAPAGO_CLIENT_ID')
 papago_client_secret = os.getenv('PAPAGO_CLIENT_SECRET')
-
 
 from langchain.agents import load_tools
 from langchain.agents import initialize_agent
@@ -90,7 +90,25 @@ def preprocess_prompt(prompt):
         # 초과하지 않는다면 그대로 반환
         return prompt
 
+
+
 class ChatService:
+    def play_normal_chat(self, data):
+        user_input = data.get('message', '')
+
+        # OpenAI 채팅 모델을 사용하여 대답 생성
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",  # 채팅에 최적화된 모델
+            messages=[
+                {"role": "user", "content": user_input}
+            ],
+            max_tokens=150
+        )
+
+        # 생성된 응답의 텍스트 추출
+        gpt_response = response.choices[0].message['content'].strip()
+
+        return {'response': gpt_response}
     def play_chat(self,data):
         #사용자 성별 입력 받기
         user_sex = data['sex']

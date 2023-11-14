@@ -24,12 +24,15 @@ function makeNewAddress(address: string) {
   return extractedAddress;
 }
 
+// 돈 표기법으로 표기
 function formatMoney(number: number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+// 거리 표기 방식 변경(km 단위)
 function formatDistance(number: number) {
-  return Math.floor(number);
+  const dist = Math.floor(number) / 1000;
+  return dist.toFixed(1);
 }
 
 const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
@@ -64,7 +67,7 @@ const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
                 <td>{makeNewAddress(hospital.address)}</td>
                 <td>{formatMoney(hospital.minPrice)}원</td>
                 <td>{formatMoney(hospital.maxPrice)}원</td>
-                <td>{formatDistance(hospital.distance)}m</td>
+                <td>{formatDistance(hospital.distance)}km</td>
                 <td
                   className="detail-cell"
                   onClick={() =>

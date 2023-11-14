@@ -9,7 +9,7 @@ from app.domain import Base
     
 class Hospital(Base):
     __tablename__ = 'hospital'
-    __table_args__ = (Index('ix_hospital_type_id_modified_at', 'hospital_type_id', 'modified_at'),)
+    __table_args__ = (Index('ix_hospital_type_id_is_in_queue_modified_at', 'hospital_type_id', 'is_in_queue', 'modified_at'),)
     
     hospital_id = Column(Integer, primary_key=True, autoincrement=True)
     hospital_type_id = Column(SmallInteger, ForeignKey('hospital_type.hospital_type_id'), nullable=False)
@@ -20,6 +20,7 @@ class Hospital(Base):
     coordinate = Column(Geometry(geometry_type='POINT', srid=4326), nullable=False, index=True)
     tel = Column(String(255)) #없는 경우 존재
     homepage_url = Column(String(255)) #없는 경우 존재
+    is_in_queue = Column(Boolean, nullable=False, default=False, index = True) # 오래된 순서부터 처리하기 위한 함수
     modified_at = Column(DateTime, nullable=False, 
                          server_default=func.now(),
                          server_onupdate=func.now())

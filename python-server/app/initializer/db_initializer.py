@@ -43,7 +43,11 @@ def init_db_base():
                 session.add(new_entity)
             except Exception as e:
                 session.flush()
-                session.add(new_entity)
+                try:
+                    session.add(new_entity)
+                except Exception as e :
+                    print(e) #해당 엔티티는 넣을 수 없음
+                    continue
 
         session.commit()
         print(base_info.entity_name, " session commited")

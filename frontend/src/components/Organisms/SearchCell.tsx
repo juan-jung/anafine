@@ -9,6 +9,7 @@ type initialData = {
   treatmentName: string;
   latitude: number;
   longitude: number;
+  distance: number;
   priceId: string;
 };
 
@@ -27,6 +28,10 @@ function formatMoney(number: number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+function formatDistance(number: number) {
+  return Math.floor(number);
+}
+
 const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
   if (!data) {
     data = [];
@@ -41,6 +46,7 @@ const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
             <th className="detail-subtitle">소재지</th>
             <th className="detail-subtitle">최저금액</th>
             <th className="detail-subtitle">최고금액</th>
+            <th className="detail-subtitle">거리</th>
             <th className="detail-subtitle">상세</th>
           </tr>
         </thead>
@@ -58,6 +64,7 @@ const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
                 <td>{makeNewAddress(hospital.address)}</td>
                 <td>{formatMoney(hospital.minPrice)}원</td>
                 <td>{formatMoney(hospital.maxPrice)}원</td>
+                <td>{formatDistance(hospital.distance)}m</td>
                 <td
                   className="detail-cell"
                   onClick={() =>

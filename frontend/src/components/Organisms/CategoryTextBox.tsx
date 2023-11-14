@@ -64,7 +64,7 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                       <div
                         className="main-search-text"
                         onClick={() => {
-                          window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}&page=1`;
+                          window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}`;
                         }}
                       >
                         검색

@@ -7,12 +7,14 @@ type initialData = {
   maxPrice: number;
   minPrice: number;
   treatmentName: string;
+  latitude: number;
+  longitude: number;
   priceId: string;
 };
 
 type SearchCellProps = {
   data: initialData[];
-  onClick: (id: string) => void;
+  onClick: (id: string, latitude: number, longitude: number) => void;
 };
 
 function makeNewAddress(address: string) {
@@ -58,7 +60,13 @@ const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
                 <td>{formatMoney(hospital.maxPrice)}원</td>
                 <td
                   className="detail-cell"
-                  onClick={() => onClick(hospital.priceId)}
+                  onClick={() =>
+                    onClick(
+                      hospital.priceId,
+                      hospital.latitude,
+                      hospital.longitude
+                    )
+                  }
                 >
                   상세
                 </td>

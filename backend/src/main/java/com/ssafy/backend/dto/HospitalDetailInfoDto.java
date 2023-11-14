@@ -26,4 +26,8 @@ public class HospitalDetailInfoDto {
 	private String treatmentName;
 
 	private List<HospitalDetailDto> hospitalDetailDtos;
+
+	private String tel;
+
+	private String hospitalType;
 }

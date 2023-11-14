@@ -48,13 +48,18 @@ public class HospitalService {
 		HospitalDetailInfoDto hospitalDetailInfoDto = HospitalDetailInfoDto.builder()
 			.hospitalId(price.getHospital().getId())
 			.hospitalName(price.getHospital().getName())
+				.hospitalType(price.getHospital().getHospitalType().getName())
 			.address(price.getHospital().getAddress())
+				.tel(price.getHospital().getTel())
 			.maxPrice(price.getMaxPrice())
 			.minPrice(price.getMinPrice())
 			.homepageUrl(price.getHospital().getHomepageUrl())
 			.modifiedAt(price.getHospital().getModifiedAt())
 			.treatmentName(price.getTreatment().getName())
+
 			.hospitalDetailDtos(hospitalDetailDtos)
+
+
 			.build();
 		return hospitalDetailInfoDto;
 	}

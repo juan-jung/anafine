@@ -11,8 +11,9 @@ interface MapProps {
   latitude: number;
   longitude: number;
   data: any[];
+  onClick: (id: string, latitude: number, longitude: number) => void;
 }
-const Map: React.FC<MapProps> = ({ latitude, longitude, data }) => {
+const Map: React.FC<MapProps> = ({ latitude, longitude, data, onClick }) => {
   console.log(data);
   useEffect(() => {
     const loadKakaoMap = () => {
@@ -80,7 +81,8 @@ const Map: React.FC<MapProps> = ({ latitude, longitude, data }) => {
             customOverlay.setMap(null);
 
             window.kakao.maps.event.addListener(marker, "click", function () {
-              // router.push(`/detail/${item.hospitalName}?id=${item.hospitalId}`);
+              console.log(item);
+              onClick(item.priceId, item.latitude, item.longitude);
             });
 
             window.kakao.maps.event.addListener(

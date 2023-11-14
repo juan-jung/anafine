@@ -10,7 +10,7 @@ interface InputProps {
 const Input = forwardRef(
   (
     { value, placeholder, className = "input", onChange, ...props }: InputProps,
-    ref: Ref<HTMLInputElement>
+    ref: Ref<HTMLInputElement>,
   ) => {
     return (
       <input
@@ -23,7 +23,7 @@ const Input = forwardRef(
         {...props}
       />
     );
-  }
+  },
 );
 
 export default Input;

@@ -32,9 +32,9 @@ import com.sun.istack.NotNull;
 		"t.treatment_name, " +
         "t.path, " +
 		"h.address " +
-		"FROM Hospital h " +
-		"JOIN Price p ON p.hospital_id = h.hospital_id " +
-		"JOIN Treatment t ON p.treatment_id = t.treatment_id " +
+		"FROM hospital h " +
+		"JOIN price p ON p.hospital_id = h.hospital_id " +
+		"JOIN treatment t ON p.treatment_id = t.treatment_id " +
 		"WHERE " +
 		"IF(" +
 		"(:latitude - (:distance / 1000 * 0.009) >= -90) AND (:latitude + (:distance / 1000 * 0.009) <= 90) AND " +

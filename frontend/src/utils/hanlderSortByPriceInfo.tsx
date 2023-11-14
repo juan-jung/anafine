@@ -6,7 +6,7 @@ const handlerSortByPriceInfo = async (
   userLatitude: number,
   userLongitude: number,
   pageNum: number,
-  pageSize: number
+  pageSize: number,
 ) => {
   console.log("handlerSortByPriceInfo");
 
@@ -20,7 +20,7 @@ const handlerSortByPriceInfo = async (
   } catch (error) {
     console.error(
       "가격순으로 데이터를 불러오던 중 오류가 발생했습니다.",
-      error
+      error,
     );
     throw error;
   }

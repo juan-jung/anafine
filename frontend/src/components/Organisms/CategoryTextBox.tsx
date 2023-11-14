@@ -1,11 +1,11 @@
 // CategoryTextBox.tsx
 
-import React, { useState } from "react";
-import TextArea from "components/atoms/TextArea";
 import { Icon } from "@iconify/react";
-import { Button } from "components/atoms/Button";
-import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import { styled } from "@mui/material";
+import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
+import React, { useState } from "react";
+import { Button } from "components/atoms/Button";
+import TextArea from "components/atoms/TextArea";
 
 interface CategoryProps {
   category: {
@@ -61,14 +61,13 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
                   {text.name}
                   <div className="icon-container">
                     {text.isLeaf && (
-                      <div className="main-search-button">
-                        <Button
-                          children={<span>검색</span>}
-                          ver={"small"}
-                          onClick={() => {
-                            window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}&page=1`;
-                          }}
-                        />
+                      <div
+                        className="main-search-text"
+                        onClick={() => {
+                          window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}&page=1`;
+                        }}
+                      >
+                        검색
                       </div>
                     )}
                     &nbsp;

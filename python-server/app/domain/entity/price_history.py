@@ -16,4 +16,4 @@ class PriceHistory(Base):
     is_latest = Column(Boolean, nullable=False, default=True)
 
     #Many to One
-    price = relationship('Price', back_populates='price_histories', lazy='joined')
+    price = relationship('Price', back_populates='price_histories', lazy='noload')

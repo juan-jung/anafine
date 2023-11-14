@@ -13,7 +13,7 @@ class Category(Base):
     is_leaf = Column(Boolean, nullable=False, default=True)
     
     #Many to One
-    parent_category = relationship('Category', remote_side=[category_id], back_populates='sub_categories', lazy='joined')
+    parent_category = relationship('Category', remote_side=[category_id], back_populates='sub_categories', lazy='noload')
     #One to Many
     treatments = relationship('Treatment', back_populates='category', lazy='joined')
-    sub_categories = relationship('Category', remote_side=[parent_category_id], back_populates='parent_category', lazy='joined')
+    sub_categories = relationship('Category', remote_side=[parent_category_id], back_populates='parent_category', lazy='noload')

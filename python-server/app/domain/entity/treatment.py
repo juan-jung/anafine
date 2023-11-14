@@ -13,7 +13,7 @@ class Treatment(Base):
     info = Column(String(2000))
     
     #Many to One
-    category = relationship('Category', back_populates='treatments', lazy='joined')
+    category = relationship('Category', back_populates='treatments', lazy='noload')
     #One to Many
-    prices = relationship('Price', back_populates='treatment', lazy='joined')
+    prices = relationship('Price', back_populates='treatment', lazy='noload')
     

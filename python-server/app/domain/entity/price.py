@@ -15,7 +15,7 @@ class Price(Base):
     max_price = Column(Integer, nullable=False, default=0)
 
     #Many to One
-    hospital = relationship('Hospital', back_populates='prices', lazy='joined')
-    treatment = relationship('Treatment', back_populates='prices', lazy='joined')
+    hospital = relationship('Hospital', back_populates='prices', lazy='noload')
+    treatment = relationship('Treatment', back_populates='prices', lazy='noload')
     #One to Many
-    price_histories = relationship('PriceHistory', back_populates='price', lazy='joined')
+    price_histories = relationship('PriceHistory', back_populates='price', lazy='noload')

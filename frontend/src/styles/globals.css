@@ -752,3 +752,13 @@ a {
   /* justify-content: space-between; */
   /* align-items: center; */
 }
+
+.arrow{
+  font-size: 48px;
+  font-weight: 700;
+  color:white;
+}
+
+.arrow:hover{
+  cursor: pointer;
+}

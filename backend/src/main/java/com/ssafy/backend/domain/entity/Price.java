@@ -32,7 +32,7 @@ import com.sun.istack.NotNull;
 		"t.treatment_name, " +
         "t.path, " +
 		"h.address " +
-		"FROM Hospital h " +
+		"FROM hospital h " +
 		"JOIN Price p ON p.hospital_id = h.hospital_id " +
 		"JOIN Treatment t ON p.treatment_id = t.treatment_id " +
 		"WHERE " +

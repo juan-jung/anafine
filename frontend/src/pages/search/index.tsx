@@ -2,17 +2,16 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { GetServerSideProps, NextPage } from "next";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import Pagination from "components/Organisms/Pagination";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
+import handlerSortByDistInfo from "utils/handlerSortByDistInfo";
 import HospitalDetail from "components/Organisms/HospitalDetail";
 
 type SearchPageProps = {
   id: string;
   path: string;
-  page: number;
   data?: any;
 };
 
@@ -26,16 +25,18 @@ const DynamicSearchCell = dynamic(
   () => import("components/Organisms/SearchCell")
 );
 
-const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
+const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   const [mapCenter, setMapCenter] = useState({
     latitude: myLatitude,
     longitude: myLongitude,
   });
-  const router = useRouter();
-  const pageNum = page;
+  const [pageNum, setPageNum] = useState(1);
   const [initialData, setInitialData] = useState<any>(data);
   const [detailVisible, setDetailVisible] = useState(false);
   const [hospitalId, setHospitalId] = useState("");
+  const [selectedDist, setSelectedDist] = useState("5000");
+  const [selectedSort, setSelectedSort] = useState("cost");
+  console.log(selectedSort);
 
   useEffect(() => {
     setInitialData(data);
@@ -43,7 +44,26 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 
   const onPageChange = (page: number) => {
     if (0 < page && page < initialData.totalPages + 1) {
-      router.push(`/search/?path=${path}&id=${id}&page=${page}`);
+      setPageNum(page);
+      if (selectedSort === "cost") {
+        handlerSortByPriceInfo(
+          id,
+          Number(selectedDist),
+          myLatitude,
+          myLongitude,
+          page - 1,
+          12
+        ).then((data) => setInitialData(data));
+      } else {
+        handlerSortByDistInfo(
+          id,
+          Number(selectedDist),
+          myLatitude,
+          myLongitude,
+          page - 1,
+          12
+        ).then((data) => setInitialData(data));
+      }
     }
   };
 
@@ -55,6 +75,56 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 
   const onCloseClick = () => {
     setDetailVisible(false);
+  };
+
+  const handleSelectDistChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setSelectedDist(event.target.value);
+    if (selectedSort === "cost") {
+      handlerSortByPriceInfo(
+        id,
+        Number(event.target.value),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    } else {
+      handlerSortByDistInfo(
+        id,
+        Number(event.target.value),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    }
+  };
+
+  const handleSelectSortChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    setSelectedSort(event.target.value);
+    if (event.target.value === "cost") {
+      handlerSortByPriceInfo(
+        id,
+        Number(selectedDist),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    } else {
+      handlerSortByDistInfo(
+        id,
+        Number(selectedDist),
+        myLatitude,
+        myLongitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    }
   };
 
   return (
@@ -85,6 +155,28 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
               />
             ) : (
               <div className="search-result">
+                <div className="search-select">
+                  반경 선택 :
+                  <select
+                    id="selectDist"
+                    value={selectedDist}
+                    onChange={handleSelectDistChange}
+                  >
+                    <option value="1000">1km</option>
+                    <option value="5000">5km</option>
+                    <option value="10000">10km</option>
+                    <option value="50000">50km</option>
+                  </select>
+                  &nbsp;&nbsp;&nbsp;정렬 기준 :
+                  <select
+                    id="selectSort"
+                    value={selectedSort}
+                    onChange={handleSelectSortChange}
+                  >
+                    <option value="cost">가격 순</option>
+                    <option value="distance">거리 순</option>
+                  </select>
+                </div>
                 <DynamicSearchCell
                   data={initialData.content}
                   onClick={onClick}
@@ -108,10 +200,9 @@ export default SearchPage;
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   context
 ) => {
-  const { path, id, page } = context.query as {
+  const { path, id } = context.query as {
     path: string;
     id: string;
-    page: string;
   };
 
   try {
@@ -120,7 +211,7 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
       5000,
       myLatitude,
       myLongitude,
-      Number(page) - 1,
+      0,
       12
     );
 
@@ -128,7 +219,6 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
       props: {
         path: path,
         id: id,
-        page: Number(page),
         data: data,
       },
     };
@@ -138,7 +228,6 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
       props: {
         path: path,
         id: id,
-        page: Number(page),
         data: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
       },
     };

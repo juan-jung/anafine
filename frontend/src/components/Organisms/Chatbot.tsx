@@ -69,6 +69,7 @@ const Chatbot: React.FC = () => {
   };
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log("클릭");
     if (e.key === "Enter") {
       setMessages((messages) => [
         ...messages,
@@ -117,7 +118,11 @@ const Chatbot: React.FC = () => {
           className={styles["chatbot-popup-container"]}
           onClick={handleOpenChatbot}
         >
-          chat
+          <img
+            src="/infoPic/chatbot.png"
+            alt="Chat Icon"
+            style={{ width: "85%", height: "auto" }}
+          />
         </div>
       ) : (
         <div className={styles["chatbot-container"]}>
@@ -136,18 +141,46 @@ const Chatbot: React.FC = () => {
             </button>
           </div>
           {chatMode === "diseasePrediction" ? (
-            <>
-              <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
-
-              <div className={styles["chatbot-header"]}>
-                <div className={styles["chatbot-messages"]}>
-                  {messages.map((msg, index) => (
-                    <div key={index} className={`message ${msg.sender}`}>
+            <div className={styles["whole-container"]}>
+              <div
+                onClick={handleOpenChatbotDown}
+                className={styles["flex-container"]}
+              >
+                <div style={{ marginLeft: "200x" }}></div>
+                <h3
+                  className={styles["chatbot-head"]}
+                  style={{ marginLeft: "160px" }}
+                >
+                  AI 질병 예측
+                </h3>
+                <img
+                  src="/infoPic/close.png"
+                  alt="Chat Icon"
+                  style={{ width: "5%", height: "auto", marginLeft: "160px" }}
+                />
+              </div>
+              <div className={styles["chat-container"]}>
+                {messages.map((msg, index) => (
+                  <div
+                    key={index}
+                    className={styles["message-container"]}
+                    style={{
+                      flexDirection:
+                        msg.sender === "user" ? "row-reverse" : "row",
+                    }}
+                  >
+                    <div
+                      className={`${styles.message} ${
+                        msg.sender === "user" ? styles.user : styles.bot
+                      }`}
+                    >
                       {msg.text}
                     </div>
-                  ))}
-                </div>
-                {currentStep < questions.length && (
+                  </div>
+                ))}
+              </div>
+              {currentStep < questions.length && (
+                <div className={styles["flex-container-bottom"]}>
                   <input
                     className={styles["chatbot-input"]}
                     type="text"
@@ -156,24 +189,65 @@ const Chatbot: React.FC = () => {
                     onChange={handleUserInput}
                     onKeyPress={handleKeyPress}
                   />
-                )}
-              </div>
-            </>
+                  <img
+                    src="/infoPic/next.png"
+                    alt="next Icon"
+                    style={{
+                      width: "8%",
+                      height: "auto",
+                    }}
+                  />
+                </div>
+              )}
+            </div>
           ) : (
-            <>
-              <h3 className={styles["chatbot-head-normal"]}>대화</h3>
-              <div className={styles["chatbot-header-normal"]}>
-                <div className={styles["chatbot-messages-normal"]}></div>
+            <div className={styles["whole-container"]}>
+              <div
+                onClick={handleOpenChatbotDown}
+                className={styles["flex-container"]}
+              >
+                <div style={{ marginLeft: "200x" }}></div>
+                <h3
+                  className={styles["chatbot-head"]}
+                  style={{ marginLeft: "160px" }}
+                >
+                  AI 일반 대화
+                </h3>
+                <img
+                  src="/infoPic/close.png"
+                  alt="Chat Icon"
+                  style={{ width: "5%", height: "auto", marginLeft: "160px" }}
+                />
+              </div>
+              <div className={styles["chat-container"]}>
+                {messages.map((msg, index) => (
+                  <div
+                    key={index}
+                    className={styles["message-container"]}
+                    style={{
+                      flexDirection:
+                        msg.sender === "user" ? "row-reverse" : "row",
+                    }}
+                  >
+                    <div
+                      className={`${styles.message} ${
+                        msg.sender === "user" ? styles.user : styles.bot
+                      }`}
+                    >
+                      {msg.text}
+                    </div>
+                  </div>
+                ))}
               </div>
               <input
-                className={styles["chatbot-input-normal"]}
+                className={styles["chatbot-input"]}
                 type="text"
                 placeholder="답변을 입력하세요"
                 value={userInput}
-                // onChange={handleUserInput}
-                // onKeyPress={handleKeyPress}
+                onChange={handleUserInput}
+                onKeyPress={handleKeyPress}
               />
-            </>
+            </div>
           )}
         </div>
       )}

@@ -1,10 +1,10 @@
 .chatbot-container {
-  /* background: rgb(92, 130, 255); */
+  /* background: rgb(92, 130, 255);
   background: linear-gradient(
     90deg,
     rgba(157, 92, 255, 1) 0%,
     rgba(92, 130, 255, 1) 100%
-  );
+  ); */
   position: fixed;
   bottom: 0px;
   right: 20px;
@@ -42,34 +42,12 @@
   padding: 1.4rem;
 }
 
-.chatbot-messages {
-  flex-grow: 1;
-  padding: 10px;
-  overflow-y: auto;
-  font-size: large;
-}
-
-.chatbot-message {
-  margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.user-message {
-  background-color: #dcf8c6;
-  align-self: flex-end;
-}
-
-.bot-message {
-  background-color: #f1f0f0;
-  align-self: flex-start;
-}
-
 .chatbot-input {
   border: none;
   padding: 10px;
   border-top: 1px solid #ddd;
-  width: 58vh;
+  width: 60vh;
+  border-radius: 8px; /* 모서리 둥글게 설정 */
 }
 
 .chatbot-button {
@@ -83,6 +61,8 @@
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  min-height: 29px;
 }
 
 .chatbot-button-normal {
@@ -157,4 +137,79 @@
 
 .chatbot-button {
   height: 10px;
+}
+
+.flex-container {
+  background: rgb(92, 130, 255);
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  border-radius: 8px 8px 0 0; /* 위쪽 모서리만 둥글게 설정 */
+}
+
+.chatbot-input::placeholder {
+  font-family: "omyu_pretty", sans-serif; /* 내가 원하는 폰트로 변경 */
+  color: #999; /* 원하는 색상으로 변경 */
+}
+
+.whole-container {
+  border-radius: 8px; /* 모서리 둥글게 설정 */
+}
+
+.flex-container-bottom {
+  display: flex;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  border-radius: 8px; /* 위쪽 모서리만 둥글게 설정 */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  background-color: white;
+  overflow-y: scroll;
+}
+
+.chat-container::-webkit-scrollbar {
+  width: 12px; /* 수직 스크롤의 너비를 조절합니다. */
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #625c5c; /* 스크롤 바의 색상을 조절합니다. */
+  border-radius: 6px; /* 스크롤 바의 모서리를 둥글게 조절합니다. */
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background-color: #eee; /* 스크롤 바 트랙의 색상을 조절합니다. */
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between; /* 각각의 말풍선을 양 끝에 정렬 */
+  margin-bottom: 5px; /* 말풍선 간격을 조절 */
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.message.bot {
+  background-color: #70a3da;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  max-width: 70%;
+}
+
+.message.user {
+  background-color: rgb(135, 205, 135);
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  max-width: 70%; /* 말풍선 최대 너비 설정 */
+}
+
+.next-button-container {
+  cursor: pointer; /* 마우스를 가져다 대면 포인터 모양으로 변경 */
+  /* 추가적인 스타일링을 원하는 대로 작성 */
 }

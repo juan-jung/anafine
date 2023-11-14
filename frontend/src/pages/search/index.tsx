@@ -7,6 +7,7 @@ import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import Pagination from "components/Organisms/Pagination";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
+import HospitalDetail from "components/Organisms/HospitalDetail";
 
 type SearchPageProps = {
   id: string;
@@ -33,6 +34,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
   const router = useRouter();
   const pageNum = page;
   const [initialData, setInitialData] = useState<any>(data);
+  const [detailVisible, setDetailVisible] = useState(false);
+  const [hospitalId, setHospitalId] = useState("");
 
   useEffect(() => {
     setInitialData(data);
@@ -42,6 +45,15 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
     if (0 < page && page < initialData.totalPages + 1) {
       router.push(`/search/?path=${path}&id=${id}&page=${page}`);
     }
+  };
+
+  const onClick = (id: string) => {
+    setHospitalId(id);
+    setDetailVisible(true);
+  };
+
+  const onCloseClick = () => {
+    setDetailVisible(false);
   };
 
   return (
@@ -61,17 +73,23 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
                 latitude={mapCenter.latitude}
                 longitude={mapCenter.longitude}
                 data={initialData.content}
-                router={router}
               />
             </div>
-            <div className="search-result">
-              <DynamicSearchCell data={initialData.content} router={router} />
-              <Pagination
-                pageNum={pageNum}
-                totalPages={initialData.totalPages}
-                onPageChange={onPageChange}
-              />
-            </div>
+            {detailVisible ? (
+              <HospitalDetail id={hospitalId} onCloseClick={onCloseClick} />
+            ) : (
+              <div className="search-result">
+                <DynamicSearchCell
+                  data={initialData.content}
+                  onClick={onClick}
+                />
+                <Pagination
+                  pageNum={pageNum}
+                  totalPages={initialData.totalPages}
+                  onPageChange={onPageChange}
+                />
+              </div>
+            )}
           </div>
         </div>
       </main>
@@ -82,7 +100,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
 export default SearchPage;
 
 export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
-  context,
+  context
 ) => {
   const { path, id, page } = context.query as {
     path: string;
@@ -93,11 +111,11 @@ export const getServerSideProps: GetServerSideProps<SearchPageProps> = async (
   try {
     const data = await handlerSortByPriceInfo(
       id,
-      150000,
+      5000,
       myLatitude,
       myLongitude,
       Number(page) - 1,
-      9
+      12
     );
 
     return {

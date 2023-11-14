@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { NextRouter } from "next/router";
 import { useEffect } from "react";
 
 declare global {
@@ -12,10 +11,8 @@ interface MapProps {
   latitude: number;
   longitude: number;
   data: any[];
-  router: NextRouter;
 }
-
-export default function Map({ latitude, longitude, data, router }: MapProps) {
+const Map: React.FC<MapProps> = ({ latitude, longitude, data }) => {
   console.log(data);
   useEffect(() => {
     const loadKakaoMap = () => {
@@ -46,13 +43,13 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
           const markerImage = new window.kakao.maps.MarkerImage(
             markerImageUrl,
             markerImageSize,
-            markerImageOptions,
+            markerImageOptions
           );
 
           data.forEach((item) => {
             const markerPosition = new window.kakao.maps.LatLng(
               item.latitude,
-              item.longitude,
+              item.longitude
             );
 
             const marker = new window.kakao.maps.Marker({
@@ -83,7 +80,7 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
             customOverlay.setMap(null);
 
             window.kakao.maps.event.addListener(marker, "click", function () {
-              router.push(`/detail/${item.hospitalName}?id=${item.hospitalId}`);
+              // router.push(`/detail/${item.hospitalName}?id=${item.hospitalId}`);
             });
 
             window.kakao.maps.event.addListener(
@@ -91,14 +88,14 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
               "mouseover",
               function () {
                 customOverlay.setMap(map);
-              },
+              }
             );
             window.kakao.maps.event.addListener(
               marker,
               "mouseout",
               function () {
                 customOverlay.setMap(null);
-              },
+              }
             );
           });
         });
@@ -111,9 +108,11 @@ export default function Map({ latitude, longitude, data, router }: MapProps) {
   }, [latitude, longitude, data]);
 
   return <MapContainer id="map" />;
-}
+};
 
 const MapContainer = styled.div`
   width: 35vw;
   height: 75vh;
 `;
+
+export default Map;

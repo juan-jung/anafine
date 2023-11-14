@@ -742,3 +742,13 @@ a {
   height: 100%;
   display: flex;
 }
+
+.arrow{
+  font-size: 48px;
+  font-weight: 700;
+  color:white;
+}
+
+.arrow:hover{
+  cursor: pointer;
+}

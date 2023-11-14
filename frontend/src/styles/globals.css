@@ -290,7 +290,7 @@ a {
 .icon-container {
   display: flex;
   flex-direction: row;
-  min-width: 20px;
+  min-width: 50px;
   justify-content: right;
   align-items: center;
 }
@@ -317,11 +317,12 @@ a {
 .search-container {
   display: flex;
   flex-direction: column;
-  padding-top: 3vh;
 }
 
 .search-title {
-  font-size: 20px;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-bottom: 15px;
 }
 
 .search-result-text.selected {
@@ -333,37 +334,45 @@ a {
 }
 
 .search-result {
-  display: flex;
   width: 50vw;
   height: 70vh;
-  overflow: auto;
+  padding-left: 10px;
 }
-
-.hospital-table {
-  border-collapse: collapse;
-  font-size: 18px;
+.search-result table {
   width: 100%;
-  height: 100%;
+  border-collapse: collapse;
 }
 
-.hospital-table th {
+.search-result th {
+  padding: 10px;
+  border: 1px solid #ddd;
   text-align: center;
-  height: 6vh;
-  border: 1px solid #d0d0d0;
-  padding: 8px;
-  background-color: #ededed;
+  background-color: #f5f6f7;
 }
-
-.hospital-table td {
+.search-result td {
+  padding: 10px;
+  border: 1px solid #ddd;
   text-align: center;
-  height: 6vh;
-  border: 1px solid #d0d0d0;
-  padding: 8px;
 }
 
-.main-search-button {
+.search-result td:first-child {
+  text-align: left;
+}
+
+.search-detail {
+  width: 50vw;
+  height: 70vh;
+}
+.no-result {
+  font-size: 28px;
+}
+
+.main-search-text {
   display: flex;
   justify-content: right;
+}
+.main-search-text:hover {
+  cursor: pointer;
 }
 
 .selected-text {
@@ -371,80 +380,164 @@ a {
   color: white;
 }
 
+.hospital-detail {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 70vh;
+  padding-left: 20px;
+}
+
+/* 표 관련 css */
+.detail-title-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.detail-button {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.detail-button:hover {
+  cursor: pointer;
+}
+
+.detail-cell:hover {
+  cursor: pointer;
+}
+
+.detail-title2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detail-content {
+  font-size: 18px;
+}
+.detail-content2 {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.detail-subtitle {
+  font-weight: bold;
+}
+
+.detail-content table,
+.detail-content2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-content th,
+.detail-content td,
+.detail-content2 th,
+.detail-content2 td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.detail-content td:first-child,
+.detail-content2 td:first-child {
+  text-align: left;
+}
+
+/* 페이지네이션 관련 css */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-arrow {
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.pagination-arrow.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-number {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination-number.selected {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* 커스텀 오버레이 관련 css */
+.overlay-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 288px;
+  margin-left: -144px;
+  text-align: left;
+}
+
+.overlay-info {
+  border-radius: 5px;
+  border-bottom: 2px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #fff;
+}
+
+.overlay-title {
+  padding: 5px 5px 5px 10px;
+  height: 30px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  font-family: "omyu_pretty";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overlay-body {
+  display: flex;
+  position: relative;
+  overflow: visible;
+  white-space: pre-wrap;
+  font-family: "omyu_pretty";
+  font-size: 18px;
+  padding: 10px 0px 5px 10px;
+  flex-grow: 1;
+}
+
+.overlay-desc {
+  display: flex;
+  justify-content: left;
+  font-family: "omyu_pretty";
+  font-size: 16px;
+  padding-left: 10px;
+  color: #888888;
+}
+
 /* 이용약관 페이지 관련 css */
 .rule-text {
   display: flex;
   flex-direction: column;
   justify-content: left;
-}
-
-/* 커스텀 레이아웃 관련 css */
-.wrap {
-  position: absolute;
-  left: 0;
-  bottom: 40px;
-  width: 288px;
-  height: 132px;
-  margin-left: -144px;
-  text-align: left;
-  overflow: hidden;
-  font-size: 12px;
-  font-family: "Malgun Gothic", dotum, "돋움", sans-serif;
-  line-height: 1.5;
-}
-
-.info {
-  width: 286px;
-  height: 120px;
-  border-radius: 5px;
-  border-bottom: 2px solid #ccc;
-  border-right: 1px solid #ccc;
-  overflow: hidden;
-  background: #fff;
-}
-
-.title {
-  padding: 5px 0 0 10px;
-  height: 30px;
-  background: #eee;
-  border-bottom: 1px solid #ddd;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #888;
-  width: 17px;
-  height: 17px;
-  background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png);
-}
-
-.body {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.img {
-  position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 73px;
-  height: 71px;
-  border: 1px solid #ddd;
-  color: #888;
-  overflow: hidden;
-}
-
-.desc {
-  position: relative;
-  margin: 13px 0 0 90px;
-  height: 75px px;
 }
 
 /* 스크롤바 css */
@@ -475,6 +568,7 @@ a {
   background-color: #888888;
   transform-origin: 0%;
 }
+<<<<<<< HEAD
 
 /* 말풍선 CSS */
 .bubble {
@@ -752,3 +846,5 @@ a {
   /* justify-content: space-between; */
   /* align-items: center; */
 }
+=======
+>>>>>>> 423a6bdb98e76f152e66a4133cb13357108a6dee

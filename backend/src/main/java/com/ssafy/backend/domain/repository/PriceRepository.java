@@ -19,7 +19,7 @@ public interface PriceRepository extends JpaRepository<Price, Long> {
 
 	// TODO : Page<Price> findByTreatment_NameOrderByMinPriceAsc(String name, Pageable pageable); 페이지네이션 구현
 	@Query(name = "findNearby")
-	List<Object[]> findNearby(@Param("treatmentId") String treatmentId, @Param("distance") double distance, @Param("latitude") double latitude, @Param("longitude") double longitude, Pageable pageable);
+	List<Object[]> findNearby(@Param("treatmentId") String treatmentId, @Param("distance") double distance, @Param("latitude") double latitude, @Param("longitude") double longitude);
 
 
 }

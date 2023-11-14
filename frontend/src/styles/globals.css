@@ -334,70 +334,35 @@ a {
 }
 
 .search-result {
-  display: flex;
-  flex-direction: column;
   width: 50vw;
   height: 70vh;
   padding-left: 10px;
 }
-
-.hospital-table {
-  display: table;
+.search-result table {
+  width: 100%;
   border-collapse: collapse;
-  font-size: 18px;
-  width: 100%;
-  height: 100%;
 }
 
-.hospital-table thead tr,
-.hospital-table tbody tr {
-  display: table-row;
-  height: 6vh;
-  width: 100%;
-}
-
-.hospital-table th {
-  display: table-cell;
+.search-result th {
+  padding: 10px;
+  border: 1px solid #ddd;
   text-align: center;
-  border: 1px solid #d0d0d0;
-  border-top: 1px solid #000000;
-  padding: 8px;
-  font-size: 20px;
-  background-color: #ededed;
+  background-color: #f5f6f7;
 }
-
-.hospital-table th:first-child {
-  border-left: none;
-}
-
-.hospital-table th:last-child {
-  border-right: none;
-}
-
-.hospital-table td {
-  display: table-cell;
+.search-result td {
+  padding: 10px;
+  border: 1px solid #ddd;
   text-align: center;
-  border: 1px solid #d0d0d0;
-  padding: 8px;
-  font-size: 18px;
 }
 
-.hospital-table td:first-child {
-  border-left: none;
+.search-result td:first-child {
+  text-align: left;
 }
 
-.hospital-table td:last-child {
-  border-right: none;
+.search-detail {
+  width: 50vw;
+  height: 70vh;
 }
-
-.hospital-table tbody tr td.detail-cell {
-  cursor: pointer;
-}
-
-.hospital-table tbody tr td.detail-cell:hover {
-  color: #0050ff;
-}
-
 .no-result {
   font-size: 28px;
 }
@@ -413,6 +378,80 @@ a {
 .selected-text {
   background-color: #0099ff;
   color: white;
+}
+
+.hospital-detail {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 70vh;
+  padding-left: 20px;
+}
+
+/* 표 관련 css */
+.detail-title-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.detail-button {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.detail-button:hover {
+  cursor: pointer;
+}
+
+.detail-cell:hover {
+  cursor: pointer;
+}
+
+.detail-title2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detail-content {
+  font-size: 18px;
+}
+.detail-content2 {
+  width: 100%;
+  height: 70vh;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.detail-subtitle {
+  font-weight: bold;
+}
+
+.detail-content table,
+.detail-content2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-content th,
+.detail-content td,
+.detail-content2 th,
+.detail-content2 td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.detail-content td:first-child,
+.detail-content2 td:first-child {
+  text-align: left;
 }
 
 /* 페이지네이션 관련 css */

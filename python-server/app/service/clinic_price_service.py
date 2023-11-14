@@ -8,9 +8,12 @@ from app.domain.entity import Hospital, Price, PriceHistory, Treatment
 from app.domain.repository.common_repository import find_or_create_if_not_exist
 import datetime
 from dataclasses import dataclass, field
-
-
+from collections import deque, defaultdict
+import threading
+lock = threading.Lock()
+import json
 MAX_QUEUE_SIZE = 1000
+from app.util.request_util import get_response
 
 
 @dataclass
@@ -32,16 +35,7 @@ class HospitalData:
     hospital_name: str
     treatment_datas: list[TreatmentData] = field(default_factory=list)
 
-# step 1.
-# 기존 세션에서 31 의원 51 치과의원 93 한의원인 병원들 리스트를 가져올 것이다.
-# 이들에 대해, modified_at을 기준으로 오래된 애들부터 1000개 가져온다.
-# 세션을 롤백한다. 이 경우에도 가져온 1000개는 그대로 유지된다. 
-# 가져온 애들의 modified_at에 현재 시간을 넣어준다.
-# flush 해준다. # 이거 메모리가 아니라 db에서 해주는게 나을것 같은데, queue 탑재 시간을 따로 관리하고
-# queue를 db에 따로 저장해주는 게 나을 것 같기는 해 추후 수정 해보자고
-# 세션에서 가져온 객체들에서 {'hospital_id":hospital_id, 'hospital_name':hospital_name} 형태로 정보를 얻어, deque에 넣어준다.
 
-# step 1
 clinic_codes = set([31, 51, 93])
 def get_new_hospital_infos(session, num_of_hospitals:int) -> list[dict]:
     hospital_infos = []
@@ -55,28 +49,62 @@ def get_new_hospital_infos(session, num_of_hospitals:int) -> list[dict]:
         hospital.is_in_queue = True
     
     for hospital in hospitals:
-        hospital_infos.append({'hospital_id':hospital.hospital_id, 'hospital_name':hospital.hospital_name, 'hospital_address':hospital.address.split(',')[0]})
+        address_parts = hospital.address.split(',')[0].split(' ')
+        address = ' '.join(address_parts[:-1])
+        hospital_infos.append({'hospital_id':hospital.hospital_id, 'hospital_name':hospital.hospital_name, 'hospital_address':address})
     return hospital_infos
 
-
-# step 1-1
-# deque에 추가한다.
-from collections import deque
-
-
-# step 2
 def get_hospital_infos_from_deque(info_deque:deque, nums:int) -> list[dict]:
     return [info_deque.popleft() for _ in range(nums)]
+def convert_json_to_hospital_data(json_data:str) -> list[HospitalData]:
+    hospital_data_list = []
+    for hospital_dict in json.loads(json_data):
+        # TreatmentData 리스트 생성
+        treatment_datas = []
+        for treatment_dict in hospital_dict.get('treatment_datas', []):
+            # PriceData 리스트 생성
+            price_datas = [PriceData(**price_dict) for price_dict in treatment_dict.get('price_datas', [])]
+            treatment_data = TreatmentData(middle_category=treatment_dict['middle_category'],
+                                           small_category=treatment_dict['small_category'],
+                                           detail_category=treatment_dict['detail_category'],
+                                           price_datas=price_datas)
+            treatment_datas.append(treatment_data)
 
-def crawl_hospital_info(hospital_infos:list[dict]) -> list[HospitalData]|None:
-    try:
-        from app.service.hira_crawling_service import do_crawling
-        import asyncio
-        return asyncio.run(do_crawling(hospital_infos))
-    except Exception as e:
-        print(e)
-        print("ERROR: 크롤링 중 에러가 발생했습니다.")
-        return None
+        # HospitalData 객체 생성
+        hospital_data = HospitalData(hospital_id=hospital_dict['hospital_id'],
+                                     hospital_name=hospital_dict['hospital_name'],
+                                     treatment_datas=treatment_datas)
+        hospital_data_list.append(hospital_data)
+    return hospital_data_list
+
+
+def crawl_hospital_info(hospital_infos:list[dict], crawling_server_url:str) -> list[HospitalData]:
+    hospital_infos_json = json.dumps(hospital_infos)
+    response = get_response(f"http://{crawling_server_url}/crawl/hira", type='POST', json=hospital_infos_json)
+    return convert_json_to_hospital_data(response)
+
+
+def check_and_refill_deque(hospital_info_deque:deque, nums:int):
+    if len(hospital_info_deque) < nums :
+        with Session() as session:
+            session.query(Hospital)\
+                .filter(Hospital.is_in_queue == True)\
+                .update({Hospital.is_in_queue:False})
+            session.query(Hospital)\
+                .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in hospital_info_deque]))\
+                .filter(Hospital.is_in_queue == False)\
+                .update({Hospital.is_in_queue:True})
+            session.flush()
+            
+            hospital_infos = get_new_hospital_infos(session, MAX_QUEUE_SIZE - len(hospital_info_deque))
+            session.query(Hospital)\
+                .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in hospital_infos]))\
+                .filter(Hospital.is_in_queue == False)\
+                .update({Hospital.is_in_queue:True})
+                
+            hospital_info_deque.extend(hospital_infos)
+            session.commit()
+            
 
 
 class ClinicPriceService:
@@ -89,86 +117,78 @@ class ClinicPriceService:
         return cls._instance  # 인스턴스 반환
 
     def __init__(self):
-        self.running = False
+        self.running_dict = defaultdict(bool)
+        self.hospital_info_deque = deque()
     
-    def start_data_collection(self):
-        return {"message":"success"}
-
-    def stop_data_collection(self):
-        self.running = False
-        return {"message":"stop success"}
-
-    def show_state_crawling(self):
-        if self.running :
-            return {"message":"running state crawling"}
-        else :
-            return {"message":"stop state crawling"} 
-        
-    def test(self, nums):
-        hospital_infos_deque = deque()
-        self.running = True
-        
-        while self.running :
-            if len(hospital_infos_deque) < nums :
-                with Session() as session:
-                    session.query(Hospital)\
-                        .filter(Hospital.is_in_queue == True)\
-                        .update({Hospital.is_in_queue:False})
-                    session.query(Hospital)\
-                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in hospital_infos_deque]))\
-                        .update({Hospital.is_in_queue:True})
-                    hospital_infos = get_new_hospital_infos(session, MAX_QUEUE_SIZE - len(hospital_infos_deque))
-                    session.commit()
-                hospital_infos_deque.extend(hospital_infos)
-            now_infos = get_hospital_infos_from_deque(hospital_infos_deque, nums)
+    def start_data_collection(self, nums:int, crawling_server_url:str):
+        if self.running_dict[crawling_server_url] : 
+            return {"message":"already running"}
+        self.running_dict[crawling_server_url] = True 
+        while self.running_dict[crawling_server_url] :
+            with lock:
+                check_and_refill_deque(self.hospital_info_deque, nums)
             
             with Session() as session:
-                session.query(Hospital)\
-                    .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
-                    .filter(Hospital.is_in_queue == True)\
-                    .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
-                session.commit()
-                
-            hospital_datas = crawl_hospital_info(now_infos)
-            if not hospital_datas : # 데이터를 가져오는데 실패했을 경우
-                return {"message":"crawling error"}
-            
-            print("데이터 로딩 성공!")
-            
-            with Session() as new_session:
-                new_entities = []
-                updated_prices = set()
-                for hospital_data in hospital_datas:
-                    hospital = find_or_create_if_not_exist(new_session, Hospital, hospital_id=hospital_data.hospital_id)
-                    hospital.modified_at = datetime.datetime.now()
+                now_infos = get_hospital_infos_from_deque(self.hospital_info_deque, nums)
+                try :
+                    session.query(Hospital)\
+                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
+                        .filter(Hospital.is_in_queue == True)\
+                        .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
                     
-                    for treatment_data in hospital_data.treatment_datas:
-                        path_of_treatment = f"{treatment_data.middle_category}/{treatment_data.small_category}"
-                        if treatment_data.detail_category : # 빈 문자열이면 false
-                            path_of_treatment += f"/{treatment_data.detail_category}"
-                        treatment = find_or_create_if_not_exist(new_session, Treatment, path = path_of_treatment)
+                    hospital_datas = crawl_hospital_info(now_infos, crawling_server_url)
+                    if not hospital_datas : # 데이터를 가져오는데 실패했을 경우
+                        return {"message":"crawling error"}
+                    print(f"데이터 로딩 성공! - {crawling_server_url}")
+                    
+                    new_entities = []
+                    updated_prices = set()
+                    for hospital_data in hospital_datas:
+                        hospital = find_or_create_if_not_exist(session, Hospital, hospital_id=hospital_data.hospital_id)
+                        hospital.modified_at = datetime.datetime.now()
                         
-                        created_at = datetime.datetime.now()
-                        
-                        for price_data in treatment_data.price_datas:
-                            price = find_or_create_if_not_exist(new_session, Price, treatment_id=treatment.treatment_id, hospital_id=hospital.hospital_id)
-                            cur_cost = int(price_data.price.replace(',', ''))
-                            price.max_price = max(price.max_price, cur_cost)
-                            price.min_price = min(price.min_price, cur_cost)
-                            updated_prices.add(price.price_id)
+                        for treatment_data in hospital_data.treatment_datas:
+                            path_of_treatment = f"{treatment_data.middle_category}/{treatment_data.small_category}"
+                            if treatment_data.detail_category : # 빈 문자열이면 false
+                                path_of_treatment += f"/{treatment_data.detail_category}"
+                            treatment = find_or_create_if_not_exist(session, Treatment, path = path_of_treatment)
                             
-                            price_history = PriceHistory(price_id=price.price_id, cost=cur_cost, significant=price_data.div, info=price_data.info, created_at=created_at)
-                            new_entities.append(price_history)
-                if updated_prices:
-                    new_session.query(PriceHistory)\
-                            .filter(PriceHistory.price_id.in_(updated_prices))\
-                            .filter(PriceHistory.is_latest == True)\
-                            .update({PriceHistory.is_latest: False})
-                new_session.add_all(new_entities)
-                new_session.commit()
-                print("커밋 성공")
-        
-        
+                            created_at = datetime.datetime.now()
+                            
+                            for price_data in treatment_data.price_datas:
+                                price = find_or_create_if_not_exist(session, Price, treatment_id=treatment.treatment_id, hospital_id=hospital.hospital_id)
+                                cur_cost = int(price_data.price.replace(',', ''))
+                                price.max_price = max(price.max_price, cur_cost)
+                                price.min_price = min(price.min_price, cur_cost)
+                                updated_prices.add(price.price_id)
+                                
+                                price_history = PriceHistory(price_id=price.price_id, cost=cur_cost, significant=price_data.div, info=price_data.info, created_at=created_at)
+                                new_entities.append(price_history)
+                    if updated_prices:
+                        session.query(PriceHistory)\
+                                .filter(PriceHistory.price_id.in_(updated_prices))\
+                                .filter(PriceHistory.is_latest == True)\
+                                .update({PriceHistory.is_latest: False})
+                    session.add_all(new_entities)
+                    session.commit()
+                    print(f"커밋 성공 - {crawling_server_url}")
+                except Exception as e: #다시 deque 에 돌려놓고 멈추기
+                    print(e)
+                    print(f"데이터 로딩 실패! - {crawling_server_url}")
+                    with lock:
+                        self.hospital_info_deque.extend(now_infos)
+                    self.running_dict[crawling_server_url] = False
+                    return {"message":"crawling error"}
+        return {"message":"running success"}
 
+    def stop_data_collection(self, crawling_server_url:str):
+        if crawling_server_url == 'all':
+            self.running_dict = defaultdict(bool)
+        self.running_dict[crawling_server_url] = False
+        return {"message":"stop success"}
+
+    def show_running_crwaling_server(self):
+        return {"running_crawling_server":[key for key, value in self.running_dict.items() if value]}
+        
 
 

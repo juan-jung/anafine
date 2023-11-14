@@ -1,13 +1,14 @@
 import asyncio
 from playwright.async_api import async_playwright, Playwright, Page, ElementHandle
-from app.service.clinic_price_service import HospitalData, TreatmentData, PriceData
+from app.service.crawling_service import HospitalData, TreatmentData, PriceData
 import re
-from app.util.log_util import logger 
+from app.util.log_util import get_logger
+from dataclasses import asdict
+        
+logger = get_logger(__name__)
 
-
-
-LONG_LOADING_WAITING_TIME = 1800
-LOADING_WAITING_TIME = 1200
+LONG_LOADING_WAITING_TIME = 1500
+LOADING_WAITING_TIME = 1000
 DEFAULT_WAITING_TIME = 200
 
 
@@ -41,17 +42,17 @@ async def get_content_from_grid(grid:ElementHandle, col_index:int, no_warning=Fa
         return
     try :
         middle_column = await grid.query_selector(f'div[aria-colindex="{col_index}"]')
-        logger.debug("find middle_column - ", middle_column)
+        logger.debug(f"find middle_column - {middle_column}")
         middle_category = await middle_column.query_selector('div.cl-text')
-        logger.debug("find middle_category - ", middle_category)
+        logger.debug(f"find middle_category - {middle_category}")
         text = await middle_category.text_content()
-        logger.debug("find text - ", text)
+        logger.debug(f"find text - {text}")
         return text
     except :
         if not no_warning:
-            logger.warning("해당 칸에 데이터가 없습니다. - ", grid, col_index)
+            logger.warning(f"해당 칸에 데이터가 없습니다. - {grid}, {col_index}")
         else :
-            logger.debug("해당 칸에 데이터가 없습니다. - ", grid, col_index)
+            logger.debug(f"해당 칸에 데이터가 없습니다. - {grid}, {col_index}")
         return ""
 
 
@@ -62,11 +63,11 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
     page = await browser.new_page(user_agent=user_agent, record_har_mode='minimal')
     url = 'https://www.hira.or.kr/npay/index.do?pgmid=HIRAA030009000000#app%2Frb%2FnpayDamtInfoList'
     
-    keyword = hos_info.get('hospital_name').replace('(', '\\(').replace(')', '\\)')
+    keyword = hos_info.get('hospital_name')
     address = hos_info.pop('hospital_address')
     hospital_data = HospitalData(**hos_info)
     
-    logger.info("크롤링을 시작합니다 : ", keyword)
+    logger.info(f"크롤링을 시작합니다 : {keyword}")
     # 페이지 로드하기
     await page.goto(url)
     await page.wait_for_timeout(LONG_LOADING_WAITING_TIME)
@@ -87,11 +88,11 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
     hos_link_boxs = await page.query_selector_all('div.cl-layout-content.form-list[data-role="content-pane"] > div.form-list')
     for hos_link_box in hos_link_boxs :
         if await find(page, f'text={address}', hos_link_box, no_warning=True) :
-            keyword_link = await find(page,f"text=/^{keyword}$/")
+            keyword_link = await find(page,f"text={keyword}")
             await click(page, keyword_link, LONG_LOADING_WAITING_TIME) # 검색결과 페이지에서 {keyword} 링크 클릭
             break
     else :
-        logger.warning("검색결과가 없습니다. - ", keyword)
+        logger.warning(f"검색결과가 없습니다 - {keyword}")
 
     while True :
         # div.cl-grid의 aria-label*="비급여 진료비용 검색으로 의료기관명"
@@ -132,26 +133,26 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             next_page_btn = await find(page, f'div[aria-label="{next_page_number}페이지"]', no_warning=True)
             if next_page_btn :
                 await click(page, next_page_btn, LONG_LOADING_WAITING_TIME)
-                logger.debug("다음 페이지로 이동 - ", next_page_number)# 다음 페이지로 이동
+                logger.debug(f"다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
                 continue
             
             elif not await find(page, 'div.cl-pageindexer-next.cl-disabled') :
                 next_button = await find(page, 'div.cl-pageindexer-next')
                 await click(page, next_button, LONG_LOADING_WAITING_TIME)
-                logger.debug("다음 페이지로 이동 - ", next_page_number)# 다음 페이지로 이동
+                logger.debug(f"다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
                 continue
             
             logger.info("마지막페이지입니다. 종료합니다.")
             break  # 마지막 페이지에 도달함
 
-    logger.info("크롤링을 종료합니다 : ", keyword)
-    logger.debug(keyword, " : " ,hospital_data)
+    logger.info(f"크롤링을 종료합니다 - {keyword}")
+    logger.debug(f"{keyword} : {hospital_data}")
     await browser.close()
     
-    return hospital_data
+    return asdict(hospital_data) #HospitalData를 asdict()로 변환
 
 
-async def do_crawling(hospital_infos:list[dict]) -> list[HospitalData]:
+async def do_crawling(hospital_infos:list[dict]) -> list[dict] : #dict는 HospitalData를 asdict()로 변환
     async with async_playwright() as playwright:
         
         #동시 실행할 태스크의 최대 수 설정

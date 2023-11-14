@@ -22,13 +22,12 @@ class Hospital(Base):
     homepage_url = Column(String(255)) #없는 경우 존재
     is_in_queue = Column(Boolean, nullable=False, default=False, index = True) # 오래된 순서부터 처리하기 위한 함수
     modified_at = Column(DateTime, nullable=False, 
-                         server_default=func.now(),
-                         server_onupdate=func.now())
+                         server_default=func.now())
 
     #Many to One
-    hospital_type = relationship('HospitalType', back_populates='hospitals', lazy='joined')
+    hospital_type = relationship('HospitalType', back_populates='hospitals', lazy='noload')
     #One to Many
-    prices = relationship('Price', back_populates='hospital', lazy='joined')
+    prices = relationship('Price', back_populates='hospital', lazy='noload')
     
     
     def set_coordinate(self, latitude, longitude):

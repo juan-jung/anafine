@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import handlerHospitalDetail from "utils/handlerHospitalDetail";
 
 type HospitalDetailProps = {
+  path: string;
   id: string;
   onCloseClick: () => void;
 };
@@ -10,12 +11,13 @@ interface HospitalData {
   hospitalName: string;
   address: string;
   hompageUrl: string;
-  hopitalType: string;
+  hospitalType: string;
   tel: string;
   hospitalDetailDtos: any;
 }
 
 const HospitalDetail: React.FC<HospitalDetailProps> = ({
+  path,
   id,
   onCloseClick,
 }) => {
@@ -23,7 +25,7 @@ const HospitalDetail: React.FC<HospitalDetailProps> = ({
     hospitalName: "",
     address: "",
     hompageUrl: "",
-    hopitalType: "",
+    hospitalType: "",
     tel: "",
     hospitalDetailDtos: [],
   });
@@ -56,16 +58,16 @@ const HospitalDetail: React.FC<HospitalDetailProps> = ({
         </div>
       </div>
       <div className="detail-content">
-        <div>병원 유형: {hospitalDetail.hopitalType}</div>
-        <div>주소: {hospitalDetail.address}</div>
-        <div>전화: {hospitalDetail.tel}</div>
+        <div>분류 : {hospitalDetail.hospitalType}</div>
+        <div>주소 : {hospitalDetail.address}</div>
+        <div>전화 : {hospitalDetail.tel}</div>
         {hospitalDetail.hompageUrl && (
           <div>홈페이지 : {hospitalDetail.hompageUrl}</div>
         )}
       </div>
       <br />
       <br />
-      <div className="detail-title2">상세항목</div>
+      <div className="detail-title2">{path} 상세</div>
       <div className="detail-content2">
         <table>
           <thead>

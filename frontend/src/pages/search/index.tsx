@@ -47,8 +47,9 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
     }
   };
 
-  const onClick = (id: string) => {
+  const onClick = (id: string, latitude: number, longitude: number) => {
     setHospitalId(id);
+    setMapCenter({ latitude, longitude });
     setDetailVisible(true);
   };
 
@@ -73,10 +74,15 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, page, data }) => {
                 latitude={mapCenter.latitude}
                 longitude={mapCenter.longitude}
                 data={initialData.content}
+                onClick={onClick}
               />
             </div>
             {detailVisible ? (
-              <HospitalDetail id={hospitalId} onCloseClick={onCloseClick} />
+              <HospitalDetail
+                path={path}
+                id={hospitalId}
+                onCloseClick={onCloseClick}
+              />
             ) : (
               <div className="search-result">
                 <DynamicSearchCell

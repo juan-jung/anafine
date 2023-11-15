@@ -81,6 +81,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedDist(event.target.value);
+    setPageNum(1);
     if (selectedSort === "cost") {
       handlerSortByPriceInfo(
         id,
@@ -106,6 +107,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedSort(event.target.value);
+    setPageNum(1);
     if (event.target.value === "cost") {
       handlerSortByPriceInfo(
         id,

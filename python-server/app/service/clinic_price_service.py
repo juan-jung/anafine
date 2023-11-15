@@ -114,6 +114,7 @@ class ClinicPriceService:
 
     def __init__(self):
         self.running_dict = defaultdict(bool)
+        self.run_tried_dict = defaultdict(int)
         self.hospital_info_deque = deque()
     
     async def start_data_collection(self, nums:int, crawling_server_url:str):
@@ -129,6 +130,7 @@ class ClinicPriceService:
                 check_and_refill_deque(self.hospital_info_deque, nums)
             
             with Session() as session:
+                
                 now_infos = get_hospital_infos_from_deque(self.hospital_info_deque, nums)
                 try :
                     session.query(Hospital)\
@@ -174,12 +176,19 @@ class ClinicPriceService:
                     session.add_all(new_entities)
                     session.commit()
                     print(f"커밋 성공 - {crawling_server_url}")
+                    self.run_tried_dict[crawling_server_url] = 0 # 실패 횟수 초기화
                 except Exception as e: #다시 deque 에 돌려놓고 멈추기
                     print(e)
                     print(f"데이터 로딩 실패! - {crawling_server_url}")
                     with lock:
                         self.hospital_info_deque.extend(now_infos)
+                    if self.run_tried_dict[crawling_server_url] < 3 : #봐주는 횟수
+                        self.run_tried_dict[crawling_server_url] += 1
+                        print(f"재시도중 ... 실패 횟수 : {self.run_tried_dict[crawling_server_url]} - {crawling_server_url}")
+                        continue
+                    print(f"재시도 횟수 초과! 더 이상 시도하지 않음 - {crawling_server_url}")
                     self.running_dict[crawling_server_url] = False
+                    self.run_tried_dict[crawling_server_url] = 0
                     return {"message":"crawling error"}
 
     def stop_data_collection(self, crawling_server_url:str):

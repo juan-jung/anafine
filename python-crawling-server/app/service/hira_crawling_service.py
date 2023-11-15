@@ -137,8 +137,9 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
                 #닫기가 꺼지지 않아, 무한 루프를 도는 상황이 있는 것으로 추정되어 추가
                 exit_btn = await find(page, 'text=닫기')
                 if exit_btn :
-                    logger.critical("닫기 버튼이 존재하여, 무한 루프가 발생됩니다. 이를 임시로 처리했습니다.")
-                    await click(page, exit_btn) 
+                    logger.critical("예상치 못한 닫기 버튼이 있는 경우 해당 병원은 더이상 찾지 않음.") #FIXME:수정 필요
+                    break
+                    
                 
                 await click(page, next_page_btn, LONG_LOADING_WAITING_TIME)
                 logger.debug(f"페이지 버튼 : 다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동

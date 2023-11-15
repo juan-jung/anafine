@@ -92,7 +92,8 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             await click(page, keyword_link, LONG_LOADING_WAITING_TIME) # 검색결과 페이지에서 {keyword} 링크 클릭
             break
     else :
-        logger.warning(f"검색결과가 없습니다 - {keyword}")
+        logger.warning(f"병원을 찾을 수 없습니다 - {keyword}")
+        return asdict(hospital_data)
 
     while True :
         # div.cl-grid의 aria-label*="비급여 진료비용 검색으로 의료기관명"

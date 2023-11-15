@@ -174,8 +174,8 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
           </div>
         </div>
       </main>
-      <Footer />
       <Chatbot />
+      <Footer />
     </div>
   );
 };

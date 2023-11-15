@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import handlerChatBot from "utils/handlerChatBot";
 import styles from "../../styles/chatbot.module.css";
 
-const questions = [
+const questionsDisease = [
   "성별을 알려주세요.",
   "나이를 알려주세요.",
   "통증 부위를 알려주세요.",
   "증상에 대해 알려주세요.",
 ];
+
+const questionsNormal = ["안녕하세요. 무엇을 도와드릴까요?"];
 
 type Message = {
   text: string;
@@ -27,6 +29,14 @@ const Chatbot: React.FC = () => {
   // 버튼 클릭 핸들러
   const handleModeChange = (mode: string) => {
     setChatMode(mode);
+    setCurrentStep(0);
+    if (mode === "normal") {
+      // "AI 일반 대화" 모드로 변경 시 초기 메시지 설정
+      setMessages([{ text: questionsNormal[0], sender: "bot" }]);
+    } else if (mode === "diseasePrediction") {
+      // "AI 질병 예측" 모드로 변경 시 초기 메시지 설정
+      setMessages([{ text: questionsDisease[0], sender: "bot" }]);
+    }
   };
 
   const [popupVisible, setPopupVisible] = useState(true);
@@ -40,6 +50,23 @@ const Chatbot: React.FC = () => {
   };
 
   const handleOpenChatbot = () => {
+    // 챗봇 모드를 기본값으로 설정
+    setChatMode("normal");
+
+    // 질문 단계를 초기화
+    setCurrentStep(0);
+
+    // 메시지 배열을 초기화 (일반 대화 시작 메시지로 설정)
+    setMessages([{ text: questionsNormal[0], sender: "bot" }]);
+
+    // 사용자 입력 관련 상태들을 초기화
+    setSex("");
+    setAge("");
+    setPainArea("");
+    setSymptoms("");
+    setUserInput("");
+
+    // 모달을 표시
     togglePopup();
   };
 
@@ -49,20 +76,27 @@ const Chatbot: React.FC = () => {
 
   useEffect(() => {
     // 컴포넌트가 마운트될 때 첫 번째 메시지를 추가
-    setMessages([{ text: questions[0], sender: "bot" }]);
+    setMessages([{ text: questionsDisease[0], sender: "bot" }]);
   }, []);
 
   useEffect(() => {
     // currentStep이 변경될 때 새로운 메시지를 추가
-    if (currentStep > 0 && currentStep < questions.length) {
+    if (currentStep > 0 && currentStep < questionsDisease.length) {
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: questions[currentStep], sender: "bot" },
+        { text: questionsDisease[currentStep], sender: "bot" },
       ]);
-    } else if (currentStep >= questions.length) {
-      submitChatBot();
+    } else if (
+      currentStep === questionsDisease.length &&
+      chatMode === "diseasePrediction"
+    ) {
+      // "다시 하시겠습니까?" 메시지 추가
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: "다시 하시겠습니까?", sender: "bot" },
+      ]);
     }
-  }, [currentStep]);
+  }, [currentStep, chatMode]);
 
   const handleUserInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserInput(e.target.value);
@@ -96,6 +130,11 @@ const Chatbot: React.FC = () => {
 
       setCurrentStep(currentStep + 1);
     }
+  };
+
+  const handleRestart = () => {
+    setCurrentStep(0);
+    setMessages([{ text: questionsDisease[0], sender: "bot" }]);
   };
 
   const submitChatBot = async () => {
@@ -178,8 +217,15 @@ const Chatbot: React.FC = () => {
                     </div>
                   </div>
                 ))}
+                {currentStep >= questionsDisease.length && (
+                  <div className={styles["flex-container-bottom"]}>
+                    <button onClick={handleRestart}>네</button>
+                    <button onClick={handleOpenChatbotDown}>아니오</button>
+                  </div>
+                )}
               </div>
-              {currentStep < questions.length && (
+              {/* 입력 필드는 질문이 모두 완료되기 전까지 표시 */}
+              {currentStep < questionsDisease.length && (
                 <div className={styles["flex-container-bottom"]}>
                   <input
                     className={styles["chatbot-input"]}
@@ -239,14 +285,23 @@ const Chatbot: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <input
-                className={styles["chatbot-input"]}
-                type="text"
-                placeholder="답변을 입력하세요"
-                value={userInput}
-                onChange={handleUserInput}
-                onKeyPress={handleKeyPress}
-              />
+              <div className={styles["flex-container-bottom"]}>
+                <input
+                  className={styles["chatbot-input"]}
+                  type="text"
+                  placeholder="답변을 입력하세요"
+                  value={userInput}
+                  onChange={handleUserInput}
+                />
+                <img
+                  src="/infoPic/next.png"
+                  alt="next Icon"
+                  style={{
+                    width: "8%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
           )}
         </div>

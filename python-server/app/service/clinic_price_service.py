@@ -133,11 +133,6 @@ class ClinicPriceService:
                 
                 now_infos = get_hospital_infos_from_deque(self.hospital_info_deque, nums)
                 try :
-                    session.query(Hospital)\
-                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
-                        .filter(Hospital.is_in_queue == True)\
-                        .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
-                    
                     hospital_datas = crawl_hospital_info(now_infos, crawling_server_url)
                     if not hospital_datas : # 데이터를 가져오는데 실패했을 경우
                         return {"message":"crawling error"}
@@ -174,6 +169,10 @@ class ClinicPriceService:
                                 .filter(PriceHistory.is_latest == True)\
                                 .update({PriceHistory.is_latest: False})
                     session.add_all(new_entities)
+                    session.query(Hospital)\
+                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
+                        .filter(Hospital.is_in_queue == True)\
+                        .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
                     session.commit()
                     print(f"커밋 성공 - {crawling_server_url}")
                     self.run_tried_dict[crawling_server_url] = 0 # 실패 횟수 초기화

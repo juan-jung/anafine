@@ -7,8 +7,8 @@ from dataclasses import asdict
         
 logger = get_logger(__name__)
 
-LONG_LOADING_WAITING_TIME = 1500
-LOADING_WAITING_TIME = 1000
+LONG_LOADING_WAITING_TIME = 3500
+LOADING_WAITING_TIME = 1500
 DEFAULT_WAITING_TIME = 200
 
 
@@ -18,9 +18,9 @@ async def find(page:Page, selector:str, outline:ElementHandle|Page=None, no_warn
     target = await outline.query_selector(selector)
     if not target :
         if not no_warning:
-            logger.warning(f"대상이 존재하지 않습니다 - {selector}")
+            logger.warning(f"대상이 존재하지 않습니다 - {selector} in {outline}")
         else :
-            logger.debug(f"대상이 존재하지 않습니다 - {selector}")
+            logger.debug(f"대상이 존재하지 않습니다 - {selector} in {outline}")
     return target
 
 async def click(page:Page, target:ElementHandle, wait_time:int=DEFAULT_WAITING_TIME) -> None:
@@ -88,7 +88,7 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
     hos_link_boxs = await page.query_selector_all('div.cl-layout-content.form-list[data-role="content-pane"] > div.form-list')
     for hos_link_box in hos_link_boxs :
         if await find(page, f'text={address}', hos_link_box, no_warning=True) :
-            keyword_link = await find(page,f"text={keyword}")
+            keyword_link = await find(page,f"text={keyword}", hos_link_box)
             await click(page, keyword_link, LONG_LOADING_WAITING_TIME) # 검색결과 페이지에서 {keyword} 링크 클릭
             break
     else :
@@ -124,13 +124,13 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             pop_up_exit_btn = await find(page, 'text=닫기', pop_up_window)
             await click(page, pop_up_exit_btn)
         
-        current_page_btn = await find(page, 'div[aria-label*="현재 페이지"]', no_warning=True)
+        current_page_btn = await find(page, 'div.cl-pageindexer-index.cl-selected', outline=None, no_warning=True)
         if current_page_btn:
             current_page_btn_label = await current_page_btn.get_attribute('aria-label')
             current_page_number = int(re.search(r'\d+', current_page_btn_label).group())
             next_page_number = current_page_number + 1
             
-            next_page_btn = await find(page, f'div[aria-label="{next_page_number}페이지"]', no_warning=True)
+            next_page_btn = await find(page, f'div.cl-pageindexer-index[aria-label*="{next_page_number}"]', no_warning=True)
             if next_page_btn :
                 await click(page, next_page_btn, LONG_LOADING_WAITING_TIME)
                 logger.debug(f"다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
@@ -144,6 +144,9 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             
             logger.info("마지막페이지입니다. 종료합니다.")
             break  # 마지막 페이지에 도달함
+        else:
+            logger.warning("페이지를 찾을 수 없습니다.")
+            break
 
     logger.info(f"크롤링을 종료합니다 - {keyword}")
     logger.debug(f"{keyword} : {hospital_data}")

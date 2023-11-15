@@ -18,7 +18,10 @@ hospital_model = ns.model('HospitalInfo', {
 class UpdateHospitalPriceFile(Resource):
     @ns.expect([hospital_model])
     def post(self):
-        request_data = json.loads(request.json)
+        try :
+            request_data = json.loads(request.json)
+        except :
+            request_data = request.json
         response_data = crawling_service.crawl_hira(request_data)
         response = Response(
             to_json(response_data), content_type='application/json; charset=utf-8')

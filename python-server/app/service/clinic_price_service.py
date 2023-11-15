@@ -10,8 +10,10 @@ import datetime
 from dataclasses import dataclass, field
 from collections import deque, defaultdict
 import threading
-lock = threading.Lock()
 import json
+import asyncio
+
+lock = threading.Lock()
 MAX_QUEUE_SIZE = 1000
 from app.util.request_util import get_response
 
@@ -45,10 +47,9 @@ def get_new_hospital_infos(session, num_of_hospitals:int) -> list[dict]:
                     .order_by(Hospital.modified_at)\
                     .limit(num_of_hospitals)\
                     .all()
-    for hospital in hospitals:
-        hospital.is_in_queue = True
     
     for hospital in hospitals:
+        hospital.is_in_queue = True
         address_parts = hospital.address.split(',')[0].split(' ')
         address = ' '.join(address_parts[:-1])
         hospital_infos.append({'hospital_id':hospital.hospital_id, 'hospital_name':hospital.hospital_name, 'hospital_address':address})
@@ -97,11 +98,6 @@ def check_and_refill_deque(hospital_info_deque:deque, nums:int):
             session.flush()
             
             hospital_infos = get_new_hospital_infos(session, MAX_QUEUE_SIZE - len(hospital_info_deque))
-            session.query(Hospital)\
-                .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in hospital_infos]))\
-                .filter(Hospital.is_in_queue == False)\
-                .update({Hospital.is_in_queue:True})
-                
             hospital_info_deque.extend(hospital_infos)
             session.commit()
             
@@ -118,24 +114,25 @@ class ClinicPriceService:
 
     def __init__(self):
         self.running_dict = defaultdict(bool)
+        self.run_tried_dict = defaultdict(int)
         self.hospital_info_deque = deque()
     
-    def start_data_collection(self, nums:int, crawling_server_url:str):
+    async def start_data_collection(self, nums:int, crawling_server_url:str):
         if self.running_dict[crawling_server_url] : 
             return {"message":"already running"}
         self.running_dict[crawling_server_url] = True 
+        asyncio.create_task(self.run_data_collection(nums, crawling_server_url))
+        return {"message":"start running success"}
+
+    async def run_data_collection(self, nums:int, crawling_server_url:str):
         while self.running_dict[crawling_server_url] :
             with lock:
                 check_and_refill_deque(self.hospital_info_deque, nums)
             
             with Session() as session:
+                
                 now_infos = get_hospital_infos_from_deque(self.hospital_info_deque, nums)
                 try :
-                    session.query(Hospital)\
-                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
-                        .filter(Hospital.is_in_queue == True)\
-                        .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
-                    
                     hospital_datas = crawl_hospital_info(now_infos, crawling_server_url)
                     if not hospital_datas : # 데이터를 가져오는데 실패했을 경우
                         return {"message":"crawling error"}
@@ -146,7 +143,8 @@ class ClinicPriceService:
                     for hospital_data in hospital_datas:
                         hospital = find_or_create_if_not_exist(session, Hospital, hospital_id=hospital_data.hospital_id)
                         hospital.modified_at = datetime.datetime.now()
-                        
+                        if not hospital_data.treatment_datas :
+                            continue
                         for treatment_data in hospital_data.treatment_datas:
                             path_of_treatment = f"{treatment_data.middle_category}/{treatment_data.small_category}"
                             if treatment_data.detail_category : # 빈 문자열이면 false
@@ -154,7 +152,8 @@ class ClinicPriceService:
                             treatment = find_or_create_if_not_exist(session, Treatment, path = path_of_treatment)
                             
                             created_at = datetime.datetime.now()
-                            
+                            if not treatment_data.price_datas :
+                                continue
                             for price_data in treatment_data.price_datas:
                                 price = find_or_create_if_not_exist(session, Price, treatment_id=treatment.treatment_id, hospital_id=hospital.hospital_id)
                                 cur_cost = int(price_data.price.replace(',', ''))
@@ -170,16 +169,26 @@ class ClinicPriceService:
                                 .filter(PriceHistory.is_latest == True)\
                                 .update({PriceHistory.is_latest: False})
                     session.add_all(new_entities)
+                    session.query(Hospital)\
+                        .filter(Hospital.hospital_id.in_([info['hospital_id'] for info in now_infos]))\
+                        .filter(Hospital.is_in_queue == True)\
+                        .update({Hospital.is_in_queue:False, Hospital.modified_at:datetime.datetime.now()})
                     session.commit()
                     print(f"커밋 성공 - {crawling_server_url}")
+                    self.run_tried_dict[crawling_server_url] = 0 # 실패 횟수 초기화
                 except Exception as e: #다시 deque 에 돌려놓고 멈추기
                     print(e)
                     print(f"데이터 로딩 실패! - {crawling_server_url}")
                     with lock:
                         self.hospital_info_deque.extend(now_infos)
+                    if self.run_tried_dict[crawling_server_url] < 3 : #봐주는 횟수
+                        self.run_tried_dict[crawling_server_url] += 1
+                        print(f"재시도중 ... 실패 횟수 : {self.run_tried_dict[crawling_server_url]} - {crawling_server_url}")
+                        continue
+                    print(f"재시도 횟수 초과! 더 이상 시도하지 않음 - {crawling_server_url}")
                     self.running_dict[crawling_server_url] = False
+                    self.run_tried_dict[crawling_server_url] = 0
                     return {"message":"crawling error"}
-        return {"message":"running success"}
 
     def stop_data_collection(self, crawling_server_url:str):
         if crawling_server_url == 'all':

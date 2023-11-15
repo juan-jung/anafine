@@ -15,9 +15,9 @@ type SearchPageProps = {
   data?: any;
 };
 
-// 기본 위치를 멀티캠퍼스 역삼으로 설정
-const myLatitude = 37.50130213612427;
-const myLongitude = 127.03945482599437;
+// 기본 위치를 서울 중심으로 설정
+const myLatitude = 37.5642135;
+const myLongitude = 127.0016985;
 
 // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
 const DynamicMap = dynamic(() => import("components/Organisms/Map"));
@@ -30,6 +30,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     latitude: myLatitude,
     longitude: myLongitude,
   });
+
   const [pageNum, setPageNum] = useState(1);
   const [initialData, setInitialData] = useState<any>(data);
   const [detailVisible, setDetailVisible] = useState(false);
@@ -39,6 +40,58 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   console.log(selectedSort);
 
   useEffect(() => {
+    const findLocation = () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          showYourLocation,
+          showErrorMsg,
+          options
+        );
+      }
+    };
+
+    // 콘솔에 위치 정보 표시(확인용)
+    const showYourLocation = (position: GeolocationPosition) => {
+      console.log(
+        `현재 사용자는 위도 ${position.coords.latitude}, 경도 ${position.coords.longitude}에 위치하고 있습니다.`
+      );
+      const newLatitude = position.coords.latitude;
+      const newLongitude = position.coords.longitude;
+
+      // 새로운 위치 정보로 상태를 업데이트합니다.
+      setMapCenter({ latitude: newLatitude, longitude: newLongitude });
+    };
+
+    // 에러 메시지
+    const showErrorMsg = (error: GeolocationPositionError) => {
+      switch (error.code) {
+        case error.PERMISSION_DENIED:
+          console.log("사용자가 위치정보 사용 권한을 거부했습니다.");
+          alert("위치정보 사용 권한을 허용해주세요.");
+          break;
+        case error.POSITION_UNAVAILABLE:
+          console.log("사용할 수 없는 위치정보입니다.");
+          break;
+        case error.TIMEOUT:
+          console.log("위치 정보 요청이 허용 시간을 초과했습니다.");
+          break;
+        default:
+          console.log("알 수 없는 오류가 발생했습니다.");
+          break;
+      }
+    };
+
+    const options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0,
+    };
+
+    findLocation();
+  }, []);
+
+  useEffect(() => {
+    console.log(myLatitude, myLongitude);
     setInitialData(data);
   }, [data]);
 
@@ -81,6 +134,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedDist(event.target.value);
+    setPageNum(1);
     if (selectedSort === "cost") {
       handlerSortByPriceInfo(
         id,
@@ -106,6 +160,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedSort(event.target.value);
+    setPageNum(1);
     if (event.target.value === "cost") {
       handlerSortByPriceInfo(
         id,
@@ -154,7 +209,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                 onCloseClick={onCloseClick}
               />
             ) : (
-              <div className="search-result">
+              <div>
                 <div className="search-select">
                   반경 선택 :
                   <select

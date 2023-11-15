@@ -743,12 +743,12 @@ a {
   display: flex;
 }
 
-.arrow{
+.arrow {
   font-size: 48px;
   font-weight: 700;
-  color:white;
+  color: white;
 }
 
-.arrow:hover{
+.arrow:hover {
   cursor: pointer;
 }

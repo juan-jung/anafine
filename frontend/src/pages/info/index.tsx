@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
@@ -36,15 +34,25 @@ const InfoPage = () => {
         className="w-[400px] lg:hidden"
         renderArrowPrev={(clickHandler, hasPrev, label) =>
           hasPrev && (
-            <div className="arrow" onClick={clickHandler} title={label} style={{ position: "absolute", top: "50%", left: 15 }}>
-            &lt;
+            <div
+              className="arrow"
+              onClick={clickHandler}
+              title={label}
+              style={{ position: "absolute", top: "50%", left: 15 }}
+            >
+              &lt;
             </div>
           )
         }
         renderArrowNext={(clickHandler, hasNext, label) =>
           hasNext && (
-            <div className="arrow" onClick={clickHandler} title={label} style={{ position: "absolute", top: "50%", right: 15 }}>
-            &gt;
+            <div
+              className="arrow"
+              onClick={clickHandler}
+              title={label}
+              style={{ position: "absolute", top: "50%", right: 15 }}
+            >
+              &gt;
             </div>
           )
         }
@@ -60,3 +68,10 @@ const InfoPage = () => {
 };
 
 export default InfoPage;
+
+//SSR랜더링을 위한 빈 데이터 객체 반환
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}

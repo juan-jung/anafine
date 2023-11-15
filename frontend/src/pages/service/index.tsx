@@ -4,7 +4,6 @@ import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import Header from "components/Organisms/Header";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const ServicePage: NextPage = () => {
   const router = useRouter();
@@ -87,3 +86,10 @@ const ServicePage: NextPage = () => {
 };
 
 export default ServicePage;
+
+//SSR랜더링을 위한 빈 데이터 객체 반환
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}

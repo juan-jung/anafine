@@ -336,7 +336,8 @@ a {
 .search-result {
   width: 50vw;
   height: 70vh;
-  padding-left: 10px;
+  padding-left: 15px;
+  overflow-y: auto;
 }
 .search-result table {
   width: 100%;
@@ -743,12 +744,12 @@ a {
   display: flex;
 }
 
-.arrow{
+.arrow {
   font-size: 48px;
   font-weight: 700;
-  color:white;
+  color: white;
 }
 
-.arrow:hover{
+.arrow:hover {
   cursor: pointer;
 }

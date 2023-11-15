@@ -8,8 +8,6 @@ services:
     image: crawling-server-1
     ports:
       - "5001:5001"
-    environment:
-      - TZ=Asia/Seoul
 
   crawling-server-2:
     build:
@@ -18,15 +16,3 @@ services:
     image: crawling-server-2
     ports:
       - "5002:5001"
-    environment:
-      - TZ=Asia/Seoul
-
-  crawling-server-3:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: crawling-server-3
-    ports:
-      - "5003:5001"
-    environment:
-      - TZ=Asia/Seoul

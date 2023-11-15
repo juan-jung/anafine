@@ -20,6 +20,11 @@ spring:
     port: ${ELASTICSEARCH_PORT}
     username: ${ELASTICSEARCH_USERNAME}
     password: ${ELASTICSEARCH_PASSWORD}
+
+kakao:
+  rest:
+    api:
+      key: ${KAKAO_REST_API_KEY}
 ---
 spring:
   config:

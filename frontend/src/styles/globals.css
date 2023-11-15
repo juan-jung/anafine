@@ -336,7 +336,8 @@ a {
 .search-result {
   width: 50vw;
   height: 70vh;
-  padding-left: 10px;
+  padding-left: 15px;
+  overflow-y: auto;
 }
 .search-result table {
   width: 100%;

@@ -92,7 +92,8 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             await click(page, keyword_link, LONG_LOADING_WAITING_TIME) # 검색결과 페이지에서 {keyword} 링크 클릭
             break
     else :
-        logger.warning(f"검색결과가 없습니다 - {keyword}")
+        logger.warning(f"병원을 찾을 수 없습니다 - {keyword}")
+        return asdict(hospital_data)
 
     while True :
         # div.cl-grid의 aria-label*="비급여 진료비용 검색으로 의료기관명"
@@ -132,14 +133,22 @@ async def run(playwright: Playwright, hos_info:dict, user_agent = "Mozilla/5.0 (
             
             next_page_btn = await find(page, f'div.cl-pageindexer-index[aria-label*="{next_page_number}"]', no_warning=True)
             if next_page_btn :
+                
+                #닫기가 꺼지지 않아, 무한 루프를 도는 상황이 있는 것으로 추정되어 추가
+                exit_btn = await find(page, 'text=닫기')
+                if exit_btn :
+                    logger.critical("예상치 못한 닫기 버튼이 있는 경우 해당 병원은 더이상 찾지 않음.") #FIXME:수정 필요
+                    break
+                    
+                
                 await click(page, next_page_btn, LONG_LOADING_WAITING_TIME)
-                logger.debug(f"다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
+                logger.debug(f"페이지 버튼 : 다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
                 continue
             
             elif not await find(page, 'div.cl-pageindexer-next.cl-disabled') :
                 next_button = await find(page, 'div.cl-pageindexer-next')
                 await click(page, next_button, LONG_LOADING_WAITING_TIME)
-                logger.debug(f"다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
+                logger.debug(f"다음 버튼 : 다음 페이지로 이동 - {next_page_number}")# 다음 페이지로 이동
                 continue
             
             logger.info("마지막페이지입니다. 종료합니다.")

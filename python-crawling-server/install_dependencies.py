@@ -21,7 +21,10 @@ def install_dependencies():
         install_pip()
 
     subprocess.check_call(["pip", "install", "-r", "requirements.txt"])
-    print("install done")
+    print("requirements install done")
+    
+    subprocess.check_call(["playwright", "install"])]
+    print("playwright install done")
 
 
 if __name__ == "__main__":

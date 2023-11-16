@@ -1,204 +1,95 @@
-import type { GetServerSideProps, NextPage } from "next";
+// 서비스 소개 페이지
+import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import CategoryIconBox from "components/Organisms/CategoryIconBox";
-import CategoryTextBox from "components/Organisms/CategoryTextBox";
-import Footer from "components/Organisms/Footer";
 import Header from "components/Organisms/Header";
-import hanlderCategoryDetail from "utils/handlerCategoryDetail";
-import hanlderCategoryLarge from "utils/handlerCategoryLarge";
-import Chatbot from "components/Organisms/Chatbot";
+import { useRouter } from "next/router";
 
-type MainPageProps = {
-  category: any;
-};
+const ServicePage: NextPage = () => {
+  const router = useRouter();
 
-const MainPage: NextPage<MainPageProps> = ({ category }) => {
-  const [state, setState] = useState({
-    isBoxVisible1: false,
-    isBoxVisible2: false,
-    isBoxVisible3: false,
-    isSearchVisible: false,
-    categoryDetail1: [],
-    categoryDetail2: [],
-    categoryDetail3: [],
-    selectedCategoryId: "",
-    searchName: "",
-  });
-
-  const {
-    isBoxVisible1,
-    isBoxVisible2,
-    isBoxVisible3,
-    isSearchVisible,
-    categoryDetail1,
-    categoryDetail2,
-    categoryDetail3,
-    selectedCategoryId,
-    searchName,
-  } = state;
-
-  const onCategoryDetailClick1 = async (categoryId: string) => {
-    try {
-      setState({ ...state, isBoxVisible1: false });
-      const categoryDetailData = await hanlderCategoryDetail(categoryId);
-      console.log(categoryDetailData);
-      setState({
-        ...state,
-        selectedCategoryId: categoryId,
-        categoryDetail1: categoryDetailData,
-        isBoxVisible1: true,
-        isBoxVisible2: false,
-        isBoxVisible3: false,
-        isSearchVisible: false,
-      });
-    } catch (error) {
-      console.error(
-        "카테고리 상세 정보를 불러오는 중 오류가 발생했습니다.",
-        error
-      );
-    }
-  };
-
-  const onCategoryDetailClick2 = async (categoryId: string, name: string) => {
-    try {
-      setState({ ...state, isBoxVisible2: false });
-      const categoryDetailData = await hanlderCategoryDetail(categoryId);
-      if (categoryDetailData.length === 0) {
-        setState({
-          ...state,
-          categoryDetail2: categoryDetailData,
-          searchName: name,
-          isSearchVisible: true,
-        });
-        console.error("카테고리 상세 정보가 없습니다.");
-      } else {
-        setState({
-          ...state,
-          categoryDetail2: categoryDetailData,
-          isBoxVisible2: true,
-          isBoxVisible3: false,
-          isSearchVisible: false,
-        });
-      }
-    } catch (error) {
-      console.error(
-        "카테고리 상세 정보를 불러오는 중 오류가 발생했습니다.",
-        error
-      );
-    }
-  };
-
-  const onCategoryDetailClick3 = async (categoryId: string, name: string) => {
-    try {
-      setState({ ...state, isBoxVisible3: false });
-      const categoryDetailData = await hanlderCategoryDetail(categoryId);
-      if (categoryDetailData.length === 0) {
-        setState({
-          ...state,
-          categoryDetail3: categoryDetailData,
-          searchName: name,
-          isSearchVisible: true,
-        });
-        console.error("카테고리 상세 정보가 없습니다.");
-      } else {
-        setState({
-          ...state,
-          categoryDetail3: categoryDetailData,
-          isBoxVisible3: true,
-          isSearchVisible: false,
-        });
-      }
-    } catch (error) {
-      console.error(
-        "카테고리 상세 정보를 불러오는 중 오류가 발생했습니다.",
-        error
-      );
-    }
-  };
-
-  const onCategoryDetailClick4 = async (name: string) => {
-    setState({ ...state, searchName: name, isSearchVisible: true });
+  const onClick = () => {
+    router.push(`/category`);
   };
 
   return (
     <div className={styles.container}>
       <Head>
         <title>SSAFY A403 자율프로젝트</title>
-        <meta
-          name="description"
-          content="비급여 항목 검색을 위한 검색 페이지"
-        />
+        <meta name="description" content="SSAFY A403 자율프로젝트" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <main className={styles.main}>
-        <div className="main-wrapper">
-          <div className="main-first">
-            <CategoryIconBox
-              category={category}
-              onCategoryDetailClick={onCategoryDetailClick1}
-              selectedCategoryId={selectedCategoryId}
-              width={120}
-              height={100}
+      <main className={styles.main2}>
+        <section className={"service-section"}>
+          <div className={"service-div1"}>
+            <div className={"animation"}>
+              <span className={"one_text"}>A.Na.Fine 서비스는</span>
+              <span className={"two_text"}>
+                비급여 진료비를 조회, 비교하는 서비스 입니다.
+              </span>
+            </div>
+            <img
+              className={"service-img1"}
+              src={"/servicePic/serviceImage1.png"}
+              alt={"설명5"}
             />
           </div>
-          <div className="main-second">
-            <div className="category-container">
-              <div className="category-list">
-                {isBoxVisible1 && (
-                  <CategoryTextBox
-                    category={categoryDetail1}
-                    onCategoryDetailClick={onCategoryDetailClick2}
-                  />
-                )}
+        </section>
+        <section className={"service-section"}>
+          <div className={"service-div2"}>
+            <img
+              className={"service-img2"}
+              src={"/servicePic/serviceImage2.png"}
+              alt={"설명5"}
+            />
+            <div className={"service-textbox2"}>
+              <h1>566가지 비급여 진료 정보를 한 번에 비교</h1>
+            </div>
+          </div>
+        </section>
+        <section className={"service-section"}>
+          <div className={"service-div3"}>
+            <div className={"service-textbox3"}>
+              <h1>병원 정보와 위치까지 한 번에</h1>
+            </div>
+            <img
+              className={"service-img3"}
+              src={"/servicePic/serviceImage3.png"}
+              alt={"설명5"}
+            />
+          </div>
+        </section>
+        <section className={"service-section"}>
+          <div className={"service-div4"}>
+            <img
+              className={"service-img5"}
+              src={"/servicePic/serviceImage5.png"}
+              alt={"설명5"}
+            />
+            <div className={"text-and-button"}>
+              <div className={"service-textbox4"}>
+                <h1>A.Na.Fine</h1>
               </div>
-              <div className="category-list">
-                {isBoxVisible2 && (
-                  <CategoryTextBox
-                    category={categoryDetail2}
-                    onCategoryDetailClick={onCategoryDetailClick3}
-                  />
-                )}
-              </div>
-              <div className="category-list">
-                {isBoxVisible3 && (
-                  <CategoryTextBox
-                    category={categoryDetail3}
-                    onCategoryDetailClick={onCategoryDetailClick4}
-                  />
-                )}
+              <div className={"start-button"} onClick={onClick}>
+                <p className={"start-button-text"}>A.Na.Fine</p>
+                <div className={"start-button2"}>
+                  <p className={"start-button-text2"}>시작하기!</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
-      <Chatbot />
-      <Footer />
     </div>
   );
 };
 
-export const getServerSideProps: GetServerSideProps<
-  MainPageProps
-> = async () => {
-  try {
-    const categoryResponse = await hanlderCategoryLarge();
+export default ServicePage;
 
-    return {
-      props: {
-        category: categoryResponse,
-      },
-    };
-  } catch (error) {
-    console.error("API 요청 중 오류 발생:", error);
-    return {
-      props: {
-        category: { error: "데이터를 불러오는 중 오류가 발생했습니다." },
-      },
-    };
-  }
-};
-
-export default MainPage;
+//SSR랜더링을 위한 빈 데이터 객체 반환
+export async function getServerSideProps() {
+  return {
+    props: {},
+  };
+}

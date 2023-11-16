@@ -307,6 +307,9 @@ a {
 .category-item.selected {
   background-color: #0099ff;
 }
+.category-item:hover {
+  cursor: pointer;
+}
 
 /* 검색 페이지 css */
 .search-result-container {

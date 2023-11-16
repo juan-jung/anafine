@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header>
       <div className="header">
         <div className="header-image">
-          <Link href="/">
+          <Link href="/category">
             <a>
               <ShapeImage
                 shape={"circle"}
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="header-link">
-          <Link href="/service">
+          <Link href="/">
             <a>서비스 소개</a>
           </Link>
         </div>

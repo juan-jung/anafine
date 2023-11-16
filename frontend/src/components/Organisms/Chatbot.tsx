@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import handlerChatBot from "utils/handlerChatBot";
 import styles from "../../styles/chatbot.module.css";
 import handlerChatBotNormal from "utils/handlerChatBotNormal";
@@ -45,12 +45,26 @@ const Chatbot: React.FC = () => {
 
   const [popupVisible, setPopupVisible] = useState(true);
 
+  const normalFocus = useRef<HTMLInputElement>(null);
+  const AIFocus = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (normalFocus.current !== null) {
+      normalFocus.current.focus();
+    }
+  }, [isProcessing]);
+
+  useEffect(() => {
+    if (AIFocus.current !== null) {
+      AIFocus.current.focus();
+    }
+  }, [isLoading]);
+
   const togglePopup = () => {
-    setPopupVisible(false);
+    setPopupVisible((prev) => !prev);
   };
 
   const togglePopdown = () => {
-    setPopupVisible(true);
+    setPopupVisible((prev) => !prev);
   };
 
   const handleOpenChatbot = () => {
@@ -199,25 +213,24 @@ const Chatbot: React.FC = () => {
 
   return (
     <div>
-      {popupVisible ? (
-        <div
-          className={styles["chatbot-popup-container"]}
-          onClick={handleOpenChatbot}
-        >
-          <img
-            src="/infoPic/chatbot.png"
-            alt="Chat Icon"
-            style={{ width: "85%", height: "auto" }}
-          />
-        </div>
-      ) : (
+      <div
+        className={styles["chatbot-popup-container"]}
+        onClick={handleOpenChatbot}
+      >
+        <img
+          src="/infoPic/chatbot.png"
+          alt="Chat Icon"
+          style={{ width: "85%", height: "auto" }}
+        />
+      </div>
+      {popupVisible ? null : (
         <div className={styles["chatbot-container"]}>
           <div className={styles["chatbot-buttons"]}>
             <button
               className={styles["chatbot-button-normal"]}
               onClick={() => handleModeChange("normal")}
             >
-              대화
+              AI 대화
             </button>
             <button
               className={styles["chatbot-button"]}
@@ -228,22 +241,8 @@ const Chatbot: React.FC = () => {
           </div>
           {chatMode === "diseasePrediction" ? (
             <div className={styles["whole-container"]}>
-              <div
-                onClick={handleOpenChatbotDown}
-                className={styles["flex-container"]}
-              >
-                <div style={{ marginLeft: "200x" }}></div>
-                <h3
-                  className={styles["chatbot-head"]}
-                  style={{ marginLeft: "160px" }}
-                >
-                  AI 질병 예측
-                </h3>
-                <img
-                  src="/infoPic/close.png"
-                  alt="Chat Icon"
-                  style={{ width: "5%", height: "auto", marginLeft: "160px" }}
-                />
+              <div className={styles["flex-container"]}>
+                <h3 className={styles["chatbot-head"]}>AI 질병 예측</h3>
               </div>
               <div className={styles["chat-container"]}>
                 {messages.map((msg, index) => (
@@ -271,7 +270,6 @@ const Chatbot: React.FC = () => {
                     {/* 로딩 바 스타일을 정의해야 함 */}
                   </div>
                 )}
-
                 {currentStep >= questionsDisease.length && (
                   <div className={styles["flex-container-bottom"]}>
                     <button onClick={handleRestart}>네</button>
@@ -283,6 +281,7 @@ const Chatbot: React.FC = () => {
               {currentStep < questionsDisease.length && (
                 <div className={styles["flex-container-bottom"]}>
                   <input
+                    ref={AIFocus}
                     className={styles["chatbot-input"]}
                     type="text"
                     placeholder="답변을 입력하세요"
@@ -290,35 +289,21 @@ const Chatbot: React.FC = () => {
                     onChange={handleUserInput}
                     onKeyPress={handleKeyPress}
                   />
-                  <img
+                  {/* <img
                     src="/infoPic/next.png"
                     alt="next Icon"
                     style={{
                       width: "8%",
                       height: "auto",
                     }}
-                  />
+                  /> */}
                 </div>
               )}
             </div>
           ) : (
             <div className={styles["whole-container"]}>
-              <div
-                onClick={handleOpenChatbotDown}
-                className={styles["flex-container"]}
-              >
-                <div style={{ marginLeft: "200x" }}></div>
-                <h3
-                  className={styles["chatbot-head"]}
-                  style={{ marginLeft: "160px" }}
-                >
-                  AI 일반 대화
-                </h3>
-                <img
-                  src="/infoPic/close.png"
-                  alt="Chat Icon"
-                  style={{ width: "5%", height: "auto", marginLeft: "160px" }}
-                />
+              <div className={styles["flex-container-normal"]}>
+                <h3 className={styles["chatbot-head"]}>AI 일반 대화</h3>
               </div>
               <div className={styles["chat-container"]}>
                 {messages.map((msg, index) => (
@@ -342,6 +327,7 @@ const Chatbot: React.FC = () => {
               </div>
               <div className={styles["flex-container-bottom"]}>
                 <input
+                  ref={normalFocus}
                   className={styles["chatbot-input"]}
                   type="text"
                   placeholder="답변을 입력하세요"
@@ -350,14 +336,14 @@ const Chatbot: React.FC = () => {
                   onKeyPress={handleKeyPressNormal}
                   disabled={isProcessing}
                 />
-                <img
+                {/* <img
                   src="/infoPic/next.png"
                   alt="next Icon"
                   style={{
                     width: "8%",
                     height: "auto",
                   }}
-                />
+                /> */}
               </div>
             </div>
           )}

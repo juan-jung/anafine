@@ -45,7 +45,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   const [selectedPosition, setSelectedPosition] = useState("now");
   const [selectedDist, setSelectedDist] = useState("5000");
   const [selectedSort, setSelectedSort] = useState("cost");
-  const [address, setAddress] = useState("");
+  const [address, setAddress] = useState("서울 중구 오장동 206-30");
 
   useEffect(() => {
     const findLocation = () => {
@@ -63,11 +63,36 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       console.log(
         `현재 사용자는 위도 ${position.coords.latitude}, 경도 ${position.coords.longitude}에 위치하고 있습니다.`
       );
-      const newLatitude = position.coords.latitude;
-      const newLongitude = position.coords.longitude;
+      setMapCenter({
+        latitude: position.coords.latitude,
+        longitude: position.coords.longitude,
+      });
 
-      // 새로운 위치 정보로 상태를 업데이트합니다.
-      setMapCenter({ latitude: newLatitude, longitude: newLongitude });
+      handlerSortByPriceInfo(
+        id,
+        Number(selectedDist),
+        position.coords.latitude,
+        position.coords.longitude,
+        0,
+        12
+      )
+        .then((data) => {
+          setInitialData(data);
+          return handlerAddressConvert(
+            position.coords.latitude,
+            position.coords.longitude
+          );
+        })
+        .then((newAddress) => {
+          setAddress(
+            newAddress.road_address?.address_name ||
+              newAddress.address.address_name
+          );
+          console.log(newAddress);
+        })
+        .catch((error) => {
+          console.error("오류 발생:", error);
+        });
     };
 
     // 에러 메시지
@@ -75,7 +100,10 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       switch (error.code) {
         case error.PERMISSION_DENIED:
           console.log("사용자가 위치정보 사용 권한을 거부했습니다.");
-          alert("위치정보 사용 권한을 허용해주세요.");
+          if (!localStorage.getItem("permissionDenied")) {
+            alert("위치정보 사용 권한을 허용해주세요.");
+            localStorage.setItem("permissionDenied", "true");
+          }
           break;
         case error.POSITION_UNAVAILABLE:
           console.log("사용할 수 없는 위치정보입니다.");
@@ -99,18 +127,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   }, []);
 
   useEffect(() => {
-    const updateData = async () => {
-      try {
-        setInitialData(data);
-        let newAddress = await handlerAddressConvert(myLatitude, myLongitude);
-        console.log(newAddress.address_name);
-        setAddress(newAddress.address_name);
-      } catch (error) {
-        console.error("Error occurred:", error);
-      }
-    };
-
-    updateData();
+    setInitialData(data);
   }, [data]);
 
   const onPageChange = (page: number) => {
@@ -120,8 +137,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
         handlerSortByPriceInfo(
           id,
           Number(selectedDist),
-          myLatitude,
-          myLongitude,
+          mapCenter.latitude,
+          mapCenter.longitude,
           page - 1,
           12
         ).then((data) => setInitialData(data));
@@ -129,8 +146,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
         handlerSortByDistInfo(
           id,
           Number(selectedDist),
-          myLatitude,
-          myLongitude,
+          mapCenter.latitude,
+          mapCenter.longitude,
           page - 1,
           12
         ).then((data) => setInitialData(data));
@@ -165,8 +182,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       handlerSortByPriceInfo(
         id,
         Number(event.target.value),
-        myLatitude,
-        myLongitude,
+        mapCenter.latitude,
+        mapCenter.longitude,
         0,
         12
       ).then((data) => setInitialData(data));
@@ -174,8 +191,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       handlerSortByDistInfo(
         id,
         Number(event.target.value),
-        myLatitude,
-        myLongitude,
+        mapCenter.latitude,
+        mapCenter.longitude,
         0,
         12
       ).then((data) => setInitialData(data));
@@ -189,8 +206,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       handlerSortByPriceInfo(
         id,
         Number(selectedDist),
-        myLatitude,
-        myLongitude,
+        mapCenter.latitude,
+        mapCenter.longitude,
         0,
         12
       ).then((data) => setInitialData(data));
@@ -198,8 +215,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
       handlerSortByDistInfo(
         id,
         Number(selectedDist),
-        myLatitude,
-        myLongitude,
+        mapCenter.latitude,
+        mapCenter.longitude,
         0,
         12
       ).then((data) => setInitialData(data));
@@ -239,7 +256,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                   <div className="search-select-left">기준 위치: {address}</div>
                   검색 장소&nbsp;&nbsp;
                   <select
-                    id="selectDist"
+                    id="selectPosition"
                     value={selectedPosition}
                     onChange={onSelectPositionChange}
                   >

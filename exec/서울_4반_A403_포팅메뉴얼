@@ -1,1 +1,278 @@
+# <center>아나파잉</center>
 
+### **<center>외부 서비스 이용</center>**
+
+### <center>SSAFY 9th 서울캠퍼스 A403</center>
+
+#### <center>나현웅 김민우 박동휘 박종민 이원희 정재현</center>
+
+<center><u>________________________________________________</u></center>
+
+# 목차
+1. 프로젝트 사용 도구
+2. 개발환경
+3. 외부 서비스
+4. 설정 파일
+   1. 프론트 설정 파일
+   2. 백앤드 설정 파일
+   3. nginx 설정 파일
+5. 배포
+   1. 자동 배포
+
+## 프로젝트 사용 도구
+- 이슈 관리 : JIRA
+- 형상 관리 : Gitlab
+- 커뮤니케이션 : Notion, MatterMost
+- 디자인 : Figma
+- CI/CD : Gitlab-CI
+
+## 개발 환경
+- VS Code : latest
+- IntelliJ : latest
+- NodeJS : 18.16.1
+- SERVER AWS EC2 Ubuntu T2 xlarge0
+- MySQL : 8.0
+- Spring Boot : 2.7.17
+- Next.js : 12.3.4
+- React.js : 18.2.0
+
+## 외부 서비스
+- Kakao Map API
+- ChatGPT API
+- serpAPI
+- papagoAPI
+- elasticsearch
+
+## docker-compose를 통한 간편 배포 방법을 설명합니다.
+
+## 설정 파일
+
+### Front 설정 파일
+1. gitignore 파일  
+   # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+2. .env
+NEXT_PUBLIC_KAKAOMAP_APPKEY="56c7fefa1415ff30159a415ec655d098"
+
+### Backend 설정 파일
+
+1. gitignore파일
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+.env
+/logs/*
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+2. application.yml
+spring:
+  profiles:
+    active: local #default
+    group:
+      local:
+        - common
+      prod :
+        - common
+---
+spring:
+  config:
+    activate:
+      on-profile: common
+    import: optional:file:.env[.properties]
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  elasticsearch:
+    host: ${ELASTICSEARCH_HOST}
+    port: ${ELASTICSEARCH_PORT}
+    username: ${ELASTICSEARCH_USERNAME}
+    password: ${ELASTICSEARCH_PASSWORD}
+
+kakao:
+  rest:
+    api:
+      key: ${KAKAO_REST_API_KEY}
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/anafine
+    username: root
+    password: ssafy
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.mysql.MySQL56SpatialDialect
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://k9a403.p.ssafy.io:3306/anafine
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.spatial.dialect.mysql.MySQL56SpatialDialect
+
+
+### Nginx 설정 파일
+1. nginx.conf
+#upstream frontend {
+#	server localhost:3000;
+#}
+
+#upstream backend {
+#	server localhost:;
+#}
+
+server {
+    listen 80;
+    server_name k9a403.p.ssafy.io anafine.com www.anafine.com;
+    return 301 https://www.anafine.com$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name www.anafine.com;
+    ssl_certificate /etc/letsencrypt/live/www.anafine.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/www.anafine.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+	
+    include /etc/nginx/conf.d/service-url.inc;
+ 
+    location /api {
+        rewrite ^/api(/.*)$ $1 break;
+        proxy_pass $service_url;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+	
+	proxy_buffer_size          128k;
+        proxy_buffers              4 256k;
+        proxy_busy_buffers_size    256k;
+
+    } 
+    
+    include /etc/nginx/conf.d/front-service-url.inc;
+    location / {
+        proxy_pass $front_service_url;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_redirect off;
+    }
+
+	include /etc/nginx/conf.d/chatbot-service-url.inc;
+     location /chat {
+        #rewrite ^/chat(/.*)$ $1 break;
+        proxy_pass $chatbot_service_url;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+    }
+}
+
+
+
+## 배포
+
+### 자동 배포

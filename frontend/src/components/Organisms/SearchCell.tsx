@@ -56,7 +56,7 @@ const SearchCell: React.FC<SearchCellProps> = ({ data, onClick }) => {
         <tbody>
           {data.length === 0 ? (
             <tr>
-              <td className="no-result" colSpan={4}>
+              <td className="no-result" colSpan={6}>
                 범위 내 검색 결과가 없습니다.
               </td>
             </tr>

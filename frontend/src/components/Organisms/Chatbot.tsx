@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import handlerChatBot from "utils/handlerChatBot";
 import styles from "../../styles/chatbot.module.css";
+import handlerChatBotNormal from "utils/handlerChatBotNormal";
 
 const questionsDisease = [
   "성별을 알려주세요.",
@@ -25,6 +26,9 @@ const Chatbot: React.FC = () => {
   const [userInput, setUserInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [chatMode, setChatMode] = useState("normal");
+  const [content, setContent] = useState("");
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   // 버튼 클릭 핸들러
   const handleModeChange = (mode: string) => {
@@ -104,6 +108,7 @@ const Chatbot: React.FC = () => {
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     console.log("클릭");
+    if (userInput.length === 0) return;
     if (e.key === "Enter") {
       setMessages((messages) => [
         ...messages,
@@ -127,8 +132,25 @@ const Chatbot: React.FC = () => {
         default:
           break;
       }
-
+      if (currentStep + 1 >= questionsDisease.length) {
+        submitChatBot(userInput);
+      }
       setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const handleKeyPressNormal = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log("클릭");
+    if (userInput.length === 0) return;
+    if (e.key === "Enter") {
+      setMessages((messages) => [
+        ...messages,
+        { text: userInput, sender: "user" },
+      ]);
+      console.log(userInput + "userInput");
+      setContent(userInput); // 여기서 상태를 설정하지만,
+      setUserInput("");
+      submitChatBotNormal(userInput); // 여기서 현재의 userInput 값을 직접 전달
     }
   };
 
@@ -137,18 +159,43 @@ const Chatbot: React.FC = () => {
     setMessages([{ text: questionsDisease[0], sender: "bot" }]);
   };
 
-  const submitChatBot = async () => {
-    // try {
-    //   const response = await handlerChatBot(sex, age, painArea, symptoms);
-    //   setMessages((messages) => [
-    //     ...messages,
-    //     { text: response, sender: "bot" },
-    //   ]);
-    // } catch (error) {
-    //   console.error("챗봇 요청 처리 중 오류 발생", error);
-    // }
+  const submitChatBot = async (currentInput: string) => {
+    try {
+      setIsLoading(true); // 로딩 시작
+      const response = await handlerChatBot(sex, age, painArea, currentInput);
+
+      const responseText = `예상 질병: ${response.disease}
+
+예상 원인: ${response.cause} 
+      
+받아볼만한 검사: ${response.recommended_tests}`;
+
+      setMessages((messages) => [
+        ...messages,
+        { text: responseText, sender: "bot" },
+      ]);
+
+      setIsLoading(false); // 로딩 종료
+    } catch (error) {
+      console.error("챗봇 요청 처리 중 오류 발생", error);
+      setIsLoading(false); // 로딩 종료
+    }
   };
-  // 일반 대화 호출도
+  // 일반 대화 호출도 -> content : userInput
+  const submitChatBotNormal = async (currentInput: string) => {
+    try {
+      setIsProcessing(true);
+      const response = await handlerChatBotNormal(currentInput);
+      setMessages((messages) => [
+        ...messages,
+        { text: response, sender: "bot" }, // 'response.response' 사용
+      ]);
+      setIsProcessing(false);
+    } catch (error) {
+      console.error("챗봇 요청 처리 중 오류 발생", error);
+      setIsProcessing(false);
+    }
+  };
 
   return (
     <div>
@@ -217,6 +264,14 @@ const Chatbot: React.FC = () => {
                     </div>
                   </div>
                 ))}
+                {isLoading && (
+                  <div>
+                    <p>1분~3분 가량 소요됩니다...</p>
+                    <div className={styles["loading-bar"]}></div>{" "}
+                    {/* 로딩 바 스타일을 정의해야 함 */}
+                  </div>
+                )}
+
                 {currentStep >= questionsDisease.length && (
                   <div className={styles["flex-container-bottom"]}>
                     <button onClick={handleRestart}>네</button>
@@ -292,6 +347,8 @@ const Chatbot: React.FC = () => {
                   placeholder="답변을 입력하세요"
                   value={userInput}
                   onChange={handleUserInput}
+                  onKeyPress={handleKeyPressNormal}
+                  disabled={isProcessing}
                 />
                 <img
                   src="/infoPic/next.png"

@@ -7,8 +7,11 @@ const LocationPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <title>A.Na.Fine 위치기반 서비스 약관</title>
+        <meta
+          name="location-desc"
+          content="A.Na.Fine 위치기반 서비스 이용약관"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

@@ -226,8 +226,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="비급여 비용 검색 결과 페이지" />
+        <title>A.Na.Fine 검색 결과</title>
+        <meta name="search-desc" content="비급여 비용 검색 결과" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

@@ -79,7 +79,7 @@ def get_search_results(query, api_key, language="en"):
 
 def preprocess_prompt(prompt):
     # 모델에 입력할 수 있는 토큰의 최대 수
-    MAX_TOKENS = 4096
+    MAX_TOKENS = 8000
     # prompt를 토큰으로 변환 (공백 기준으로 나눔)
     tokens = prompt.split()
     # 토큰의 길이가 최대 토큰 수를 초과하는지 확인
@@ -246,18 +246,18 @@ class ChatService:
         # 검색 결과를 통합 후 LLM에게 전달
         combined_results_disease = wrapped_text_english_results_text_disease + " " + wrapped_text_korean_results_text_disease 
         preprocessed_prompt_disease = preprocess_prompt(combined_results_disease)
-        disease_prompt = f"이 증상으로 인한 예상되는 질병은 무엇입니까? 몇가지 알려주세요. 한국어로 답해주세요. \n\n{preprocessed_prompt_disease}"
-        llm_response_disease = agent.run({"input": disease_prompt})
+        disease_prompt = f"이 증상으로 인한 예상되는 질병은 무엇입니까? \n\n{preprocessed_prompt_disease} \n\모든 답변은 한국어로 해주세요."
+        llm_response_disease = agent.run(input=disease_prompt, max_tokens=3000)
 
         combined_results_cause = wrapped_text_english_results_text_cause + " " +  wrapped_text_korean_results_text_cause
         preprocessed_prompt_cause = preprocess_prompt(combined_results_cause)
-        cause_prompt = f"이 증상의 예상되는 원인은 무엇입니까? 한국어로 답해주세요. \n\n{preprocessed_prompt_cause}"
-        llm_response_cause = agent.run({"input": cause_prompt})
+        cause_prompt = f"이 증상의 예상되는 원인은 무엇입니까? \n\n{preprocessed_prompt_cause} \n\n모든 답변은 한국어로 해주세요."
+        llm_response_cause = agent.run(input=cause_prompt, max_tokens=3000)
 
         combined_results_doubt = wrapped_text_english_results_text_doubt + " " +  wrapped_text_korean_results_text_doubt
         preprocessed_prompt_doubt = preprocess_prompt(combined_results_doubt)
-        doubt_prompt = f"어떤 병원에서 어떤 검사를 받아보는 것이 좋을까요? 몇가지 추천해주시고 한국어로 답해주세요. \n\n{preprocessed_prompt_doubt}"
-        llm_response_doubt = agent.run({"input": doubt_prompt})
+        doubt_prompt = f"어떤 검사를 받아보는 것이 좋을까요? 어떤 검사를 받으면 좋을지 추천 검사만 알려주세요. \n\n{preprocessed_prompt_doubt} \n\n 모든 답변은 한국어로 해주세요."
+        llm_response_doubt = agent.run(input=doubt_prompt, max_tokens=3000)
 
             
         # 최종적으로 분석된 결과 출력

@@ -10,12 +10,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CoordDocumentDto {
 
-    private String region_type;
-    private String address_name;
+   @JsonProperty("address")
+   private AddressDto addressDto;
 
-    @JsonProperty("y")
-    private String latitude;
-
-    @JsonProperty("x")
-    private String longitude;
+   @JsonProperty("road_address")
+   private RoadAddressDto roadAddressDto;
 }

@@ -19,8 +19,8 @@ const InfoPage = () => {
   return (
     <div className="flex justify-center items-center py-5 px-3">
       <Head>
-        <title>SSAFY A403 자율프로젝트</title>
-        <meta name="description" content="SSAFY A403 자율프로젝트" />
+        <title>A.Na.Fine 비급여 소개</title>
+        <meta name="info-desc" content="비급여란 무엇인지 소개하는 페이지" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

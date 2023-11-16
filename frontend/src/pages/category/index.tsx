@@ -125,9 +125,9 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>SSAFY A403 자율프로젝트</title>
+        <title>A.Na.Fine 카테고리 검색</title>
         <meta
-          name="description"
+          name="category-desc"
           content="비급여 항목 검색을 위한 검색 페이지"
         />
         <link rel="icon" href="/favicon.png" />

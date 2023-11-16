@@ -8,6 +8,7 @@ import Pagination from "components/Organisms/Pagination";
 import handlerSortByPriceInfo from "utils/hanlderSortByPriceInfo";
 import handlerSortByDistInfo from "utils/handlerSortByDistInfo";
 import HospitalDetail from "components/Organisms/HospitalDetail";
+import handlerAddressConvert from "utils/handlerAddressConvert";
 
 type SearchPageProps = {
   id: string;
@@ -20,7 +21,7 @@ const myLatitude = 37.5642135;
 const myLongitude = 127.0016985;
 
 // CSR로 렌더링할 Map와 SearchCell 컴포넌트를 동적으로 불러오기
-const DynamicMap = dynamic(() => import("components/Organisms/Map"));
+const DynamicMap = dynamic(() => import("components/Organisms/DynamicMap"));
 const DynamicSearchCell = dynamic(
   () => import("components/Organisms/SearchCell")
 );
@@ -30,14 +31,21 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     latitude: myLatitude,
     longitude: myLongitude,
   });
+  const [currentMapCenter, setCurrentMapCenter] = useState({
+    latitude: myLatitude,
+    longitude: myLongitude,
+  });
+  console.log("mapCenter", mapCenter);
+  console.log("currentMapCenter", currentMapCenter);
 
   const [pageNum, setPageNum] = useState(1);
   const [initialData, setInitialData] = useState<any>(data);
   const [detailVisible, setDetailVisible] = useState(false);
   const [hospitalId, setHospitalId] = useState("");
+  const [selectedPosition, setSelectedPosition] = useState("now");
   const [selectedDist, setSelectedDist] = useState("5000");
   const [selectedSort, setSelectedSort] = useState("cost");
-  console.log(selectedSort);
+  const [address, setAddress] = useState("");
 
   useEffect(() => {
     const findLocation = () => {
@@ -91,8 +99,18 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   }, []);
 
   useEffect(() => {
-    console.log(myLatitude, myLongitude);
-    setInitialData(data);
+    const updateData = async () => {
+      try {
+        setInitialData(data);
+        let newAddress = await handlerAddressConvert(myLatitude, myLongitude);
+        console.log(newAddress.address_name);
+        setAddress(newAddress.address_name);
+      } catch (error) {
+        console.error("Error occurred:", error);
+      }
+    };
+
+    updateData();
   }, [data]);
 
   const onPageChange = (page: number) => {
@@ -126,13 +144,21 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     setDetailVisible(true);
   };
 
+  const onLocationChange = (latitude: number, longitude: number) => {
+    setCurrentMapCenter({ latitude, longitude });
+  };
+
   const onCloseClick = () => {
     setDetailVisible(false);
   };
 
-  const handleSelectDistChange = (
+  const onSelectPositionChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
+    setSelectedPosition(event.target.value);
+  };
+
+  const onSelectDistChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDist(event.target.value);
     setPageNum(1);
     if (selectedSort === "cost") {
@@ -156,9 +182,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     }
   };
 
-  const handleSelectSortChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
+  const onSelectSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedSort(event.target.value);
     setPageNum(1);
     if (event.target.value === "cost") {
@@ -200,6 +224,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                 longitude={mapCenter.longitude}
                 data={initialData.content}
                 onClick={onClick}
+                onLocationChange={onLocationChange}
               />
             </div>
             {detailVisible ? (
@@ -211,22 +236,32 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
             ) : (
               <div>
                 <div className="search-select">
-                  반경 선택 :
+                  <div className="search-select-left">기준 위치: {address}</div>
+                  검색 장소&nbsp;&nbsp;
+                  <select
+                    id="selectDist"
+                    value={selectedPosition}
+                    onChange={onSelectPositionChange}
+                  >
+                    <option value="now">내 위치</option>
+                    <option value="map">지도</option>
+                  </select>
+                  &nbsp;&nbsp;&nbsp;반경 선택&nbsp;&nbsp;
                   <select
                     id="selectDist"
                     value={selectedDist}
-                    onChange={handleSelectDistChange}
+                    onChange={onSelectDistChange}
                   >
                     <option value="1000">1km</option>
                     <option value="5000">5km</option>
                     <option value="10000">10km</option>
                     <option value="50000">50km</option>
                   </select>
-                  &nbsp;&nbsp;&nbsp;정렬 기준 :
+                  &nbsp;&nbsp;&nbsp;정렬 기준&nbsp;&nbsp;
                   <select
                     id="selectSort"
                     value={selectedSort}
-                    onChange={handleSelectSortChange}
+                    onChange={onSelectSortChange}
                   >
                     <option value="cost">가격 순</option>
                     <option value="distance">거리 순</option>

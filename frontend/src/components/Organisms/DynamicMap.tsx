@@ -12,9 +12,16 @@ interface MapProps {
   longitude: number;
   data: any[];
   onClick: (id: string, latitude: number, longitude: number) => void;
+  onLocationChange: (latitude: number, longitude: number) => void;
 }
-const Map: React.FC<MapProps> = ({ latitude, longitude, data, onClick }) => {
-  console.log(data);
+
+const DynamicMap: React.FC<MapProps> = ({
+  latitude,
+  longitude,
+  data,
+  onClick,
+  onLocationChange,
+}) => {
   useEffect(() => {
     const loadKakaoMap = () => {
       const script = document.createElement("script");
@@ -86,6 +93,17 @@ const Map: React.FC<MapProps> = ({ latitude, longitude, data, onClick }) => {
             });
 
             window.kakao.maps.event.addListener(
+              map,
+              "center_changed",
+              function () {
+                onLocationChange(
+                  map.getCenter().getLat(),
+                  map.getCenter().getLng()
+                );
+              }
+            );
+
+            window.kakao.maps.event.addListener(
               marker,
               "mouseover",
               function () {
@@ -117,4 +135,4 @@ const MapContainer = styled.div`
   height: 75vh;
 `;
 
-export default Map;
+export default DynamicMap;

@@ -47,8 +47,6 @@ const HospitalDetail: React.FC<HospitalDetailProps> = ({
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  console.log(hospitalDetail);
-
   return (
     <div className="hospital-detail">
       <div className="detail-title-wrap">

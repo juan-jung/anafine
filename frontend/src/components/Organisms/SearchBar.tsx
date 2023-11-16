@@ -95,9 +95,10 @@ const SearchBar: React.FC = () => {
             className={`search-result-text ${
               index === selectIdx ? "selected" : ""
             }`}
-            children={result.path}
             onClick={() => onClick(result.treatmentId, result.path)}
-          ></TextArea>
+          >
+            {result.path}
+          </TextArea>
         ))}
       </div>
     </div>

@@ -1,0 +1,1130 @@
+{"index": { "_index": "treatment", "_id": "ABZ010001"}}
+{"treatmentId": "ABZ010001", "name": "1인실", "path": "상급병실료/1인실", "chosung": "ㅅㄱㅂㅅㄹ1ㅇㅅ", "jamo": "ㅅㅏㅇㄱㅡㅂㅂㅕㅇㅅㅣㄹㄹㅛ1ㅇㅣㄴㅅㅣㄹ", "engtokor": "tkdrmqqudtlffy1dlstlf"}
+{"index": { "_index": "treatment", "_id": "ABZ020001"}}
+{"treatmentId": "ABZ020001", "name": "2인실", "path": "상급병실료/2인실", "chosung": "ㅅㄱㅂㅅㄹ2ㅇㅅ", "jamo": "ㅅㅏㅇㄱㅡㅂㅂㅕㅇㅅㅣㄹㄹㅛ2ㅇㅣㄴㅅㅣㄹ", "engtokor": "tkdrmqqudtlffy2dlstlf"}
+{"index": { "_index": "treatment", "_id": "ABZ030001"}}
+{"treatmentId": "ABZ030001", "name": "3인실", "path": "상급병실료/3인실", "chosung": "ㅅㄱㅂㅅㄹ3ㅇㅅ", "jamo": "ㅅㅏㅇㄱㅡㅂㅂㅕㅇㅅㅣㄹㄹㅛ3ㅇㅣㄴㅅㅣㄹ", "engtokor": "tkdrmqqudtlffy3dlstlf"}
+{"index": { "_index": "treatment", "_id": "AZ0010000"}}
+{"treatmentId": "AZ0010000", "name": "당뇨병교육", "path": "교육상담료/당뇨병교육", "chosung": "ㄱㅇㅅㄷㄹㄷㄴㅂㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㄷㅏㅇㄴㅛㅂㅕㅇㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafyekdsyqudrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0020000"}}
+{"treatmentId": "AZ0020000", "name": "고혈압교육", "path": "교육상담료/고혈압교육", "chosung": "ㄱㅇㅅㄷㄹㄱㅎㅇㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㄱㅗㅎㅕㄹㅇㅏㅂㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafyrhgufdkqrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0070000"}}
+{"treatmentId": "AZ0070000", "name": "치태조절교육", "path": "교육상담료/치태조절교육", "chosung": "ㄱㅇㅅㄷㄹㅊㅌㅈㅈㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㅊㅣㅌㅐㅈㅗㅈㅓㄹㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafyclxowhwjfrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0080000"}}
+{"treatmentId": "AZ0080000", "name": "고지혈증교육", "path": "교육상담료/고지혈증교육", "chosung": "ㄱㅇㅅㄷㄹㄱㅈㅎㅈㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㄱㅗㅈㅣㅎㅕㄹㅈㅡㅇㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafyrhwlgufwmdrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0090000"}}
+{"treatmentId": "AZ0090000", "name": "재생불량성빈혈교육", "path": "교육상담료/재생불량성빈혈교육", "chosung": "ㄱㅇㅅㄷㄹㅈㅅㅂㄹㅅㅂㅎㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㅈㅐㅅㅐㅇㅂㅜㄹㄹㅑㅇㅅㅓㅇㅂㅣㄴㅎㅕㄹㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafywotodqnffidtjdqlsgufrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0100000"}}
+{"treatmentId": "AZ0100000", "name": "유전성대사장애질환교육", "path": "교육상담료/유전성대사장애질환교육", "chosung": "ㄱㅇㅅㄷㄹㅇㅈㅅㄷㅅㅈㅇㅈㅎㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㅇㅠㅈㅓㄴㅅㅓㅇㄷㅐㅅㅏㅈㅏㅇㅇㅐㅈㅣㄹㅎㅘㄴㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafydbwjstjdeotkwkddowlfghksrydbr"}
+{"index": { "_index": "treatment", "_id": "AZ0110000"}}
+{"treatmentId": "AZ0110000", "name": "난치성뇌전증교육", "path": "교육상담료/난치성뇌전증교육", "chosung": "ㄱㅇㅅㄷㄹㄴㅊㅅㄴㅈㅈㄱㅇ", "jamo": "ㄱㅛㅇㅠㄱㅅㅏㅇㄷㅏㅁㄹㅛㄴㅏㄴㅊㅣㅅㅓㅇㄴㅚㅈㅓㄴㅈㅡㅇㄱㅛㅇㅠㄱ", "engtokor": "rydbrtkdekafyskscltjdshlwjswmdrydbr"}
+{"index": { "_index": "treatment", "_id": "CZ3940000"}}
+{"treatmentId": "CZ3940000", "name": "인플루엔자 A·B 바이러스항원검사[현장검사]", "path": "검체검사료/인플루엔자 A·B 바이러스항원검사[현장검사]", "chosung": "ㄱㅊㄱㅅㄹㅇㅍㄹㅇㅈABㅂㅇㄹㅅㅎㅇㄱㅅㅎㅈㄱㅅ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏABㅂㅏㅇㅣㄹㅓㅅㅡㅎㅏㅇㅇㅝㄴㄱㅓㅁㅅㅏㅎㅕㄴㅈㅏㅇㄱㅓㅁㅅㅏ", "engtokor": "rjacprjatkfydlsvmffndpswkABqkdlfjtmgkddnjsrjatkguswkdrjatk"}
+{"index": { "_index": "treatment", "_id": "CZ1140000"}}
+{"treatmentId": "CZ1140000", "name": "호산구양이온단백농도측정검사", "path": "검체검사료/호산구양이온단백농도측정검사", "chosung": "ㄱㅊㄱㅅㄹㅎㅅㄱㅇㅇㅇㄷㅂㄴㄷㅊㅈㄱㅅ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅎㅗㅅㅏㄴㄱㅜㅇㅑㅇㅇㅣㅇㅗㄴㄷㅏㄴㅂㅐㄱㄴㅗㅇㄷㅗㅊㅡㄱㅈㅓㅇㄱㅓㅁㅅㅏ", "engtokor": "rjacprjatkfyghtksrndiddldhseksqorshdehcmrwjdrjatk"}
+{"index": { "_index": "treatment", "_id": "CY1530000"}}
+{"treatmentId": "CY1530000", "name": "비타민 D1 [RIA법]", "path": "검체검사료/비타민 D1 [RIA법]", "chosung": "ㄱㅊㄱㅅㄹㅂㅌㅁD1RIAㅂ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅂㅣㅌㅏㅁㅣㄴD1RIAㅂㅓㅂ", "engtokor": "rjacprjatkfyqlxkalsD1RIAqjq"}
+{"index": { "_index": "treatment", "_id": "CZ1960000"}}
+{"treatmentId": "CZ1960000", "name": "안드로스테네디온", "path": "검체검사료/안드로스테네디온", "chosung": "ㄱㅊㄱㅅㄹㅇㄷㄹㅅㅌㄴㄷㅇ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅇㅏㄴㄷㅡㄹㅗㅅㅡㅌㅔㄴㅔㄷㅣㅇㅗㄴ", "engtokor": "rjacprjatkfydksemfhtmxpspeldhs"}
+{"index": { "_index": "treatment", "_id": "CZ1990000"}}
+{"treatmentId": "CZ1990000", "name": "DHEA(Dehydroepiandrosterone)", "path": "검체검사료/DHEA(Dehydroepiandrosterone)", "chosung": "ㄱㅊㄱㅅㄹDHEADehydroepiandrosterone", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛDHEADehydroepiandrosterone", "engtokor": "rjacprjatkfyDHEADehydroepiandrosterone"}
+{"index": { "_index": "treatment", "_id": "CZ2020000"}}
+{"treatmentId": "CZ2020000", "name": "성호르몬결합글로불린", "path": "검체검사료/성호르몬결합글로불린", "chosung": "ㄱㅊㄱㅅㄹㅅㅎㄹㅁㄱㅎㄱㄹㅂㄹ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅅㅓㅇㅎㅗㄹㅡㅁㅗㄴㄱㅕㄹㅎㅏㅂㄱㅡㄹㄹㅗㅂㅜㄹㄹㅣㄴ", "engtokor": "rjacprjatkfytjdghfmahsrufgkqrmffhqnffls"}
+{"index": { "_index": "treatment", "_id": "D37300000"}}
+{"treatmentId": "D37300000", "name": "항뮬러관호르몬 [정밀면역검사]", "path": "검체검사료/항뮬러관호르몬 [정밀면역검사]", "chosung": "ㄱㅊㄱㅅㄹㅎㅁㄹㄱㅎㄹㅁㅈㅁㅁㅇㄱㅅ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅎㅏㅇㅁㅠㄹㄹㅓㄱㅘㄴㅎㅗㄹㅡㅁㅗㄴㅈㅓㅇㅁㅣㄹㅁㅕㄴㅇㅕㄱㄱㅓㅁㅅㅏ", "engtokor": "rjacprjatkfygkdabffjrhksghfmahswjdalfausdurrjatk"}
+{"index": { "_index": "treatment", "_id": "CZ2460000"}}
+{"treatmentId": "CZ2460000", "name": "허혈성 변형 알부민 검사", "path": "검체검사료/허혈성 변형 알부민 검사", "chosung": "ㄱㅊㄱㅅㄹㅎㅎㅅㅂㅎㅇㅂㅁㄱㅅ", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅎㅓㅎㅕㄹㅅㅓㅇㅂㅕㄴㅎㅕㅇㅇㅏㄹㅂㅜㅁㅣㄴㄱㅓㅁㅅㅏ", "engtokor": "rjacprjatkfygjguftjdqusguddkfqnalsrjatk"}
+{"index": { "_index": "treatment", "_id": "3Z2600001"}}
+{"treatmentId": "3Z2600001", "name": "비침습적 산전검사(NIPT)", "path": "검체검사료/비침습적 산전검사(NIPT)", "chosung": "ㄱㅊㄱㅅㄹㅂㅊㅅㅈㅅㅈㄱㅅNIPT", "jamo": "ㄱㅓㅁㅊㅔㄱㅓㅁㅅㅏㄹㅛㅂㅣㅊㅣㅁㅅㅡㅂㅈㅓㄱㅅㅏㄴㅈㅓㄴㄱㅓㅁㅅㅏNIPT", "engtokor": "rjacprjatkfyqlclatmqwjrtkswjsrjatkNIPT"}
+{"index": { "_index": "treatment", "_id": "EZ9410000"}}
+{"treatmentId": "EZ9410000", "name": "약물유도 수면상기도 내시경검사 ", "path": "내시경, 천자 및 생검료 /약물유도 수면상기도 내시경검사 ", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅇㅁㅇㄷㅅㅁㅅㄱㄷㄴㅅㄱㄱㅅ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅇㅑㄱㅁㅜㄹㅇㅠㄷㅗㅅㅜㅁㅕㄴㅅㅏㅇㄱㅣㄷㅗㄴㅐㅅㅣㄱㅕㅇㄱㅓㅁㅅㅏ", "engtokor": "sotlrudcjswkalctodrjafydiranfdbehtnaustkdrlehsotlrudrjatk"}
+{"index": { "_index": "treatment", "_id": "CZ9770000"}}
+{"treatmentId": "CZ9770000", "name": "입체적 유방절제생검술", "path": "내시경, 천자 및 생검료 /입체적 유방절제생검술", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅇㅊㅈㅇㅂㅈㅈㅅㄱㅅ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅇㅣㅂㅊㅔㅈㅓㄱㅇㅠㅂㅏㅇㅈㅓㄹㅈㅔㅅㅐㅇㄱㅓㅁㅅㅜㄹ", "engtokor": "sotlrudcjswkalctodrjafydlqcpwjrdbqkdwjfwptodrjatnf"}
+{"index": { "_index": "treatment", "_id": "EA0010000"}}
+{"treatmentId": "EA0010000", "name": "Ⅰ", "path": "내시경, 천자 및 생검료 /진정내시경환자관리료 /Ⅰ", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅈㅈㄴㅅㄱㅎㅈㄱㄹㄹ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅈㅣㄴㅈㅓㅇㄴㅐㅅㅣㄱㅕㅇㅎㅘㄴㅈㅏㄱㅘㄴㄹㅣㄹㅛ", "engtokor": "sotlrudcjswkalctodrjafywlswjdsotlrudghkswkrhksflfy"}
+{"index": { "_index": "treatment", "_id": "EA0020000"}}
+{"treatmentId": "EA0020000", "name": "Ⅱ", "path": "내시경, 천자 및 생검료 /진정내시경환자관리료 /Ⅱ", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅈㅈㄴㅅㄱㅎㅈㄱㄹㄹ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅈㅣㄴㅈㅓㅇㄴㅐㅅㅣㄱㅕㅇㅎㅘㄴㅈㅏㄱㅘㄴㄹㅣㄹㅛ", "engtokor": "sotlrudcjswkalctodrjafywlswjdsotlrudghkswkrhksflfy"}
+{"index": { "_index": "treatment", "_id": "EA0030000"}}
+{"treatmentId": "EA0030000", "name": "Ⅲ", "path": "내시경, 천자 및 생검료 /진정내시경환자관리료 /Ⅲ", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅈㅈㄴㅅㄱㅎㅈㄱㄹㄹ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅈㅣㄴㅈㅓㅇㄴㅐㅅㅣㄱㅕㅇㅎㅘㄴㅈㅏㄱㅘㄴㄹㅣㄹㅛ", "engtokor": "sotlrudcjswkalctodrjafywlswjdsotlrudghkswkrhksflfy"}
+{"index": { "_index": "treatment", "_id": "EA0040000"}}
+{"treatmentId": "EA0040000", "name": "Ⅳ", "path": "내시경, 천자 및 생검료 /진정내시경환자관리료 /Ⅳ", "chosung": "ㄴㅅㄱㅊㅈㅁㅅㄱㄹㅈㅈㄴㅅㄱㅎㅈㄱㄹㄹ", "jamo": "ㄴㅐㅅㅣㄱㅕㅇㅊㅓㄴㅈㅏㅁㅣㅊㅅㅐㅇㄱㅓㅁㄹㅛㅈㅣㄴㅈㅓㅇㄴㅐㅅㅣㄱㅕㅇㅎㅘㄴㅈㅏㄱㅘㄴㄹㅣㄹㅛ", "engtokor": "sotlrudcjswkalctodrjafywlswjdsotlrudghkswkrhksflfy"}
+{"index": { "_index": "treatment", "_id": "EZ9810000"}}
+{"treatmentId": "EZ9810000", "name": "진단초음파/횡파 탄성 초음파 영상", "path": "초음파검사료/진단초음파/횡파 탄성 초음파 영상", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㅍㅌㅅㅊㅇㅍㅇㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅚㅇㅍㅏㅌㅏㄴㅅㅓㅇㅊㅗㅇㅡㅁㅍㅏㅇㅕㅇㅅㅏㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkghldvkxkstjdchdmavkdudtkd"}
+{"index": { "_index": "treatment", "_id": "EB4140000"}}
+{"treatmentId": "EB4140000", "name": "갑상선·부갑상선", "path": "초음파검사료/진단초음파/두경부-경부 초음파/갑상선·부갑상선", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄷㄱㅂㄱㅂㅊㅇㅍㄱㅅㅅㅂㄱㅅㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄷㅜㄱㅕㅇㅂㅜㄱㅕㅇㅂㅜㅊㅗㅇㅡㅁㅍㅏㄱㅏㅂㅅㅏㅇㅅㅓㄴㅂㅜㄱㅏㅂㅅㅏㅇㅅㅓㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkenrudqnrudqnchdmavkrkqtkdtjsqnrkqtkdtjs"}
+{"index": { "_index": "treatment", "_id": "EB4150000"}}
+{"treatmentId": "EB4150000", "name": "갑상선·부갑상선 제외한 경부", "path": "초음파검사료/진단초음파/두경부-경부 초음파/갑상선·부갑상선 제외한 경부", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄷㄱㅂㄱㅂㅊㅇㅍㄱㅅㅅㅂㄱㅅㅅㅈㅇㅎㄱㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄷㅜㄱㅕㅇㅂㅜㄱㅕㅇㅂㅜㅊㅗㅇㅡㅁㅍㅏㄱㅏㅂㅅㅏㅇㅅㅓㄴㅂㅜㄱㅏㅂㅅㅏㅇㅅㅓㄴㅈㅔㅇㅚㅎㅏㄴㄱㅕㅇㅂㅜ", "engtokor": "chdmavkrjatkfywlsekschdmavkenrudqnrudqnchdmavkrkqtkdtjsqnrkqtkdtjswpdhlgksrudqn"}
+{"index": { "_index": "treatment", "_id": "EB4160000"}}
+{"treatmentId": "EB4160000", "name": "진단초음파/두경부-비·부비동 초음파", "path": "초음파검사료/진단초음파/두경부-비·부비동 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄷㄱㅂㅂㅂㅂㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄷㅜㄱㅕㅇㅂㅜㅂㅣㅂㅜㅂㅣㄷㅗㅇㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavkenrudqnqlqnqlehdchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB4310000"}}
+{"treatmentId": "EB4310000", "name": "단순", "path": "초음파검사료/진단초음파/심장-경흉부 심초음파/단순", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㄱㅎㅂㅅㅊㅇㅍㄷㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㄱㅕㅇㅎㅠㅇㅂㅜㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏㄷㅏㄴㅅㅜㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdrudgbdqntlachdmavkekstns"}
+{"index": { "_index": "treatment", "_id": "EB4320000"}}
+{"treatmentId": "EB4320000", "name": "일반", "path": "초음파검사료/진단초음파/심장-경흉부 심초음파/일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㄱㅎㅂㅅㅊㅇㅍㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㄱㅕㅇㅎㅠㅇㅂㅜㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdrudgbdqntlachdmavkdlfqks"}
+{"index": { "_index": "treatment", "_id": "EB4330000"}}
+{"treatmentId": "EB4330000", "name": "전문", "path": "초음파검사료/진단초음파/심장-경흉부 심초음파/전문", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㄱㅎㅂㅅㅊㅇㅍㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㄱㅕㅇㅎㅠㅇㅂㅜㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏㅈㅓㄴㅁㅜㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdrudgbdqntlachdmavkwjsans"}
+{"index": { "_index": "treatment", "_id": "EB4340000"}}
+{"treatmentId": "EB4340000", "name": "약물부하", "path": "초음파검사료/진단초음파/심장-부하 심초음파/약물부하", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㅂㅎㅅㅊㅇㅍㅇㅁㅂㅎ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㅂㅜㅎㅏㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏㅇㅑㄱㅁㅜㄹㅂㅜㅎㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdqngktlachdmavkdiranfqngk"}
+{"index": { "_index": "treatment", "_id": "EB4350000"}}
+{"treatmentId": "EB4350000", "name": "운동부하", "path": "초음파검사료/진단초음파/심장-부하 심초음파/운동부하", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㅂㅎㅅㅊㅇㅍㅇㄷㅂㅎ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㅂㅜㅎㅏㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏㅇㅜㄴㄷㅗㅇㅂㅜㅎㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdqngktlachdmavkdnsehdqngk"}
+{"index": { "_index": "treatment", "_id": "EB4360000"}}
+{"treatmentId": "EB4360000", "name": "진단초음파/심장-태아정밀 심초음파", "path": "초음파검사료/진단초음파/심장-태아정밀 심초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㅈㅌㅇㅈㅁㅅㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㅌㅐㅇㅏㅈㅓㅇㅁㅣㄹㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavktlawkdxodkwjdalftlachdmavk"}
+{"index": { "_index": "treatment", "_id": "EB4610000"}}
+{"treatmentId": "EB4610000", "name": "손가락 ", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/손가락 ", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅅㄱㄹ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅅㅗㄴㄱㅏㄹㅏㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkthsrkfkr"}
+{"index": { "_index": "treatment", "_id": "EB4620000"}}
+{"treatmentId": "EB4620000", "name": "발가락 ", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/발가락 ", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅂㄱㄹ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅂㅏㄹㄱㅏㄹㅏㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkqkfrkfkr"}
+{"index": { "_index": "treatment", "_id": "EB4630000"}}
+{"treatmentId": "EB4630000", "name": "주관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/주관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅈㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅈㅜㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkwnrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4640000"}}
+{"treatmentId": "EB4640000", "name": "슬관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/슬관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅅㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅅㅡㄹㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavktmfrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4650000"}}
+{"treatmentId": "EB4650000", "name": "고관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/고관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㄱㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㄱㅗㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkrhrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4660000"}}
+{"treatmentId": "EB4660000", "name": "견관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/견관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㄱㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㄱㅕㄴㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkrusrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4670000"}}
+{"treatmentId": "EB4670000", "name": "손목관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/손목관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅅㅁㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅅㅗㄴㅁㅗㄱㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkthsahrrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4680000"}}
+{"treatmentId": "EB4680000", "name": "발목관절", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/발목관절", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㅂㅁㄱㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㅂㅏㄹㅁㅗㄱㄱㅘㄴㅈㅓㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkqkfahrrhkswjf"}
+{"index": { "_index": "treatment", "_id": "EB4690000"}}
+{"treatmentId": "EB4690000", "name": "류마티스성 질환에 의한 다발성 관절염", "path": "초음파검사료/진단초음파/근골격, 연부-관절 초음파/류마티스성 질환에 의한 다발성 관절염", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㄱㅈㅊㅇㅍㄹㅁㅌㅅㅅㅈㅎㅇㅇㅎㄷㅂㅅㄱㅈㅇ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㄱㅘㄴㅈㅓㄹㅊㅗㅇㅡㅁㅍㅏㄹㅠㅁㅏㅌㅣㅅㅡㅅㅓㅇㅈㅣㄹㅎㅘㄴㅇㅔㅇㅢㅎㅏㄴㄷㅏㅂㅏㄹㅅㅓㅇㄱㅘㄴㅈㅓㄹㅇㅕㅁ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqnrhkswjfchdmavkfbakxltmtjdwlfghksdpdmlgksekqkftjdrhkswjfdua"}
+{"index": { "_index": "treatment", "_id": "EB4700000"}}
+{"treatmentId": "EB4700000", "name": "일반", "path": "초음파검사료/진단초음파/근골격, 연부-연부조직 초음파/일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㅇㅂㅈㅈㅊㅇㅍㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㅇㅕㄴㅂㅜㅈㅗㅈㅣㄱㅊㅗㅇㅡㅁㅍㅏㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqndusqnwhwlrchdmavkdlfqks"}
+{"index": { "_index": "treatment", "_id": "EB4710000"}}
+{"treatmentId": "EB4710000", "name": "정밀 ", "path": "초음파검사료/진단초음파/근골격, 연부-연부조직 초음파/정밀 ", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄱㄱㄱㅇㅂㅇㅂㅈㅈㅊㅇㅍㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㅇㅕㄴㅂㅜㅇㅕㄴㅂㅜㅈㅗㅈㅣㄱㅊㅗㅇㅡㅁㅍㅏㅈㅓㅇㅁㅣㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkrmsrhfrurdusqndusqnwhwlrchdmavkwjdalf"}
+{"index": { "_index": "treatment", "_id": "EB4810000"}}
+{"treatmentId": "EB4810000", "name": "진단초음파/혈관-뇌혈류 초음파", "path": "초음파검사료/진단초음파/혈관-뇌혈류 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㄴㅎㄹㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㄴㅚㅎㅕㄹㄹㅠㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhksshlguffbchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB4820000"}}
+{"treatmentId": "EB4820000", "name": "경동맥", "path": "초음파검사료/진단초음파/혈관-두개외 혈관 도플러 초음파/경동맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㄷㄱㅇㅎㄱㄷㅍㄹㅊㅇㅍㄱㄷㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㄷㅜㄱㅐㅇㅚㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㄱㅕㅇㄷㅗㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhksenrodhlgufrhksehvmffjchdmavkrudehdaor"}
+{"index": { "_index": "treatment", "_id": "EB4830000"}}
+{"treatmentId": "EB4830000", "name": "기타동맥", "path": "초음파검사료/진단초음파/혈관-두개외 혈관 도플러 초음파/기타동맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㄷㄱㅇㅎㄱㄷㅍㄹㅊㅇㅍㄱㅌㄷㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㄷㅜㄱㅐㅇㅚㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㄱㅣㅌㅏㄷㅗㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhksenrodhlgufrhksehvmffjchdmavkrlxkehdaor"}
+{"index": { "_index": "treatment", "_id": "EB4840000"}}
+{"treatmentId": "EB4840000", "name": "상지-동맥", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/상지-동맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㅅㅈㄷㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㅅㅏㅇㅈㅣㄷㅗㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavktkdwlehdaor"}
+{"index": { "_index": "treatment", "_id": "EB4850000"}}
+{"treatmentId": "EB4850000", "name": "상지-정맥", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/상지-정맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㅅㅈㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㅅㅏㅇㅈㅣㅈㅓㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavktkdwlwjdaor"}
+{"index": { "_index": "treatment", "_id": "EB4860000"}}
+{"treatmentId": "EB4860000", "name": "동정맥루의 혈류및 협착 측정 시", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/동정맥루의 혈류및 협착 측정 시", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㄷㅈㅁㄹㅇㅎㄹㅁㅎㅊㅊㅈㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㄷㅗㅇㅈㅓㅇㅁㅐㄱㄹㅜㅇㅢㅎㅕㄹㄹㅠㅁㅣㅊㅎㅕㅂㅊㅏㄱㅊㅡㄱㅈㅓㅇㅅㅣ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavkehdwjdaorfndmlguffbalcguqckrcmrwjdtl"}
+{"index": { "_index": "treatment", "_id": "EB4870000"}}
+{"treatmentId": "EB4870000", "name": "하지-동맥", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/하지-동맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㅎㅈㄷㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㅎㅏㅈㅣㄷㅗㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavkgkwlehdaor"}
+{"index": { "_index": "treatment", "_id": "EB4880000"}}
+{"treatmentId": "EB4880000", "name": "하지-정맥", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/하지-정맥", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㅎㅈㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㅎㅏㅈㅣㅈㅓㅇㅁㅐㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavkgkwlwjdaor"}
+{"index": { "_index": "treatment", "_id": "EB4890000"}}
+{"treatmentId": "EB4890000", "name": "하지정맥류", "path": "초음파검사료/진단초음파/혈관-사지혈관 도플러 초음파/하지정맥류", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㅅㅈㅎㄱㄷㅍㄹㅊㅇㅍㅎㅈㅈㅁㄹ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏㅎㅏㅈㅣㅈㅓㅇㅁㅐㄱㄹㅠ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkstkwlgufrhksehvmffjchdmavkgkwlwjdaorfb"}
+{"index": { "_index": "treatment", "_id": "EB4900000"}}
+{"treatmentId": "EB4900000", "name": "진단초음파/혈관-대동맥 도플러 초음파", "path": "초음파검사료/진단초음파/혈관-대동맥 도플러 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㄱㄷㄷㅁㄷㅍㄹㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㄷㅐㄷㅗㅇㅁㅐㄱㄷㅗㅍㅡㄹㄹㅓㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavkgufrhkseoehdaorehvmffjchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB5110000"}}
+{"treatmentId": "EB5110000", "name": "제1삼분기 -일반", "path": "초음파검사료/진단초음파/임산부 초음파/제1삼분기 -일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅇㅅㅂㅊㅇㅍㅈ1ㅅㅂㄱㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅣㅁㅅㅏㄴㅂㅜㅊㅗㅇㅡㅁㅍㅏㅈㅔ1ㅅㅏㅁㅂㅜㄴㄱㅣㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkdlatksqnchdmavkwp1tkaqnsrldlfqks"}
+{"index": { "_index": "treatment", "_id": "EB5130000"}}
+{"treatmentId": "EB5130000", "name": "제1삼분기 -정밀", "path": "초음파검사료/진단초음파/임산부 초음파/제1삼분기 -정밀", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅇㅅㅂㅊㅇㅍㅈ1ㅅㅂㄱㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅣㅁㅅㅏㄴㅂㅜㅊㅗㅇㅡㅁㅍㅏㅈㅔ1ㅅㅏㅁㅂㅜㄴㄱㅣㅈㅓㅇㅁㅣㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkdlatksqnchdmavkwp1tkaqnsrlwjdalf"}
+{"index": { "_index": "treatment", "_id": "EB5150000"}}
+{"treatmentId": "EB5150000", "name": "제2,3삼분기 -일반", "path": "초음파검사료/진단초음파/임산부 초음파/제2,3삼분기 -일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅇㅅㅂㅊㅇㅍㅈ23ㅅㅂㄱㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅣㅁㅅㅏㄴㅂㅜㅊㅗㅇㅡㅁㅍㅏㅈㅔ23ㅅㅏㅁㅂㅜㄴㄱㅣㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkdlatksqnchdmavkwp23tkaqnsrldlfqks"}
+{"index": { "_index": "treatment", "_id": "EB5170000"}}
+{"treatmentId": "EB5170000", "name": "제2,3삼분기 -정밀", "path": "초음파검사료/진단초음파/임산부 초음파/제2,3삼분기 -정밀", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅇㅅㅂㅊㅇㅍㅈ23ㅅㅂㄱㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅣㅁㅅㅏㄴㅂㅜㅊㅗㅇㅡㅁㅍㅏㅈㅔ23ㅅㅏㅁㅂㅜㄴㄱㅣㅈㅓㅇㅁㅣㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkdlatksqnchdmavkwp23tkaqnsrlwjdalf"}
+{"index": { "_index": "treatment", "_id": "EB4430001"}}
+{"treatmentId": "EB4430001", "name": "충수", "path": "초음파검사료/진단초음파/복부-복부 초음파/충수", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㅂㅊㅇㅍㅊㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅊㅗㅇㅡㅁㅍㅏㅊㅜㅇㅅㅜ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqhrqnchdmavkcndtn"}
+{"index": { "_index": "treatment", "_id": "EB4440001"}}
+{"treatmentId": "EB4440001", "name": "소장·대장", "path": "초음파검사료/진단초음파/복부-복부 초음파/소장·대장", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㅂㅊㅇㅍㅅㅈㄷㅈ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅊㅗㅇㅡㅁㅍㅏㅅㅗㅈㅏㅇㄷㅐㅈㅏㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqhrqnchdmavkthwkdeowkd"}
+{"index": { "_index": "treatment", "_id": "EB4450001"}}
+{"treatmentId": "EB4450001", "name": "서혜부", "path": "초음파검사료/진단초음파/복부-복부 초음파/서혜부", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㅂㅊㅇㅍㅅㅎㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅊㅗㅇㅡㅁㅍㅏㅅㅓㅎㅖㅂㅜ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqhrqnchdmavktjgPqn"}
+{"index": { "_index": "treatment", "_id": "EB4460001"}}
+{"treatmentId": "EB4460001", "name": "직장·항문", "path": "초음파검사료/진단초음파/복부-복부 초음파/직장·항문", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㅂㅊㅇㅍㅈㅈㅎㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅊㅗㅇㅡㅁㅍㅏㅈㅣㄱㅈㅏㅇㅎㅏㅇㅁㅜㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqhrqnchdmavkwlrwkdgkdans"}
+{"index": { "_index": "treatment", "_id": "EB4470001"}}
+{"treatmentId": "EB4470001", "name": "항문", "path": "초음파검사료/진단초음파/복부-복부 초음파/항문", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㅂㅊㅇㅍㅎㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅊㅗㅇㅡㅁㅍㅏㅎㅏㅇㅁㅜㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqhrqnchdmavkgkdans"}
+{"index": { "_index": "treatment", "_id": "EB4480001"}}
+{"treatmentId": "EB4480001", "name": "신장·부신·방광", "path": "초음파검사료/진단초음파/복부-비뇨기계 초음파/신장·부신·방광", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㄴㄱㄱㅊㅇㅍㅅㅈㅂㅅㅂㄱ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅣㄴㅛㄱㅣㄱㅖㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㅈㅏㅇㅂㅜㅅㅣㄴㅂㅏㅇㄱㅘㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqlsyrlrPchdmavktlswkdqntlsqkdrhkd"}
+{"index": { "_index": "treatment", "_id": "EB4490001"}}
+{"treatmentId": "EB4490001", "name": "신장·부신", "path": "초음파검사료/진단초음파/복부-비뇨기계 초음파/신장·부신", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㄴㄱㄱㅊㅇㅍㅅㅈㅂㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅣㄴㅛㄱㅣㄱㅖㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㅈㅏㅇㅂㅜㅅㅣㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqlsyrlrPchdmavktlswkdqntls"}
+{"index": { "_index": "treatment", "_id": "EB4500001"}}
+{"treatmentId": "EB4500001", "name": "방광", "path": "초음파검사료/진단초음파/복부-비뇨기계 초음파/방광", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅂㄴㄱㄱㅊㅇㅍㅂㄱ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅂㅣㄴㅛㄱㅣㄱㅖㅊㅗㅇㅡㅁㅍㅏㅂㅏㅇㄱㅘㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnqlsyrlrPchdmavkqkdrhkd"}
+{"index": { "_index": "treatment", "_id": "EB4510001"}}
+{"treatmentId": "EB4510001", "name": "전립선·정낭", "path": "초음파검사료/진단초음파/복부-남성생식기 초음파/전립선·정낭", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㄴㅅㅅㅅㄱㅊㅇㅍㅈㄹㅅㅈㄴ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㄴㅏㅁㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅈㅓㄴㄹㅣㅂㅅㅓㄴㅈㅓㅇㄴㅏㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnskatjdtodtlrrlchdmavkwjsflqtjswjdskd"}
+{"index": { "_index": "treatment", "_id": "EB4520001"}}
+{"treatmentId": "EB4520001", "name": "전립선·정낭-경복부로 실시", "path": "초음파검사료/진단초음파/복부-남성생식기 초음파/전립선·정낭-경복부로 실시", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㄴㅅㅅㅅㄱㅊㅇㅍㅈㄹㅅㅈㄴㄱㅂㅂㄹㅅㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㄴㅏㅁㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅈㅓㄴㄹㅣㅂㅅㅓㄴㅈㅓㅇㄴㅏㅇㄱㅕㅇㅂㅗㄱㅂㅜㄹㅗㅅㅣㄹㅅㅣ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnskatjdtodtlrrlchdmavkwjsflqtjswjdskdrudqhrqnfhtlftl"}
+{"index": { "_index": "treatment", "_id": "EB4530001"}}
+{"treatmentId": "EB4530001", "name": "음경", "path": "초음파검사료/진단초음파/복부-남성생식기 초음파/음경", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㄴㅅㅅㅅㄱㅊㅇㅍㅇㄱ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㄴㅏㅁㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅇㅡㅁㄱㅕㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnskatjdtodtlrrlchdmavkdmarud"}
+{"index": { "_index": "treatment", "_id": "EB4540001"}}
+{"treatmentId": "EB4540001", "name": "음낭", "path": "초음파검사료/진단초음파/복부-남성생식기 초음파/음낭", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㄴㅅㅅㅅㄱㅊㅇㅍㅇㄴ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㄴㅏㅁㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅇㅡㅁㄴㅏㅇ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqnskatjdtodtlrrlchdmavkdmaskd"}
+{"index": { "_index": "treatment", "_id": "EB5010000"}}
+{"treatmentId": "EB5010000", "name": "경천문 뇌", "path": "초음파검사료/진단초음파/신경-중추신경계 초음파/경천문 뇌", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㄱㅈㅊㅅㄱㄱㅊㅇㅍㄱㅊㅁㄴ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㄱㅕㅇㅈㅜㅇㅊㅜㅅㅣㄴㄱㅕㅇㄱㅖㅊㅗㅇㅡㅁㅍㅏㄱㅕㅇㅊㅓㄴㅁㅜㄴㄴㅚ", "engtokor": "chdmavkrjatkfywlsekschdmavktlsrudwndcntlsrudrPchdmavkrudcjsansshl"}
+{"index": { "_index": "treatment", "_id": "EB5020000"}}
+{"treatmentId": "EB5020000", "name": "척수", "path": "초음파검사료/진단초음파/신경-중추신경계 초음파/척수", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㄱㅈㅊㅅㄱㄱㅊㅇㅍㅊㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㄱㅕㅇㅈㅜㅇㅊㅜㅅㅣㄴㄱㅕㅇㄱㅖㅊㅗㅇㅡㅁㅍㅏㅊㅓㄱㅅㅜ", "engtokor": "chdmavkrjatkfywlsekschdmavktlsrudwndcntlsrudrPchdmavkcjrtn"}
+{"index": { "_index": "treatment", "_id": "EB5030000"}}
+{"treatmentId": "EB5030000", "name": "편측", "path": "초음파검사료/진단초음파/신경-말초신경 초음파/편측", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㄱㅁㅊㅅㄱㅊㅇㅍㅍㅊ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㄱㅕㅇㅁㅏㄹㅊㅗㅅㅣㄴㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㅍㅕㄴㅊㅡㄱ", "engtokor": "chdmavkrjatkfywlsekschdmavktlsrudakfchtlsrudchdmavkvuscmr"}
+{"index": { "_index": "treatment", "_id": "EB5040000"}}
+{"treatmentId": "EB5040000", "name": "사지신경 모두를 종합적으로 검사", "path": "초음파검사료/진단초음파/신경-말초신경 초음파/사지신경 모두를 종합적으로 검사", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅅㄱㅁㅊㅅㄱㅊㅇㅍㅅㅈㅅㄱㅁㄷㄹㅈㅎㅈㅇㄹㄱㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅅㅣㄴㄱㅕㅇㅁㅏㄹㅊㅗㅅㅣㄴㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㅅㅏㅈㅣㅅㅣㄴㄱㅕㅇㅁㅗㄷㅜㄹㅡㄹㅈㅗㅇㅎㅏㅂㅈㅓㄱㅇㅡㄹㅗㄱㅓㅁㅅㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavktlsrudakfchtlsrudchdmavktkwltlsrudahenfmfwhdgkqwjrdmfhrjatk"}
+{"index": { "_index": "treatment", "_id": "EB4110001"}}
+{"treatmentId": "EB4110001", "name": "안구", "path": "초음파검사료/진단초음파/두경부-안 초음파/안구", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄷㄱㅂㅇㅊㅇㅍㅇㄱ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄷㅜㄱㅕㅇㅂㅜㅇㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅏㄴㄱㅜ", "engtokor": "chdmavkrjatkfywlsekschdmavkenrudqndkschdmavkdksrn"}
+{"index": { "_index": "treatment", "_id": "EB4120001"}}
+{"treatmentId": "EB4120001", "name": "안와", "path": "초음파검사료/진단초음파/두경부-안 초음파/안와", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㄷㄱㅂㅇㅊㅇㅍㅇㅇ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㄷㅜㄱㅕㅇㅂㅜㅇㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅏㄴㅇㅘ", "engtokor": "chdmavkrjatkfywlsekschdmavkenrudqndkschdmavkdksdhk"}
+{"index": { "_index": "treatment", "_id": "EB4550001"}}
+{"treatmentId": "EB4550001", "name": "일반", "path": "초음파검사료/진단초음파/복부-여성생식기 초음파/일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅇㅅㅅㅅㄱㅊㅇㅍㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqndutjdtodtlrrlchdmavkdlfqks"}
+{"index": { "_index": "treatment", "_id": "EB4560001"}}
+{"treatmentId": "EB4560001", "name": "일반-자궁내 생리식염수를 주입하여 검사", "path": "초음파검사료/진단초음파/복부-여성생식기 초음파/일반-자궁내 생리식염수를 주입하여 검사", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅇㅅㅅㅅㄱㅊㅇㅍㅇㅂㅈㄱㄴㅅㄹㅅㅇㅅㄹㅈㅇㅎㅇㄱㅅ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅇㅣㄹㅂㅏㄴㅈㅏㄱㅜㅇㄴㅐㅅㅐㅇㄹㅣㅅㅣㄱㅇㅕㅁㅅㅜㄹㅡㄹㅈㅜㅇㅣㅂㅎㅏㅇㅕㄱㅓㅁㅅㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqndutjdtodtlrrlchdmavkdlfqkswkrndsotodfltlrduatnfmfwndlqgkdurjatk"}
+{"index": { "_index": "treatment", "_id": "EB4570001"}}
+{"treatmentId": "EB4570001", "name": "정밀", "path": "초음파검사료/진단초음파/복부-여성생식기 초음파/정밀", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅂㅂㅇㅅㅅㅅㄱㅊㅇㅍㅈㅁ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅂㅗㄱㅂㅜㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅊㅗㅇㅡㅁㅍㅏㅈㅓㅇㅁㅣㄹ", "engtokor": "chdmavkrjatkfywlsekschdmavkqhrqndutjdtodtlrrlchdmavkwjdalf"}
+{"index": { "_index": "treatment", "_id": "EB4210000"}}
+{"treatmentId": "EB4210000", "name": "일반", "path": "초음파검사료/진단초음파/흉부-유방·액와부 초음파 /일반", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㅂㅇㅂㅇㅇㅂㅊㅇㅍㅇㅂ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅠㅇㅂㅜㅇㅠㅂㅏㅇㅇㅐㄱㅇㅘㅂㅜㅊㅗㅇㅡㅁㅍㅏㅇㅣㄹㅂㅏㄴ", "engtokor": "chdmavkrjatkfywlsekschdmavkgbdqndbqkddordhkqnchdmavkdlfqks"}
+{"index": { "_index": "treatment", "_id": "EB4220000"}}
+{"treatmentId": "EB4220000", "name": "진단초음파/흉부-흉벽,흉막,늑골 등 초음파", "path": "초음파검사료/진단초음파/흉부-흉벽,흉막,늑골 등 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅈㄷㅊㅇㅍㅎㅂㅎㅂㅎㅁㄴㄱㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅈㅣㄴㄷㅏㄴㅊㅗㅇㅡㅁㅍㅏㅎㅠㅇㅂㅜㅎㅠㅇㅂㅕㄱㅎㅠㅇㅁㅏㄱㄴㅡㄱㄱㅗㄹㄷㅡㅇㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfywlsekschdmavkgbdqngbdqurgbdakrsmrrhfemdchdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9870000"}}
+{"treatmentId": "EZ9870000", "name": "유도초음파/진공보조 유방 생검시 유도 초음파", "path": "초음파검사료/유도초음파/진공보조 유방 생검시 유도 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅈㄱㅂㅈㅇㅂㅅㄱㅅㅇㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅈㅣㄴㄱㅗㅇㅂㅗㅈㅗㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅅㅣㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkwlsrhdqhwhdbqkdtodrjatldbehchdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9850000"}}
+{"treatmentId": "EZ9850000", "name": "유도초음파/수술 중 초음파", "path": "초음파검사료/유도초음파/수술 중 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅅㅅㅈㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅅㅜㅅㅜㄹㅈㅜㅇㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavktntnfwndchdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9860000"}}
+{"treatmentId": "EZ9860000", "name": "유도초음파/분만기간 초음파", "path": "초음파검사료/유도초음파/분만기간 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅂㅁㄱㄱㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅂㅜㄴㅁㅏㄴㄱㅣㄱㅏㄴㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkqnsaksrlrkschdmavk"}
+{"index": { "_index": "treatment", "_id": "EB5610000"}}
+{"treatmentId": "EB5610000", "name": "Ⅰ", "path": "초음파검사료/유도초음파/유도초음파/Ⅰ", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅇㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkdbehchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB5620000"}}
+{"treatmentId": "EB5620000", "name": "Ⅱ", "path": "초음파검사료/유도초음파/유도초음파/Ⅱ", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅇㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkdbehchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB5630000"}}
+{"treatmentId": "EB5630000", "name": "Ⅲ", "path": "초음파검사료/유도초음파/유도초음파/Ⅲ", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅇㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkdbehchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB5640000"}}
+{"treatmentId": "EB5640000", "name": "Ⅳ", "path": "초음파검사료/유도초음파/유도초음파/Ⅳ", "chosung": "ㅊㅇㅍㄱㅅㄹㅇㄷㅊㅇㅍㅇㄷㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfydbehchdmavkdbehchdmavk"}
+{"index": { "_index": "treatment", "_id": "EB6110000"}}
+{"treatmentId": "EB6110000", "name": "특수초음파/심장-경식도 심초음파", "path": "초음파검사료/특수초음파/심장-경식도 심초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㅅㅈㄱㅅㄷㅅㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㄱㅕㅇㅅㅣㄱㄷㅗㅅㅣㅁㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyxmrtnchdmavktlawkdrudtlrehtlachdmavk"}
+{"index": { "_index": "treatment", "_id": "EB6120000"}}
+{"treatmentId": "EB6120000", "name": "특수초음파/심장-심장내 초음파", "path": "초음파검사료/특수초음파/심장-심장내 초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㅅㅈㅅㅈㄴㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㅅㅣㅁㅈㅏㅇㅅㅣㅁㅈㅏㅇㄴㅐㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyxmrtnchdmavktlawkdtlawkdsochdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9910000"}}
+{"treatmentId": "EZ9910000", "name": "특수초음파/기관지내시경초음파 [가이드시스를 이용한 경우 포함]", "path": "초음파검사료/특수초음파/기관지내시경초음파 [가이드시스를 이용한 경우 포함]", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㄱㄱㅈㄴㅅㄱㅊㅇㅍㄱㅇㄷㅅㅅㄹㅇㅇㅎㄱㅇㅍㅎ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄱㅏㅇㅣㄷㅡㅅㅣㅅㅡㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㄱㅕㅇㅇㅜㅍㅗㅎㅏㅁ", "engtokor": "chdmavkrjatkfyxmrtnchdmavkrlrhkswlsotlrudchdmavkrkdlemtltmfmfdldydgksruddnvhgka"}
+{"index": { "_index": "treatment", "_id": "EZ9920000"}}
+{"treatmentId": "EZ9920000", "name": "특수초음파/내시경초음파", "path": "초음파검사료/특수초음파/내시경초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㄴㅅㄱㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyxmrtnchdmavksotlrudchdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9930000"}}
+{"treatmentId": "EZ9930000", "name": "특수초음파/관강내초음파", "path": "초음파검사료/특수초음파/관강내초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㄱㄱㄴㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㄱㅘㄴㄱㅏㅇㄴㅐㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyxmrtnchdmavkrhksrkdsochdmavk"}
+{"index": { "_index": "treatment", "_id": "EZ9940000"}}
+{"treatmentId": "EZ9940000", "name": "특수초음파/혈관내초음파", "path": "초음파검사료/특수초음파/혈관내초음파", "chosung": "ㅊㅇㅍㄱㅅㄹㅌㅅㅊㅇㅍㅎㄱㄴㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㅌㅡㄱㅅㅜㅊㅗㅇㅡㅁㅍㅏㅎㅕㄹㄱㅘㄴㄴㅐㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyxmrtnchdmavkgufrhkssochdmavk"}
+{"index": { "_index": "treatment", "_id": "EB4010000"}}
+{"treatmentId": "EB4010000", "name": "Ⅰ", "path": "초음파검사료/기본초음파/단순초음파/Ⅰ", "chosung": "ㅊㅇㅍㄱㅅㄹㄱㅂㅊㅇㅍㄷㅅㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㄱㅣㅂㅗㄴㅊㅗㅇㅡㅁㅍㅏㄷㅏㄴㅅㅜㄴㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyrlqhschdmavkekstnschdmavk"}
+{"index": { "_index": "treatment", "_id": "EB4020000"}}
+{"treatmentId": "EB4020000", "name": "Ⅱ", "path": "초음파검사료/기본초음파/단순초음파/Ⅱ", "chosung": "ㅊㅇㅍㄱㅅㄹㄱㅂㅊㅇㅍㄷㅅㅊㅇㅍ", "jamo": "ㅊㅗㅇㅡㅁㅍㅏㄱㅓㅁㅅㅏㄹㅛㄱㅣㅂㅗㄴㅊㅗㅇㅡㅁㅍㅏㄷㅏㄴㅅㅜㄴㅊㅗㅇㅡㅁㅍㅏ", "engtokor": "chdmavkrjatkfyrlqhschdmavkekstnschdmavk"}
+{"index": { "_index": "treatment", "_id": "CZ9920000"}}
+{"treatmentId": "CZ9920000", "name": "중합효소연쇄반응법-MRSA", "path": "병리검사료/기타검사/중합효소연쇄반응법-MRSA", "chosung": "ㅂㄹㄱㅅㄹㄱㅌㄱㅅㅈㅎㅎㅅㅇㅅㅂㅇㅂMRSA", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㄱㅣㅌㅏㄱㅓㅁㅅㅏㅈㅜㅇㅎㅏㅂㅎㅛㅅㅗㅇㅕㄴㅅㅙㅂㅏㄴㅇㅡㅇㅂㅓㅂMRSA", "engtokor": "qudflrjatkfyrlxkrjatkwndgkqgythdusthoqksdmdqjqMRSA"}
+{"index": { "_index": "treatment", "_id": "CZ9980000"}}
+{"treatmentId": "CZ9980000", "name": "메티실린내성 황색포도알균 유전자검사 [실시간 중합효소연쇄반응]", "path": "병리검사료/기타검사/메티실린내성 황색포도알균 유전자검사 [실시간 중합효소연쇄반응]", "chosung": "ㅂㄹㄱㅅㄹㄱㅌㄱㅅㅁㅌㅅㄹㄴㅅㅎㅅㅍㄷㅇㄱㅇㅈㅈㄱㅅㅅㅅㄱㅈㅎㅎㅅㅇㅅㅂㅇ", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㄱㅣㅌㅏㄱㅓㅁㅅㅏㅁㅔㅌㅣㅅㅣㄹㄹㅣㄴㄴㅐㅅㅓㅇㅎㅘㅇㅅㅐㄱㅍㅗㄷㅗㅇㅏㄹㄱㅠㄴㅇㅠㅈㅓㄴㅈㅏㄱㅓㅁㅅㅏㅅㅣㄹㅅㅣㄱㅏㄴㅈㅜㅇㅎㅏㅂㅎㅛㅅㅗㅇㅕㄴㅅㅙㅂㅏㄴㅇㅡㅇ", "engtokor": "qudflrjatkfyrlxkrjatkapxltlfflssotjdghkdtorvhehdkfrbsdbwjswkrjatktlftlrkswndgkqgythdusthoqksdmd"}
+{"index": { "_index": "treatment", "_id": "3Z2610000"}}
+{"treatmentId": "3Z2610000", "name": "양수염색체검사", "path": "병리검사료/양수염색체검사", "chosung": "ㅂㄹㄱㅅㄹㅇㅅㅇㅅㅊㄱㅅ", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㅇㅑㅇㅅㅜㅇㅕㅁㅅㅐㄱㅊㅔㄱㅓㅁㅅㅏ", "engtokor": "qudflrjatkfydidtnduatorcprjatk"}
+{"index": { "_index": "treatment", "_id": "CZ5840000"}}
+{"treatmentId": "CZ5840000", "name": "비유전성 유전자검사-메틸화특이중합효소연쇄반응", "path": "병리검사료/사람유전자 분자병리검사/비유전성 유전자검사-메틸화특이중합효소연쇄반응", "chosung": "ㅂㄹㄱㅅㄹㅅㄹㅇㅈㅈㅂㅈㅂㄹㄱㅅㅂㅇㅈㅅㅇㅈㅈㄱㅅㅁㅌㅎㅌㅇㅈㅎㅎㅅㅇㅅㅂㅇ", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㅅㅏㄹㅏㅁㅇㅠㅈㅓㄴㅈㅏㅂㅜㄴㅈㅏㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㅂㅣㅇㅠㅈㅓㄴㅅㅓㅇㅇㅠㅈㅓㄴㅈㅏㄱㅓㅁㅅㅏㅁㅔㅌㅣㄹㅎㅘㅌㅡㄱㅇㅣㅈㅜㅇㅎㅏㅂㅎㅛㅅㅗㅇㅕㄴㅅㅙㅂㅏㄴㅇㅡㅇ", "engtokor": "qudflrjatkfytkfkadbwjswkqnswkqudflrjatkqldbwjstjddbwjswkrjatkapxlfghkxmrdlwndgkqgythdusthoqksdmd"}
+{"index": { "_index": "treatment", "_id": "3Z2102201"}}
+{"treatmentId": "3Z2102201", "name": "일반세포검사-자궁질 세포병리검사", "path": "병리검사료/세포병리검사/일반세포검사-자궁질 세포병리검사", "chosung": "ㅂㄹㄱㅅㄹㅅㅍㅂㄹㄱㅅㅇㅂㅅㅍㄱㅅㅈㄱㅈㅅㅍㅂㄹㄱㅅ", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㅅㅔㅍㅗㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㅇㅣㄹㅂㅏㄴㅅㅔㅍㅗㄱㅓㅁㅅㅏㅈㅏㄱㅜㅇㅈㅣㄹㅅㅔㅍㅗㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏ", "engtokor": "qudflrjatkfytpvhqudflrjatkdlfqkstpvhrjatkwkrndwlftpvhqudflrjatk"}
+{"index": { "_index": "treatment", "_id": "3Z2102202"}}
+{"treatmentId": "3Z2102202", "name": "액상세포검사-자궁질 세포병리검사", "path": "병리검사료/세포병리검사/액상세포검사-자궁질 세포병리검사", "chosung": "ㅂㄹㄱㅅㄹㅅㅍㅂㄹㄱㅅㅇㅅㅅㅍㄱㅅㅈㄱㅈㅅㅍㅂㄹㄱㅅ", "jamo": "ㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㄹㅛㅅㅔㅍㅗㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏㅇㅐㄱㅅㅏㅇㅅㅔㅍㅗㄱㅓㅁㅅㅏㅈㅏㄱㅜㅇㅈㅣㄹㅅㅔㅍㅗㅂㅕㅇㄹㅣㄱㅓㅁㅅㅏ", "engtokor": "qudflrjatkfytpvhqudflrjatkdortkdtpvhrjatkwkrndwlftpvhqudflrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6710000"}}
+{"treatmentId": "FZ6710000", "name": "후각기능(인지 및 역치)검사", "path": "기능 검사료(호흡기 기능검사)/후각기능(인지 및 역치)검사", "chosung": "ㄱㄴㄱㅅㄹㅎㅎㄱㄱㄴㄱㅅㅎㄱㄱㄴㅇㅈㅁㅇㅊㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅎㅗㅎㅡㅂㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅎㅜㄱㅏㄱㄱㅣㄴㅡㅇㅇㅣㄴㅈㅣㅁㅣㅊㅇㅕㄱㅊㅣㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfyghgmqrlrlsmdrjatkgnrkrrlsmddlswlalcdurclrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6720000"}}
+{"treatmentId": "FZ6720000", "name": "호기 산화질소 측정", "path": "기능 검사료(호흡기 기능검사)/호기 산화질소 측정", "chosung": "ㄱㄴㄱㅅㄹㅎㅎㄱㄱㄴㄱㅅㅎㄱㅅㅎㅈㅅㅊㅈ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅎㅗㅎㅡㅂㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅎㅗㄱㅣㅅㅏㄴㅎㅘㅈㅣㄹㅅㅗㅊㅡㄱㅈㅓㅇ", "engtokor": "rlsmdrjatkfyghgmqrlrlsmdrjatkghrltksghkwlfthcmrwjd"}
+{"index": { "_index": "treatment", "_id": "FZ6810000"}}
+{"treatmentId": "FZ6810000", "name": "교감신경피부반응검사", "path": "기능 검사료(신경계 기능검사)/교감신경피부반응검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㄱㄱㅅㄱㅍㅂㅂㅇㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄱㅛㄱㅏㅁㅅㅣㄴㄱㅕㅇㅍㅣㅂㅜㅂㅏㄴㅇㅡㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkryrkatlsrudvlqnqksdmdrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6840000"}}
+{"treatmentId": "FZ6840000", "name": "성기능장애평가", "path": "기능 검사료(신경계 기능검사)/성기능장애평가", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅅㄱㄴㅈㅇㅍㄱ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅅㅓㅇㄱㅣㄴㅡㅇㅈㅏㅇㅇㅐㅍㅕㅇㄱㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatktjdrlsmdwkddovudrk"}
+{"index": { "_index": "treatment", "_id": "FZ6850000"}}
+{"treatmentId": "FZ6850000", "name": "섭식장애평가", "path": "기능 검사료(신경계 기능검사)/섭식장애평가", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅅㅅㅈㅇㅍㄱ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅅㅓㅂㅅㅣㄱㅈㅏㅇㅇㅐㅍㅕㅇㄱㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatktjqtlrwkddovudrk"}
+{"index": { "_index": "treatment", "_id": "FZ6880000"}}
+{"treatmentId": "FZ6880000", "name": "발음 및 발성검사", "path": "기능 검사료(신경계 기능검사)/발음 및 발성검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅂㅇㅁㅂㅅㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅂㅏㄹㅇㅡㅁㅁㅣㅊㅂㅏㄹㅅㅓㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkqkfdmaalcqkftjdrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6890000"}}
+{"treatmentId": "FZ6890000", "name": "언어전반진단검사", "path": "기능 검사료(신경계 기능검사)/언어전반진단검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅇㅇㅈㅂㅈㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅇㅓㄴㅇㅓㅈㅓㄴㅂㅏㄴㅈㅣㄴㄷㅏㄴㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkdjsdjwjsqkswlseksrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6930000"}}
+{"treatmentId": "FZ6930000", "name": "영유아발달검사(한국판덴버발달검사)", "path": "기능 검사료(신경계 기능검사)/영유아발달검사(한국판덴버발달검사)", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅇㅇㅇㅂㄷㄱㅅㅎㄱㅍㄷㅂㅂㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅇㅕㅇㅇㅠㅇㅏㅂㅏㄹㄷㅏㄹㄱㅓㅁㅅㅏㅎㅏㄴㄱㅜㄱㅍㅏㄴㄷㅔㄴㅂㅓㅂㅏㄹㄷㅏㄹㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkduddbdkqkfekfrjatkgksrnrvksepsqjqkfekfrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6940000"}}
+{"treatmentId": "FZ6940000", "name": "덴버발달검사", "path": "기능 검사료(신경계 기능검사)/덴버발달검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㄷㅂㅂㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄷㅔㄴㅂㅓㅂㅏㄹㄷㅏㄹㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkepsqjqkfekfrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6960000"}}
+{"treatmentId": "FZ6960000", "name": "뮌헨 유소아 기능발달검사", "path": "기능 검사료(신경계 기능검사)/뮌헨 유소아 기능발달검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅁㅎㅇㅅㅇㄱㄴㅂㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅁㅟㄴㅎㅔㄴㅇㅠㅅㅗㅇㅏㄱㅣㄴㅡㅇㅂㅏㄹㄷㅏㄹㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkanlsgpsdbthdkrlsmdqkfekfrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ6900000"}}
+{"treatmentId": "FZ6900000", "name": "주의력검사", "path": "기능 검사료(신경계 기능검사)/주의력검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㄹㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅜㅇㅢㄹㅕㄱㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwndmlfurrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7000000"}}
+{"treatmentId": "FZ7000000", "name": "수면리듬양상검사", "path": "기능 검사료(신경계 기능검사)/수면리듬양상검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅅㅁㄹㄷㅇㅅㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅅㅜㅁㅕㄴㄹㅣㄷㅡㅁㅇㅑㅇㅅㅏㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatktnausflemadidtkdrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7020000"}}
+{"treatmentId": "FZ7020000", "name": "다중수면잠복기검사", "path": "기능 검사료(신경계 기능검사)/다중수면잠복기검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㄷㅈㅅㅁㅈㅂㄱㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄷㅏㅈㅜㅇㅅㅜㅁㅕㄴㅈㅏㅁㅂㅗㄱㄱㅣㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkekwndtnauswkaqhrrlrjatk"}
+{"index": { "_index": "treatment", "_id": "FY8830000"}}
+{"treatmentId": "FY8830000", "name": "전류인지역치", "path": "기능 검사료(신경계 기능검사)/정량적감각기능검사/전류인지역치", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㄹㅈㄱㄱㄱㄴㄱㅅㅈㄹㅇㅈㅇㅊ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㄹㅑㅇㅈㅓㄱㄱㅏㅁㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㄴㄹㅠㅇㅣㄴㅈㅣㅇㅕㄱㅊㅣ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwjdfidwjrrkarkrrlsmdrjatkwjsfbdlswldurcl"}
+{"index": { "_index": "treatment", "_id": "FY8840000"}}
+{"treatmentId": "FY8840000", "name": "전류인지역치(통증역치검사)", "path": "기능 검사료(신경계 기능검사)/정량적감각기능검사/전류인지역치(통증역치검사)", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㄹㅈㄱㄱㄱㄴㄱㅅㅈㄹㅇㅈㅇㅊㅌㅈㅇㅊㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㄹㅑㅇㅈㅓㄱㄱㅏㅁㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㄴㄹㅠㅇㅣㄴㅈㅣㅇㅕㄱㅊㅣㅌㅗㅇㅈㅡㅇㅇㅕㄱㅊㅣㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwjdfidwjrrkarkrrlsmdrjatkwjsfbdlswldurclxhdwmddurclrjatk"}
+{"index": { "_index": "treatment", "_id": "FY8810000"}}
+{"treatmentId": "FY8810000", "name": "진동역치", "path": "기능 검사료(신경계 기능검사)/정량적감각기능검사/진동역치", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㄹㅈㄱㄱㄱㄴㄱㅅㅈㄷㅇㅊ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㄹㅑㅇㅈㅓㄱㄱㅏㅁㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅣㄴㄷㅗㅇㅇㅕㄱㅊㅣ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwjdfidwjrrkarkrrlsmdrjatkwlsehddurcl"}
+{"index": { "_index": "treatment", "_id": "FY8820000"}}
+{"treatmentId": "FY8820000", "name": "온도역치", "path": "기능 검사료(신경계 기능검사)/정량적감각기능검사/온도역치", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㄹㅈㄱㄱㄱㄴㄱㅅㅇㄷㅇㅊ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㄹㅑㅇㅈㅓㄱㄱㅏㅁㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅇㅗㄴㄷㅗㅇㅕㄱㅊㅣ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwjdfidwjrrkarkrrlsmdrjatkdhsehdurcl"}
+{"index": { "_index": "treatment", "_id": "FY8910000"}}
+{"treatmentId": "FY8910000", "name": "기립성혈압검사", "path": "기능 검사료(신경계 기능검사)/자율신경계이상검사/기립성혈압검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㅅㄱㄱㅇㅅㄱㅅㄱㄹㅅㅎㅇㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅏㅇㅠㄹㅅㅣㄴㄱㅕㅇㄱㅖㅇㅣㅅㅏㅇㄱㅓㅁㅅㅏㄱㅣㄹㅣㅂㅅㅓㅇㅎㅕㄹㅇㅏㅂㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwkdbftlsrudrPdltkdrjatkrlflqtjdgufdkqrjatk"}
+{"index": { "_index": "treatment", "_id": "FY8920000"}}
+{"treatmentId": "FY8920000", "name": "발살바법", "path": "기능 검사료(신경계 기능검사)/자율신경계이상검사/발살바법", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㅅㄱㄱㅇㅅㄱㅅㅂㅅㅂㅂ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅏㅇㅠㄹㅅㅣㄴㄱㅕㅇㄱㅖㅇㅣㅅㅏㅇㄱㅓㅁㅅㅏㅂㅏㄹㅅㅏㄹㅂㅏㅂㅓㅂ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwkdbftlsrudrPdltkdrjatkqkftkfqkqjq"}
+{"index": { "_index": "treatment", "_id": "FY8930000"}}
+{"treatmentId": "FY8930000", "name": "지속적 근긴장에 따른 혈압검사", "path": "기능 검사료(신경계 기능검사)/자율신경계이상검사/지속적 근긴장에 따른 혈압검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㅅㄱㄱㅇㅅㄱㅅㅈㅅㅈㄱㄱㅈㅇㄸㄹㅎㅇㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅏㅇㅠㄹㅅㅣㄴㄱㅕㅇㄱㅖㅇㅣㅅㅏㅇㄱㅓㅁㅅㅏㅈㅣㅅㅗㄱㅈㅓㄱㄱㅡㄴㄱㅣㄴㅈㅏㅇㅇㅔㄸㅏㄹㅡㄴㅎㅕㄹㅇㅏㅂㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwkdbftlsrudrPdltkdrjatkwlthrwjrrmsrlswkddpEkfmsgufdkqrjatk"}
+{"index": { "_index": "treatment", "_id": "FY8940000"}}
+{"treatmentId": "FY8940000", "name": "심박변이도검사", "path": "기능 검사료(신경계 기능검사)/자율신경계이상검사/심박변이도검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㅅㄱㄱㅇㅅㄱㅅㅅㅂㅂㅇㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅏㅇㅠㄹㅅㅣㄴㄱㅕㅇㄱㅖㅇㅣㅅㅏㅇㄱㅓㅁㅅㅏㅅㅣㅁㅂㅏㄱㅂㅕㄴㅇㅣㄷㅗㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwkdbftlsrudrPdltkdrjatktlaqkrqusdlehrjatk"}
+{"index": { "_index": "treatment", "_id": "FY8950000"}}
+{"treatmentId": "FY8950000", "name": "피부전도반응검사", "path": "기능 검사료(신경계 기능검사)/자율신경계이상검사/피부전도반응검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅇㅅㄱㄱㅇㅅㄱㅅㅍㅂㅈㄷㅂㅇㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅏㅇㅠㄹㅅㅣㄴㄱㅕㅇㄱㅖㅇㅣㅅㅏㅇㄱㅓㅁㅅㅏㅍㅣㅂㅜㅈㅓㄴㄷㅗㅂㅏㄴㅇㅡㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwkdbftlsrudrPdltkdrjatkvlqnwjsehqksdmdrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7090000"}}
+{"treatmentId": "FZ7090000", "name": "정량적 발한 축삭 반사검사", "path": "기능 검사료(신경계 기능검사)/정량적 발한 축삭 반사검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㄹㅈㅂㅎㅊㅅㅂㅅㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㄹㅑㅇㅈㅓㄱㅂㅏㄹㅎㅏㄴㅊㅜㄱㅅㅏㄱㅂㅏㄴㅅㅏㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwjdfidwjrqkfgkscnrtkrqkstkrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7140000"}}
+{"treatmentId": "FZ7140000", "name": "초음파를 활용한 뇌혈류 기능검사", "path": "기능 검사료(신경계 기능검사)/초음파를 활용한 뇌혈류 기능검사", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅊㅇㅍㄹㅎㅇㅎㄴㅎㄹㄱㄴㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅎㅘㄹㅇㅛㅇㅎㅏㄴㄴㅚㅎㅕㄹㄹㅠㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkchdmavkfmfghkfdydgksshlguffbrlsmdrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7100000"}}
+{"treatmentId": "FZ7100000", "name": "미각검사[인지 및 역치검사]", "path": "기능 검사료(신경계 기능검사)/미각검사[인지 및 역치검사]", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅁㄱㄱㅅㅇㅈㅁㅇㅊㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅁㅣㄱㅏㄱㄱㅓㅁㅅㅏㅇㅣㄴㅈㅣㅁㅣㅊㅇㅕㄱㅊㅣㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkalrkrrjatkdlswlalcdurclrjatk"}
+{"index": { "_index": "treatment", "_id": "FY7130000"}}
+{"treatmentId": "FY7130000", "name": "우울척도[신경증우울평가]", "path": "기능 검사료(신경계 기능검사)/증상 및 행동 평가척도/우울척도[신경증우울평가]", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅅㅁㅎㄷㅍㄱㅊㄷㅇㅇㅊㄷㅅㄱㅈㅇㅇㅍㄱ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅡㅇㅅㅏㅇㅁㅣㅊㅎㅐㅇㄷㅗㅇㅍㅕㅇㄱㅏㅊㅓㄱㄷㅗㅇㅜㅇㅜㄹㅊㅓㄱㄷㅗㅅㅣㄴㄱㅕㅇㅈㅡㅇㅇㅜㅇㅜㄹㅍㅕㅇㄱㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwmdtkdalcgodehdvudrkcjrehdndnfcjrehtlsrudwmddndnfvudrk"}
+{"index": { "_index": "treatment", "_id": "FY7370000"}}
+{"treatmentId": "FY7370000", "name": "기타[이화방어기제검사]", "path": "기능 검사료(신경계 기능검사)/증상 및 행동 평가척도/기타[이화방어기제검사]", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅅㅁㅎㄷㅍㄱㅊㄷㄱㅌㅇㅎㅂㅇㄱㅈㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅡㅇㅅㅏㅇㅁㅣㅊㅎㅐㅇㄷㅗㅇㅍㅕㅇㄱㅏㅊㅓㄱㄷㅗㄱㅣㅌㅏㅇㅣㅎㅘㅂㅏㅇㅇㅓㄱㅣㅈㅔㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwmdtkdalcgodehdvudrkcjrehrlxkdlghkqkddjrlwprjatk"}
+{"index": { "_index": "treatment", "_id": "FY7390000"}}
+{"treatmentId": "FY7390000", "name": "기타[한국판성격평가척도(KPAI)]", "path": "기능 검사료(신경계 기능검사)/증상 및 행동 평가척도/기타[한국판성격평가척도(KPAI)]", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄱㄱㄴㄱㅅㅈㅅㅁㅎㄷㅍㄱㅊㄷㄱㅌㅎㄱㅍㅅㄱㅍㄱㅊㄷKPAI", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄴㄱㅕㅇㄱㅖㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅡㅇㅅㅏㅇㅁㅣㅊㅎㅐㅇㄷㅗㅇㅍㅕㅇㄱㅏㅊㅓㄱㄷㅗㄱㅣㅌㅏㅎㅏㄴㄱㅜㄱㅍㅏㄴㅅㅓㅇㄱㅕㄱㅍㅕㅇㄱㅏㅊㅓㄱㄷㅗKPAI", "engtokor": "rlsmdrjatkfytlsrudrPrlsmdrjatkwmdtkdalcgodehdvudrkcjrehrlxkgksrnrvkstjdrurvudrkcjrehKPAI"}
+{"index": { "_index": "treatment", "_id": "FZ7310000"}}
+{"treatmentId": "FZ7310000", "name": "동적체평형검사", "path": "기능 검사료(평형 및 청각 기능검사)/동적체평형검사", "chosung": "ㄱㄴㄱㅅㄹㅍㅎㅁㅊㄱㄱㄴㄱㅅㄷㅈㅊㅍㅎㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅍㅕㅇㅎㅕㅇㅁㅣㅊㅊㅓㅇㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄷㅗㅇㅈㅓㄱㅊㅔㅍㅕㅇㅎㅕㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfyvudgudalccjdrkrrlsmdrjatkehdwjrcpvudgudrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7320000"}}
+{"treatmentId": "FZ7320000", "name": "회전검사", "path": "기능 검사료(평형 및 청각 기능검사)/회전검사", "chosung": "ㄱㄴㄱㅅㄹㅍㅎㅁㅊㄱㄱㄴㄱㅅㅎㅈㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅍㅕㅇㅎㅕㅇㅁㅣㅊㅊㅓㅇㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅎㅚㅈㅓㄴㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfyvudgudalccjdrkrrlsmdrjatkghlwjsrjatk"}
+{"index": { "_index": "treatment", "_id": "FZ7330000"}}
+{"treatmentId": "FZ7330000", "name": "비디오전기안진검사", "path": "기능 검사료(평형 및 청각 기능검사)/비디오전기안진검사", "chosung": "ㄱㄴㄱㅅㄹㅍㅎㅁㅊㄱㄱㄴㄱㅅㅂㄷㅇㅈㄱㅇㅈㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅍㅕㅇㅎㅕㅇㅁㅣㅊㅊㅓㅇㄱㅏㄱㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅂㅣㄷㅣㅇㅗㅈㅓㄴㄱㅣㅇㅏㄴㅈㅣㄴㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfyvudgudalccjdrkrrlsmdrjatkqleldhwjsrldkswlsrjatk"}
+{"index": { "_index": "treatment", "_id": "EZ7750000"}}
+{"treatmentId": "EZ7750000", "name": "관절계를 이용한 무릎관절인대검사", "path": "기능 검사료(외피, 근골 기능 검사)/관절계를 이용한 무릎관절인대검사", "chosung": "ㄱㄴㄱㅅㄹㅇㅍㄱㄱㄱㄴㄱㅅㄱㅈㄱㄹㅇㅇㅎㅁㄹㄱㅈㅇㄷㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅚㅍㅣㄱㅡㄴㄱㅗㄹㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄱㅘㄴㅈㅓㄹㄱㅖㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅁㅜㄹㅡㅍㄱㅘㄴㅈㅓㄹㅇㅣㄴㄷㅐㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfydhlvlrmsrhfrlsmdrjatkrhkswjfrPfmfdldydgksanfmvrhkswjfdlseorjatk"}
+{"index": { "_index": "treatment", "_id": "EZ7760001"}}
+{"treatmentId": "EZ7760001", "name": "전신", "path": "기능 검사료(외피, 근골 기능 검사)/체온열검사/전신", "chosung": "ㄱㄴㄱㅅㄹㅇㅍㄱㄱㄱㄴㄱㅅㅊㅇㅇㄱㅅㅈㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅚㅍㅣㄱㅡㄴㄱㅗㄹㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅊㅔㅇㅗㄴㅇㅕㄹㄱㅓㅁㅅㅏㅈㅓㄴㅅㅣㄴ", "engtokor": "rlsmdrjatkfydhlvlrmsrhfrlsmdrjatkcpdhsdufrjatkwjstls"}
+{"index": { "_index": "treatment", "_id": "EZ7760002"}}
+{"treatmentId": "EZ7760002", "name": "부분", "path": "기능 검사료(외피, 근골 기능 검사)/체온열검사/부분", "chosung": "ㄱㄴㄱㅅㄹㅇㅍㄱㄱㄱㄴㄱㅅㅊㅇㅇㄱㅅㅂㅂ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅚㅍㅣㄱㅡㄴㄱㅗㄹㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅊㅔㅇㅗㄴㅇㅕㄹㄱㅓㅁㅅㅏㅂㅜㅂㅜㄴ", "engtokor": "rlsmdrjatkfydhlvlrmsrhfrlsmdrjatkcpdhsdufrjatkqnqns"}
+{"index": { "_index": "treatment", "_id": "EZ7770000"}}
+{"treatmentId": "EZ7770000", "name": "동적 족저압측정", "path": "기능 검사료(외피, 근골 기능 검사)/동적 족저압측정", "chosung": "ㄱㄴㄱㅅㄹㅇㅍㄱㄱㄱㄴㄱㅅㄷㅈㅈㅈㅇㅊㅈ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅚㅍㅣㄱㅡㄴㄱㅗㄹㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄷㅗㅇㅈㅓㄱㅈㅗㄱㅈㅓㅇㅏㅂㅊㅡㄱㅈㅓㅇ", "engtokor": "rlsmdrjatkfydhlvlrmsrhfrlsmdrjatkehdwjrwhrwjdkqcmrwjd"}
+{"index": { "_index": "treatment", "_id": "EZ7960000"}}
+{"treatmentId": "EZ7960000", "name": "안구광학단층촬영", "path": "기능 검사료(시기능검사)/안구광학단층촬영", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄴㄱㅅㅇㄱㄱㅎㄷㅊㅊㅇ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅇㅏㄴㄱㅜㄱㅘㅇㅎㅏㄱㄷㅏㄴㅊㅡㅇㅊㅘㄹㅇㅕㅇ", "engtokor": "rlsmdrjatkfytlrlsmdrjatkdksrnrhkdgkrekscmdchkfdud"}
+{"index": { "_index": "treatment", "_id": "E78000000"}}
+{"treatmentId": "E78000000", "name": "초음파 이용", "path": "기능 검사료(시기능검사)/눈의 계측검사[편측]/초음파 이용", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄴㄱㅅㄴㅇㄱㅊㄱㅅㅍㅊㅊㅇㅍㅇㅇ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄴㅜㄴㅇㅢㄱㅖㅊㅡㄱㄱㅓㅁㅅㅏㅍㅕㄴㅊㅡㄱㅊㅗㅇㅡㅁㅍㅏㅇㅣㅇㅛㅇ", "engtokor": "rlsmdrjatkfytlrlsmdrjatksnsdmlrPcmrrjatkvuscmrchdmavkdldyd"}
+{"index": { "_index": "treatment", "_id": "E78010000"}}
+{"treatmentId": "E78010000", "name": "레이저 간섭계 이용", "path": "기능 검사료(시기능검사)/눈의 계측검사[편측]/레이저 간섭계 이용", "chosung": "ㄱㄴㄱㅅㄹㅅㄱㄴㄱㅅㄴㅇㄱㅊㄱㅅㅍㅊㄹㅇㅈㄱㅅㄱㅇㅇ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄴㅜㄴㅇㅢㄱㅖㅊㅡㄱㄱㅓㅁㅅㅏㅍㅕㄴㅊㅡㄱㄹㅔㅇㅣㅈㅓㄱㅏㄴㅅㅓㅂㄱㅖㅇㅣㅇㅛㅇ", "engtokor": "rlsmdrjatkfytlrlsmdrjatksnsdmlrPcmrrjatkvuscmrfpdlwjrkstjqrPdldyd"}
+{"index": { "_index": "treatment", "_id": "EZ8290000"}}
+{"treatmentId": "EZ8290000", "name": "간섬유화검사", "path": "기능 검사료(소화기 기능 검사)/간섬유화검사", "chosung": "ㄱㄴㄱㅅㄹㅅㅎㄱㄱㄴㄱㅅㄱㅅㅇㅎㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅗㅎㅘㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄱㅏㄴㅅㅓㅁㅇㅠㅎㅘㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfythghkrlrlsmdrjatkrkstjadbghkrjatk"}
+{"index": { "_index": "treatment", "_id": "EZ8470000"}}
+{"treatmentId": "EZ8470000", "name": "주사제 약물 유발시험", "path": "기능 검사료(알레르기 검사)/주사제 약물 유발시험", "chosung": "ㄱㄴㄱㅅㄹㅇㄹㄹㄱㄱㅅㅈㅅㅈㅇㅁㅇㅂㅅㅎ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅏㄹㄹㅔㄹㅡㄱㅣㄱㅓㅁㅅㅏㅈㅜㅅㅏㅈㅔㅇㅑㄱㅁㅜㄹㅇㅠㅂㅏㄹㅅㅣㅎㅓㅁ", "engtokor": "rlsmdrjatkfydkffpfmrlrjatkwntkwpdiranfdbqkftlgja"}
+{"index": { "_index": "treatment", "_id": "EZ8480000"}}
+{"treatmentId": "EZ8480000", "name": "경구 음식물유발시험과 경구 약물유발시험검사", "path": "기능 검사료(알레르기 검사)/경구 음식물유발시험과 경구 약물유발시험검사", "chosung": "ㄱㄴㄱㅅㄹㅇㄹㄹㄱㄱㅅㄱㄱㅇㅅㅁㅇㅂㅅㅎㄱㄱㄱㅇㅁㅇㅂㅅㅎㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅇㅏㄹㄹㅔㄹㅡㄱㅣㄱㅓㅁㅅㅏㄱㅕㅇㄱㅜㅇㅡㅁㅅㅣㄱㅁㅜㄹㅇㅠㅂㅏㄹㅅㅣㅎㅓㅁㄱㅘㄱㅕㅇㄱㅜㅇㅑㄱㅁㅜㄹㅇㅠㅂㅏㄹㅅㅣㅎㅓㅁㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfydkffpfmrlrjatkrudrndmatlranfdbqkftlgjarhkrudrndiranfdbqkftlgjarjatk"}
+{"index": { "_index": "treatment", "_id": "EZ8670000"}}
+{"treatmentId": "EZ8670000", "name": "정맥역류검사", "path": "기능 검사료(순환기 기능 검사)/정맥역류검사", "chosung": "ㄱㄴㄱㅅㄹㅅㅎㄱㄱㄴㄱㅅㅈㅁㅇㄹㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅈㅓㅇㅁㅐㄱㅇㅕㄱㄹㅠㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytnsghksrlrlsmdrjatkwjdaordurfbrjatk"}
+{"index": { "_index": "treatment", "_id": "EZ8680000"}}
+{"treatmentId": "EZ8680000", "name": "동맥경화도검사(맥파전달속도측정)", "path": "기능 검사료(순환기 기능 검사)/동맥경화도검사(맥파전달속도측정)", "chosung": "ㄱㄴㄱㅅㄹㅅㅎㄱㄱㄴㄱㅅㄷㅁㄱㅎㄷㄱㅅㅁㅍㅈㄷㅅㄷㅊㅈ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄷㅗㅇㅁㅐㄱㄱㅕㅇㅎㅘㄷㅗㄱㅓㅁㅅㅏㅁㅐㄱㅍㅏㅈㅓㄴㄷㅏㄹㅅㅗㄱㄷㅗㅊㅡㄱㅈㅓㅇ", "engtokor": "rlsmdrjatkfytnsghksrlrlsmdrjatkehdaorrudghkehrjatkaorvkwjsekfthrehcmrwjd"}
+{"index": { "_index": "treatment", "_id": "EZ8710000"}}
+{"treatmentId": "EZ8710000", "name": "관상동맥내 광학파 단층촬영", "path": "기능 검사료(순환기 기능 검사)/관상동맥내 광학파 단층촬영", "chosung": "ㄱㄴㄱㅅㄹㅅㅎㄱㄱㄴㄱㅅㄱㅅㄷㅁㄴㄱㅎㅍㄷㅊㅊㅇ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄱㅘㄴㅅㅏㅇㄷㅗㅇㅁㅐㄱㄴㅐㄱㅘㅇㅎㅏㄱㅍㅏㄷㅏㄴㅊㅡㅇㅊㅘㄹㅇㅕㅇ", "engtokor": "rlsmdrjatkfytnsghksrlrlsmdrjatkrhkstkdehdaorsorhkdgkrvkekscmdchkfdud"}
+{"index": { "_index": "treatment", "_id": "EZ8740000"}}
+{"treatmentId": "EZ8740000", "name": "미세전위 T 교대파 검사", "path": "기능 검사료(순환기 기능 검사)/미세전위 T 교대파 검사", "chosung": "ㄱㄴㄱㅅㄹㅅㅎㄱㄱㄴㄱㅅㅁㅅㅈㅇTㄱㄷㅍㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㅁㅣㅅㅔㅈㅓㄴㅇㅟTㄱㅛㄷㅐㅍㅏㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytnsghksrlrlsmdrjatkaltpwjsdnlTryeovkrjatk"}
+{"index": { "_index": "treatment", "_id": "EZ8860000"}}
+{"treatmentId": "EZ8860000", "name": "자궁경부확대촬영검사", "path": "기능 검사료(생식, 임신 및 분만)/자궁경부확대촬영검사", "chosung": "ㄱㄴㄱㅅㄹㅅㅅㅇㅅㅁㅂㅁㅈㄱㄱㅂㅎㄷㅊㅇㄱㅅ", "jamo": "ㄱㅣㄴㅡㅇㄱㅓㅁㅅㅏㄹㅛㅅㅐㅇㅅㅣㄱㅇㅣㅁㅅㅣㄴㅁㅣㅊㅂㅜㄴㅁㅏㄴㅈㅏㄱㅜㅇㄱㅕㅇㅂㅜㅎㅘㄱㄷㅐㅊㅘㄹㅇㅕㅇㄱㅓㅁㅅㅏ", "engtokor": "rlsmdrjatkfytodtlrdlatlsalcqnsakswkrndrudqnghkreochkfdudrjatk"}
+{"index": { "_index": "treatment", "_id": "GZ0020000"}}
+{"treatmentId": "GZ0020000", "name": "유방", "path": "영상진단 및 방사선 치료료/디지털 단층영상합성촬영술/유방", "chosung": "ㅇㅅㅈㄷㅁㅂㅅㅅㅊㄹㄹㄷㅈㅌㄷㅊㅇㅅㅎㅅㅊㅇㅅㅇㅂ", "jamo": "ㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㅁㅣㅊㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㄹㅛㄷㅣㅈㅣㅌㅓㄹㄷㅏㄴㅊㅡㅇㅇㅕㅇㅅㅏㅇㅎㅏㅂㅅㅓㅇㅊㅘㄹㅇㅕㅇㅅㅜㄹㅇㅠㅂㅏㅇ", "engtokor": "dudtkdwlseksalcqkdtktjsclfyfyelwlxjfekscmddudtkdgkqtjdchkfdudtnfdbqkd"}
+{"index": { "_index": "treatment", "_id": "HZ1620000"}}
+{"treatmentId": "HZ1620000", "name": "뇌혈관 정량적 자기공명혈관조영술 [동 행위를 위해 실시한 MRA 포함]", "path": "영상진단 및 방사선 치료료/뇌혈관 정량적 자기공명혈관조영술 [동 행위를 위해 실시한 MRA 포함]", "chosung": "ㅇㅅㅈㄷㅁㅂㅅㅅㅊㄹㄹㄴㅎㄱㅈㄹㅈㅈㄱㄱㅁㅎㄱㅈㅇㅅㄷㅎㅇㄹㅇㅎㅅㅅㅎMRAㅍㅎ", "jamo": "ㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㅁㅣㅊㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㄹㅛㄴㅚㅎㅕㄹㄱㅘㄴㅈㅓㅇㄹㅑㅇㅈㅓㄱㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅎㅕㄹㄱㅘㄴㅈㅗㅇㅕㅇㅅㅜㄹㄷㅗㅇㅎㅐㅇㅇㅟㄹㅡㄹㅇㅟㅎㅐㅅㅣㄹㅅㅣㅎㅏㄴMRAㅍㅗㅎㅏㅁ", "engtokor": "dudtkdwlseksalcqkdtktjsclfyfyshlgufrhkswjdfidwjrwkrlrhdaudgufrhkswhdudtnfehdgoddnlfmfdnlgotlftlgksMRAvhgka"}
+{"index": { "_index": "treatment", "_id": "HE1010001"}}
+{"treatmentId": "HE1010001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/뇌/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄴㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄴㅚㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkshldlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1030001"}}
+{"treatmentId": "HE1030001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-안면/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㅇㅁㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㅇㅏㄴㅁㅕㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqndksausdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1040001"}}
+{"treatmentId": "HE1040001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-부비동/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㅂㅂㄷㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㅂㅜㅂㅣㄷㅗㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqnqnqlehddlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1050001"}}
+{"treatmentId": "HE1050001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-안와/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㅇㅇㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㅇㅏㄴㅇㅘㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqndksdhkdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1060001"}}
+{"treatmentId": "HE1060001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-측두골/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㅊㄷㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㅊㅡㄱㄷㅜㄱㅗㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqncmrenrhfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1070001"}}
+{"treatmentId": "HE1070001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-측두하악관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㅊㄷㅎㅇㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㅊㅡㄱㄷㅜㅎㅏㅇㅏㄱㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqncmrengkdkrrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1080001"}}
+{"treatmentId": "HE1080001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/두경부-경부/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄷㄱㅂㄱㅂㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄷㅜㄱㅕㅇㅂㅜㄱㅕㅇㅂㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkenrudqnrudqndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1090000"}}
+{"treatmentId": "HE1090000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/척추-경추/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅊㅊㄱㅊㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅊㅓㄱㅊㅜㄱㅕㅇㅊㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkcjrcnrudcndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1100000"}}
+{"treatmentId": "HE1100000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/척추-흉추/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅊㅊㅎㅊㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅊㅓㄱㅊㅜㅎㅠㅇㅊㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkcjrcngbdcndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1110000"}}
+{"treatmentId": "HE1110000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/척추-요천추/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅊㅊㅇㅊㅊㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅊㅓㄱㅊㅜㅇㅛㅊㅓㄴㅊㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkcjrcndycjscndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1120000"}}
+{"treatmentId": "HE1120000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/척추-척추강/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅊㅊㅊㅊㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅊㅓㄱㅊㅜㅊㅓㄱㅊㅜㄱㅏㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkcjrcncjrcnrkddlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1150000"}}
+{"treatmentId": "HE1150000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-견관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅕㄴㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrusrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2150000"}}
+{"treatmentId": "HE2150000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-견관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅕㄴㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrusrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4150000"}}
+{"treatmentId": "HE4150000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-견관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅕㄴㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrusrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5150000"}}
+{"treatmentId": "HE5150000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-견관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅕㄴㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrusrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1160000"}}
+{"treatmentId": "HE1160000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-주관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅈㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅈㅜㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPwnrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2160000"}}
+{"treatmentId": "HE2160000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-주관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅈㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅈㅜㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPwnrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4160000"}}
+{"treatmentId": "HE4160000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-주관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅈㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅈㅜㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPwnrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5160000"}}
+{"treatmentId": "HE5160000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-주관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅈㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅈㅜㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPwnrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1170000"}}
+{"treatmentId": "HE1170000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-수관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅜㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtnrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2170000"}}
+{"treatmentId": "HE2170000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-수관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅜㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtnrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4170000"}}
+{"treatmentId": "HE4170000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-수관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅜㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtnrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5170000"}}
+{"treatmentId": "HE5170000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-수관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅜㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtnrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1180000"}}
+{"treatmentId": "HE1180000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-고관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅗㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2180000"}}
+{"treatmentId": "HE2180000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-고관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅗㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4180000"}}
+{"treatmentId": "HE4180000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-고관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅗㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5180000"}}
+{"treatmentId": "HE5180000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-고관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅗㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1190000"}}
+{"treatmentId": "HE1190000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-천장골관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅊㅈㄱㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅊㅓㄴㅈㅏㅇㄱㅗㄹㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPcjswkdrhfrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2190000"}}
+{"treatmentId": "HE2190000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-천장골관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅊㅈㄱㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅊㅓㄴㅈㅏㅇㄱㅗㄹㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPcjswkdrhfrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4190000"}}
+{"treatmentId": "HE4190000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-천장골관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅊㅈㄱㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅊㅓㄴㅈㅏㅇㄱㅗㄹㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPcjswkdrhfrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5190000"}}
+{"treatmentId": "HE5190000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-천장골관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅊㅈㄱㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅊㅓㄴㅈㅏㅇㄱㅗㄹㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPcjswkdrhfrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1200000"}}
+{"treatmentId": "HE1200000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-슬관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅡㄹㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtmfrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2200000"}}
+{"treatmentId": "HE2200000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-슬관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅡㄹㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtmfrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4200000"}}
+{"treatmentId": "HE4200000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-슬관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅡㄹㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtmfrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5200000"}}
+{"treatmentId": "HE5200000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-슬관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅅㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅅㅡㄹㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPtmfrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1210000"}}
+{"treatmentId": "HE1210000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-발목관절/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅂㅁㄱㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅂㅏㄹㅁㅗㄱㄱㅘㄴㅈㅓㄹㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPqkfahrrhkswjfdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2210000"}}
+{"treatmentId": "HE2210000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-발목관절/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅂㅁㄱㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅂㅏㄹㅁㅗㄱㄱㅘㄴㅈㅓㄹㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPqkfahrrhkswjfwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4210000"}}
+{"treatmentId": "HE4210000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-발목관절/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅂㅁㄱㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅂㅏㄹㅁㅗㄱㄱㅘㄴㅈㅓㄹㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPqkfahrrhkswjfwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5210000"}}
+{"treatmentId": "HE5210000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-발목관절/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㅂㅁㄱㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅂㅏㄹㅁㅗㄱㄱㅘㄴㅈㅓㄹ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPqkfahrrhkswjf3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1220000"}}
+{"treatmentId": "HE1220000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 상지/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅅㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅅㅏㅇㅈㅣㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhltkdwldlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2220000"}}
+{"treatmentId": "HE2220000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 상지/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅅㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅅㅏㅇㅈㅣㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhltkdwlwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4220000"}}
+{"treatmentId": "HE4220000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 상지/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅅㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅅㅏㅇㅈㅣㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhltkdwlwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5220000"}}
+{"treatmentId": "HE5220000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 상지/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅅㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅅㅏㅇㅈㅣ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhltkdwl3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1230000"}}
+{"treatmentId": "HE1230000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 하지/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅎㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅎㅏㅈㅣㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhlgkwldlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2230000"}}
+{"treatmentId": "HE2230000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 하지/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅎㅈㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅎㅏㅈㅣㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhlgkwlwhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE4230000"}}
+{"treatmentId": "HE4230000", "name": "제한적 MRI(방사선 치료범위 및 위치결정 등) ", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 하지/제한적 MRI(방사선 치료범위 및 위치결정 등) ", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅎㅈㅈㅎㅈMRIㅂㅅㅅㅊㄹㅂㅇㅁㅇㅊㄱㅈㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅎㅏㅈㅣㅈㅔㅎㅏㄴㅈㅓㄱMRIㅂㅏㅇㅅㅏㅅㅓㄴㅊㅣㄹㅛㅂㅓㅁㅇㅟㅁㅣㅊㅇㅟㅊㅣㄱㅕㄹㅈㅓㅇㄷㅡㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhlgkwlwpgkswjrMRIqkdtktjsclfyqjadnlalcdnlclrufwjdemd"}
+{"index": { "_index": "treatment", "_id": "HE5230000"}}
+{"treatmentId": "HE5230000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/근골격계-관절외 하지/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㄱㄱㄱㄱㄱㅈㅇㅎㅈ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㄱㅘㄴㅈㅓㄹㅇㅚㅎㅏㅈㅣ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkrmsrhfrurrPrhkswjfdhlgkwl3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1250001"}}
+{"treatmentId": "HE1250001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/흉부-흉부/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㅂㅎㅂㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅠㅇㅂㅜㅎㅠㅇㅂㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgbdqngbdqndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1260001"}}
+{"treatmentId": "HE1260001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/흉부-유방/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㅂㅇㅂㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅠㅇㅂㅜㅇㅠㅂㅏㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgbdqndbqkddlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1270001"}}
+{"treatmentId": "HE1270001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-복부/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㅂㅂㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㅂㅗㄱㅂㅜㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqnqhrqndlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1280001"}}
+{"treatmentId": "HE1280001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-골반/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㄱㅂㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㄱㅗㄹㅂㅏㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqnrhfqksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1290001"}}
+{"treatmentId": "HE1290001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-췌장/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㅊㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㅊㅞㅈㅏㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqncnpwkddlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1300001"}}
+{"treatmentId": "HE1300001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-신장 및 부신/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㅅㅈㅁㅂㅅㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㅅㅣㄴㅈㅏㅇㅁㅣㅊㅂㅜㅅㅣㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqntlswkdalcqntlsdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1310001"}}
+{"treatmentId": "HE1310001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-음낭 및 음경/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㅇㄴㅁㅇㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㅇㅡㅁㄴㅏㅇㅁㅣㅊㅇㅡㅁㄱㅕㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqndmaskdalcdmaruddlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1320001"}}
+{"treatmentId": "HE1320001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-간/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㄱㅏㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqnrksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1330001"}}
+{"treatmentId": "HE1330001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-담췌관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㄷㅊㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㄷㅏㅁㅊㅞㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqnekacnprhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1340001"}}
+{"treatmentId": "HE1340001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/복부-전립선/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅂㅂㅈㄹㅅㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅂㅗㄱㅂㅜㅈㅓㄴㄹㅣㅂㅅㅓㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkqhrqnwjsflqtjsdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1350001"}}
+{"treatmentId": "HE1350001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-뇌혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㄴㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㄴㅚㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhksshlgufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1360001"}}
+{"treatmentId": "HE1360001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-경부혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㄱㅂㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㄱㅕㅇㅂㅜㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhksrudqngufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1370001"}}
+{"treatmentId": "HE1370001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-흉부혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅎㅂㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅎㅠㅇㅂㅜㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhksgbdqngufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1380001"}}
+{"treatmentId": "HE1380001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-복부혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅂㅂㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅂㅗㄱㅂㅜㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhksqhrqngufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1390000"}}
+{"treatmentId": "HE1390000", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-사지혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅅㅈㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhkstkwlgufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE2390000"}}
+{"treatmentId": "HE2390000", "name": "조영제 주입 전·후 촬영 판독", "path": "자기공명영상진단료(MRI-기본검사)/혈관-사지혈관/조영제 주입 전·후 촬영 판독", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅅㅈㅎㄱㅈㅇㅈㅈㅇㅈㅎㅊㅇㅍㄷ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴㅈㅗㅇㅕㅇㅈㅔㅈㅜㅇㅣㅂㅈㅓㄴㅎㅜㅊㅘㄹㅇㅕㅇㅍㅏㄴㄷㅗㄱ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhkstkwlgufrhkswhdudwpwndlqwjsgnchkfdudvksehr"}
+{"index": { "_index": "treatment", "_id": "HE5390000"}}
+{"treatmentId": "HE5390000", "name": "3차원자기공명영상을 실시한 경우", "path": "자기공명영상진단료(MRI-기본검사)/혈관-사지혈관/3차원자기공명영상을 실시한 경우", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅅㅈㅎㄱ3ㅊㅇㅈㄱㄱㅁㅇㅅㅇㅅㅅㅎㄱㅇ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅅㅏㅈㅣㅎㅕㄹㄱㅘㄴ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅡㄹㅅㅣㄹㅅㅣㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhkstkwlgufrhks3ckdnjswkrlrhdauddudtkddmftlftlgksruddn"}
+{"index": { "_index": "treatment", "_id": "HE1400001"}}
+{"treatmentId": "HE1400001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/혈관-심혈관/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅎㄱㅅㅎㄱㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅎㅕㄹㄱㅘㄴㅅㅣㅁㅎㅕㄹㄱㅘㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkgufrhkstlagufrhksdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1410001"}}
+{"treatmentId": "HE1410001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/전신/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅈㅅㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅈㅓㄴㅅㅣㄴㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatkwjstlsdlfqks"}
+{"index": { "_index": "treatment", "_id": "HE1240001"}}
+{"treatmentId": "HE1240001", "name": "일반", "path": "자기공명영상진단료(MRI-기본검사)/심장/일반", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㄱㅂㄱㅅㅅㅈㅇㅂ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅅㅣㅁㅈㅏㅇㅇㅣㄹㅂㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIrlqhsrjatktlawkddlfqks"}
+{"index": { "_index": "treatment", "_id": "HF1010000"}}
+{"treatmentId": "HF1010000", "name": "확산", "path": "자기공명영상진단료(MRI-특수검사)/확산", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㅎㅅ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㅎㅘㄱㅅㅏㄴ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkghkrtks"}
+{"index": { "_index": "treatment", "_id": "HF1020000"}}
+{"treatmentId": "HF1020000", "name": "관류 [3차원자기공명영상 포함]", "path": "자기공명영상진단료(MRI-특수검사)/관류 [3차원자기공명영상 포함]", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㄱㄹ3ㅊㅇㅈㄱㄱㅁㅇㅅㅍㅎ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㄱㅘㄴㄹㅠ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅍㅗㅎㅏㅁ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkrhksfb3ckdnjswkrlrhdauddudtkdvhgka"}
+{"index": { "_index": "treatment", "_id": "HF1030000"}}
+{"treatmentId": "HF1030000", "name": "분광영상", "path": "자기공명영상진단료(MRI-특수검사)/분광영상", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㅂㄱㅇㅅ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㅂㅜㄴㄱㅘㅇㅇㅕㅇㅅㅏㅇ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkqnsrhkddudtkd"}
+{"index": { "_index": "treatment", "_id": "HF1040000"}}
+{"treatmentId": "HF1040000", "name": "영화 [기본검사 및 3차원자기공명영상 포함]", "path": "자기공명영상진단료(MRI-특수검사)/영화 [기본검사 및 3차원자기공명영상 포함]", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㅇㅎㄱㅂㄱㅅㅁ3ㅊㅇㅈㄱㄱㅁㅇㅅㅍㅎ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㅇㅕㅇㅎㅘㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅁㅣㅊ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅍㅗㅎㅏㅁ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkdudghkrlqhsrjatkalc3ckdnjswkrlrhdauddudtkdvhgka"}
+{"index": { "_index": "treatment", "_id": "HF1050000"}}
+{"treatmentId": "HF1050000", "name": "Dynamic [기본검사 포함]", "path": "자기공명영상진단료(MRI-특수검사)/Dynamic [기본검사 포함]", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅDynamicㄱㅂㄱㅅㅍㅎ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏDynamicㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅍㅗㅎㅏㅁ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkDynamicrlqhsrjatkvhgka"}
+{"index": { "_index": "treatment", "_id": "HF1060000"}}
+{"treatmentId": "HF1060000", "name": "이중조영 [기본검사 포함]", "path": "자기공명영상진단료(MRI-특수검사)/이중조영 [기본검사 포함]", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㅇㅈㅈㅇㄱㅂㄱㅅㅍㅎ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㅇㅣㅈㅜㅇㅈㅗㅇㅕㅇㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅍㅗㅎㅏㅁ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkdlwndwhdudrlqhsrjatkvhgka"}
+{"index": { "_index": "treatment", "_id": "HF1070000"}}
+{"treatmentId": "HF1070000", "name": "기능적 [기본검사 및 3차원자기공명영상 포함]", "path": "자기공명영상진단료(MRI-특수검사)/기능적 [기본검사 및 3차원자기공명영상 포함]", "chosung": "ㅈㄱㄱㅁㅇㅅㅈㄷㄹMRIㅌㅅㄱㅅㄱㄴㅈㄱㅂㄱㅅㅁ3ㅊㅇㅈㄱㄱㅁㅇㅅㅍㅎ", "jamo": "ㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅈㅣㄴㄷㅏㄴㄹㅛMRIㅌㅡㄱㅅㅜㄱㅓㅁㅅㅏㄱㅣㄴㅡㅇㅈㅓㄱㄱㅣㅂㅗㄴㄱㅓㅁㅅㅏㅁㅣㅊ3ㅊㅏㅇㅝㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅍㅗㅎㅏㅁ", "engtokor": "wkrlrhdauddudtkdwlseksfyMRIxmrtnrjatkrlsmdwjrrlqhsrjatkalc3ckdnjswkrlrhdauddudtkdvhgka"}
+{"index": { "_index": "treatment", "_id": "KZ0010000"}}
+{"treatmentId": "KZ0010000", "name": "알레르겐 면역요법", "path": "주사료/알레르겐 면역요법", "chosung": "ㅈㅅㄹㅇㄹㄹㄱㅁㅇㅇㅂ", "jamo": "ㅈㅜㅅㅏㄹㅛㅇㅏㄹㄹㅔㄹㅡㄱㅔㄴㅁㅕㄴㅇㅕㄱㅇㅛㅂㅓㅂ", "engtokor": "wntkfydkffpfmrpsausdurdyqjq"}
+{"index": { "_index": "treatment", "_id": "MZ0060000"}}
+{"treatmentId": "MZ0060000", "name": "언어치료", "path": "이학요법료/언어치료", "chosung": "ㅇㅎㅇㅂㄹㅇㅇㅊㄹ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅇㅓㄴㅇㅓㅊㅣㄹㅛ", "engtokor": "dlgkrdyqjqfydjsdjclfy"}
+{"index": { "_index": "treatment", "_id": "MZ0070000"}}
+{"treatmentId": "MZ0070000", "name": "신장분사치료", "path": "이학요법료/신장분사치료", "chosung": "ㅇㅎㅇㅂㄹㅅㅈㅂㅅㅊㄹ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅅㅣㄴㅈㅏㅇㅂㅜㄴㅅㅏㅊㅣㄹㅛ", "engtokor": "dlgkrdyqjqfytlswkdqnstkclfy"}
+{"index": { "_index": "treatment", "_id": "MX1220000"}}
+{"treatmentId": "MX1220000", "name": "도수치료", "path": "이학요법료/도수치료", "chosung": "ㅇㅎㅇㅂㄹㄷㅅㅊㄹ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㄷㅗㅅㅜㅊㅣㄹㅛ", "engtokor": "dlgkrdyqjqfyehtnclfy"}
+{"index": { "_index": "treatment", "_id": "MY1420000"}}
+{"treatmentId": "MY1420000", "name": "사지관절부위", "path": "이학요법료/증식치료/사지관절부위", "chosung": "ㅇㅎㅇㅂㄹㅈㅅㅊㄹㅅㅈㄱㅈㅂㅇ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅈㅡㅇㅅㅣㄱㅊㅣㄹㅛㅅㅏㅈㅣㄱㅘㄴㅈㅓㄹㅂㅜㅇㅟ", "engtokor": "dlgkrdyqjqfywmdtlrclfytkwlrhkswjfqndnl"}
+{"index": { "_index": "treatment", "_id": "MY1430000"}}
+{"treatmentId": "MY1430000", "name": "척추부위", "path": "이학요법료/증식치료/척추부위", "chosung": "ㅇㅎㅇㅂㄹㅈㅅㅊㄹㅊㅊㅂㅇ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅈㅡㅇㅅㅣㄱㅊㅣㄹㅛㅊㅓㄱㅊㅜㅂㅜㅇㅟ", "engtokor": "dlgkrdyqjqfywmdtlrclfycjrcnqndnl"}
+{"index": { "_index": "treatment", "_id": "MX0330000"}}
+{"treatmentId": "MX0330000", "name": "체외자기장 요실금치료[1일당]", "path": "이학요법료/체외자기장 요실금치료[1일당]", "chosung": "ㅇㅎㅇㅂㄹㅊㅇㅈㄱㅈㅇㅅㄱㅊㄹ1ㅇㄷ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅊㅔㅇㅚㅈㅏㄱㅣㅈㅏㅇㅇㅛㅅㅣㄹㄱㅡㅁㅊㅣㄹㅛ1ㅇㅣㄹㄷㅏㅇ", "engtokor": "dlgkrdyqjqfycpdhlwkrlwkddytlfrmaclfy1dlfekd"}
+{"index": { "_index": "treatment", "_id": "MZ0090000"}}
+{"treatmentId": "MZ0090000", "name": "전산화 인지재활치료[주의·기억]", "path": "이학요법료/전산화 인지재활치료[주의·기억]", "chosung": "ㅇㅎㅇㅂㄹㅈㅅㅎㅇㅈㅈㅎㅊㄹㅈㅇㄱㅇ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅈㅓㄴㅅㅏㄴㅎㅘㅇㅣㄴㅈㅣㅈㅐㅎㅘㄹㅊㅣㄹㅛㅈㅜㅇㅢㄱㅣㅇㅓㄱ", "engtokor": "dlgkrdyqjqfywjstksghkdlswlwoghkfclfywndmlrldjr"}
+{"index": { "_index": "treatment", "_id": "MZ0010000"}}
+{"treatmentId": "MZ0010000", "name": "FIMS(Functional Intramuscular Stimulation)", "path": "이학요법료/FIMS(Functional Intramuscular Stimulation)", "chosung": "ㅇㅎㅇㅂㄹFIMSFunctionalIntramuscularStimulation", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛFIMSFunctionalIntramuscularStimulation", "engtokor": "dlgkrdyqjqfyFIMSFunctionalIntramuscularStimulation"}
+{"index": { "_index": "treatment", "_id": "MZ0120000"}}
+{"treatmentId": "MZ0120000", "name": "비침습적 무통증 신호요법", "path": "이학요법료/비침습적 무통증 신호요법", "chosung": "ㅇㅎㅇㅂㄹㅂㅊㅅㅈㅁㅌㅈㅅㅎㅇㅂ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅂㅣㅊㅣㅁㅅㅡㅂㅈㅓㄱㅁㅜㅌㅗㅇㅈㅡㅇㅅㅣㄴㅎㅗㅇㅛㅂㅓㅂ", "engtokor": "dlgkrdyqjqfyqlclatmqwjranxhdwmdtlsghdyqjq"}
+{"index": { "_index": "treatment", "_id": "MZ0040000"}}
+{"treatmentId": "MZ0040000", "name": "이명재훈련치료", "path": "이학요법료/이명재훈련치료", "chosung": "ㅇㅎㅇㅂㄹㅇㅁㅈㅎㄹㅊㄹ", "jamo": "ㅇㅣㅎㅏㄱㅇㅛㅂㅓㅂㄹㅛㅇㅣㅁㅕㅇㅈㅐㅎㅜㄴㄹㅕㄴㅊㅣㄹㅛ", "engtokor": "dlgkrdyqjqfydlaudwognsfusclfy"}
+{"index": { "_index": "treatment", "_id": "SZ0330000"}}
+{"treatmentId": "SZ0330000", "name": "지방흡입기를 이용한 액취증·다한증수술", "path": "처치 및 수술료(피부 및 연부조직)/지방흡입기를 이용한 액취증·다한증수술", "chosung": "ㅊㅊㅁㅅㅅㄹㅍㅂㅁㅇㅂㅈㅈㅈㅂㅎㅇㄱㄹㅇㅇㅎㅇㅊㅈㄷㅎㅈㅅㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅍㅣㅂㅜㅁㅣㅊㅇㅕㄴㅂㅜㅈㅗㅈㅣㄱㅈㅣㅂㅏㅇㅎㅡㅂㅇㅣㅂㄱㅣㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅇㅐㄱㅊㅟㅈㅡㅇㄷㅏㅎㅏㄴㅈㅡㅇㅅㅜㅅㅜㄹ", "engtokor": "cjclalctntnffyvlqnalcdusqnwhwlrwlqkdgmqdlqrlfmfdldydgksdorcnlwmdekgkswmdtntnf"}
+{"index": { "_index": "treatment", "_id": "SZ0350000"}}
+{"treatmentId": "SZ0350000", "name": "레이저를 이용한 손발톱 진균증 치료", "path": "처치 및 수술료(피부 및 연부조직)/레이저를 이용한 손발톱 진균증 치료", "chosung": "ㅊㅊㅁㅅㅅㄹㅍㅂㅁㅇㅂㅈㅈㄹㅇㅈㄹㅇㅇㅎㅅㅂㅌㅈㄱㅈㅊㄹ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅍㅣㅂㅜㅁㅣㅊㅇㅕㄴㅂㅜㅈㅗㅈㅣㄱㄹㅔㅇㅣㅈㅓㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅗㄴㅂㅏㄹㅌㅗㅂㅈㅣㄴㄱㅠㄴㅈㅡㅇㅊㅣㄹㅛ", "engtokor": "cjclalctntnffyvlqnalcdusqnwhwlrfpdlwjfmfdldydgksthsqkfxhqwlsrbswmdclfy"}
+{"index": { "_index": "treatment", "_id": "SZ0830000"}}
+{"treatmentId": "SZ0830000", "name": "추간판내 고주파 열치료술", "path": "처치 및 수술료(근골)/추간판내 고주파 열치료술", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㄱㅊㄱㅍㄴㄱㅈㅍㅇㅊㄹㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅡㄴㄱㅗㄹㅊㅜㄱㅏㄴㅍㅏㄴㄴㅐㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅅㅜㄹ", "engtokor": "cjclalctntnffyrmsrhfcnrksvkssorhwnvkdufclfytnf"}
+{"index": { "_index": "treatment", "_id": "SZ0840000"}}
+{"treatmentId": "SZ0840000", "name": "체외충격파치료[근골격계질환]", "path": "처치 및 수술료(근골)/체외충격파치료[근골격계질환]", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㄱㅊㅇㅊㄱㅍㅊㄹㄱㄱㄱㄱㅈㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅡㄴㄱㅗㄹㅊㅔㅇㅚㅊㅜㅇㄱㅕㄱㅍㅏㅊㅣㄹㅛㄱㅡㄴㄱㅗㄹㄱㅕㄱㄱㅖㅈㅣㄹㅎㅘㄴ", "engtokor": "cjclalctntnffyrmsrhfcpdhlcndrurvkclfyrmsrhfrurrPwlfghks"}
+{"index": { "_index": "treatment", "_id": "SZ0850000"}}
+{"treatmentId": "SZ0850000", "name": "연골결손(동 행위를 위해 실시한 골수천자, 미세천공술 및 관절경 치료재료대 포함)", "path": "처치 및 수술료(근골)/자가 골수 줄기세포 치료/연골결손(동 행위를 위해 실시한 골수천자, 미세천공술 및 관절경 치료재료대 포함)", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㄱㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅇㄱㄱㅅㄷㅎㅇㄹㅇㅎㅅㅅㅎㄱㅅㅊㅈㅁㅅㅊㄱㅅㅁㄱㅈㄱㅊㄹㅈㄹㄷㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅡㄴㄱㅗㄹㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㄷㅗㅇㅎㅐㅇㅇㅟㄹㅡㄹㅇㅟㅎㅐㅅㅣㄹㅅㅣㅎㅏㄴㄱㅗㄹㅅㅜㅊㅓㄴㅈㅏㅁㅣㅅㅔㅊㅓㄴㄱㅗㅇㅅㅜㄹㅁㅣㅊㄱㅘㄴㅈㅓㄹㄱㅕㅇㅊㅣㄹㅛㅈㅐㄹㅛㄷㅐㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffyrmsrhfwkrkrhftnwnfrltpvhclfydusrhfrufthsehdgoddnlfmfdnlgotlftlgksrhftncjswkaltpcjsrhdtnfalcrhkswjfrudclfywofyeovhgka"}
+{"index": { "_index": "treatment", "_id": "OY2010000"}}
+{"treatmentId": "OY2010000", "name": "교통정맥결찰술을 동반한 경우", "path": "처치 및 수술료(순환기)/고주파정맥내막폐쇄술[유도료 포함]/교통정맥결찰술을 동반한 경우", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㄱㅈㅍㅈㅁㄴㅁㅍㅅㅅㅇㄷㄹㅍㅎㄱㅌㅈㅁㄱㅊㅅㅇㄷㅂㅎㄱㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅗㅈㅜㅍㅏㅈㅓㅇㅁㅐㄱㄴㅐㅁㅏㄱㅍㅖㅅㅙㅅㅜㄹㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁㄱㅛㅌㅗㅇㅈㅓㅇㅁㅐㄱㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅡㄹㄷㅗㅇㅂㅏㄴㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "cjclalctntnffytnsghksrlrhwnvkwjdaorsoakrvPthotnfdbehfyvhgkaryxhdwjdaorrufckftnfdmfehdqksgksruddn"}
+{"index": { "_index": "treatment", "_id": "OY2020000"}}
+{"treatmentId": "OY2020000", "name": "교통정맥결찰술을 동반하지 않은 경우", "path": "처치 및 수술료(순환기)/고주파정맥내막폐쇄술[유도료 포함]/교통정맥결찰술을 동반하지 않은 경우", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㄱㅈㅍㅈㅁㄴㅁㅍㅅㅅㅇㄷㄹㅍㅎㄱㅌㅈㅁㄱㅊㅅㅇㄷㅂㅎㅈㅇㅇㄱㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅗㅈㅜㅍㅏㅈㅓㅇㅁㅐㄱㄴㅐㅁㅏㄱㅍㅖㅅㅙㅅㅜㄹㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁㄱㅛㅌㅗㅇㅈㅓㅇㅁㅐㄱㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅡㄹㄷㅗㅇㅂㅏㄴㅎㅏㅈㅣㅇㅏㄶㅇㅡㄴㄱㅕㅇㅇㅜ", "engtokor": "cjclalctntnffytnsghksrlrhwnvkwjdaorsoakrvPthotnfdbehfyvhgkaryxhdwjdaorrufckftnfdmfehdqksgkwldksgdmsruddn"}
+{"index": { "_index": "treatment", "_id": "OY2030000"}}
+{"treatmentId": "OY2030000", "name": "교통정맥결찰술을 동반한 경우", "path": "처치 및 수술료(순환기)/광투시정맥흡입제거술/교통정맥결찰술을 동반한 경우", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㄱㅌㅅㅈㅁㅎㅇㅈㄱㅅㄱㅌㅈㅁㄱㅊㅅㅇㄷㅂㅎㄱㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅘㅇㅌㅜㅅㅣㅈㅓㅇㅁㅐㄱㅎㅡㅂㅇㅣㅂㅈㅔㄱㅓㅅㅜㄹㄱㅛㅌㅗㅇㅈㅓㅇㅁㅐㄱㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅡㄹㄷㅗㅇㅂㅏㄴㅎㅏㄴㄱㅕㅇㅇㅜ", "engtokor": "cjclalctntnffytnsghksrlrhkdxntlwjdaorgmqdlqwprjtnfryxhdwjdaorrufckftnfdmfehdqksgksruddn"}
+{"index": { "_index": "treatment", "_id": "OY2040000"}}
+{"treatmentId": "OY2040000", "name": "교통정맥결찰술을 동반하지 않은 경우", "path": "처치 및 수술료(순환기)/광투시정맥흡입제거술/교통정맥결찰술을 동반하지 않은 경우", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㄱㅌㅅㅈㅁㅎㅇㅈㄱㅅㄱㅌㅈㅁㄱㅊㅅㅇㄷㅂㅎㅈㅇㅇㄱㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄱㅘㅇㅌㅜㅅㅣㅈㅓㅇㅁㅐㄱㅎㅡㅂㅇㅣㅂㅈㅔㄱㅓㅅㅜㄹㄱㅛㅌㅗㅇㅈㅓㅇㅁㅐㄱㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅡㄹㄷㅗㅇㅂㅏㄴㅎㅏㅈㅣㅇㅏㄶㅇㅡㄴㄱㅕㅇㅇㅜ", "engtokor": "cjclalctntnffytnsghksrlrhkdxntlwjdaorgmqdlqwprjtnfryxhdwjdaorrufckftnfdmfehdqksgkwldksgdmsruddn"}
+{"index": { "_index": "treatment", "_id": "OZ3040000"}}
+{"treatmentId": "OZ3040000", "name": "레이저정맥폐쇄술[유도료 포함]", "path": "처치 및 수술료(순환기)/레이저정맥폐쇄술[유도료 포함]", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㄹㅇㅈㅈㅁㅍㅅㅅㅇㄷㄹㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㄹㅔㅇㅣㅈㅓㅈㅓㅇㅁㅐㄱㅍㅖㅅㅙㅅㅜㄹㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffytnsghksrlfpdlwjwjdaorvPthotnfdbehfyvhgka"}
+{"index": { "_index": "treatment", "_id": "OZ3050000"}}
+{"treatmentId": "OZ3050000", "name": "초음파 유도하 혈관경화요법", "path": "처치 및 수술료(순환기)/초음파 유도하 혈관경화요법", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㅊㅇㅍㅇㄷㅎㅎㄱㄱㅎㅇㅂ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅎㅏㅎㅕㄹㄱㅘㄴㄱㅕㅇㅎㅘㅇㅛㅂㅓㅂ", "engtokor": "cjclalctntnffytnsghksrlchdmavkdbehgkgufrhksrudghkdyqjq"}
+{"index": { "_index": "treatment", "_id": "OZ3030000"}}
+{"treatmentId": "OZ3030000", "name": "시아노아크릴레이트를 이용한 복재정맥 폐색술[유도료 포함]", "path": "처치 및 수술료(순환기)/시아노아크릴레이트를 이용한 복재정맥 폐색술[유도료 포함]", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㅎㄱㅅㅇㄴㅇㅋㄹㄹㅇㅌㄹㅇㅇㅎㅂㅈㅈㅁㅍㅅㅅㅇㄷㄹㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅜㄴㅎㅘㄴㄱㅣㅅㅣㅇㅏㄴㅗㅇㅏㅋㅡㄹㅣㄹㄹㅔㅇㅣㅌㅡㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅂㅗㄱㅈㅐㅈㅓㅇㅁㅐㄱㅍㅖㅅㅐㄱㅅㅜㄹㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffytnsghksrltldkshdkzmflffpdlxmfmfdldydgksqhrwowjdaorvPtortnfdbehfyvhgka"}
+{"index": { "_index": "treatment", "_id": "QZ3730000"}}
+{"treatmentId": "QZ3730000", "name": "이설근전진술", "path": "처치 및 수술료(입, 이하선)/이설근전진술", "chosung": "ㅊㅊㅁㅅㅅㄹㅇㅇㅎㅅㅇㅅㄱㅈㅈㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅇㅣㅂㅇㅣㅎㅏㅅㅓㄴㅇㅣㅅㅓㄹㄱㅡㄴㅈㅓㄴㅈㅣㄴㅅㅜㄹ", "engtokor": "cjclalctntnffydlqdlgktjsdltjfrmswjswlstnf"}
+{"index": { "_index": "treatment", "_id": "RZ5110000"}}
+{"treatmentId": "RZ5110000", "name": "고강도 초음파 집속술 [전립선암]", "path": "처치 및 수술료(비뇨기)/고강도 초음파 집속술 [전립선암]", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㄴㄱㄱㄱㄷㅊㅇㅍㅈㅅㅅㅈㄹㅅㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅣㄴㅛㄱㅣㄱㅗㄱㅏㅇㄷㅗㅊㅗㅇㅡㅁㅍㅏㅈㅣㅂㅅㅗㄱㅅㅜㄹㅈㅓㄴㄹㅣㅂㅅㅓㄴㅇㅏㅁ", "engtokor": "cjclalctntnffyqlsyrlrhrkdehchdmavkwlqthrtnfwjsflqtjsdka"}
+{"index": { "_index": "treatment", "_id": "RZ5150000"}}
+{"treatmentId": "RZ5150000", "name": "이식형 결찰사를 이용한 전립선 결찰", "path": "처치 및 수술료(비뇨기)/이식형 결찰사를 이용한 전립선 결찰", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㄴㄱㅇㅅㅎㄱㅊㅅㄹㅇㅇㅎㅈㄹㅅㄱㅊ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅣㄴㅛㄱㅣㅇㅣㅅㅣㄱㅎㅕㅇㄱㅕㄹㅊㅏㄹㅅㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅈㅓㄴㄹㅣㅂㅅㅓㄴㄱㅕㄹㅊㅏㄹ", "engtokor": "cjclalctntnffyqlsyrldltlrgudrufckftkfmfdldydgkswjsflqtjsrufckf"}
+{"index": { "_index": "treatment", "_id": "RZ5650000"}}
+{"treatmentId": "RZ5650000", "name": "자기공명영상유도 하 고강도초음파집속술[자궁근종]", "path": "처치 및 수술료(여성생식기, 임신과 분만)/자기공명영상유도 하 고강도초음파집속술[자궁근종]", "chosung": "ㅊㅊㅁㅅㅅㄹㅇㅅㅅㅅㄱㅇㅅㄱㅂㅁㅈㄱㄱㅁㅇㅅㅇㄷㅎㄱㄱㄷㅊㅇㅍㅈㅅㅅㅈㄱㄱㅈ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅇㅣㅁㅅㅣㄴㄱㅘㅂㅜㄴㅁㅏㄴㅈㅏㄱㅣㄱㅗㅇㅁㅕㅇㅇㅕㅇㅅㅏㅇㅇㅠㄷㅗㅎㅏㄱㅗㄱㅏㅇㄷㅗㅊㅗㅇㅡㅁㅍㅏㅈㅣㅂㅅㅗㄱㅅㅜㄹㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇ", "engtokor": "cjclalctntnffydutjdtodtlrrldlatlsrhkqnsakswkrlrhdauddudtkddbehgkrhrkdehchdmavkwlqthrtnfwkrndrmswhd"}
+{"index": { "_index": "treatment", "_id": "RZ5660000"}}
+{"treatmentId": "RZ5660000", "name": "초음파 유도하 고강도초음파집속술 [자궁근종, 자궁선근증]", "path": "처치 및 수술료(여성생식기, 임신과 분만)/초음파 유도하 고강도초음파집속술 [자궁근종, 자궁선근증]", "chosung": "ㅊㅊㅁㅅㅅㄹㅇㅅㅅㅅㄱㅇㅅㄱㅂㅁㅊㅇㅍㅇㄷㅎㄱㄱㄷㅊㅇㅍㅈㅅㅅㅈㄱㄱㅈㅈㄱㅅㄱㅈ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅇㅣㅁㅅㅣㄴㄱㅘㅂㅜㄴㅁㅏㄴㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㅎㅏㄱㅗㄱㅏㅇㄷㅗㅊㅗㅇㅡㅁㅍㅏㅈㅣㅂㅅㅗㄱㅅㅜㄹㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅈㅏㄱㅜㅇㅅㅓㄴㄱㅡㄴㅈㅡㅇ", "engtokor": "cjclalctntnffydutjdtodtlrrldlatlsrhkqnsakschdmavkdbehgkrhrkdehchdmavkwlqthrtnfwkrndrmswhdwkrndtjsrmswmd"}
+{"index": { "_index": "treatment", "_id": "RZ5640000"}}
+{"treatmentId": "RZ5640000", "name": "고주파 자궁근종용해술", "path": "처치 및 수술료(여성생식기, 임신과 분만)/고주파 자궁근종용해술", "chosung": "ㅊㅊㅁㅅㅅㄹㅇㅅㅅㅅㄱㅇㅅㄱㅂㅁㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅇㅕㅅㅓㅇㅅㅐㅇㅅㅣㄱㄱㅣㅇㅣㅁㅅㅣㄴㄱㅘㅂㅜㄴㅁㅏㄴㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹ", "engtokor": "cjclalctntnffydutjdtodtlrrldlatlsrhkqnsaksrhwnvkwkrndrmswhddydgotnf"}
+{"index": { "_index": "treatment", "_id": "SZ6310000"}}
+{"treatmentId": "SZ6310000", "name": "내시경적 경막외강 신경근성형술", "path": "처치 및 수술료(신경)/내시경적 경막외강 신경근성형술", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㄱㄴㅅㄱㅈㄱㅁㅇㄱㅅㄱㄱㅅㅎㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅣㄴㄱㅕㅇㄴㅐㅅㅣㄱㅕㅇㅈㅓㄱㄱㅕㅇㅁㅏㄱㅇㅚㄱㅏㅇㅅㅣㄴㄱㅕㅇㄱㅡㄴㅅㅓㅇㅎㅕㅇㅅㅜㄹ", "engtokor": "cjclalctntnffytlsrudsotlrudwjrrudakrdhlrkdtlsrudrmstjdgudtnf"}
+{"index": { "_index": "treatment", "_id": "SZ6340000"}}
+{"treatmentId": "SZ6340000", "name": "경피적 경막외강 신경성형술", "path": "처치 및 수술료(신경)/경피적 경막외강 신경성형술", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㄱㄱㅍㅈㄱㅁㅇㄱㅅㄱㅅㅎㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅣㄴㄱㅕㅇㄱㅕㅇㅍㅣㅈㅓㄱㄱㅕㅇㅁㅏㄱㅇㅚㄱㅏㅇㅅㅣㄴㄱㅕㅇㅅㅓㅇㅎㅕㅇㅅㅜㄹ", "engtokor": "cjclalctntnffytlsrudrudvlwjrrudakrdhlrkdtlsrudtjdgudtnf"}
+{"index": { "_index": "treatment", "_id": "SZ6410000"}}
+{"treatmentId": "SZ6410000", "name": "경피적 풍선확장 경막외강 신경성형", "path": "처치 및 수술료(신경)/경피적 풍선확장 경막외강 신경성형", "chosung": "ㅊㅊㅁㅅㅅㄹㅅㄱㄱㅍㅈㅍㅅㅎㅈㄱㅁㅇㄱㅅㄱㅅㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅅㅣㄴㄱㅕㅇㄱㅕㅇㅍㅣㅈㅓㄱㅍㅜㅇㅅㅓㄴㅎㅘㄱㅈㅏㅇㄱㅕㅇㅁㅏㄱㅇㅚㄱㅏㅇㅅㅣㄴㄱㅕㅇㅅㅓㅇㅎㅕㅇ", "engtokor": "cjclalctntnffytlsrudrudvlwjrvndtjsghkrwkdrudakrdhlrkdtlsrudtjdgud"}
+{"index": { "_index": "treatment", "_id": "QZ8440000"}}
+{"treatmentId": "QZ8440000", "name": "간암의 초음파유도 고강도초음파 집속술", "path": "처치 및 수술료(간)/간암의 초음파유도 고강도초음파 집속술", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㄱㅇㅇㅊㅇㅍㅇㄷㄱㄱㄷㅊㅇㅍㅈㅅㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅏㄴㄱㅏㄴㅇㅏㅁㅇㅢㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㄱㅗㄱㅏㅇㄷㅗㅊㅗㅇㅡㅁㅍㅏㅈㅣㅂㅅㅗㄱㅅㅜㄹ", "engtokor": "cjclalctntnffyrksrksdkadmlchdmavkdbehrhrkdehchdmavkwlqthrtnf"}
+{"index": { "_index": "treatment", "_id": "QZ9620000"}}
+{"treatmentId": "QZ9620000", "name": "경두개자기자극술", "path": "처치 및 수술료(기타)/경두개자기자극술", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㅌㄱㄷㄱㅈㄱㅈㄱㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅣㅌㅏㄱㅕㅇㄷㅜㄱㅐㅈㅏㄱㅣㅈㅏㄱㅡㄱㅅㅜㄹ", "engtokor": "cjclalctntnffyrlxkrudenrowkrlwkrmrtnf"}
+{"index": { "_index": "treatment", "_id": "QZ9610002"}}
+{"treatmentId": "QZ9610002", "name": "갑상선악성종양근치수술(갑상선암)", "path": "처치 및 수술료(기타)/로봇 보조 수술 [시술시 소요재료 포함]-다빈치 기기/갑상선악성종양근치수술(갑상선암)", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㅌㄹㅂㅂㅈㅅㅅㅅㅅㅅㅅㅇㅈㄹㅍㅎㄷㅂㅊㄱㄱㄱㅅㅅㅇㅅㅈㅇㄱㅊㅅㅅㄱㅅㅅㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅣㅌㅏㄹㅗㅂㅗㅅㅂㅗㅈㅗㅅㅜㅅㅜㄹㅅㅣㅅㅜㄹㅅㅣㅅㅗㅇㅛㅈㅐㄹㅛㅍㅗㅎㅏㅁㄷㅏㅂㅣㄴㅊㅣㄱㅣㄱㅣㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅏㄱㅅㅓㅇㅈㅗㅇㅇㅑㅇㄱㅡㄴㅊㅣㅅㅜㅅㅜㄹㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅏㅁ", "engtokor": "cjclalctntnffyrlxkfhqhtqhwhtntnftltnftlthdywofyvhgkaekqlsclrlrlrkqtkdtjsdkrtjdwhddidrmscltntnfrkqtkdtjsdka"}
+{"index": { "_index": "treatment", "_id": "QZ9610009"}}
+{"treatmentId": "QZ9610009", "name": "근치적전립선적출술(전립선암)", "path": "처치 및 수술료(기타)/로봇 보조 수술 [시술시 소요재료 포함]-다빈치 기기/근치적전립선적출술(전립선암)", "chosung": "ㅊㅊㅁㅅㅅㄹㄱㅌㄹㅂㅂㅈㅅㅅㅅㅅㅅㅅㅇㅈㄹㅍㅎㄷㅂㅊㄱㄱㄱㅊㅈㅈㄹㅅㅈㅊㅅㅈㄹㅅㅇ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄱㅣㅌㅏㄹㅗㅂㅗㅅㅂㅗㅈㅗㅅㅜㅅㅜㄹㅅㅣㅅㅜㄹㅅㅣㅅㅗㅇㅛㅈㅐㄹㅛㅍㅗㅎㅏㅁㄷㅏㅂㅣㄴㅊㅣㄱㅣㄱㅣㄱㅡㄴㅊㅣㅈㅓㄱㅈㅓㄴㄹㅣㅂㅅㅓㄴㅈㅓㄱㅊㅜㄹㅅㅜㄹㅈㅓㄴㄹㅣㅂㅅㅓㄴㅇㅏㅁ", "engtokor": "cjclalctntnffyrlxkfhqhtqhwhtntnftltnftlthdywofyvhgkaekqlsclrlrlrmsclwjrwjsflqtjswjrcnftnfwjsflqtjsdka"}
+{"index": { "_index": "treatment", "_id": "RZ6400000"}}
+{"treatmentId": "RZ6400000", "name": "정자채취 및 처리", "path": "처치 및 수술료(보조생식술)/정자채취 및 처리", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅈㅈㅊㅊㅁㅊㄹ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅈㅓㅇㅈㅏㅊㅐㅊㅟㅁㅣㅊㅊㅓㄹㅣ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfwjdwkcocnlalccjfl"}
+{"index": { "_index": "treatment", "_id": "RZ6410000"}}
+{"treatmentId": "RZ6410000", "name": "난자채취 및 처리[양측][초음파 유도료 포함]", "path": "처치 및 수술료(보조생식술)/난자채취 및 처리[양측][초음파 유도료 포함]", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㄴㅈㅊㅊㅁㅊㄹㅇㅊㅊㅇㅍㅇㄷㄹㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㄴㅏㄴㅈㅏㅊㅐㅊㅟㅁㅣㅊㅊㅓㄹㅣㅇㅑㅇㅊㅡㄱㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfskswkcocnlalccjfldidcmrchdmavkdbehfyvhgka"}
+{"index": { "_index": "treatment", "_id": "RZ6420001"}}
+{"treatmentId": "RZ6420001", "name": "일반 체외수정", "path": "처치 및 수술료(보조생식술)/수정 및 확인/일반 체외수정", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅅㅈㅁㅎㅇㅇㅂㅊㅇㅅㅈ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅅㅜㅈㅓㅇㅁㅣㅊㅎㅘㄱㅇㅣㄴㅇㅣㄹㅂㅏㄴㅊㅔㅇㅚㅅㅜㅈㅓㅇ", "engtokor": "cjclalctntnffyqhwhtodtlrtnftnwjdalcghkrdlsdlfqkscpdhltnwjd"}
+{"index": { "_index": "treatment", "_id": "RZ6420002"}}
+{"treatmentId": "RZ6420002", "name": "세포질내 정자주입술", "path": "처치 및 수술료(보조생식술)/수정 및 확인/세포질내 정자주입술", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅅㅈㅁㅎㅇㅅㅍㅈㄴㅈㅈㅈㅇㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅅㅜㅈㅓㅇㅁㅣㅊㅎㅘㄱㅇㅣㄴㅅㅔㅍㅗㅈㅣㄹㄴㅐㅈㅓㅇㅈㅏㅈㅜㅇㅣㅂㅅㅜㄹ", "engtokor": "cjclalctntnffyqhwhtodtlrtnftnwjdalcghkrdlstpvhwlfsowjdwkwndlqtnf"}
+{"index": { "_index": "treatment", "_id": "RZ6430000"}}
+{"treatmentId": "RZ6430000", "name": "해동", "path": "처치 및 수술료(보조생식술)/해동", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅎㄷ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅎㅐㄷㅗㅇ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfgoehd"}
+{"index": { "_index": "treatment", "_id": "RZ6440000"}}
+{"treatmentId": "RZ6440000", "name": "배아 배양 및 관찰", "path": "처치 및 수술료(보조생식술)/배아 배양 및 관찰", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅂㅇㅂㅇㅁㄱㅊ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅂㅐㅇㅏㅂㅐㅇㅑㅇㅁㅣㅊㄱㅘㄴㅊㅏㄹ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfqodkqodidalcrhksckf"}
+{"index": { "_index": "treatment", "_id": "RZ6450000"}}
+{"treatmentId": "RZ6450000", "name": "배아 이식[초음파유도료 포함] ", "path": "처치 및 수술료(보조생식술)/배아 이식[초음파유도료 포함] ", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅂㅇㅇㅅㅊㅇㅍㅇㄷㄹㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅂㅐㅇㅏㅇㅣㅅㅣㄱㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfqodkdltlrchdmavkdbehfyvhgka"}
+{"index": { "_index": "treatment", "_id": "RZ6460000"}}
+{"treatmentId": "RZ6460000", "name": "자궁강내 정자주입술[초음파 유도료 포함]", "path": "처치 및 수술료(보조생식술)/자궁강내 정자주입술[초음파 유도료 포함]", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅈㄱㄱㄴㅈㅈㅈㅇㅅㅊㅇㅍㅇㄷㄹㅍㅎ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅈㅏㄱㅜㅇㄱㅏㅇㄴㅐㅈㅓㅇㅈㅏㅈㅜㅇㅣㅂㅅㅜㄹㅊㅗㅇㅡㅁㅍㅏㅇㅠㄷㅗㄹㅛㅍㅗㅎㅏㅁ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfwkrndrkdsowjdwkwndlqtnfchdmavkdbehfyvhgka"}
+{"index": { "_index": "treatment", "_id": "RZ6470000"}}
+{"treatmentId": "RZ6470000", "name": "배아 동결·보존", "path": "처치 및 수술료(보조생식술)/배아 동결·보존", "chosung": "ㅊㅊㅁㅅㅅㄹㅂㅈㅅㅅㅅㅂㅇㄷㄱㅂㅈ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅂㅗㅈㅗㅅㅐㅇㅅㅣㄱㅅㅜㄹㅂㅐㅇㅏㄷㅗㅇㄱㅕㄹㅂㅗㅈㅗㄴ", "engtokor": "cjclalctntnffyqhwhtodtlrtnfqodkehdrufqhwhs"}
+{"index": { "_index": "treatment", "_id": "OZ1110000"}}
+{"treatmentId": "OZ1110000", "name": "비밸브재건술", "path": "처치 및 수술료(코)/비밸브재건술", "chosung": "ㅊㅊㅁㅅㅅㄹㅋㅂㅂㅂㅈㄱㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅋㅗㅂㅣㅂㅐㄹㅂㅡㅈㅐㄱㅓㄴㅅㅜㄹ", "engtokor": "cjclalctntnffyzhqlqofqmworjstnf"}
+{"index": { "_index": "treatment", "_id": "OZ1320000"}}
+{"treatmentId": "OZ1320000", "name": "후두내시경하 펄스다이레이저 후두수술", "path": "처치 및 수술료(후두)/후두내시경하 펄스다이레이저 후두수술", "chosung": "ㅊㅊㅁㅅㅅㄹㅎㄷㅎㄷㄴㅅㄱㅎㅍㅅㄷㅇㄹㅇㅈㅎㄷㅅㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅎㅜㄷㅜㅎㅜㄷㅜㄴㅐㅅㅣㄱㅕㅇㅎㅏㅍㅓㄹㅅㅡㄷㅏㅇㅣㄹㅔㅇㅣㅈㅓㅎㅜㄷㅜㅅㅜㅅㅜㄹ", "engtokor": "cjclalctntnffygnengnensotlrudgkvjftmekdlfpdlwjgnentntnf"}
+{"index": { "_index": "treatment", "_id": "OZ1330000"}}
+{"treatmentId": "OZ1330000", "name": "성대근내 보툴리늄 독소 주입술", "path": "처치 및 수술료(후두)/성대근내 보툴리늄 독소 주입술", "chosung": "ㅊㅊㅁㅅㅅㄹㅎㄷㅅㄷㄱㄴㅂㅌㄹㄴㄷㅅㅈㅇㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㅎㅜㄷㅜㅅㅓㅇㄷㅐㄱㅡㄴㄴㅐㅂㅗㅌㅜㄹㄹㅣㄴㅠㅁㄷㅗㄱㅅㅗㅈㅜㅇㅣㅂㅅㅜㄹ", "engtokor": "cjclalctntnffygnentjdeormssoqhxnfflsbaehrthwndlqtnf"}
+{"index": { "_index": "treatment", "_id": "PZ6120000"}}
+{"treatmentId": "PZ6120000", "name": "증상이 있는 갑상선양성결절의 고주파열치료술", "path": "처치 및 수술료(내분비기)/증상이 있는 갑상선양성결절의 고주파열치료술", "chosung": "ㅊㅊㅁㅅㅅㄹㄴㅂㅂㄱㅈㅅㅇㅇㄴㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅅ", "jamo": "ㅊㅓㅊㅣㅁㅣㅊㅅㅜㅅㅜㄹㄹㅛㄴㅐㅂㅜㄴㅂㅣㄱㅣㅈㅡㅇㅅㅏㅇㅇㅣㅇㅣㅆㄴㅡㄴㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅅㅜㄹ", "engtokor": "cjclalctntnffysoqnsqlrlwmdtkddldlTsmsrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfytnf"}
+{"index": { "_index": "treatment", "_id": "1Z9230001"}}
+{"treatmentId": "1Z9230001", "name": "500모미만", "path": "모발이식술료/모발이식술/500모미만", "chosung": "ㅁㅂㅇㅅㅅㄹㅁㅂㅇㅅㅅ500ㅁㅁㅁ", "jamo": "ㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹㄹㅛㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹ500ㅁㅗㅁㅣㅁㅏㄴ", "engtokor": "ahqkfdltlrtnffyahqkfdltlrtnf500ahalaks"}
+{"index": { "_index": "treatment", "_id": "1Z9230002"}}
+{"treatmentId": "1Z9230002", "name": "500모~1,000모미만", "path": "모발이식술료/모발이식술/500모~1,000모미만", "chosung": "ㅁㅂㅇㅅㅅㄹㅁㅂㅇㅅㅅ500ㅁ1000ㅁㅁㅁ", "jamo": "ㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹㄹㅛㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹ500ㅁㅗ1000ㅁㅗㅁㅣㅁㅏㄴ", "engtokor": "ahqkfdltlrtnffyahqkfdltlrtnf500ah1000ahalaks"}
+{"index": { "_index": "treatment", "_id": "1Z9230003"}}
+{"treatmentId": "1Z9230003", "name": "1,000모~2,000모미만", "path": "모발이식술료/모발이식술/1,000모~2,000모미만", "chosung": "ㅁㅂㅇㅅㅅㄹㅁㅂㅇㅅㅅ1000ㅁ2000ㅁㅁㅁ", "jamo": "ㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹㄹㅛㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹ1000ㅁㅗ2000ㅁㅗㅁㅣㅁㅏㄴ", "engtokor": "ahqkfdltlrtnffyahqkfdltlrtnf1000ah2000ahalaks"}
+{"index": { "_index": "treatment", "_id": "1Z9230004"}}
+{"treatmentId": "1Z9230004", "name": "2,000모이상", "path": "모발이식술료/모발이식술/2,000모이상", "chosung": "ㅁㅂㅇㅅㅅㄹㅁㅂㅇㅅㅅ2000ㅁㅇㅅ", "jamo": "ㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹㄹㅛㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹ2000ㅁㅗㅇㅣㅅㅏㅇ", "engtokor": "ahqkfdltlrtnffyahqkfdltlrtnf2000ahdltkd"}
+{"index": { "_index": "treatment", "_id": "1Z9231001"}}
+{"treatmentId": "1Z9231001", "name": "1모당", "path": "모발이식술료/모발이식술/1모당", "chosung": "ㅁㅂㅇㅅㅅㄹㅁㅂㅇㅅㅅ1ㅁㄷ", "jamo": "ㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹㄹㅛㅁㅗㅂㅏㄹㅇㅣㅅㅣㄱㅅㅜㄹ1ㅁㅗㄷㅏㅇ", "engtokor": "ahqkfdltlrtnffyahqkfdltlrtnf1ahekd"}
+{"index": { "_index": "treatment", "_id": "2Z9610001"}}
+{"treatmentId": "2Z9610001", "name": "레이저각막절삭성형술(라식)", "path": "시력교정술료/레이저각막절삭성형술(라식)", "chosung": "ㅅㄹㄱㅈㅅㄹㄹㅇㅈㄱㅁㅈㅅㅅㅎㅅㄹㅅ", "jamo": "ㅅㅣㄹㅕㄱㄱㅛㅈㅓㅇㅅㅜㄹㄹㅛㄹㅔㅇㅣㅈㅓㄱㅏㄱㅁㅏㄱㅈㅓㄹㅅㅏㄱㅅㅓㅇㅎㅕㅇㅅㅜㄹㄹㅏㅅㅣㄱ", "engtokor": "tlfurrywjdtnffyfpdlwjrkrakrwjftkrtjdgudtnffktlr"}
+{"index": { "_index": "treatment", "_id": "2Z9620001"}}
+{"treatmentId": "2Z9620001", "name": "레이저각막상피절삭성형술(라섹)", "path": "시력교정술료/레이저각막상피절삭성형술(라섹)", "chosung": "ㅅㄹㄱㅈㅅㄹㄹㅇㅈㄱㅁㅅㅍㅈㅅㅅㅎㅅㄹㅅ", "jamo": "ㅅㅣㄹㅕㄱㄱㅛㅈㅓㅇㅅㅜㄹㄹㅛㄹㅔㅇㅣㅈㅓㄱㅏㄱㅁㅏㄱㅅㅏㅇㅍㅣㅈㅓㄹㅅㅏㄱㅅㅓㅇㅎㅕㅇㅅㅜㄹㄹㅏㅅㅔㄱ", "engtokor": "tlfurrywjdtnffyfpdlwjrkrakrtkdvlwjftkrtjdgudtnffktpr"}
+{"index": { "_index": "treatment", "_id": "3Z5200301"}}
+{"treatmentId": "3Z5200301", "name": "스카이조스터주", "path": "예방접종료/대상포진/스카이조스터주", "chosung": "ㅇㅂㅈㅈㄹㄷㅅㅍㅈㅅㅋㅇㅈㅅㅌㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㄷㅐㅅㅏㅇㅍㅗㅈㅣㄴㅅㅡㅋㅏㅇㅣㅈㅗㅅㅡㅌㅓㅈㅜ", "engtokor": "dPqkdwjqwhdfyeotkdvhwlstmzkdlwhtmxjwn"}
+{"index": { "_index": "treatment", "_id": "3Z5200302"}}
+{"treatmentId": "3Z5200302", "name": "조스타박스주", "path": "예방접종료/대상포진/조스타박스주", "chosung": "ㅇㅂㅈㅈㄹㄷㅅㅍㅈㅈㅅㅌㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㄷㅐㅅㅏㅇㅍㅗㅈㅣㄴㅈㅗㅅㅡㅌㅏㅂㅏㄱㅅㅡㅈㅜ", "engtokor": "dPqkdwjqwhdfyeotkdvhwlswhtmxkqkrtmwn"}
+{"index": { "_index": "treatment", "_id": "3Z5202001"}}
+{"treatmentId": "3Z5202001", "name": "하브릭스주 0.5ml", "path": "예방접종료/A형간염/하브릭스주 0.5ml", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅎㅂㄹㅅㅈ05ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅎㅏㅂㅡㄹㅣㄱㅅㅡㅈㅜ05ml", "engtokor": "dPqkdwjqwhdfyAgudrksduagkqmflrtmwn05ml"}
+{"index": { "_index": "treatment", "_id": "3Z5202005"}}
+{"treatmentId": "3Z5202005", "name": "박타주 0.5ml", "path": "예방접종료/A형간염/박타주 0.5ml", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅂㅌㅈ05ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅂㅏㄱㅌㅏㅈㅜ05ml", "engtokor": "dPqkdwjqwhdfyAgudrksduaqkrxkwn05ml"}
+{"index": { "_index": "treatment", "_id": "3Z5202007"}}
+{"treatmentId": "3Z5202007", "name": "박타프리필드 시린지 0.5ml", "path": "예방접종료/A형간염/박타프리필드 시린지 0.5ml", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅂㅌㅍㄹㅍㄷㅅㄹㅈ05ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅂㅏㄱㅌㅏㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ05ml", "engtokor": "dPqkdwjqwhdfyAgudrksduaqkrxkvmflvlfemtlflswl05ml"}
+{"index": { "_index": "treatment", "_id": "3Z5202009"}}
+{"treatmentId": "3Z5202009", "name": "아박심80U소아용주", "path": "예방접종료/A형간염/아박심80U소아용주", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅇㅂㅅ80Uㅅㅇㅇㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅇㅏㅂㅏㄱㅅㅣㅁ80Uㅅㅗㅇㅏㅇㅛㅇㅈㅜ", "engtokor": "dPqkdwjqwhdfyAgudrksduadkqkrtla80Uthdkdydwn"}
+{"index": { "_index": "treatment", "_id": "3Z5202010"}}
+{"treatmentId": "3Z5202010", "name": "아박심160U성인용주", "path": "예방접종료/A형간염/아박심160U성인용주", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅇㅂㅅ160Uㅅㅇㅇㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅇㅏㅂㅏㄱㅅㅣㅁ160Uㅅㅓㅇㅇㅣㄴㅇㅛㅇㅈㅜ", "engtokor": "dPqkdwjqwhdfyAgudrksduadkqkrtla160Utjddlsdydwn"}
+{"index": { "_index": "treatment", "_id": "3Z5202002"}}
+{"treatmentId": "3Z5202002", "name": "하브릭스주 1.0ml", "path": "예방접종료/A형간염/하브릭스주 1.0ml", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅎㅂㄹㅅㅈ10ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅎㅏㅂㅡㄹㅣㄱㅅㅡㅈㅜ10ml", "engtokor": "dPqkdwjqwhdfyAgudrksduagkqmflrtmwn10ml"}
+{"index": { "_index": "treatment", "_id": "3Z5202006"}}
+{"treatmentId": "3Z5202006", "name": "박타주 1.0mL", "path": "예방접종료/A형간염/박타주 1.0mL", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅂㅌㅈ10mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅂㅏㄱㅌㅏㅈㅜ10mL", "engtokor": "dPqkdwjqwhdfyAgudrksduaqkrxkwn10mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202008"}}
+{"treatmentId": "3Z5202008", "name": "박타프리필드 시린지 1.0ml", "path": "예방접종료/A형간염/박타프리필드 시린지 1.0ml", "chosung": "ㅇㅂㅈㅈㄹAㅎㄱㅇㅂㅌㅍㄹㅍㄷㅅㄹㅈ10ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛAㅎㅕㅇㄱㅏㄴㅇㅕㅁㅂㅏㄱㅌㅏㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ10ml", "engtokor": "dPqkdwjqwhdfyAgudrksduaqkrxkvmflvlfemtlflswl10ml"}
+{"index": { "_index": "treatment", "_id": "3Z5200701"}}
+{"treatmentId": "3Z5200701", "name": "바리-엘백신", "path": "예방접종료/수두/바리-엘백신", "chosung": "ㅇㅂㅈㅈㄹㅅㄷㅂㄹㅇㅂㅅ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅜㄷㅜㅂㅏㄹㅣㅇㅔㄹㅂㅐㄱㅅㅣㄴ", "engtokor": "dPqkdwjqwhdfytnenqkfldpfqortls"}
+{"index": { "_index": "treatment", "_id": "3Z5200702"}}
+{"treatmentId": "3Z5200702", "name": "스카이바리셀라주", "path": "예방접종료/수두/스카이바리셀라주", "chosung": "ㅇㅂㅈㅈㄹㅅㄷㅅㅋㅇㅂㄹㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅜㄷㅜㅅㅡㅋㅏㅇㅣㅂㅏㄹㅣㅅㅔㄹㄹㅏㅈㅜ", "engtokor": "dPqkdwjqwhdfytnentmzkdlqkfltpffkwn"}
+{"index": { "_index": "treatment", "_id": "3Z5200703"}}
+{"treatmentId": "3Z5200703", "name": "수두박스주", "path": "예방접종료/수두/수두박스주", "chosung": "ㅇㅂㅈㅈㄹㅅㄷㅅㄷㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅜㄷㅜㅅㅜㄷㅜㅂㅏㄱㅅㅡㅈㅜ", "engtokor": "dPqkdwjqwhdfytnentnenqkrtmwn"}
+{"index": { "_index": "treatment", "_id": "3Z5200801"}}
+{"treatmentId": "3Z5200801", "name": "멘비오", "path": "예방접종료/수막구균/멘비오", "chosung": "ㅇㅂㅈㅈㄹㅅㅁㄱㄱㅁㅂㅇ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅜㅁㅏㄱㄱㅜㄱㅠㄴㅁㅔㄴㅂㅣㅇㅗ", "engtokor": "dPqkdwjqwhdfytnakrrnrbsapsqldh"}
+{"index": { "_index": "treatment", "_id": "3Z5200802"}}
+{"treatmentId": "3Z5200802", "name": "메낙트라주", "path": "예방접종료/수막구균/메낙트라주", "chosung": "ㅇㅂㅈㅈㄹㅅㅁㄱㄱㅁㄴㅌㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅜㅁㅏㄱㄱㅜㄱㅠㄴㅁㅔㄴㅏㄱㅌㅡㄹㅏㅈㅜ", "engtokor": "dPqkdwjqwhdfytnakrrnrbsapskrxmfkwn"}
+{"index": { "_index": "treatment", "_id": "3Z5200901"}}
+{"treatmentId": "3Z5200901", "name": "한타박스주 0.5ml", "path": "예방접종료/신증후군출혈열/한타박스주 0.5ml", "chosung": "ㅇㅂㅈㅈㄹㅅㅈㅎㄱㅊㅎㅇㅎㅌㅂㅅㅈ05ml", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅣㄴㅈㅡㅇㅎㅜㄱㅜㄴㅊㅜㄹㅎㅕㄹㅇㅕㄹㅎㅏㄴㅌㅏㅂㅏㄱㅅㅡㅈㅜ05ml", "engtokor": "dPqkdwjqwhdfytlswmdgnrnscnfgufdufgksxkqkrtmwn05ml"}
+{"index": { "_index": "treatment", "_id": "3Z5201101"}}
+{"treatmentId": "3Z5201101", "name": "스카이셀플루4가프리필드시린지", "path": "예방접종료/인플루엔자(독감)/스카이셀플루4가프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅅㅋㅇㅅㅍㄹ4ㄱㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅅㅡㅋㅏㅇㅣㅅㅔㄹㅍㅡㄹㄹㅜ4ㄱㅏㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkatmzkdltpfvmffn4rkvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201102"}}
+{"treatmentId": "3Z5201102", "name": "테라텍트프리필드시린지주", "path": "예방접종료/인플루엔자(독감)/테라텍트프리필드시린지주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅌㄹㅌㅌㅍㄹㅍㄷㅅㄹㅈㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅌㅔㄹㅏㅌㅔㄱㅌㅡㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaxpfkxprxmvmflvlfemtlflswlwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201103"}}
+{"treatmentId": "3Z5201103", "name": "비알플루텍I테트라백신주", "path": "예방접종료/인플루엔자(독감)/비알플루텍I테트라백신주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅂㅇㅍㄹㅌIㅌㅌㄹㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅂㅣㅇㅏㄹㅍㅡㄹㄹㅜㅌㅔㄱIㅌㅔㅌㅡㄹㅏㅂㅐㄱㅅㅣㄴㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaqldkfvmffnxprIxpxmfkqortlswn"}
+{"index": { "_index": "treatment", "_id": "3Z5201104"}}
+{"treatmentId": "3Z5201104", "name": "비알플루텍III테트라백신프리필드시린지", "path": "예방접종료/인플루엔자(독감)/비알플루텍III테트라백신프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅂㅇㅍㄹㅌIIIㅌㅌㄹㅂㅅㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅂㅣㅇㅏㄹㅍㅡㄹㄹㅜㅌㅔㄱIIIㅌㅔㅌㅡㄹㅏㅂㅐㄱㅅㅣㄴㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaqldkfvmffnxprIIIxpxmfkqortlsvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201106"}}
+{"treatmentId": "3Z5201106", "name": "지씨플루쿼드리밸런트프리필드시린지주", "path": "예방접종료/인플루엔자(독감)/지씨플루쿼드리밸런트프리필드시린지주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅈㅆㅍㄹㅋㄷㄹㅂㄹㅌㅍㄹㅍㄷㅅㄹㅈㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅈㅣㅆㅣㅍㅡㄹㄹㅜㅋㅝㄷㅡㄹㅣㅂㅐㄹㄹㅓㄴㅌㅡㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkawlTlvmffnznjemflqoffjsxmvmflvlfemtlflswlwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201107"}}
+{"treatmentId": "3Z5201107", "name": "코박스플루4가PF주", "path": "예방접종료/인플루엔자(독감)/코박스플루4가PF주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅋㅂㅅㅍㄹ4ㄱPFㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅋㅗㅂㅏㄱㅅㅡㅍㅡㄹㄹㅜ4ㄱㅏPFㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkazhqkrtmvmffn4rkPFwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201108"}}
+{"treatmentId": "3Z5201108", "name": "코박스인플루4가PF주", "path": "예방접종료/인플루엔자(독감)/코박스인플루4가PF주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅋㅂㅅㅇㅍㄹ4ㄱPFㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅋㅗㅂㅏㄱㅅㅡㅇㅣㄴㅍㅡㄹㄹㅜ4ㄱㅏPFㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkazhqkrtmdlsvmffn4rkPFwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201109"}}
+{"treatmentId": "3Z5201109", "name": "플루아릭스테트라프리필드시린지", "path": "예방접종료/인플루엔자(독감)/플루아릭스테트라프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅍㄹㅇㄹㅅㅌㅌㄹㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅍㅡㄹㄹㅜㅇㅏㄹㅣㄱㅅㅡㅌㅔㅌㅡㄹㅏㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkavmffndkflrtmxpxmfkvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201110"}}
+{"treatmentId": "3Z5201110", "name": "박씨그리프테트라주", "path": "예방접종료/인플루엔자(독감)/박씨그리프테트라주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅂㅆㄱㄹㅍㅌㅌㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅂㅏㄱㅆㅣㄱㅡㄹㅣㅍㅡㅌㅔㅌㅡㄹㅏㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaqkrTlrmflvmxpxmfkwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201111"}}
+{"treatmentId": "3Z5201111", "name": "보령플루Ⅴ테트라백신주", "path": "예방접종료/인플루엔자(독감)/보령플루Ⅴ테트라백신주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅂㄹㅍㄹㅌㅌㄹㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅂㅗㄹㅕㅇㅍㅡㄹㄹㅜㅌㅔㅌㅡㄹㅏㅂㅐㄱㅅㅣㄴㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaqhfudvmffnxpxmfkqortlswn"}
+{"index": { "_index": "treatment", "_id": "3Z5201112"}}
+{"treatmentId": "3Z5201112", "name": "보령플루Ⅷ테트라백신주", "path": "예방접종료/인플루엔자(독감)/보령플루Ⅷ테트라백신주", "chosung": "ㅇㅂㅈㅈㄹㅇㅍㄹㅇㅈㄷㄱㅂㄹㅍㄹㅌㅌㄹㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㄷㅗㄱㄱㅏㅁㅂㅗㄹㅕㅇㅍㅡㄹㄹㅜㅌㅔㅌㅡㄹㅏㅂㅐㄱㅅㅣㄴㅈㅜ", "engtokor": "dPqkdwjqwhdfydlsvmffndpswkehrrkaqhfudvmffnxpxmfkqortlswn"}
+{"index": { "_index": "treatment", "_id": "3Z5201401"}}
+{"treatmentId": "3Z5201401", "name": "지로티프-주", "path": "예방접종료/장티푸스/지로티프-주", "chosung": "ㅇㅂㅈㅈㄹㅈㅌㅍㅅㅈㄹㅌㅍㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅈㅏㅇㅌㅣㅍㅜㅅㅡㅈㅣㄹㅗㅌㅣㅍㅡㅈㅜ", "engtokor": "dPqkdwjqwhdfywkdxlvntmwlfhxlvmwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201501"}}
+{"treatmentId": "3Z5201501", "name": "에스케이티디백신주", "path": "예방접종료/Td(파상풍, 디프테리아)/에스케이티디백신주", "chosung": "ㅇㅂㅈㅈㄹTdㅍㅅㅍㄷㅍㅌㄹㅇㅇㅅㅋㅇㅌㄷㅂㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㅇㅔㅅㅡㅋㅔㅇㅣㅌㅣㄷㅣㅂㅐㄱㅅㅣㄴㅈㅜ", "engtokor": "dPqkdwjqwhdfyTdvktkdvndelvmxpfldkdptmzpdlxlelqortlswn"}
+{"index": { "_index": "treatment", "_id": "3Z5201502"}}
+{"treatmentId": "3Z5201502", "name": "녹십자티디백신프리필드시린지주", "path": "예방접종료/Td(파상풍, 디프테리아)/녹십자티디백신프리필드시린지주", "chosung": "ㅇㅂㅈㅈㄹTdㅍㅅㅍㄷㅍㅌㄹㅇㄴㅅㅈㅌㄷㅂㅅㅍㄹㅍㄷㅅㄹㅈㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㄴㅗㄱㅅㅣㅂㅈㅏㅌㅣㄷㅣㅂㅐㄱㅅㅣㄴㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣㅈㅜ", "engtokor": "dPqkdwjqwhdfyTdvktkdvndelvmxpfldkshrtlqwkxlelqortlsvmflvlfemtlflswlwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201503"}}
+{"treatmentId": "3Z5201503", "name": "티디퓨어주", "path": "예방접종료/Td(파상풍, 디프테리아)/티디퓨어주", "chosung": "ㅇㅂㅈㅈㄹTdㅍㅅㅍㄷㅍㅌㄹㅇㅌㄷㅍㅇㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㅌㅣㄷㅣㅍㅠㅇㅓㅈㅜ", "engtokor": "dPqkdwjqwhdfyTdvktkdvndelvmxpfldkxlelvbdjwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201504"}}
+{"treatmentId": "3Z5201504", "name": "디티부스터주", "path": "예방접종료/Td(파상풍, 디프테리아)/디티부스터주", "chosung": "ㅇㅂㅈㅈㄹTdㅍㅅㅍㄷㅍㅌㄹㅇㄷㅌㅂㅅㅌㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㄷㅣㅌㅣㅂㅜㅅㅡㅌㅓㅈㅜ", "engtokor": "dPqkdwjqwhdfyTdvktkdvndelvmxpfldkelxlqntmxjwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201601"}}
+{"treatmentId": "3Z5201601", "name": "부스트릭스프리필드시린지", "path": "예방접종료/Tdap(파상풍, 디프테리아, 백일해)/부스트릭스프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹTdapㅍㅅㅍㄷㅍㅌㄹㅇㅂㅇㅎㅂㅅㅌㄹㅅㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdapㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㅂㅐㄱㅇㅣㄹㅎㅐㅂㅜㅅㅡㅌㅡㄹㅣㄱㅅㅡㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfyTdapvktkdvndelvmxpfldkqordlfgoqntmxmflrtmvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201602"}}
+{"treatmentId": "3Z5201602", "name": "아다셀주", "path": "예방접종료/Tdap(파상풍, 디프테리아, 백일해)/아다셀주", "chosung": "ㅇㅂㅈㅈㄹTdapㅍㅅㅍㄷㅍㅌㄹㅇㅂㅇㅎㅇㄷㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛTdapㅍㅏㅅㅏㅇㅍㅜㅇㄷㅣㅍㅡㅌㅔㄹㅣㅇㅏㅂㅐㄱㅇㅣㄹㅎㅐㅇㅏㄷㅏㅅㅔㄹㅈㅜ", "engtokor": "dPqkdwjqwhdfyTdapvktkdvndelvmxpfldkqordlfgodkektpfwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201701"}}
+{"treatmentId": "3Z5201701", "name": "프리베나13주", "path": "예방접종료/폐렴구균/프리베나13주", "chosung": "ㅇㅂㅈㅈㄹㅍㄹㄱㄱㅍㄹㅂㄴ13ㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅍㅖㄹㅕㅁㄱㅜㄱㅠㄴㅍㅡㄹㅣㅂㅔㄴㅏ13ㅈㅜ", "engtokor": "dPqkdwjqwhdfyvPfuarnrbsvmflqpsk13wn"}
+{"index": { "_index": "treatment", "_id": "3Z5201702"}}
+{"treatmentId": "3Z5201702", "name": "신플로릭스프리필드시린지", "path": "예방접종료/폐렴구균/신플로릭스프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅍㄹㄱㄱㅅㅍㄹㄹㅅㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅍㅖㄹㅕㅁㄱㅜㄱㅠㄴㅅㅣㄴㅍㅡㄹㄹㅗㄹㅣㄱㅅㅡㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfyvPfuarnrbstlsvmffhflrtmvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201703"}}
+{"treatmentId": "3Z5201703", "name": "프로디악스-23", "path": "예방접종료/폐렴구균/프로디악스-23", "chosung": "ㅇㅂㅈㅈㄹㅍㄹㄱㄱㅍㄹㄷㅇㅅ23", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅍㅖㄹㅕㅁㄱㅜㄱㅠㄴㅍㅡㄹㅗㄷㅣㅇㅏㄱㅅㅡ23", "engtokor": "dPqkdwjqwhdfyvPfuarnrbsvmfheldkrtm23"}
+{"index": { "_index": "treatment", "_id": "3Z5201704"}}
+{"treatmentId": "3Z5201704", "name": "프로디악스-23프리필드시린지", "path": "예방접종료/폐렴구균/프로디악스-23프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅍㄹㄱㄱㅍㄹㄷㅇㅅ23ㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅍㅖㄹㅕㅁㄱㅜㄱㅠㄴㅍㅡㄹㅗㄷㅣㅇㅏㄱㅅㅡ23ㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfyvPfuarnrbsvmfheldkrtm23vmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201201"}}
+{"treatmentId": "3Z5201201", "name": "녹십자-세포배양일본뇌염백신주 0.4mL", "path": "예방접종료/일본뇌염/녹십자-세포배양일본뇌염백신주 0.4mL", "chosung": "ㅇㅂㅈㅈㄹㅇㅂㄴㅇㄴㅅㅈㅅㅍㅂㅇㅇㅂㄴㅇㅂㅅㅈ04mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㄴㅗㄱㅅㅣㅂㅈㅏㅅㅔㅍㅗㅂㅐㅇㅑㅇㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅐㄱㅅㅣㄴㅈㅜ04mL", "engtokor": "dPqkdwjqwhdfydlfqhsshlduashrtlqwktpvhqodiddlfqhsshlduaqortlswn04mL"}
+{"index": { "_index": "treatment", "_id": "3Z5201202"}}
+{"treatmentId": "3Z5201202", "name": "녹십자-세포배양일본뇌염백신주 0.7mL", "path": "예방접종료/일본뇌염/녹십자-세포배양일본뇌염백신주 0.7mL", "chosung": "ㅇㅂㅈㅈㄹㅇㅂㄴㅇㄴㅅㅈㅅㅍㅂㅇㅇㅂㄴㅇㅂㅅㅈ07mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㄴㅗㄱㅅㅣㅂㅈㅏㅅㅔㅍㅗㅂㅐㅇㅑㅇㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅐㄱㅅㅣㄴㅈㅜ07mL", "engtokor": "dPqkdwjqwhdfydlfqhsshlduashrtlqwktpvhqodiddlfqhsshlduaqortlswn07mL"}
+{"index": { "_index": "treatment", "_id": "3Z5201203"}}
+{"treatmentId": "3Z5201203", "name": "보령세포배양일본뇌염백신주 0.4mL", "path": "예방접종료/일본뇌염/보령세포배양일본뇌염백신주 0.4mL", "chosung": "ㅇㅂㅈㅈㄹㅇㅂㄴㅇㅂㄹㅅㅍㅂㅇㅇㅂㄴㅇㅂㅅㅈ04mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅗㄹㅕㅇㅅㅔㅍㅗㅂㅐㅇㅑㅇㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅐㄱㅅㅣㄴㅈㅜ04mL", "engtokor": "dPqkdwjqwhdfydlfqhsshlduaqhfudtpvhqodiddlfqhsshlduaqortlswn04mL"}
+{"index": { "_index": "treatment", "_id": "3Z5201204"}}
+{"treatmentId": "3Z5201204", "name": "보령세포배양일본뇌염백신주 0.7mL", "path": "예방접종료/일본뇌염/보령세포배양일본뇌염백신주 0.7mL", "chosung": "ㅇㅂㅈㅈㄹㅇㅂㄴㅇㅂㄹㅅㅍㅂㅇㅇㅂㄴㅇㅂㅅㅈ07mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅗㄹㅕㅇㅅㅔㅍㅗㅂㅐㅇㅑㅇㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅂㅐㄱㅅㅣㄴㅈㅜ07mL", "engtokor": "dPqkdwjqwhdfydlfqhsshlduaqhfudtpvhqodiddlfqhsshlduaqortlswn07mL"}
+{"index": { "_index": "treatment", "_id": "3Z5201301"}}
+{"treatmentId": "3Z5201301", "name": "씨디.제박스", "path": "예방접종료/일본뇌염/씨디.제박스", "chosung": "ㅇㅂㅈㅈㄹㅇㅂㄴㅇㅆㄷㅈㅂㅅ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅇㅣㄹㅂㅗㄴㄴㅚㅇㅕㅁㅆㅣㄷㅣㅈㅔㅂㅏㄱㅅㅡ", "engtokor": "dPqkdwjqwhdfydlfqhsshlduaTlelwpqkrtm"}
+{"index": { "_index": "treatment", "_id": "3Z5201901"}}
+{"treatmentId": "3Z5201901", "name": "엠엠알II", "path": "예방접종료/홍역/유행성이하선염/풍진/엠엠알II", "chosung": "ㅇㅂㅈㅈㄹㅎㅇㅇㅎㅅㅇㅎㅅㅇㅍㅈㅇㅇㅇII", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅎㅗㅇㅇㅕㄱㅇㅠㅎㅐㅇㅅㅓㅇㅇㅣㅎㅏㅅㅓㄴㅇㅕㅁㅍㅜㅇㅈㅣㄴㅇㅔㅁㅇㅔㅁㅇㅏㄹII", "engtokor": "dPqkdwjqwhdfyghddurdbgodtjddlgktjsduavndwlsdpadpadkfII"}
+{"index": { "_index": "treatment", "_id": "3Z5201902"}}
+{"treatmentId": "3Z5201902", "name": "프리오릭스주", "path": "예방접종료/홍역/유행성이하선염/풍진/프리오릭스주", "chosung": "ㅇㅂㅈㅈㄹㅎㅇㅇㅎㅅㅇㅎㅅㅇㅍㅈㅍㄹㅇㄹㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅎㅗㅇㅇㅕㄱㅇㅠㅎㅐㅇㅅㅓㅇㅇㅣㅎㅏㅅㅓㄴㅇㅕㅁㅍㅜㅇㅈㅣㄴㅍㅡㄹㅣㅇㅗㄹㅣㄱㅅㅡㅈㅜ", "engtokor": "dPqkdwjqwhdfyghddurdbgodtjddlgktjsduavndwlsvmfldhflrtmwn"}
+{"index": { "_index": "treatment", "_id": "3Z5202104"}}
+{"treatmentId": "3Z5202104", "name": "헤파뮨주 0.5mL", "path": "예방접종료/B형간염/헤파뮨주 0.5mL", "chosung": "ㅇㅂㅈㅈㄹBㅎㄱㅇㅎㅍㅁㅈ05mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛBㅎㅕㅇㄱㅏㄴㅇㅕㅁㅎㅔㅍㅏㅁㅠㄴㅈㅜ05mL", "engtokor": "dPqkdwjqwhdfyBgudrksduagpvkabswn05mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202105"}}
+{"treatmentId": "3Z5202105", "name": "헤파뮨프리필드시린지 1.0mL", "path": "예방접종료/B형간염/헤파뮨프리필드시린지 1.0mL", "chosung": "ㅇㅂㅈㅈㄹBㅎㄱㅇㅎㅍㅁㅍㄹㅍㄷㅅㄹㅈ10mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛBㅎㅕㅇㄱㅏㄴㅇㅕㅁㅎㅔㅍㅏㅁㅠㄴㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ10mL", "engtokor": "dPqkdwjqwhdfyBgudrksduagpvkabsvmflvlfemtlflswl10mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202106"}}
+{"treatmentId": "3Z5202106", "name": "유박스비주 0.5mL", "path": "예방접종료/B형간염/유박스비주 0.5mL", "chosung": "ㅇㅂㅈㅈㄹBㅎㄱㅇㅇㅂㅅㅂㅈ05mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛBㅎㅕㅇㄱㅏㄴㅇㅕㅁㅇㅠㅂㅏㄱㅅㅡㅂㅣㅈㅜ05mL", "engtokor": "dPqkdwjqwhdfyBgudrksduadbqkrtmqlwn05mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202107"}}
+{"treatmentId": "3Z5202107", "name": "유박스비주 1.0mL", "path": "예방접종료/B형간염/유박스비주 1.0mL", "chosung": "ㅇㅂㅈㅈㄹBㅎㄱㅇㅇㅂㅅㅂㅈ10mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛBㅎㅕㅇㄱㅏㄴㅇㅕㅁㅇㅠㅂㅏㄱㅅㅡㅂㅣㅈㅜ10mL", "engtokor": "dPqkdwjqwhdfyBgudrksduadbqkrtmqlwn10mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202108"}}
+{"treatmentId": "3Z5202108", "name": "유박스비 프리필드주 1.0mL", "path": "예방접종료/B형간염/유박스비 프리필드주 1.0mL", "chosung": "ㅇㅂㅈㅈㄹBㅎㄱㅇㅇㅂㅅㅂㅍㄹㅍㄷㅈ10mL", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛBㅎㅕㅇㄱㅏㄴㅇㅕㅁㅇㅠㅂㅏㄱㅅㅡㅂㅣㅍㅡㄹㅣㅍㅣㄹㄷㅡㅈㅜ10mL", "engtokor": "dPqkdwjqwhdfyBgudrksduadbqkrtmqlvmflvlfemwn10mL"}
+{"index": { "_index": "treatment", "_id": "3Z5202201"}}
+{"treatmentId": "3Z5202201", "name": "유히브주", "path": "예방접종료/b형헤모필루스인플루엔자/유히브주", "chosung": "ㅇㅂㅈㅈㄹbㅎㅎㅁㅍㄹㅅㅇㅍㄹㅇㅈㅇㅎㅂㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛbㅎㅕㅇㅎㅔㅁㅗㅍㅣㄹㄹㅜㅅㅡㅇㅣㄴㅍㅡㄹㄹㅜㅇㅔㄴㅈㅏㅇㅠㅎㅣㅂㅡㅈㅜ", "engtokor": "dPqkdwjqwhdfybgudgpahvlffntmdlsvmffndpswkdbglqmwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201001"}}
+{"treatmentId": "3Z5201001", "name": "서바릭스프리필드시린지", "path": "예방접종료/사람유두종바이러스 감염증(HPV 백신)/서바릭스프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅅㄹㅇㄷㅈㅂㅇㄹㅅㄱㅇㅈHPVㅂㅅㅅㅂㄹㅅㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅏㄹㅏㅁㅇㅠㄷㅜㅈㅗㅇㅂㅏㅇㅣㄹㅓㅅㅡㄱㅏㅁㅇㅕㅁㅈㅡㅇHPVㅂㅐㄱㅅㅣㄴㅅㅓㅂㅏㄹㅣㄱㅅㅡㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfytkfkadbenwhdqkdlfjtmrkaduawmdHPVqortlstjqkflrtmvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201002"}}
+{"treatmentId": "3Z5201002", "name": "가다실 프리필드시린지", "path": "예방접종료/사람유두종바이러스 감염증(HPV 백신)/가다실 프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅅㄹㅇㄷㅈㅂㅇㄹㅅㄱㅇㅈHPVㅂㅅㄱㄷㅅㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅏㄹㅏㅁㅇㅠㄷㅜㅈㅗㅇㅂㅏㅇㅣㄹㅓㅅㅡㄱㅏㅁㅇㅕㅁㅈㅡㅇHPVㅂㅐㄱㅅㅣㄴㄱㅏㄷㅏㅅㅣㄹㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfytkfkadbenwhdqkdlfjtmrkaduawmdHPVqortlsrkektlfvmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201003"}}
+{"treatmentId": "3Z5201003", "name": "가다실9프리필드시린지", "path": "예방접종료/사람유두종바이러스 감염증(HPV 백신)/가다실9프리필드시린지", "chosung": "ㅇㅂㅈㅈㄹㅅㄹㅇㄷㅈㅂㅇㄹㅅㄱㅇㅈHPVㅂㅅㄱㄷㅅ9ㅍㄹㅍㄷㅅㄹㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅏㄹㅏㅁㅇㅠㄷㅜㅈㅗㅇㅂㅏㅇㅣㄹㅓㅅㅡㄱㅏㅁㅇㅕㅁㅈㅡㅇHPVㅂㅐㄱㅅㅣㄴㄱㅏㄷㅏㅅㅣㄹ9ㅍㅡㄹㅣㅍㅣㄹㄷㅡㅅㅣㄹㅣㄴㅈㅣ", "engtokor": "dPqkdwjqwhdfytkfkadbenwhdqkdlfjtmrkaduawmdHPVqortlsrkektlf9vmflvlfemtlflswl"}
+{"index": { "_index": "treatment", "_id": "3Z5201004"}}
+{"treatmentId": "3Z5201004", "name": "가다실 주", "path": "예방접종료/사람유두종바이러스 감염증(HPV 백신)/가다실 주", "chosung": "ㅇㅂㅈㅈㄹㅅㄹㅇㄷㅈㅂㅇㄹㅅㄱㅇㅈHPVㅂㅅㄱㄷㅅㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅏㄹㅏㅁㅇㅠㄷㅜㅈㅗㅇㅂㅏㅇㅣㄹㅓㅅㅡㄱㅏㅁㅇㅕㅁㅈㅡㅇHPVㅂㅐㄱㅅㅣㄴㄱㅏㄷㅏㅅㅣㄹㅈㅜ", "engtokor": "dPqkdwjqwhdfytkfkadbenwhdqkdlfjtmrkaduawmdHPVqortlsrkektlfwn"}
+{"index": { "_index": "treatment", "_id": "3Z5201005"}}
+{"treatmentId": "3Z5201005", "name": "가다실9주", "path": "예방접종료/사람유두종바이러스 감염증(HPV 백신)/가다실9주", "chosung": "ㅇㅂㅈㅈㄹㅅㄹㅇㄷㅈㅂㅇㄹㅅㄱㅇㅈHPVㅂㅅㄱㄷㅅ9ㅈ", "jamo": "ㅇㅖㅂㅏㅇㅈㅓㅂㅈㅗㅇㄹㅛㅅㅏㄹㅏㅁㅇㅠㄷㅜㅈㅗㅇㅂㅏㅇㅣㄹㅓㅅㅡㄱㅏㅁㅇㅕㅁㅈㅡㅇHPVㅂㅐㄱㅅㅣㄴㄱㅏㄷㅏㅅㅣㄹ9ㅈㅜ", "engtokor": "dPqkdwjqwhdfytkfkadbenwhdqkdlfjtmrkaduawmdHPVqortlsrkektlf9wn"}
+{"index": { "_index": "treatment", "_id": "4Z0440101"}}
+{"treatmentId": "4Z0440101", "name": "CONTEX OK™", "path": "보장구/굴절교정렌즈/CONTEX OK™", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈCONTEXOK", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡCONTEXOK", "engtokor": "qhwkdrnrnfwjfrywjdfpswmCONTEXOK"}
+{"index": { "_index": "treatment", "_id": "4Z0440201"}}
+{"treatmentId": "4Z0440201", "name": "Euclid Systems Orthokeratology(oprifocon A) Contact Lens For Overnight Wear", "path": "보장구/굴절교정렌즈/Euclid Systems Orthokeratology(oprifocon A) Contact Lens For Overnight Wear", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈEuclidSystemsOrthokeratologyoprifoconAContactLensForOvernightWear", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡEuclidSystemsOrthokeratologyoprifoconAContactLensForOvernightWear", "engtokor": "qhwkdrnrnfwjfrywjdfpswmEuclidSystemsOrthokeratologyoprifoconAContactLensForOvernightWear"}
+{"index": { "_index": "treatment", "_id": "4Z0440301"}}
+{"treatmentId": "4Z0440301", "name": "Ortho-K LK®-Lens", "path": "보장구/굴절교정렌즈/Ortho-K LK®-Lens", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈOrthoKLKLens", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡOrthoKLKLens", "engtokor": "qhwkdrnrnfwjfrywjdfpswmOrthoKLKLens"}
+{"index": { "_index": "treatment", "_id": "4Z0440302"}}
+{"treatmentId": "4Z0440302", "name": "Ortho-K LK®-Lens PREMIER", "path": "보장구/굴절교정렌즈/Ortho-K LK®-Lens PREMIER", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈOrthoKLKLensPREMIER", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡOrthoKLKLensPREMIER", "engtokor": "qhwkdrnrnfwjfrywjdfpswmOrthoKLKLensPREMIER"}
+{"index": { "_index": "treatment", "_id": "4Z0440303"}}
+{"treatmentId": "4Z0440303", "name": "Ortho-K LK-Lens Toric PREMIER", "path": "보장구/굴절교정렌즈/Ortho-K LK-Lens Toric PREMIER", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈOrthoKLKLensToricPREMIER", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡOrthoKLKLensToricPREMIER", "engtokor": "qhwkdrnrnfwjfrywjdfpswmOrthoKLKLensToricPREMIER"}
+{"index": { "_index": "treatment", "_id": "4Z0440401"}}
+{"treatmentId": "4Z0440401", "name": "Paragon CRT 100", "path": "보장구/굴절교정렌즈/Paragon CRT 100", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈParagonCRT100", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡParagonCRT100", "engtokor": "qhwkdrnrnfwjfrywjdfpswmParagonCRT100"}
+{"index": { "_index": "treatment", "_id": "4Z0440402"}}
+{"treatmentId": "4Z0440402", "name": "Paragon CRT 100 Dual Axis", "path": "보장구/굴절교정렌즈/Paragon CRT 100 Dual Axis", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈParagonCRT100DualAxis", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡParagonCRT100DualAxis", "engtokor": "qhwkdrnrnfwjfrywjdfpswmParagonCRT100DualAxis"}
+{"index": { "_index": "treatment", "_id": "4Z0440501"}}
+{"treatmentId": "4Z0440501", "name": "FARGO 100", "path": "보장구/굴절교정렌즈/FARGO 100", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈFARGO100", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡFARGO100", "engtokor": "qhwkdrnrnfwjfrywjdfpswmFARGO100"}
+{"index": { "_index": "treatment", "_id": "4Z0440601"}}
+{"treatmentId": "4Z0440601", "name": "α Ortho-K", "path": "보장구/굴절교정렌즈/α Ortho-K", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈOrthoK", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡOrthoK", "engtokor": "qhwkdrnrnfwjfrywjdfpswmOrthoK"}
+{"index": { "_index": "treatment", "_id": "4Z0440701"}}
+{"treatmentId": "4Z0440701", "name": "White OK", "path": "보장구/굴절교정렌즈/White OK", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈWhiteOK", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡWhiteOK", "engtokor": "qhwkdrnrnfwjfrywjdfpswmWhiteOK"}
+{"index": { "_index": "treatment", "_id": "4Z0440801"}}
+{"treatmentId": "4Z0440801", "name": "Vision", "path": "보장구/굴절교정렌즈/Vision", "chosung": "ㅂㅈㄱㄱㅈㄱㅈㄹㅈVision", "jamo": "ㅂㅗㅈㅏㅇㄱㅜㄱㅜㄹㅈㅓㄹㄱㅛㅈㅓㅇㄹㅔㄴㅈㅡVision", "engtokor": "qhwkdrnrnfwjfrywjdfpswmVision"}
+{"index": { "_index": "treatment", "_id": "U02390000"}}
+{"treatmentId": "U02390000", "name": "우식-1면", "path": "치과 처치· 수술료/광중합형 복합레진 충전/우식-1면", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㄱㅈㅎㅎㅂㅎㄹㅈㅊㅈㅇㅅ1ㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㄱㅘㅇㅈㅜㅇㅎㅏㅂㅎㅕㅇㅂㅗㄱㅎㅏㅂㄹㅔㅈㅣㄴㅊㅜㅇㅈㅓㄴㅇㅜㅅㅣㄱ1ㅁㅕㄴ", "engtokor": "clrhkcjcltntnffyrhkdwndgkqgudqhrgkqfpwlscndwjsdntlr1aus"}
+{"index": { "_index": "treatment", "_id": "U02400000"}}
+{"treatmentId": "U02400000", "name": "우식-2면", "path": "치과 처치· 수술료/광중합형 복합레진 충전/우식-2면", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㄱㅈㅎㅎㅂㅎㄹㅈㅊㅈㅇㅅ2ㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㄱㅘㅇㅈㅜㅇㅎㅏㅂㅎㅕㅇㅂㅗㄱㅎㅏㅂㄹㅔㅈㅣㄴㅊㅜㅇㅈㅓㄴㅇㅜㅅㅣㄱ2ㅁㅕㄴ", "engtokor": "clrhkcjcltntnffyrhkdwndgkqgudqhrgkqfpwlscndwjsdntlr2aus"}
+{"index": { "_index": "treatment", "_id": "U02410000"}}
+{"treatmentId": "U02410000", "name": "우식-3면 이상", "path": "치과 처치· 수술료/광중합형 복합레진 충전/우식-3면 이상", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㄱㅈㅎㅎㅂㅎㄹㅈㅊㅈㅇㅅ3ㅁㅇㅅ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㄱㅘㅇㅈㅜㅇㅎㅏㅂㅎㅕㅇㅂㅗㄱㅎㅏㅂㄹㅔㅈㅣㄴㅊㅜㅇㅈㅓㄴㅇㅜㅅㅣㄱ3ㅁㅕㄴㅇㅣㅅㅏㅇ", "engtokor": "clrhkcjcltntnffyrhkdwndgkqgudqhrgkqfpwlscndwjsdntlr3ausdltkd"}
+{"index": { "_index": "treatment", "_id": "UZ0050001"}}
+{"treatmentId": "UZ0050001", "name": "마모", "path": "치과 처치· 수술료/광중합형 복합레진 충전/마모", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㄱㅈㅎㅎㅂㅎㄹㅈㅊㅈㅁㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㄱㅘㅇㅈㅜㅇㅎㅏㅂㅎㅕㅇㅂㅗㄱㅎㅏㅂㄹㅔㅈㅣㄴㅊㅜㅇㅈㅓㄴㅁㅏㅁㅗ", "engtokor": "clrhkcjcltntnffyrhkdwndgkqgudqhrgkqfpwlscndwjsakah"}
+{"index": { "_index": "treatment", "_id": "UZ0050002"}}
+{"treatmentId": "UZ0050002", "name": "파절 등", "path": "치과 처치· 수술료/광중합형 복합레진 충전/파절 등", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㄱㅈㅎㅎㅂㅎㄹㅈㅊㅈㅍㅈㄷ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㄱㅘㅇㅈㅜㅇㅎㅏㅂㅎㅕㅇㅂㅗㄱㅎㅏㅂㄹㅔㅈㅣㄴㅊㅜㅇㅈㅓㄴㅍㅏㅈㅓㄹㄷㅡㅇ", "engtokor": "clrhkcjcltntnffyrhkdwndgkqgudqhrgkqfpwlscndwjsvkwjfemd"}
+{"index": { "_index": "treatment", "_id": "UZ0820000"}}
+{"treatmentId": "UZ0820000", "name": "자가치아 이식술", "path": "치과 처치· 수술료/자가치아 이식술", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅈㄱㅊㅇㅇㅅㅅ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅈㅏㄱㅏㅊㅣㅇㅏㅇㅣㅅㅣㄱㅅㅜㄹ", "engtokor": "clrhkcjcltntnffywkrkcldkdltlrtnf"}
+{"index": { "_index": "treatment", "_id": "UZ0040011"}}
+{"treatmentId": "UZ0040011", "name": "금", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이/금", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄱ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅣㄴㄹㅔㅇㅣㄱㅡㅁ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydlsfpdlrma"}
+{"index": { "_index": "treatment", "_id": "UZ0040012"}}
+{"treatmentId": "UZ0040012", "name": "레진", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이/레진", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄹㅈ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅣㄴㄹㅔㅇㅣㄹㅔㅈㅣㄴ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydlsfpdlfpwls"}
+{"index": { "_index": "treatment", "_id": "UZ0040013"}}
+{"treatmentId": "UZ0040013", "name": "도재-세라믹", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이/도재-세라믹", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄷㅈㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅣㄴㄹㅔㅇㅣㄷㅗㅈㅐㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydlsfpdlehwotpfkalr"}
+{"index": { "_index": "treatment", "_id": "UZ0040014"}}
+{"treatmentId": "UZ0040014", "name": "도재-CAD/CAM 세라믹", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-인레이/도재-CAD/CAM 세라믹", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄷㅈCADCAMㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅣㄴㄹㅔㅇㅣㄷㅗㅈㅐCADCAMㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydlsfpdlehwoCADCAMtpfkalr"}
+{"index": { "_index": "treatment", "_id": "UZ0040021"}}
+{"treatmentId": "UZ0040021", "name": "금", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-온레이/금", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄱ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅗㄴㄹㅔㅇㅣㄱㅡㅁ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydhsfpdlrma"}
+{"index": { "_index": "treatment", "_id": "UZ0040022"}}
+{"treatmentId": "UZ0040022", "name": "레진", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-온레이/레진", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄹㅈ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅗㄴㄹㅔㅇㅣㄹㅔㅈㅣㄴ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydhsfpdlfpwls"}
+{"index": { "_index": "treatment", "_id": "UZ0040023"}}
+{"treatmentId": "UZ0040023", "name": "도재-세라믹", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-온레이/도재-세라믹", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄷㅈㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅗㄴㄹㅔㅇㅣㄷㅗㅈㅐㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydhsfpdlehwotpfkalr"}
+{"index": { "_index": "treatment", "_id": "UZ0040024"}}
+{"treatmentId": "UZ0040024", "name": "도재-CAD/CAM 세라믹", "path": "치과 처치· 수술료/인레이(Inlay) 및 온레이(Onlay) 간접충전(금 등을 사용한 충전치료)-온레이/도재-CAD/CAM 세라믹", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㄹㅇInlayㅁㅇㄹㅇOnlayㄱㅈㅊㅈㄱㄷㅇㅅㅇㅎㅊㅈㅊㄹㅇㄹㅇㄷㅈCADCAMㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㄴㄹㅔㅇㅣInlayㅁㅣㅊㅇㅗㄴㄹㅔㅇㅣOnlayㄱㅏㄴㅈㅓㅂㅊㅜㅇㅈㅓㄴㄱㅡㅁㄷㅡㅇㅇㅡㄹㅅㅏㅇㅛㅇㅎㅏㄴㅊㅜㅇㅈㅓㄴㅊㅣㄹㅛㅇㅗㄴㄹㅔㅇㅣㄷㅗㅈㅐCADCAMㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkcjcltntnffydlsfpdlInlayalcdhsfpdlOnlayrkswjqcndwjsrmaemddmftkdydgkscndwjsclfydhsfpdlehwoCADCAMtpfkalr"}
+{"index": { "_index": "treatment", "_id": "UW3021017"}}
+{"treatmentId": "UW3021017", "name": "1/3악당", "path": "치과 처치· 수술료/치석제거/1/3악당", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅊㅅㅈㄱ13ㅇㄷ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅊㅣㅅㅓㄱㅈㅔㄱㅓ13ㅇㅏㄱㄷㅏㅇ", "engtokor": "clrhkcjcltntnffycltjrwprj13dkrekd"}
+{"index": { "_index": "treatment", "_id": "UW3021027"}}
+{"treatmentId": "UW3021027", "name": "상악", "path": "치과 처치· 수술료/치석제거/상악", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅊㅅㅈㄱㅅㅇ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅊㅣㅅㅓㄱㅈㅔㄱㅓㅅㅏㅇㅇㅏㄱ", "engtokor": "clrhkcjcltntnffycltjrwprjtkddkr"}
+{"index": { "_index": "treatment", "_id": "UW3021037"}}
+{"treatmentId": "UW3021037", "name": "하악", "path": "치과 처치· 수술료/치석제거/하악", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅊㅅㅈㄱㅎㅇ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅊㅣㅅㅓㄱㅈㅔㄱㅓㅎㅏㅇㅏㄱ", "engtokor": "clrhkcjcltntnffycltjrwprjgkdkr"}
+{"index": { "_index": "treatment", "_id": "UW3021047"}}
+{"treatmentId": "UW3021047", "name": "전악", "path": "치과 처치· 수술료/치석제거/전악", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅊㅅㅈㄱㅈㅇ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅊㅣㅅㅓㄱㅈㅔㄱㅓㅈㅓㄴㅇㅏㄱ", "engtokor": "clrhkcjcltntnffycltjrwprjwjsdkr"}
+{"index": { "_index": "treatment", "_id": "UZ1120001"}}
+{"treatmentId": "UZ1120001", "name": "잇몸절제", "path": "치과 처치· 수술료/잇몸웃음교정술/잇몸절제", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㅁㅇㅇㄱㅈㅅㅇㅁㅈㅈ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㅅㅁㅗㅁㅇㅜㅅㅇㅡㅁㄱㅛㅈㅓㅇㅅㅜㄹㅇㅣㅅㅁㅗㅁㅈㅓㄹㅈㅔ", "engtokor": "clrhkcjcltntnffydltahadntdmarywjdtnfdltahawjfwp"}
+{"index": { "_index": "treatment", "_id": "UZ1120002"}}
+{"treatmentId": "UZ1120002", "name": "치조골 삭제", "path": "치과 처치· 수술료/잇몸웃음교정술/치조골 삭제", "chosung": "ㅊㄱㅊㅊㅅㅅㄹㅇㅁㅇㅇㄱㅈㅅㅊㅈㄱㅅㅈ", "jamo": "ㅊㅣㄱㅘㅊㅓㅊㅣㅅㅜㅅㅜㄹㄹㅛㅇㅣㅅㅁㅗㅁㅇㅜㅅㅇㅡㅁㄱㅛㅈㅓㅇㅅㅜㄹㅊㅣㅈㅗㄱㅗㄹㅅㅏㄱㅈㅔ", "engtokor": "clrhkcjcltntnffydltahadntdmarywjdtnfclwhrhftkrwp"}
+{"index": { "_index": "treatment", "_id": "290610000"}}
+{"treatmentId": "290610000", "name": "QSCCII 설문지에 의한 심성검사", "path": "한방검사료/사상체질검사/QSCCII 설문지에 의한 심성검사", "chosung": "ㅎㅂㄱㅅㄹㅅㅅㅊㅈㄱㅅQSCCIIㅅㅁㅈㅇㅇㅎㅅㅅㄱㅅ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㅅㅏㅅㅏㅇㅊㅔㅈㅣㄹㄱㅓㅁㅅㅏQSCCIIㅅㅓㄹㅁㅜㄴㅈㅣㅇㅔㅇㅢㅎㅏㄴㅅㅣㅁㅅㅓㅇㄱㅓㅁㅅㅏ", "engtokor": "gksqkdrjatkfytktkdcpwlfrjatkQSCCIItjfanswldpdmlgkstlatjdrjatk"}
+{"index": { "_index": "treatment", "_id": "290620000"}}
+{"treatmentId": "290620000", "name": "QSCCII 설문지에 의한 심성검사 및 상담", "path": "한방검사료/사상체질검사/QSCCII 설문지에 의한 심성검사 및 상담", "chosung": "ㅎㅂㄱㅅㄹㅅㅅㅊㅈㄱㅅQSCCIIㅅㅁㅈㅇㅇㅎㅅㅅㄱㅅㅁㅅㄷ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㅅㅏㅅㅏㅇㅊㅔㅈㅣㄹㄱㅓㅁㅅㅏQSCCIIㅅㅓㄹㅁㅜㄴㅈㅣㅇㅔㅇㅢㅎㅏㄴㅅㅣㅁㅅㅓㅇㄱㅓㅁㅅㅏㅁㅣㅊㅅㅏㅇㄷㅏㅁ", "engtokor": "gksqkdrjatkfytktkdcpwlfrjatkQSCCIItjfanswldpdmlgkstlatjdrjatkalctkdeka"}
+{"index": { "_index": "treatment", "_id": "280100000"}}
+{"treatmentId": "280100000", "name": "경근무늬측정검사", "path": "한방검사료/경근무늬측정검사", "chosung": "ㅎㅂㄱㅅㄹㄱㄱㅁㄴㅊㅈㄱㅅ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㄱㅕㅇㄱㅡㄴㅁㅜㄴㅢㅊㅡㄱㅈㅓㅇㄱㅓㅁㅅㅏ", "engtokor": "gksqkdrjatkfyrudrmsansmlcmrwjdrjatk"}
+{"index": { "_index": "treatment", "_id": "2L0400001"}}
+{"treatmentId": "2L0400001", "name": "전신", "path": "한방검사료/경피온열검사/전신", "chosung": "ㅎㅂㄱㅅㄹㄱㅍㅇㅇㄱㅅㅈㅅ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㄱㅕㅇㅍㅣㅇㅗㄴㅇㅕㄹㄱㅓㅁㅅㅏㅈㅓㄴㅅㅣㄴ", "engtokor": "gksqkdrjatkfyrudvldhsdufrjatkwjstls"}
+{"index": { "_index": "treatment", "_id": "2L0400002"}}
+{"treatmentId": "2L0400002", "name": "부분", "path": "한방검사료/경피온열검사/부분", "chosung": "ㅎㅂㄱㅅㄹㄱㅍㅇㅇㄱㅅㅂㅂ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㄱㅕㅇㅍㅣㅇㅗㄴㅇㅕㄹㄱㅓㅁㅅㅏㅂㅜㅂㅜㄴ", "engtokor": "gksqkdrjatkfyrudvldhsdufrjatkqnqns"}
+{"index": { "_index": "treatment", "_id": "290020000"}}
+{"treatmentId": "290020000", "name": "골도법검사", "path": "한방검사료/골도법검사", "chosung": "ㅎㅂㄱㅅㄹㄱㄷㅂㄱㅅ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㄱㅗㄹㄷㅗㅂㅓㅂㄱㅓㅁㅅㅏ", "engtokor": "gksqkdrjatkfyrhfehqjqrjatk"}
+{"index": { "_index": "treatment", "_id": "290700000"}}
+{"treatmentId": "290700000", "name": "혈맥어혈검사(맥파전달속도측정)", "path": "한방검사료/혈맥어혈검사(맥파전달속도측정)", "chosung": "ㅎㅂㄱㅅㄹㅎㅁㅇㅎㄱㅅㅁㅍㅈㄷㅅㄷㅊㅈ", "jamo": "ㅎㅏㄴㅂㅏㅇㄱㅓㅁㅅㅏㄹㅛㅎㅕㄹㅁㅐㄱㅇㅓㅎㅕㄹㄱㅓㅁㅅㅏㅁㅐㄱㅍㅏㅈㅓㄴㄷㅏㄹㅅㅗㄱㄷㅗㅊㅡㄱㅈㅓㅇ", "engtokor": "gksqkdrjatkfygufaordjgufrjatkaorvkwjsekfthrehcmrwjd"}
+{"index": { "_index": "treatment", "_id": "490100000"}}
+{"treatmentId": "490100000", "name": "경혈", "path": "한방 시술 및 처치료/약침술/경혈", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅇㅊㅅㄱㅎ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅇㅑㄱㅊㅣㅁㅅㅜㄹㄱㅕㅇㅎㅕㄹ", "engtokor": "gksqkdtltnfalccjclfydirclatnfrudguf"}
+{"index": { "_index": "treatment", "_id": "480510000"}}
+{"treatmentId": "480510000", "name": "한방 향기요법", "path": "한방 시술 및 처치료/한방 향기요법", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅎㅂㅎㄱㅇㅂ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅎㅏㄴㅂㅏㅇㅎㅑㅇㄱㅣㅇㅛㅂㅓㅂ", "engtokor": "gksqkdtltnfalccjclfygksqkdgidrldyqjq"}
+{"index": { "_index": "treatment", "_id": "591040000"}}
+{"treatmentId": "591040000", "name": "자율훈련법", "path": "한방 시술 및 처치료/자율훈련법", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅈㅇㅎㄹㅂ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅈㅏㅇㅠㄹㅎㅜㄴㄹㅕㄴㅂㅓㅂ", "engtokor": "gksqkdtltnfalccjclfywkdbfgnsfusqjq"}
+{"index": { "_index": "treatment", "_id": "407100000"}}
+{"treatmentId": "407100000", "name": "단순추나", "path": "한방 시술 및 처치료/추나요법/단순추나", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅊㄴㅇㅂㄷㅅㅊㄴ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅊㅜㄴㅏㅇㅛㅂㅓㅂㄷㅏㄴㅅㅜㄴㅊㅜㄴㅏ", "engtokor": "gksqkdtltnfalccjclfycnskdyqjqekstnscnsk"}
+{"index": { "_index": "treatment", "_id": "407200000"}}
+{"treatmentId": "407200000", "name": "복잡추나", "path": "한방 시술 및 처치료/추나요법/복잡추나", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅊㄴㅇㅂㅂㅈㅊㄴ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅊㅜㄴㅏㅇㅛㅂㅓㅂㅂㅗㄱㅈㅏㅂㅊㅜㄴㅏ", "engtokor": "gksqkdtltnfalccjclfycnskdyqjqqhrwkqcnsk"}
+{"index": { "_index": "treatment", "_id": "407300001"}}
+{"treatmentId": "407300001", "name": "특수(탈구)추나", "path": "한방 시술 및 처치료/추나요법/특수(탈구)추나", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅊㄴㅇㅂㅌㅅㅌㄱㅊㄴ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅊㅜㄴㅏㅇㅛㅂㅓㅂㅌㅡㄱㅅㅜㅌㅏㄹㄱㅜㅊㅜㄴㅏ", "engtokor": "gksqkdtltnfalccjclfycnskdyqjqxmrtnxkfrncnsk"}
+{"index": { "_index": "treatment", "_id": "407300002"}}
+{"treatmentId": "407300002", "name": "특수(내장기, 두개천골)추나", "path": "한방 시술 및 처치료/추나요법/특수(내장기, 두개천골)추나", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅊㄴㅇㅂㅌㅅㄴㅈㄱㄷㄱㅊㄱㅊㄴ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅊㅜㄴㅏㅇㅛㅂㅓㅂㅌㅡㄱㅅㅜㄴㅐㅈㅏㅇㄱㅣㄷㅜㄱㅐㅊㅓㄴㄱㅗㄹㅊㅜㄴㅏ", "engtokor": "gksqkdtltnfalccjclfycnskdyqjqxmrtnsowkdrlenrocjsrhfcnsk"}
+{"index": { "_index": "treatment", "_id": "490200000"}}
+{"treatmentId": "490200000", "name": "한방물리요법", "path": "한방 시술 및 처치료/한방물리요법", "chosung": "ㅎㅂㅅㅅㅁㅊㅊㄹㅎㅂㅁㄹㅇㅂ", "jamo": "ㅎㅏㄴㅂㅏㅇㅅㅣㅅㅜㄹㅁㅣㅊㅊㅓㅊㅣㄹㅛㅎㅏㄴㅂㅏㅇㅁㅜㄹㄹㅣㅇㅛㅂㅓㅂ", "engtokor": "gksqkdtltnfalccjclfygksqkdanffldyqjq"}
+{"index": { "_index": "treatment", "_id": "UB0010011"}}
+{"treatmentId": "UB0010011", "name": "Metal", "path": "치과의 보철료/치과임플란트(1치당)/Metal", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷMetal", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇMetal", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdMetal"}
+{"index": { "_index": "treatment", "_id": "UB0010021"}}
+{"treatmentId": "UB0010021", "name": "Gold", "path": "치과의 보철료/치과임플란트(1치당)/Gold", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷGold", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇGold", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdGold"}
+{"index": { "_index": "treatment", "_id": "UB0010012"}}
+{"treatmentId": "UB0010012", "name": "PFM", "path": "치과의 보철료/치과임플란트(1치당)/PFM", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷPFM", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇPFM", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdPFM"}
+{"index": { "_index": "treatment", "_id": "UB0010022"}}
+{"treatmentId": "UB0010022", "name": "PFG", "path": "치과의 보철료/치과임플란트(1치당)/PFG", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷPFG", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇPFG", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdPFG"}
+{"index": { "_index": "treatment", "_id": "UB0010041"}}
+{"treatmentId": "UB0010041", "name": "올세라믹", "path": "치과의 보철료/치과임플란트(1치당)/올세라믹", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷㅇㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇㅇㅗㄹㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekddhftpfkalr"}
+{"index": { "_index": "treatment", "_id": "UB0010051"}}
+{"treatmentId": "UB0010051", "name": "Zirconia", "path": "치과의 보철료/치과임플란트(1치당)/Zirconia", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷZirconia", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇZirconia", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdZirconia"}
+{"index": { "_index": "treatment", "_id": "UB0010001"}}
+{"treatmentId": "UB0010001", "name": "기타", "path": "치과의 보철료/치과임플란트(1치당)/기타", "chosung": "ㅊㄱㅇㅂㅊㄹㅊㄱㅇㅍㄹㅌ1ㅊㄷㄱㅌ", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅊㅣㄱㅘㅇㅣㅁㅍㅡㄹㄹㅏㄴㅌㅡ1ㅊㅣㄷㅏㅇㄱㅣㅌㅏ", "engtokor": "clrhkdmlqhcjffyclrhkdlavmffksxm1clekdrlxk"}
+{"index": { "_index": "treatment", "_id": "UW607F310"}}
+{"treatmentId": "UW607F310", "name": "Metal", "path": "치과의 보철료/크라운/Metal", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇMetal", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴMetal", "engtokor": "clrhkdmlqhcjffyzmfkdnsMetal"}
+{"index": { "_index": "treatment", "_id": "UW607F320"}}
+{"treatmentId": "UW607F320", "name": "Gold", "path": "치과의 보철료/크라운/Gold", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇGold", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴGold", "engtokor": "clrhkdmlqhcjffyzmfkdnsGold"}
+{"index": { "_index": "treatment", "_id": "UW608F310"}}
+{"treatmentId": "UW608F310", "name": "PFM", "path": "치과의 보철료/크라운/PFM", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇPFM", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴPFM", "engtokor": "clrhkdmlqhcjffyzmfkdnsPFM"}
+{"index": { "_index": "treatment", "_id": "UW608F320"}}
+{"treatmentId": "UW608F320", "name": "PFG", "path": "치과의 보철료/크라운/PFG", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇPFG", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴPFG", "engtokor": "clrhkdmlqhcjffyzmfkdnsPFG"}
+{"index": { "_index": "treatment", "_id": "UW609F340"}}
+{"treatmentId": "UW609F340", "name": "올세라믹", "path": "치과의 보철료/크라운/올세라믹", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇㅇㅅㄹㅁ", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴㅇㅗㄹㅅㅔㄹㅏㅁㅣㄱ", "engtokor": "clrhkdmlqhcjffyzmfkdnsdhftpfkalr"}
+{"index": { "_index": "treatment", "_id": "UW609F350"}}
+{"treatmentId": "UW609F350", "name": "Zirconia", "path": "치과의 보철료/크라운/Zirconia", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇZirconia", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴZirconia", "engtokor": "clrhkdmlqhcjffyzmfkdnsZirconia"}
+{"index": { "_index": "treatment", "_id": "UW613F300"}}
+{"treatmentId": "UW613F300", "name": "기타", "path": "치과의 보철료/크라운/기타", "chosung": "ㅊㄱㅇㅂㅊㄹㅋㄹㅇㄱㅌ", "jamo": "ㅊㅣㄱㅘㅇㅢㅂㅗㅊㅓㄹㄹㅛㅋㅡㄹㅏㅇㅜㄴㄱㅣㅌㅏ", "engtokor": "clrhkdmlqhcjffyzmfkdnsrlxk"}
+{"index": { "_index": "treatment", "_id": "BI0200DU"}}
+{"treatmentId": "BI0200DU", "name": "INFO IOL", "path": "치료재료/조절성 인공수정체/INFO IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊINFOIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔINFOIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpINFOIOL"}
+{"index": { "_index": "treatment", "_id": "BI0200EB"}}
+{"treatmentId": "BI0200EB", "name": "ACRYSOF IQ PANOPTIX TORIC PRESBYOPIA CORRECTING IOLS", "path": "치료재료/조절성 인공수정체/ACRYSOF IQ PANOPTIX TORIC PRESBYOPIA CORRECTING IOLS", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊACRYSOFIQPANOPTIXTORICPRESBYOPIACORRECTINGIOLS", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔACRYSOFIQPANOPTIXTORICPRESBYOPIACORRECTINGIOLS", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpACRYSOFIQPANOPTIXTORICPRESBYOPIACORRECTINGIOLS"}
+{"index": { "_index": "treatment", "_id": "BI0201IR"}}
+{"treatmentId": "BI0201IR", "name": "SBL-3", "path": "치료재료/조절성 인공수정체/SBL-3", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊSBL3", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔSBL3", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpSBL3"}
+{"index": { "_index": "treatment", "_id": "BI0201KU"}}
+{"treatmentId": "BI0201KU", "name": "FINEVISION, POD F", "path": "치료재료/조절성 인공수정체/FINEVISION, POD F", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFINEVISIONPODF", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFINEVISIONPODF", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFINEVISIONPODF"}
+{"index": { "_index": "treatment", "_id": "BI0201OZ"}}
+{"treatmentId": "BI0201OZ", "name": "AT. LISA 809M", "path": "치료재료/조절성 인공수정체/AT. LISA 809M", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATLISA809M", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATLISA809M", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATLISA809M"}
+{"index": { "_index": "treatment", "_id": "BI0201TE"}}
+{"treatmentId": "BI0201TE", "name": "TELEON MULTIFOCAL IOL GROUP", "path": "치료재료/조절성 인공수정체/TELEON MULTIFOCAL IOL GROUP", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTELEONMULTIFOCALIOLGROUP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTELEONMULTIFOCALIOLGROUP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTELEONMULTIFOCALIOLGROUP"}
+{"index": { "_index": "treatment", "_id": "BI0201WX"}}
+{"treatmentId": "BI0201WX", "name": "BI-FLEX M(677MY)", "path": "치료재료/조절성 인공수정체/BI-FLEX M(677MY)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊBIFLEXM677MY", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔBIFLEXM677MY", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpBIFLEXM677MY"}
+{"index": { "_index": "treatment", "_id": "BI0201XQ"}}
+{"treatmentId": "BI0201XQ", "name": "HANITA MF IOL(SEELENS MF, BUNNYLENS MF)", "path": "치료재료/조절성 인공수정체/HANITA MF IOL(SEELENS MF, BUNNYLENS MF)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊHANITAMFIOLSEELENSMFBUNNYLENSMF", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔHANITAMFIOLSEELENSMFBUNNYLENSMF", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpHANITAMFIOLSEELENSMFBUNNYLENSMF"}
+{"index": { "_index": "treatment", "_id": "BI0202EY"}}
+{"treatmentId": "BI0202EY", "name": "FIL 611PV", "path": "치료재료/조절성 인공수정체/FIL 611PV", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFIL611PV", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFIL611PV", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFIL611PV"}
+{"index": { "_index": "treatment", "_id": "BI0202HA"}}
+{"treatmentId": "BI0202HA", "name": "OPTIVIS", "path": "치료재료/조절성 인공수정체/OPTIVIS", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊOPTIVIS", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔOPTIVIS", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpOPTIVIS"}
+{"index": { "_index": "treatment", "_id": "BI0202KU"}}
+{"treatmentId": "BI0202KU", "name": "FINEVISION TORIC, POD FT", "path": "치료재료/조절성 인공수정체/FINEVISION TORIC, POD FT", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFINEVISIONTORICPODFT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFINEVISIONTORICPODFT", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFINEVISIONTORICPODFT"}
+{"index": { "_index": "treatment", "_id": "BI0203EY"}}
+{"treatmentId": "BI0203EY", "name": "FIL 611PVT", "path": "치료재료/조절성 인공수정체/FIL 611PVT", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFIL611PVT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFIL611PVT", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFIL611PVT"}
+{"index": { "_index": "treatment", "_id": "BI0203OZ"}}
+{"treatmentId": "BI0203OZ", "name": "AT LISA 839MP", "path": "치료재료/조절성 인공수정체/AT LISA 839MP", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATLISA839MP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATLISA839MP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATLISA839MP"}
+{"index": { "_index": "treatment", "_id": "BI0203YX"}}
+{"treatmentId": "BI0203YX", "name": "PRECIZON PRESBYOPIC", "path": "치료재료/조절성 인공수정체/PRECIZON PRESBYOPIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊPRECIZONPRESBYOPIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔPRECIZONPRESBYOPIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpPRECIZONPRESBYOPIC"}
+{"index": { "_index": "treatment", "_id": "BI0204OZ"}}
+{"treatmentId": "BI0204OZ", "name": "AT LISA TRI TORIC 939M(P)", "path": "치료재료/조절성 인공수정체/AT LISA TRI TORIC 939M(P)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATLISATRITORIC939MP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATLISATRITORIC939MP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATLISATRITORIC939MP"}
+{"index": { "_index": "treatment", "_id": "BI0204TE"}}
+{"treatmentId": "BI0204TE", "name": "TELEON MULTIFOCAL TORIC IOL GROUP", "path": "치료재료/조절성 인공수정체/TELEON MULTIFOCAL TORIC IOL GROUP", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTELEONMULTIFOCALTORICIOLGROUP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTELEONMULTIFOCALTORICIOLGROUP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTELEONMULTIFOCALTORICIOLGROUP"}
+{"index": { "_index": "treatment", "_id": "BI0205LN"}}
+{"treatmentId": "BI0205LN", "name": "TECNIS SYMFONY EXTENDED RANGE OF VISION IOL, TECNIS SYMFONY PLUS EXTENDED RANGE OF VISION IOL", "path": "치료재료/조절성 인공수정체/TECNIS SYMFONY EXTENDED RANGE OF VISION IOL, TECNIS SYMFONY PLUS EXTENDED RANGE OF VISION IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTECNISSYMFONYEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSEXTENDEDRANGEOFVISIONIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTECNISSYMFONYEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSEXTENDEDRANGEOFVISIONIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTECNISSYMFONYEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSEXTENDEDRANGEOFVISIONIOL"}
+{"index": { "_index": "treatment", "_id": "BI0205OZ"}}
+{"treatmentId": "BI0205OZ", "name": "AT LARA 829MP", "path": "치료재료/조절성 인공수정체/AT LARA 829MP", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATLARA829MP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATLARA829MP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATLARA829MP"}
+{"index": { "_index": "treatment", "_id": "BI0208EB"}}
+{"treatmentId": "BI0208EB", "name": "ACRYSOF IQ PANOPTIX PRESBYOPIA-CORRECTING IOL", "path": "치료재료/조절성 인공수정체/ACRYSOF IQ PANOPTIX PRESBYOPIA-CORRECTING IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊACRYSOFIQPANOPTIXPRESBYOPIACORRECTINGIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔACRYSOFIQPANOPTIXPRESBYOPIACORRECTINGIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpACRYSOFIQPANOPTIXPRESBYOPIACORRECTINGIOL"}
+{"index": { "_index": "treatment", "_id": "BI0200GP"}}
+{"treatmentId": "BI0200GP", "name": "AUROVUE DFINE", "path": "치료재료/조절성 인공수정체/AUROVUE DFINE", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊAUROVUEDFINE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔAUROVUEDFINE", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpAUROVUEDFINE"}
+{"index": { "_index": "treatment", "_id": "BI0200VG"}}
+{"treatmentId": "BI0200VG", "name": "HOYA VIVINEX TORIC", "path": "치료재료/조절성 인공수정체/HOYA VIVINEX TORIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊHOYAVIVINEXTORIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔHOYAVIVINEXTORIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpHOYAVIVINEXTORIC"}
+{"index": { "_index": "treatment", "_id": "BI0201EY"}}
+{"treatmentId": "BI0201EY", "name": "FIL 611T", "path": "치료재료/조절성 인공수정체/FIL 611T", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFIL611T", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFIL611T", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFIL611T"}
+{"index": { "_index": "treatment", "_id": "BI0201GF"}}
+{"treatmentId": "BI0201GF", "name": "AKKOMMODATIVE 1CU", "path": "치료재료/조절성 인공수정체/AKKOMMODATIVE 1CU", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊAKKOMMODATIVE1CU", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔAKKOMMODATIVE1CU", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpAKKOMMODATIVE1CU"}
+{"index": { "_index": "treatment", "_id": "BI0201HM"}}
+{"treatmentId": "BI0201HM", "name": "T-FLEX ASPHERIC TORIC", "path": "치료재료/조절성 인공수정체/T-FLEX ASPHERIC TORIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTFLEXASPHERICTORIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTFLEXASPHERICTORIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTFLEXASPHERICTORIC"}
+{"index": { "_index": "treatment", "_id": "BI0201LN"}}
+{"treatmentId": "BI0201LN", "name": "REZOOM MULTIFOCAL IOLS", "path": "치료재료/조절성 인공수정체/REZOOM MULTIFOCAL IOLS", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊREZOOMMULTIFOCALIOLS", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔREZOOMMULTIFOCALIOLS", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpREZOOMMULTIFOCALIOLS"}
+{"index": { "_index": "treatment", "_id": "BI0201VD"}}
+{"treatmentId": "BI0201VD", "name": "TECNIS MULTIFOCAL TORIC 1-PIECE INTRAOCULAR LENSE(IOL)", "path": "치료재료/조절성 인공수정체/TECNIS MULTIFOCAL TORIC 1-PIECE INTRAOCULAR LENSE(IOL)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTECNISMULTIFOCALTORIC1PIECEINTRAOCULARLENSEIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTECNISMULTIFOCALTORIC1PIECEINTRAOCULARLENSEIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTECNISMULTIFOCALTORIC1PIECEINTRAOCULARLENSEIOL"}
+{"index": { "_index": "treatment", "_id": "BI0201YX"}}
+{"treatmentId": "BI0201YX", "name": "PRECIZON TORIC 565", "path": "치료재료/조절성 인공수정체/PRECIZON TORIC 565", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊPRECIZONTORIC565", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔPRECIZONTORIC565", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpPRECIZONTORIC565"}
+{"index": { "_index": "treatment", "_id": "BI0202DU"}}
+{"treatmentId": "BI0202DU", "name": "LUCIDIS 108M LUCIDIS 124M", "path": "치료재료/조절성 인공수정체/LUCIDIS 108M LUCIDIS 124M", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊLUCIDIS108MLUCIDIS124M", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔLUCIDIS108MLUCIDIS124M", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpLUCIDIS108MLUCIDIS124M"}
+{"index": { "_index": "treatment", "_id": "BI0202HM"}}
+{"treatmentId": "BI0202HM", "name": "SULCOFLEX TORIC", "path": "치료재료/조절성 인공수정체/SULCOFLEX TORIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊSULCOFLEXTORIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔSULCOFLEXTORIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpSULCOFLEXTORIC"}
+{"index": { "_index": "treatment", "_id": "BI0202HY"}}
+{"treatmentId": "BI0202HY", "name": "ARTIS T PL E", "path": "치료재료/조절성 인공수정체/ARTIS T PL E", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊARTISTPLE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔARTISTPLE", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpARTISTPLE"}
+{"index": { "_index": "treatment", "_id": "BI0202IR"}}
+{"treatmentId": "BI0202IR", "name": "TETRAFLEX HD", "path": "치료재료/조절성 인공수정체/TETRAFLEX HD", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTETRAFLEXHD", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTETRAFLEXHD", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTETRAFLEXHD"}
+{"index": { "_index": "treatment", "_id": "BI0202NK"}}
+{"treatmentId": "BI0202NK", "name": "CRYSTALENS AT50AO ACCOMMODATING INTRAOCULAR LENS", "path": "치료재료/조절성 인공수정체/CRYSTALENS AT50AO ACCOMMODATING INTRAOCULAR LENS", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊCRYSTALENSAT50AOACCOMMODATINGINTRAOCULARLENS", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔCRYSTALENSAT50AOACCOMMODATINGINTRAOCULARLENS", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpCRYSTALENSAT50AOACCOMMODATINGINTRAOCULARLENS"}
+{"index": { "_index": "treatment", "_id": "BI0202OZ"}}
+{"treatmentId": "BI0202OZ", "name": "AT TORBI 709M", "path": "치료재료/조절성 인공수정체/AT TORBI 709M", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATTORBI709M", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATTORBI709M", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATTORBI709M"}
+{"index": { "_index": "treatment", "_id": "BI0202TE"}}
+{"treatmentId": "BI0202TE", "name": "MEDENNIUM PHAKIC LENS(MPL)", "path": "치료재료/조절성 인공수정체/MEDENNIUM PHAKIC LENS(MPL)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊMEDENNIUMPHAKICLENSMPL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔMEDENNIUMPHAKICLENSMPL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpMEDENNIUMPHAKICLENSMPL"}
+{"index": { "_index": "treatment", "_id": "BI0202WX"}}
+{"treatmentId": "BI0202WX", "name": "ADDON (A45SML)", "path": "치료재료/조절성 인공수정체/ADDON (A45SML)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊADDONA45SML", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔADDONA45SML", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpADDONA45SML"}
+{"index": { "_index": "treatment", "_id": "BI0202XQ"}}
+{"treatmentId": "BI0202XQ", "name": "VISTOR/BUNNYLENS TR", "path": "치료재료/조절성 인공수정체/VISTOR/BUNNYLENS TR", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊVISTORBUNNYLENSTR", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔVISTORBUNNYLENSTR", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpVISTORBUNNYLENSTR"}
+{"index": { "_index": "treatment", "_id": "BI0202YX"}}
+{"treatmentId": "BI0202YX", "name": "ARTISAN", "path": "치료재료/조절성 인공수정체/ARTISAN", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊARTISAN", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔARTISAN", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpARTISAN"}
+{"index": { "_index": "treatment", "_id": "BI0203HM"}}
+{"treatmentId": "BI0203HM", "name": "SULCOFLEX ASPHERIC", "path": "치료재료/조절성 인공수정체/SULCOFLEX ASPHERIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊSULCOFLEXASPHERIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔSULCOFLEXASPHERIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpSULCOFLEXASPHERIC"}
+{"index": { "_index": "treatment", "_id": "BI0203HY"}}
+{"treatmentId": "BI0203HY", "name": "ARTIS PL M", "path": "치료재료/조절성 인공수정체/ARTIS PL M", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊARTISPLM", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔARTISPLM", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpARTISPLM"}
+{"index": { "_index": "treatment", "_id": "BI0203KU"}}
+{"treatmentId": "BI0203KU", "name": "POD F GF", "path": "치료재료/조절성 인공수정체/POD F GF", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊPODFGF", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔPODFGF", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpPODFGF"}
+{"index": { "_index": "treatment", "_id": "BI0203NK"}}
+{"treatmentId": "BI0203NK", "name": "CRYSTALENS AT52AO ACCOMMODATING INTRAOCULAR LENS", "path": "치료재료/조절성 인공수정체/CRYSTALENS AT52AO ACCOMMODATING INTRAOCULAR LENS", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊCRYSTALENSAT52AOACCOMMODATINGINTRAOCULARLENS", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔCRYSTALENSAT52AOACCOMMODATINGINTRAOCULARLENS", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpCRYSTALENSAT52AOACCOMMODATINGINTRAOCULARLENS"}
+{"index": { "_index": "treatment", "_id": "BI0203TE"}}
+{"treatmentId": "BI0203TE", "name": "TELEON TORIC IOL GROUP", "path": "치료재료/조절성 인공수정체/TELEON TORIC IOL GROUP", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTELEONTORICIOLGROUP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTELEONTORICIOLGROUP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTELEONTORICIOLGROUP"}
+{"index": { "_index": "treatment", "_id": "BI0204EB"}}
+{"treatmentId": "BI0204EB", "name": "ACRYSOF IQ TORIC NATURAL IOL(T2-T5)", "path": "치료재료/조절성 인공수정체/ACRYSOF IQ TORIC NATURAL IOL(T2-T5)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊACRYSOFIQTORICNATURALIOLT2T5", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔACRYSOFIQTORICNATURALIOLT2T5", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpACRYSOFIQTORICNATURALIOLT2T5"}
+{"index": { "_index": "treatment", "_id": "BI0204HM"}}
+{"treatmentId": "BI0204HM", "name": "RAYONE TRIFOCAL (RAO603F)", "path": "치료재료/조절성 인공수정체/RAYONE TRIFOCAL (RAO603F)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊRAYONETRIFOCALRAO603F", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔRAYONETRIFOCALRAO603F", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpRAYONETRIFOCALRAO603F"}
+{"index": { "_index": "treatment", "_id": "BI0204KU"}}
+{"treatmentId": "BI0204KU", "name": "FINE EDOF", "path": "치료재료/조절성 인공수정체/FINE EDOF", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊFINEEDOF", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔFINEEDOF", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpFINEEDOF"}
+{"index": { "_index": "treatment", "_id": "BI0204LN"}}
+{"treatmentId": "BI0204LN", "name": "TECNIS TORIC 1-PIECE INTRAOCULAR LENS(IOL), TECNIS TORIC II 1-PIECE IOL", "path": "치료재료/조절성 인공수정체/TECNIS TORIC 1-PIECE INTRAOCULAR LENS(IOL), TECNIS TORIC II 1-PIECE IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTECNISTORIC1PIECEINTRAOCULARLENSIOLTECNISTORICII1PIECEIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTECNISTORIC1PIECEINTRAOCULARLENSIOLTECNISTORICII1PIECEIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTECNISTORIC1PIECEINTRAOCULARLENSIOLTECNISTORICII1PIECEIOL"}
+{"index": { "_index": "treatment", "_id": "BI0204NK"}}
+{"treatmentId": "BI0204NK", "name": "ENVISTA TORIC MX60T", "path": "치료재료/조절성 인공수정체/ENVISTA TORIC MX60T", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊENVISTATORICMX60T", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔENVISTATORICMX60T", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpENVISTATORICMX60T"}
+{"index": { "_index": "treatment", "_id": "BI0204YX"}}
+{"treatmentId": "BI0204YX", "name": "PRECIZON PRESBYOPIC TORIC", "path": "치료재료/조절성 인공수정체/PRECIZON PRESBYOPIC TORIC", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊPRECIZONPRESBYOPICTORIC", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔPRECIZONPRESBYOPICTORIC", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpPRECIZONPRESBYOPICTORIC"}
+{"index": { "_index": "treatment", "_id": "BI0205EB"}}
+{"treatmentId": "BI0205EB", "name": "ACRYSOF IQ TORIC NATURAL IOL (T6-T9)", "path": "치료재료/조절성 인공수정체/ACRYSOF IQ TORIC NATURAL IOL (T6-T9)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊACRYSOFIQTORICNATURALIOLT6T9", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔACRYSOFIQTORICNATURALIOLT6T9", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpACRYSOFIQTORICNATURALIOLT6T9"}
+{"index": { "_index": "treatment", "_id": "BI0205HM"}}
+{"treatmentId": "BI0205HM", "name": "SULCOFLEX TRIFOCAL IOL", "path": "치료재료/조절성 인공수정체/SULCOFLEX TRIFOCAL IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊSULCOFLEXTRIFOCALIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔSULCOFLEXTRIFOCALIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpSULCOFLEXTRIFOCALIOL"}
+{"index": { "_index": "treatment", "_id": "BI0206LN"}}
+{"treatmentId": "BI0206LN", "name": "TECNIS SYMFONY TORIC EXTENDED RANGE OF VISION IOL, TECNIS SYMFONY PLUS TORIC EXTENDED RANGE OF VISION IOL", "path": "치료재료/조절성 인공수정체/TECNIS SYMFONY TORIC EXTENDED RANGE OF VISION IOL, TECNIS SYMFONY PLUS TORIC EXTENDED RANGE OF VISION IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTECNISSYMFONYTORICEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSTORICEXTENDEDRANGEOFVISIONIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTECNISSYMFONYTORICEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSTORICEXTENDEDRANGEOFVISIONIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTECNISSYMFONYTORICEXTENDEDRANGEOFVISIONIOLTECNISSYMFONYPLUSTORICEXTENDEDRANGEOFVISIONIOL"}
+{"index": { "_index": "treatment", "_id": "BI0206OZ"}}
+{"treatmentId": "BI0206OZ", "name": "AT LARA TORIC 929M(P)", "path": "치료재료/조절성 인공수정체/AT LARA TORIC 929M(P)", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊATLARATORIC929MP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔATLARATORIC929MP", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpATLARATORIC929MP"}
+{"index": { "_index": "treatment", "_id": "BI0207LN"}}
+{"treatmentId": "BI0207LN", "name": "TECNIS EYHANCE IOL, TECNIS EYHANCE IOL WITH TECNIS SIMPLICITY DELIVERY SYSTEM", "path": "치료재료/조절성 인공수정체/TECNIS EYHANCE IOL, TECNIS EYHANCE IOL WITH TECNIS SIMPLICITY DELIVERY SYSTEM", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊTECNISEYHANCEIOLTECNISEYHANCEIOLWITHTECNISSIMPLICITYDELIVERYSYSTEM", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔTECNISEYHANCEIOLTECNISEYHANCEIOLWITHTECNISSIMPLICITYDELIVERYSYSTEM", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpTECNISEYHANCEIOLTECNISEYHANCEIOLWITHTECNISSIMPLICITYDELIVERYSYSTEM"}
+{"index": { "_index": "treatment", "_id": "BI0209EB"}}
+{"treatmentId": "BI0209EB", "name": "ACRYSOF IQ VIVITY EXTENDED VISION IOL", "path": "치료재료/조절성 인공수정체/ACRYSOF IQ VIVITY EXTENDED VISION IOL", "chosung": "ㅊㄹㅈㄹㅈㅈㅅㅇㄱㅅㅈㅊACRYSOFIQVIVITYEXTENDEDVISIONIOL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅗㅈㅓㄹㅅㅓㅇㅇㅣㄴㄱㅗㅇㅅㅜㅈㅓㅇㅊㅔACRYSOFIQVIVITYEXTENDEDVISIONIOL", "engtokor": "clfywofywhwjftjddlsrhdtnwjdcpACRYSOFIQVIVITYEXTENDEDVISIONIOL"}
+{"index": { "_index": "treatment", "_id": "BJ4300GX"}}
+{"treatmentId": "BJ4300GX", "name": "VENISTAR", "path": "치료재료/고주파 정맥내막폐쇄요법용/VENISTAR", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㅁㄴㅁㅍㅅㅇㅂㅇVENISTAR", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅓㅇㅁㅐㄱㄴㅐㅁㅏㄱㅍㅖㅅㅙㅇㅛㅂㅓㅂㅇㅛㅇVENISTAR", "engtokor": "clfywofyrhwnvkwjdaorsoakrvPthodyqjqdydVENISTAR"}
+{"index": { "_index": "treatment", "_id": "BJ4301DU"}}
+{"treatmentId": "BJ4301DU", "name": "VNUS CLOSURE FAST", "path": "치료재료/고주파 정맥내막폐쇄요법용/VNUS CLOSURE FAST", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㅁㄴㅁㅍㅅㅇㅂㅇVNUSCLOSUREFAST", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅓㅇㅁㅐㄱㄴㅐㅁㅏㄱㅍㅖㅅㅙㅇㅛㅂㅓㅂㅇㅛㅇVNUSCLOSUREFAST", "engtokor": "clfywofyrhwnvkwjdaorsoakrvPthodyqjqdydVNUSCLOSUREFAST"}
+{"index": { "_index": "treatment", "_id": "BJ4301KY"}}
+{"treatmentId": "BJ4301KY", "name": "VEINCLEAR", "path": "치료재료/고주파 정맥내막폐쇄요법용/VEINCLEAR", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㅁㄴㅁㅍㅅㅇㅂㅇVEINCLEAR", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅓㅇㅁㅐㄱㄴㅐㅁㅏㄱㅍㅖㅅㅙㅇㅛㅂㅓㅂㅇㅛㅇVEINCLEAR", "engtokor": "clfywofyrhwnvkwjdaorsoakrvPthodyqjqdydVEINCLEAR"}
+{"index": { "_index": "treatment", "_id": "BJ4311DG"}}
+{"treatmentId": "BJ4311DG", "name": "광섬유카테타(BJ4311DG)", "path": "치료재료/정맥류제거용/광섬유카테타(BJ4311DG)", "chosung": "ㅊㄹㅈㄹㅈㅁㄹㅈㄱㅇㄱㅅㅇㅋㅌㅌBJ4311DG", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅓㅇㅁㅐㄱㄹㅠㅈㅔㄱㅓㅇㅛㅇㄱㅘㅇㅅㅓㅁㅇㅠㅋㅏㅌㅔㅌㅏBJ4311DG", "engtokor": "clfywofywjdaorfbwprjdydrhkdtjadbzkxpxkBJ4311DG"}
+{"index": { "_index": "treatment", "_id": "BJ4311RD"}}
+{"treatmentId": "BJ4311RD", "name": "광섬유카테타(BJ4311RD)", "path": "치료재료/정맥류제거용/광섬유카테타(BJ4311RD)", "chosung": "ㅊㄹㅈㄹㅈㅁㄹㅈㄱㅇㄱㅅㅇㅋㅌㅌBJ4311RD", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅓㅇㅁㅐㄱㄹㅠㅈㅔㄱㅓㅇㅛㅇㄱㅘㅇㅅㅓㅁㅇㅠㅋㅏㅌㅔㅌㅏBJ4311RD", "engtokor": "clfywofywjdaorfbwprjdydrhkdtjadbzkxpxkBJ4311RD"}
+{"index": { "_index": "treatment", "_id": "BJ4312DG"}}
+{"treatmentId": "BJ4312DG", "name": "볼타입광섬유카테타", "path": "치료재료/정맥류제거용/볼타입광섬유카테타", "chosung": "ㅊㄹㅈㄹㅈㅁㄹㅈㄱㅇㅂㅌㅇㄱㅅㅇㅋㅌㅌ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅓㅇㅁㅐㄱㄹㅠㅈㅔㄱㅓㅇㅛㅇㅂㅗㄹㅌㅏㅇㅣㅂㄱㅘㅇㅅㅓㅁㅇㅠㅋㅏㅌㅔㅌㅏ", "engtokor": "clfywofywjdaorfbwprjdydqhfxkdlqrhkdtjadbzkxpxk"}
+{"index": { "_index": "treatment", "_id": "BJ4501YO"}}
+{"treatmentId": "BJ4501YO", "name": "KODAMA INTRAVASCULAR ULTRASOUND CATHETER", "path": "치료재료/혈관내영상카테타/KODAMA INTRAVASCULAR ULTRASOUND CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌKODAMAINTRAVASCULARULTRASOUNDCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏKODAMAINTRAVASCULARULTRASOUNDCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkKODAMAINTRAVASCULARULTRASOUNDCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4502JT"}}
+{"treatmentId": "BJ4502JT", "name": "REVOLUTION CATHETER", "path": "치료재료/혈관내영상카테타/REVOLUTION CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌREVOLUTIONCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏREVOLUTIONCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkREVOLUTIONCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4503BM"}}
+{"treatmentId": "BJ4503BM", "name": "OPTICROSS CORONARY IMAGING CATHETER", "path": "치료재료/혈관내영상카테타/OPTICROSS CORONARY IMAGING CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌOPTICROSSCORONARYIMAGINGCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏOPTICROSSCORONARYIMAGINGCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkOPTICROSSCORONARYIMAGINGCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4504BM"}}
+{"treatmentId": "BJ4504BM", "name": "OPTICROSS 18 PERIPHERAL IMAGING CATHETER", "path": "치료재료/혈관내영상카테타/OPTICROSS 18 PERIPHERAL IMAGING CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌOPTICROSS18PERIPHERALIMAGINGCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏOPTICROSS18PERIPHERALIMAGINGCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkOPTICROSS18PERIPHERALIMAGINGCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4504JT"}}
+{"treatmentId": "BJ4504JT", "name": "EAGLE EYE IVUS CATHETER", "path": "치료재료/혈관내영상카테타/EAGLE EYE IVUS CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌEAGLEEYEIVUSCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏEAGLEEYEIVUSCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkEAGLEEYEIVUSCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4505JT"}}
+{"treatmentId": "BJ4505JT", "name": "PV0.035 IVUS CATHETER ", "path": "치료재료/혈관내영상카테타/PV0.035 IVUS CATHETER ", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌPV0035IVUSCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏPV0035IVUSCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkPV0035IVUSCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4506JT"}}
+{"treatmentId": "BJ4506JT", "name": "REFINITY ST ROTATIONAL IVUS CATHETER", "path": "치료재료/혈관내영상카테타/REFINITY ST ROTATIONAL IVUS CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌREFINITYSTROTATIONALIVUSCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏREFINITYSTROTATIONALIVUSCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkREFINITYSTROTATIONALIVUSCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4505BM"}}
+{"treatmentId": "BJ4505BM", "name": "OPTICROSS HD CORONARY IMAGING CATHETER", "path": "치료재료/혈관내영상카테타/OPTICROSS HD CORONARY IMAGING CATHETER", "chosung": "ㅊㄹㅈㄹㅎㄱㄴㅇㅅㅋㅌㅌOPTICROSSHDCORONARYIMAGINGCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅎㅕㄹㄱㅘㄴㄴㅐㅇㅕㅇㅅㅏㅇㅋㅏㅌㅔㅌㅏOPTICROSSHDCORONARYIMAGINGCATHETER", "engtokor": "clfywofygufrhkssodudtkdzkxpxkOPTICROSSHDCORONARYIMAGINGCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4513LR"}}
+{"treatmentId": "BJ4513LR", "name": "DRAGONFLY CATHETER", "path": "치료재료/관상동맥내 광학파 단층촬영용/DRAGONFLY CATHETER", "chosung": "ㅊㄹㅈㄹㄱㅅㄷㅁㄴㄱㅎㅍㄷㅊㅊㅇㅇDRAGONFLYCATHETER", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅘㄴㅅㅏㅇㄷㅗㅇㅁㅐㄱㄴㅐㄱㅘㅇㅎㅏㄱㅍㅏㄷㅏㄴㅊㅡㅇㅊㅘㄹㅇㅕㅇㅇㅛㅇDRAGONFLYCATHETER", "engtokor": "clfywofyrhkstkdehdaorsorhkdgkrvkekscmdchkfduddydDRAGONFLYCATHETER"}
+{"index": { "_index": "treatment", "_id": "BJ4711DU"}}
+{"treatmentId": "BJ4711DU", "name": "COOL-TIP RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/COOL-TIP RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇCOOLTIPRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇCOOLTIPRFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydCOOLTIPRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4711GX"}}
+{"treatmentId": "BJ4711GX", "name": "WELL-POINT RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/WELL-POINT RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇWELLPOINTRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇWELLPOINTRFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydWELLPOINTRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4711HS"}}
+{"treatmentId": "BJ4711HS", "name": "TCHP시리즈", "path": "치료재료/고주파 자궁근종용해술용/TCHP시리즈", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇTCHPㅅㄹㅈ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇTCHPㅅㅣㄹㅣㅈㅡ", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydTCHPtlflwm"}
+{"index": { "_index": "treatment", "_id": "BJ4711NH"}}
+{"treatmentId": "BJ4711NH", "name": "COATHERM ELECTRODE SERIES", "path": "치료재료/고주파 자궁근종용해술용/COATHERM ELECTRODE SERIES", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇCOATHERMELECTRODESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇCOATHERMELECTRODESERIES", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydCOATHERMELECTRODESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4711PY"}}
+{"treatmentId": "BJ4711PY", "name": "OCTOPUS RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/OCTOPUS RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇOCTOPUSRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇOCTOPUSRFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydOCTOPUSRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4712DU"}}
+{"treatmentId": "BJ4712DU", "name": "COOL-TIP E SERIES", "path": "치료재료/고주파 자궁근종용해술용/COOL-TIP E SERIES", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇCOOLTIPESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇCOOLTIPESERIES", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydCOOLTIPESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4712KY"}}
+{"treatmentId": "BJ4712KY", "name": "RF MYOLYSIS BTM ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/RF MYOLYSIS BTM ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇRFMYOLYSISBTMELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇRFMYOLYSISBTMELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydRFMYOLYSISBTMELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4712NH"}}
+{"treatmentId": "BJ4712NH", "name": "CTI ELECTRODE SERIES", "path": "치료재료/고주파 자궁근종용해술용/CTI ELECTRODE SERIES", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇCTIELECTRODESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇCTIELECTRODESERIES", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydCTIELECTRODESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4712PY"}}
+{"treatmentId": "BJ4712PY", "name": "STAR BIPOLAR RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/STAR BIPOLAR RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇSTARBIPOLARRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇSTARBIPOLARRFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydSTARBIPOLARRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4713KY"}}
+{"treatmentId": "BJ4713KY", "name": "VCTM", "path": "치료재료/고주파 자궁근종용해술용/VCTM", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇVCTM", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇVCTM", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydVCTM"}
+{"index": { "_index": "treatment", "_id": "BJ4713PY"}}
+{"treatmentId": "BJ4713PY", "name": "STAR RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/STAR RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇSTARRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇSTARRFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydSTARRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4714KY"}}
+{"treatmentId": "BJ4714KY", "name": "HEMOTIP/TIMCO", "path": "치료재료/고주파 자궁근종용해술용/HEMOTIP/TIMCO", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇHEMOTIPTIMCO", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇHEMOTIPTIMCO", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydHEMOTIPTIMCO"}
+{"index": { "_index": "treatment", "_id": "BJ4714PY"}}
+{"treatmentId": "BJ4714PY", "name": "VIVA RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/VIVA RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇVIVARFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇVIVARFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydVIVARFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4715PY"}}
+{"treatmentId": "BJ4715PY", "name": "STAR INJECTABLE RF ELECTRODE", "path": "치료재료/고주파 자궁근종용해술용/STAR INJECTABLE RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅈㅍㅈㄱㄱㅈㅇㅎㅅㅇSTARINJECTABLERFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅗㅈㅜㅍㅏㅈㅏㄱㅜㅇㄱㅡㄴㅈㅗㅇㅇㅛㅇㅎㅐㅅㅜㄹㅇㅛㅇSTARINJECTABLERFELECTRODE", "engtokor": "clfywofyrhwnvkwkrndrmswhddydgotnfdydSTARINJECTABLERFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4701DU"}}
+{"treatmentId": "BJ4701DU", "name": "COOL-TIP RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/COOL-TIP RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇCOOLTIPRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇCOOLTIPRFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydCOOLTIPRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4701GX"}}
+{"treatmentId": "BJ4701GX", "name": "WELL-POINT RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/WELL-POINT RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇWELLPOINTRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇWELLPOINTRFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydWELLPOINTRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4701HS"}}
+{"treatmentId": "BJ4701HS", "name": "TCHP시리즈", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/TCHP시리즈", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇTCHPㅅㄹㅈ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇTCHPㅅㅣㄹㅣㅈㅡ", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydTCHPtlflwm"}
+{"index": { "_index": "treatment", "_id": "BJ4701KY"}}
+{"treatmentId": "BJ4701KY", "name": "RFA ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/RFA ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇRFAELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇRFAELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydRFAELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4701NH"}}
+{"treatmentId": "BJ4701NH", "name": "COATHERM ELECTRODE SERIES", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/COATHERM ELECTRODE SERIES", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇCOATHERMELECTRODESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇCOATHERMELECTRODESERIES", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydCOATHERMELECTRODESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4701PY"}}
+{"treatmentId": "BJ4701PY", "name": "OCTOPUS RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/OCTOPUS RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇOCTOPUSRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇOCTOPUSRFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydOCTOPUSRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4702DU"}}
+{"treatmentId": "BJ4702DU", "name": "COOL-TIP E SERIES ", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/COOL-TIP E SERIES ", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇCOOLTIPESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇCOOLTIPESERIES", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydCOOLTIPESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4702KY"}}
+{"treatmentId": "BJ4702KY", "name": "RFT-ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/RFT-ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇRFTELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇRFTELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydRFTELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4702NH"}}
+{"treatmentId": "BJ4702NH", "name": "CTI ELECTRODE SERIES", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/CTI ELECTRODE SERIES", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇCTIELECTRODESERIES", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇCTIELECTRODESERIES", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydCTIELECTRODESERIES"}
+{"index": { "_index": "treatment", "_id": "BJ4702PY"}}
+{"treatmentId": "BJ4702PY", "name": "STAR BIPOLAR RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/STAR BIPOLAR RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇSTARBIPOLARRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇSTARBIPOLARRFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydSTARBIPOLARRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4703PY"}}
+{"treatmentId": "BJ4703PY", "name": "STAR RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/STAR RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇSTARRFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇSTARRFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydSTARRFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4704PY"}}
+{"treatmentId": "BJ4704PY", "name": "VIVA RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/VIVA RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇVIVARFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇVIVARFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydVIVARFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BJ4705PY"}}
+{"treatmentId": "BJ4705PY", "name": "STAR INJECTABLE RF ELECTRODE", "path": "치료재료/갑상선 양성결절의 고주파 열치료용/STAR INJECTABLE RF ELECTRODE", "chosung": "ㅊㄹㅈㄹㄱㅅㅅㅇㅅㄱㅈㅇㄱㅈㅍㅇㅊㄹㅇSTARINJECTABLERFELECTRODE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅏㅂㅅㅏㅇㅅㅓㄴㅇㅑㅇㅅㅓㅇㄱㅕㄹㅈㅓㄹㅇㅢㄱㅗㅈㅜㅍㅏㅇㅕㄹㅊㅣㄹㅛㅇㅛㅇSTARINJECTABLERFELECTRODE", "engtokor": "clfywofyrkqtkdtjsdidtjdrufwjfdmlrhwnvkdufclfydydSTARINJECTABLERFELECTRODE"}
+{"index": { "_index": "treatment", "_id": "BM0001EE"}}
+{"treatmentId": "BM0001EE", "name": "MAMMOTOME SYSTEM(PROBE & VACUUM SET)", "path": "치료재료/유방 생검용/MAMMOTOME SYSTEM(PROBE & VACUUM SET)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇMAMMOTOMESYSTEMPROBEVACUUMSET", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇMAMMOTOMESYSTEMPROBEVACUUMSET", "engtokor": "clfywofydbqkdtodrjadydMAMMOTOMESYSTEMPROBEVACUUMSET"}
+{"index": { "_index": "treatment", "_id": "BM0001MT"}}
+{"treatmentId": "BM0001MT", "name": "ATEC(PROBE & VACCUM SET)", "path": "치료재료/유방 생검용/ATEC(PROBE & VACCUM SET)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇATECPROBEVACCUMSET", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇATECPROBEVACCUMSET", "engtokor": "clfywofydbqkdtodrjadydATECPROBEVACCUMSET"}
+{"index": { "_index": "treatment", "_id": "BM0001ZC"}}
+{"treatmentId": "BM0001ZC", "name": "BEXCORE(PROBE & VACUUM SET)", "path": "치료재료/유방 생검용/BEXCORE(PROBE & VACUUM SET)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇBEXCOREPROBEVACUUMSET", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇBEXCOREPROBEVACUUMSET", "engtokor": "clfywofydbqkdtodrjadydBEXCOREPROBEVACUUMSET"}
+{"index": { "_index": "treatment", "_id": "BM0002GU"}}
+{"treatmentId": "BM0002GU", "name": "ENCOR BIOPSY PROBES(PROBE + RINSE/VACUUM TUBINHG ASSEMBLY)", "path": "치료재료/유방 생검용/ENCOR BIOPSY PROBES(PROBE + RINSE/VACUUM TUBINHG ASSEMBLY)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇENCORBIOPSYPROBESPROBERINSEVACUUMTUBINHGASSEMBLY", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇENCORBIOPSYPROBESPROBERINSEVACUUMTUBINHGASSEMBLY", "engtokor": "clfywofydbqkdtodrjadydENCORBIOPSYPROBESPROBERINSEVACUUMTUBINHGASSEMBLY"}
+{"index": { "_index": "treatment", "_id": "BM0002MT"}}
+{"treatmentId": "BM0002MT", "name": "EVIVA(PROBE & VACCUM SET)", "path": "치료재료/유방 생검용/EVIVA(PROBE & VACCUM SET)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇEVIVAPROBEVACCUMSET", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇEVIVAPROBEVACCUMSET", "engtokor": "clfywofydbqkdtodrjadydEVIVAPROBEVACCUMSET"}
+{"index": { "_index": "treatment", "_id": "BM0003EE"}}
+{"treatmentId": "BM0003EE", "name": "MAMMOTOME ELITE BIOPSY SYSTEM(MEH1, MEP13)", "path": "치료재료/유방 생검용/MAMMOTOME ELITE BIOPSY SYSTEM(MEH1, MEP13)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇMAMMOTOMEELITEBIOPSYSYSTEMMEH1MEP13", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇMAMMOTOMEELITEBIOPSYSYSTEMMEH1MEP13", "engtokor": "clfywofydbqkdtodrjadydMAMMOTOMEELITEBIOPSYSYSTEMMEH1MEP13"}
+{"index": { "_index": "treatment", "_id": "BM0004EE"}}
+{"treatmentId": "BM0004EE", "name": "MAMMOTOME REVOLVE SYSTEM(PROBE & VACUUM SET)", "path": "치료재료/유방 생검용/MAMMOTOME REVOLVE SYSTEM(PROBE & VACUUM SET)", "chosung": "ㅊㄹㅈㄹㅇㅂㅅㄱㅇMAMMOTOMEREVOLVESYSTEMPROBEVACUUMSET", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅠㅂㅏㅇㅅㅐㅇㄱㅓㅁㅇㅛㅇMAMMOTOMEREVOLVESYSTEMPROBEVACUUMSET", "engtokor": "clfywofydbqkdtodrjadydMAMMOTOMEREVOLVESYSTEMPROBEVACUUMSET"}
+{"index": { "_index": "treatment", "_id": "BM0001BM"}}
+{"treatmentId": "BM0001BM", "name": "EXPECT PULMONARY EBUS-TRAN", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/EXPECT PULMONARY EBUS-TRAN", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇEXPECTPULMONARYEBUSTRAN", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇEXPECTPULMONARYEBUSTRAN", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydEXPECTPULMONARYEBUSTRAN"}
+{"index": { "_index": "treatment", "_id": "BM0004LV"}}
+{"treatmentId": "BM0004LV", "name": "VIZISHOT", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/VIZISHOT", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇVIZISHOT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇVIZISHOT", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydVIZISHOT"}
+{"index": { "_index": "treatment", "_id": "BM0004OQ"}}
+{"treatmentId": "BM0004OQ", "name": "ECHOTIP ULTRA ENDOBRONCHIAL HIGH DEFINITION ULTRASOUND NEEDLE", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/ECHOTIP ULTRA ENDOBRONCHIAL HIGH DEFINITION ULTRASOUND NEEDLE", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇECHOTIPULTRAENDOBRONCHIALHIGHDEFINITIONULTRASOUNDNEEDLE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇECHOTIPULTRAENDOBRONCHIALHIGHDEFINITIONULTRASOUNDNEEDLE", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydECHOTIPULTRAENDOBRONCHIALHIGHDEFINITIONULTRASOUNDNEEDLE"}
+{"index": { "_index": "treatment", "_id": "BM0004ZB"}}
+{"treatmentId": "BM0004ZB", "name": "SONO TIP", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/SONO TIP", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇSONOTIP", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇSONOTIP", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydSONOTIP"}
+{"index": { "_index": "treatment", "_id": "BM0005LV"}}
+{"treatmentId": "BM0005LV", "name": "VIZISHOT2", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/VIZISHOT2", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇVIZISHOT2", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇVIZISHOT2", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydVIZISHOT2"}
+{"index": { "_index": "treatment", "_id": "BM0005OQ"}}
+{"treatmentId": "BM0005OQ", "name": "ECHOTIP PROCORE HD ENDOBRONCHIAL ULTRASOUND BIOPSY NEEDLE", "path": "치료재료/기관지내시경 초음파를 이용한 세침흡인술용/ECHOTIP PROCORE HD ENDOBRONCHIAL ULTRASOUND BIOPSY NEEDLE", "chosung": "ㅊㄹㅈㄹㄱㄱㅈㄴㅅㄱㅊㅇㅍㄹㅇㅇㅎㅅㅊㅎㅇㅅㅇECHOTIPPROCOREHDENDOBRONCHIALULTRASOUNDBIOPSYNEEDLE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㄱㅣㄱㅘㄴㅈㅣㄴㅐㅅㅣㄱㅕㅇㅊㅗㅇㅡㅁㅍㅏㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅅㅔㅊㅣㅁㅎㅡㅂㅇㅣㄴㅅㅜㄹㅇㅛㅇECHOTIPPROCOREHDENDOBRONCHIALULTRASOUNDBIOPSYNEEDLE", "engtokor": "clfywofyrlrhkswlsotlrudchdmavkfmfdldydgkstpclagmqdlstnfdydECHOTIPPROCOREHDENDOBRONCHIALULTRASOUNDBIOPSYNEEDLE"}
+{"index": { "_index": "treatment", "_id": "BF0100RJ"}}
+{"treatmentId": "BF0100RJ", "name": "OXIPLEX1 ", "path": "치료재료/척추경막외 유착방지제/OXIPLEX1 ", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈOXIPLEX1", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔOXIPLEX1", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpOXIPLEX1"}
+{"index": { "_index": "treatment", "_id": "BF0100VD"}}
+{"treatmentId": "BF0100VD", "name": "INTERBLOCK", "path": "치료재료/척추경막외 유착방지제/INTERBLOCK", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈINTERBLOCK", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔINTERBLOCK", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpINTERBLOCK"}
+{"index": { "_index": "treatment", "_id": "BF0101AW"}}
+{"treatmentId": "BF0101AW", "name": "MEDISHIELD ANTI-ADHESION GEL", "path": "치료재료/척추경막외 유착방지제/MEDISHIELD ANTI-ADHESION GEL", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈMEDISHIELDANTIADHESIONGEL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔMEDISHIELDANTIADHESIONGEL", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpMEDISHIELDANTIADHESIONGEL"}
+{"index": { "_index": "treatment", "_id": "BF0101AY"}}
+{"treatmentId": "BF0101AY", "name": "ADCON-GEL(BF0101AY)", "path": "치료재료/척추경막외 유착방지제/ADCON-GEL(BF0101AY)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈADCONGELBF0101AY", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔADCONGELBF0101AY", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpADCONGELBF0101AY"}
+{"index": { "_index": "treatment", "_id": "BF0101VT"}}
+{"treatmentId": "BF0101VT", "name": "하이배리(HIBARRY)", "path": "치료재료/척추경막외 유착방지제/하이배리(HIBARRY)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈㅎㅇㅂㄹHIBARRY", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔㅎㅏㅇㅣㅂㅐㄹㅣHIBARRY", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpgkdlqoflHIBARRY"}
+{"index": { "_index": "treatment", "_id": "BF0101WC"}}
+{"treatmentId": "BF0101WC", "name": "큐블럭(QBLOCK)", "path": "치료재료/척추경막외 유착방지제/큐블럭(QBLOCK)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈㅋㅂㄹQBLOCK", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔㅋㅠㅂㅡㄹㄹㅓㄱQBLOCK", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpzbqmffjrQBLOCK"}
+{"index": { "_index": "treatment", "_id": "BF0103AY"}}
+{"treatmentId": "BF0103AY", "name": "ADCON-GEL(BF0103AY)", "path": "치료재료/척추경막외 유착방지제/ADCON-GEL(BF0103AY)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈADCONGELBF0103AY", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔADCONGELBF0103AY", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpADCONGELBF0103AY"}
+{"index": { "_index": "treatment", "_id": "BM2101QT"}}
+{"treatmentId": "BM2101QT", "name": "MEDICLORE", "path": "치료재료/척추경막외 유착방지제/MEDICLORE", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈMEDICLORE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔMEDICLORE", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpMEDICLORE"}
+{"index": { "_index": "treatment", "_id": "BM2103JO"}}
+{"treatmentId": "BM2103JO", "name": "GUARDIX-SP PLUS(가딕스-SP PLUS),BARRIX(배릭스)", "path": "치료재료/척추경막외 유착방지제/GUARDIX-SP PLUS(가딕스-SP PLUS),BARRIX(배릭스)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈGUARDIXSPPLUSㄱㄷㅅSPPLUSBARRIXㅂㄹㅅ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔGUARDIXSPPLUSㄱㅏㄷㅣㄱㅅㅡSPPLUSBARRIXㅂㅐㄹㅣㄱㅅㅡ", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpGUARDIXSPPLUSrkelrtmSPPLUSBARRIXqoflrtm"}
+{"index": { "_index": "treatment", "_id": "BM2104JO"}}
+{"treatmentId": "BM2104JO", "name": "GUARDIX-SP(가딕스-SP),GUARDHEAL(가드힐)", "path": "치료재료/척추경막외 유착방지제/GUARDIX-SP(가딕스-SP),GUARDHEAL(가드힐)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈGUARDIXSPㄱㄷㅅSPGUARDHEALㄱㄷㅎ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔGUARDIXSPㄱㅏㄷㅣㄱㅅㅡSPGUARDHEALㄱㅏㄷㅡㅎㅣㄹ", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpGUARDIXSPrkelrtmSPGUARDHEALrkemglf"}
+{"index": { "_index": "treatment", "_id": "BF0100AJ"}}
+{"treatmentId": "BF0100AJ", "name": "ARTQ, COVER SEAL", "path": "치료재료/척추경막외 유착방지제/ARTQ, COVER SEAL", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈARTQCOVERSEAL", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔARTQCOVERSEAL", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpARTQCOVERSEAL"}
+{"index": { "_index": "treatment", "_id": "BF0100BK"}}
+{"treatmentId": "BF0100BK", "name": "X-AD", "path": "치료재료/척추경막외 유착방지제/X-AD", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈXAD", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔXAD", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpXAD"}
+{"index": { "_index": "treatment", "_id": "BF0100SX"}}
+{"treatmentId": "BF0100SX", "name": "수술엔(SUSUL N)", "path": "치료재료/척추경막외 유착방지제/수술엔(SUSUL N)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈㅅㅅㅇSUSULN", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔㅅㅜㅅㅜㄹㅇㅔㄴSUSULN", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwptntnfdpsSUSULN"}
+{"index": { "_index": "treatment", "_id": "BF0101BA"}}
+{"treatmentId": "BF0101BA", "name": "AMMI GUARD,GUARDIANWRAP,MEGABARRY, MCSHIELD (맥쉴드)", "path": "치료재료/척추경막외 유착방지제/AMMI GUARD,GUARDIANWRAP,MEGABARRY, MCSHIELD (맥쉴드)", "chosung": "ㅊㄹㅈㄹㅊㅊㄱㅁㅇㅇㅊㅂㅈㅈAMMIGUARDGUARDIANWRAPMEGABARRYMCSHIELDㅁㅅㄷ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅊㅓㄱㅊㅜㄱㅕㅇㅁㅏㄱㅇㅚㅇㅠㅊㅏㄱㅂㅏㅇㅈㅣㅈㅔAMMIGUARDGUARDIANWRAPMEGABARRYMCSHIELDㅁㅐㄱㅅㅟㄹㄷㅡ", "engtokor": "clfywofycjrcnrudakrdhldbckrqkdwlwpAMMIGUARDGUARDIANWRAPMEGABARRYMCSHIELDaortnlfem"}
+{"index": { "_index": "treatment", "_id": "BL6050GH"}}
+{"treatmentId": "BL6050GH", "name": "TRICELL BMC KIT", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/TRICELL BMC KIT", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇTRICELLBMCKIT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇTRICELLBMCKIT", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydTRICELLBMCKIT"}
+{"index": { "_index": "treatment", "_id": "BL6050RA"}}
+{"treatmentId": "BL6050RA", "name": "ABMC KIT-A", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/ABMC KIT-A", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇABMCKITA", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇABMCKITA", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydABMCKITA"}
+{"index": { "_index": "treatment", "_id": "BL6051BG"}}
+{"treatmentId": "BL6051BG", "name": "BIOCUE CONCENTRATION SYSTEM", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/BIOCUE CONCENTRATION SYSTEM", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇBIOCUECONCENTRATIONSYSTEM", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇBIOCUECONCENTRATIONSYSTEM", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydBIOCUECONCENTRATIONSYSTEM"}
+{"index": { "_index": "treatment", "_id": "BL6051VY"}}
+{"treatmentId": "BL6051VY", "name": "CHONDRO-GIDE", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/CHONDRO-GIDE", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇCHONDROGIDE", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇCHONDROGIDE", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydCHONDROGIDE"}
+{"index": { "_index": "treatment", "_id": "BL6050GD"}}
+{"treatmentId": "BL6050GD", "name": "PRO-BONE MARROW KIT", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/PRO-BONE MARROW KIT", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇPROBONEMARROWKIT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇPROBONEMARROWKIT", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydPROBONEMARROWKIT"}
+{"index": { "_index": "treatment", "_id": "BL6050QT"}}
+{"treatmentId": "BL6050QT", "name": "CGBMC KIT", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/CGBMC KIT", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇCGBMCKIT", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇCGBMCKIT", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydCGBMCKIT"}
+{"index": { "_index": "treatment", "_id": "BL6051FE"}}
+{"treatmentId": "BL6051FE", "name": "BMSC+3 60, BMSC+3 120", "path": "치료재료/연골 결손 환자에서의 자가 골수 줄기 세포 치료술용/BMSC+3 60, BMSC+3 120", "chosung": "ㅊㄹㅈㄹㅇㄱㄱㅅㅎㅈㅇㅅㅇㅈㄱㄱㅅㅈㄱㅅㅍㅊㄹㅅㅇBMSC360BMSC3120", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅇㅕㄴㄱㅗㄹㄱㅕㄹㅅㅗㄴㅎㅘㄴㅈㅏㅇㅔㅅㅓㅇㅢㅈㅏㄱㅏㄱㅗㄹㅅㅜㅈㅜㄹㄱㅣㅅㅔㅍㅗㅊㅣㄹㅛㅅㅜㄹㅇㅛㅇBMSC360BMSC3120", "engtokor": "clfywofydusrhfrufthsghkswkdptjdmlwkrkrhftnwnfrltpvhclfytnfdydBMSC360BMSC3120"}
+{"index": { "_index": "treatment", "_id": "BM2020NQ"}}
+{"treatmentId": "BM2020NQ", "name": "UROLIFT SYSTEM(BM2020NQ)", "path": "치료재료/전립선 결찰술용 이식형 결찰사/UROLIFT SYSTEM(BM2020NQ)", "chosung": "ㅊㄹㅈㄹㅈㄹㅅㄱㅊㅅㅇㅇㅅㅎㄱㅊㅅUROLIFTSYSTEMBM2020NQ", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅓㄴㄹㅣㅂㅅㅓㄴㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅛㅇㅇㅣㅅㅣㄱㅎㅕㅇㄱㅕㄹㅊㅏㄹㅅㅏUROLIFTSYSTEMBM2020NQ", "engtokor": "clfywofywjsflqtjsrufckftnfdyddltlrgudrufckftkUROLIFTSYSTEMBM2020NQ"}
+{"index": { "_index": "treatment", "_id": "BM2020BN"}}
+{"treatmentId": "BM2020BN", "name": "UROLIFT SYSTEM(BM2020BN)", "path": "치료재료/전립선 결찰술용 이식형 결찰사/UROLIFT SYSTEM(BM2020BN)", "chosung": "ㅊㄹㅈㄹㅈㄹㅅㄱㅊㅅㅇㅇㅅㅎㄱㅊㅅUROLIFTSYSTEMBM2020BN", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅈㅓㄴㄹㅣㅂㅅㅓㄴㄱㅕㄹㅊㅏㄹㅅㅜㄹㅇㅛㅇㅇㅣㅅㅣㄱㅎㅕㅇㄱㅕㄹㅊㅏㄹㅅㅏUROLIFTSYSTEMBM2020BN", "engtokor": "clfywofywjsflqtjsrufckftnfdyddltlrgudrufckftkUROLIFTSYSTEMBM2020BN"}
+{"index": { "_index": "treatment", "_id": "BJ4321DU"}}
+{"treatmentId": "BJ4321DU", "name": "VENASEAL CLOSURE SYSTEM", "path": "치료재료/시아노아크릴레이트를 이용한 복재정맥 폐색술용/VENASEAL CLOSURE SYSTEM", "chosung": "ㅊㄹㅈㄹㅅㅇㄴㅇㅋㄹㄹㅇㅌㄹㅇㅇㅎㅂㅈㅈㅁㅍㅅㅅㅇVENASEALCLOSURESYSTEM", "jamo": "ㅊㅣㄹㅛㅈㅐㄹㅛㅅㅣㅇㅏㄴㅗㅇㅏㅋㅡㄹㅣㄹㄹㅔㅇㅣㅌㅡㄹㅡㄹㅇㅣㅇㅛㅇㅎㅏㄴㅂㅗㄱㅈㅐㅈㅓㅇㅁㅐㄱㅍㅖㅅㅐㄱㅅㅜㄹㅇㅛㅇVENASEALCLOSURESYSTEM", "engtokor": "clfywofytldkshdkzmflffpdlxmfmfdldydgksqhrwowjdaorvPtortnfdydVENASEALCLOSURESYSTEM"}
+{"index": { "_index": "treatment", "_id": "NZ0010000"}}
+{"treatmentId": "NZ0010000", "name": "광치료", "path": "정신요법료/광치료", "chosung": "ㅈㅅㅇㅂㄹㄱㅊㄹ", "jamo": "ㅈㅓㅇㅅㅣㄴㅇㅛㅂㅓㅂㄹㅛㄱㅘㅇㅊㅣㄹㅛ", "engtokor": "wjdtlsdyqjqfyrhkdclfy"}
+{"index": { "_index": "treatment", "_id": "NZ0090000"}}
+{"treatmentId": "NZ0090000", "name": "신경발달중재치료", "path": "정신요법료/기타 행동치료/신경발달중재치료", "chosung": "ㅈㅅㅇㅂㄹㄱㅌㅎㄷㅊㄹㅅㄱㅂㄷㅈㅈㅊㄹ", "jamo": "ㅈㅓㅇㅅㅣㄴㅇㅛㅂㅓㅂㄹㅛㄱㅣㅌㅏㅎㅐㅇㄷㅗㅇㅊㅣㄹㅛㅅㅣㄴㄱㅕㅇㅂㅏㄹㄷㅏㄹㅈㅜㅇㅈㅐㅊㅣㄹㅛ", "engtokor": "wjdtlsdyqjqfyrlxkgodehdclfytlsrudqkfekfwndwoclfy"}
+{"index": { "_index": "treatment", "_id": "NZ0110000"}}
+{"treatmentId": "NZ0110000", "name": "정신분석적 정신치료", "path": "정신요법료/정신분석적 정신치료", "chosung": "ㅈㅅㅇㅂㄹㅈㅅㅂㅅㅈㅈㅅㅊㄹ", "jamo": "ㅈㅓㅇㅅㅣㄴㅇㅛㅂㅓㅂㄹㅛㅈㅓㅇㅅㅣㄴㅂㅜㄴㅅㅓㄱㅈㅓㄱㅈㅓㅇㅅㅣㄴㅊㅣㄹㅛ", "engtokor": "wjdtlsdyqjqfywjdtlsqnstjrwjrwjdtlsclfy"}
+{"index": { "_index": "treatment", "_id": "PDZ010000"}}
+{"treatmentId": "PDZ010000", "name": "일반", "path": "제증명수수료/진단서/일반", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄷㅅㅇㅂ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄷㅏㄴㅅㅓㅇㅣㄹㅂㅏㄴ", "engtokor": "wpwmdaudtntnfywlsekstjdlfqks"}
+{"index": { "_index": "treatment", "_id": "PDZ010001"}}
+{"treatmentId": "PDZ010001", "name": "건강", "path": "제증명수수료/진단서/건강", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄷㅅㄱㄱ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄷㅏㄴㅅㅓㄱㅓㄴㄱㅏㅇ", "engtokor": "wpwmdaudtntnfywlsekstjrjsrkd"}
+{"index": { "_index": "treatment", "_id": "PDZ010002"}}
+{"treatmentId": "PDZ010002", "name": "근로능력평가용", "path": "제증명수수료/진단서/근로능력평가용", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄷㅅㄱㄹㄴㄹㅍㄱㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄷㅏㄴㅅㅓㄱㅡㄴㄹㅗㄴㅡㅇㄹㅕㄱㅍㅕㅇㄱㅏㅇㅛㅇ", "engtokor": "wpwmdaudtntnfywlsekstjrmsfhsmdfurvudrkdyd"}
+{"index": { "_index": "treatment", "_id": "PDZ030000"}}
+{"treatmentId": "PDZ030000", "name": "사망진단서", "path": "제증명수수료/사망진단서", "chosung": "ㅈㅈㅁㅅㅅㄹㅅㅁㅈㄷㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅅㅏㅁㅏㅇㅈㅣㄴㄷㅏㄴㅅㅓ", "engtokor": "wpwmdaudtntnfytkakdwlsekstj"}
+{"index": { "_index": "treatment", "_id": "PDZ080000"}}
+{"treatmentId": "PDZ080000", "name": "병무용진단서", "path": "제증명수수료/병무용진단서", "chosung": "ㅈㅈㅁㅅㅅㄹㅂㅁㅇㅈㄷㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅂㅕㅇㅁㅜㅇㅛㅇㅈㅣㄴㄷㅏㄴㅅㅓ", "engtokor": "wpwmdaudtntnfyqudandydwlsekstj"}
+{"index": { "_index": "treatment", "_id": "PDZ100000"}}
+{"treatmentId": "PDZ100000", "name": "국민연금 장애 심사용 진단서", "path": "제증명수수료/국민연금 장애 심사용 진단서", "chosung": "ㅈㅈㅁㅅㅅㄹㄱㅁㅇㄱㅈㅇㅅㅅㅇㅈㄷㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㄱㅜㄱㅁㅣㄴㅇㅕㄴㄱㅡㅁㅈㅏㅇㅇㅐㅅㅣㅁㅅㅏㅇㅛㅇㅈㅣㄴㄷㅏㄴㅅㅓ", "engtokor": "wpwmdaudtntnfyrnralsdusrmawkddotlatkdydwlsekstj"}
+{"index": { "_index": "treatment", "_id": "PDZ020001"}}
+{"treatmentId": "PDZ020001", "name": "3주 미만", "path": "제증명수수료/상해진단서/3주 미만", "chosung": "ㅈㅈㅁㅅㅅㄹㅅㅎㅈㄷㅅ3ㅈㅁㅁ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅅㅏㅇㅎㅐㅈㅣㄴㄷㅏㄴㅅㅓ3ㅈㅜㅁㅣㅁㅏㄴ", "engtokor": "wpwmdaudtntnfytkdgowlsekstj3wnalaks"}
+{"index": { "_index": "treatment", "_id": "PDZ020002"}}
+{"treatmentId": "PDZ020002", "name": "3주 이상", "path": "제증명수수료/상해진단서/3주 이상", "chosung": "ㅈㅈㅁㅅㅅㄹㅅㅎㅈㄷㅅ3ㅈㅇㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅅㅏㅇㅎㅐㅈㅣㄴㄷㅏㄴㅅㅓ3ㅈㅜㅇㅣㅅㅏㅇ", "engtokor": "wpwmdaudtntnfytkdgowlsekstj3wndltkd"}
+{"index": { "_index": "treatment", "_id": "PDE010001"}}
+{"treatmentId": "PDE010001", "name": "일반", "path": "제증명수수료/영문진단서/일반", "chosung": "ㅈㅈㅁㅅㅅㄹㅇㅁㅈㄷㅅㅇㅂ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅇㅕㅇㅁㅜㄴㅈㅣㄴㄷㅏㄴㅅㅓㅇㅣㄹㅂㅏㄴ", "engtokor": "wpwmdaudtntnfydudanswlsekstjdlfqks"}
+{"index": { "_index": "treatment", "_id": "PDZ090002"}}
+{"treatmentId": "PDZ090002", "name": "입퇴원", "path": "제증명수수료/확인서/입퇴원", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅇㅅㅇㅌㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅘㄱㅇㅣㄴㅅㅓㅇㅣㅂㅌㅚㅇㅝㄴ", "engtokor": "wpwmdaudtntnfyghkrdlstjdlqxhldnjs"}
+{"index": { "_index": "treatment", "_id": "PDZ090004"}}
+{"treatmentId": "PDZ090004", "name": "통원", "path": "제증명수수료/확인서/통원", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅇㅅㅌㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅘㄱㅇㅣㄴㅅㅓㅌㅗㅇㅇㅝㄴ", "engtokor": "wpwmdaudtntnfyghkrdlstjxhddnjs"}
+{"index": { "_index": "treatment", "_id": "PDZ090007"}}
+{"treatmentId": "PDZ090007", "name": "진료", "path": "제증명수수료/확인서/진료", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅇㅅㅈㄹ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅘㄱㅇㅣㄴㅅㅓㅈㅣㄴㄹㅛ", "engtokor": "wpwmdaudtntnfyghkrdlstjwlsfy"}
+{"index": { "_index": "treatment", "_id": "PDZ140001"}}
+{"treatmentId": "PDZ140001", "name": "천만원 미만", "path": "제증명수수료/향후진료비추정서/천만원 미만", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅎㅈㄹㅂㅊㅈㅅㅊㅁㅇㅁㅁ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅑㅇㅎㅜㅈㅣㄴㄹㅛㅂㅣㅊㅜㅈㅓㅇㅅㅓㅊㅓㄴㅁㅏㄴㅇㅝㄴㅁㅣㅁㅏㄴ", "engtokor": "wpwmdaudtntnfygidgnwlsfyqlcnwjdtjcjsaksdnjsalaks"}
+{"index": { "_index": "treatment", "_id": "PDZ140002"}}
+{"treatmentId": "PDZ140002", "name": "천만원 이상", "path": "제증명수수료/향후진료비추정서/천만원 이상", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅎㅈㄹㅂㅊㅈㅅㅊㅁㅇㅇㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅑㅇㅎㅜㅈㅣㄴㄹㅛㅂㅣㅊㅜㅈㅓㅇㅅㅓㅊㅓㄴㅁㅏㄴㅇㅝㄴㅇㅣㅅㅏㅇ", "engtokor": "wpwmdaudtntnfygidgnwlsfyqlcnwjdtjcjsaksdnjsdltkd"}
+{"index": { "_index": "treatment", "_id": "PDZ060000"}}
+{"treatmentId": "PDZ060000", "name": "출생증명서", "path": "제증명수수료/출생증명서", "chosung": "ㅈㅈㅁㅅㅅㄹㅊㅅㅈㅁㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅊㅜㄹㅅㅐㅇㅈㅡㅇㅁㅕㅇㅅㅓ", "engtokor": "wpwmdaudtntnfycnftodwmdaudtj"}
+{"index": { "_index": "treatment", "_id": "PDZ040000"}}
+{"treatmentId": "PDZ040000", "name": "시체검안서", "path": "제증명수수료/시체검안서", "chosung": "ㅈㅈㅁㅅㅅㄹㅅㅊㄱㅇㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅅㅣㅊㅔㄱㅓㅁㅇㅏㄴㅅㅓ", "engtokor": "wpwmdaudtntnfytlcprjadkstj"}
+{"index": { "_index": "treatment", "_id": "PDZ170000"}}
+{"treatmentId": "PDZ170000", "name": "장애인증명서", "path": "제증명수수료/장애인증명서", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㅇㅇㅈㅁㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅏㅇㅇㅐㅇㅣㄴㅈㅡㅇㅁㅕㅇㅅㅓ", "engtokor": "wpwmdaudtntnfywkddodlswmdaudtj"}
+{"index": { "_index": "treatment", "_id": "PDZ050000"}}
+{"treatmentId": "PDZ050000", "name": "사산(사태)증명서", "path": "제증명수수료/사산(사태)증명서", "chosung": "ㅈㅈㅁㅅㅅㄹㅅㅅㅅㅌㅈㅁㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅅㅏㅅㅏㄴㅅㅏㅌㅐㅈㅡㅇㅁㅕㅇㅅㅓ", "engtokor": "wpwmdaudtntnfytktkstkxowmdaudtj"}
+{"index": { "_index": "treatment", "_id": "PDZ150000"}}
+{"treatmentId": "PDZ150000", "name": "입원사실 증명서", "path": "제증명수수료/입원사실 증명서", "chosung": "ㅈㅈㅁㅅㅅㄹㅇㅇㅅㅅㅈㅁㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅇㅣㅂㅇㅝㄴㅅㅏㅅㅣㄹㅈㅡㅇㅁㅕㅇㅅㅓ", "engtokor": "wpwmdaudtntnfydlqdnjstktlfwmdaudtj"}
+{"index": { "_index": "treatment", "_id": "PDZ010003"}}
+{"treatmentId": "PDZ010003", "name": "공무원", "path": "제증명수수료/채용신체 검사서/공무원", "chosung": "ㅈㅈㅁㅅㅅㄹㅊㅇㅅㅊㄱㅅㅅㄱㅁㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅊㅐㅇㅛㅇㅅㅣㄴㅊㅔㄱㅓㅁㅅㅏㅅㅓㄱㅗㅇㅁㅜㅇㅝㄴ", "engtokor": "wpwmdaudtntnfycodydtlscprjatktjrhdandnjs"}
+{"index": { "_index": "treatment", "_id": "PDZ010004"}}
+{"treatmentId": "PDZ010004", "name": "일반", "path": "제증명수수료/채용신체 검사서/일반", "chosung": "ㅈㅈㅁㅅㅅㄹㅊㅇㅅㅊㄱㅅㅅㅇㅂ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅊㅐㅇㅛㅇㅅㅣㄴㅊㅔㄱㅓㅁㅅㅏㅅㅓㅇㅣㄹㅂㅏㄴ", "engtokor": "wpwmdaudtntnfycodydtlscprjatktjdlfqks"}
+{"index": { "_index": "treatment", "_id": "PDZ110101"}}
+{"treatmentId": "PDZ110101", "name": "1~5매", "path": "제증명수수료/진료기록사본/1~5매", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅅㅂ15ㅁ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅅㅏㅂㅗㄴ15ㅁㅐ", "engtokor": "wpwmdaudtntnfywlsfyrlfhrtkqhs15ao"}
+{"index": { "_index": "treatment", "_id": "PDZ110102"}}
+{"treatmentId": "PDZ110102", "name": "6매 이상", "path": "제증명수수료/진료기록사본/6매 이상", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅅㅂ6ㅁㅇㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅅㅏㅂㅗㄴ6ㅁㅐㅇㅣㅅㅏㅇ", "engtokor": "wpwmdaudtntnfywlsfyrlfhrtkqhs6aodltkd"}
+{"index": { "_index": "treatment", "_id": "PDZ110003"}}
+{"treatmentId": "PDZ110003", "name": "필름", "path": "제증명수수료/진료기록영상/필름", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅇㅅㅍㄹ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅇㅕㅇㅅㅏㅇㅍㅣㄹㄹㅡㅁ", "engtokor": "wpwmdaudtntnfywlsfyrlfhrdudtkdvlffma"}
+{"index": { "_index": "treatment", "_id": "PDZ110004"}}
+{"treatmentId": "PDZ110004", "name": "CD", "path": "제증명수수료/진료기록영상/CD", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅇㅅCD", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅇㅕㅇㅅㅏㅇCD", "engtokor": "wpwmdaudtntnfywlsfyrlfhrdudtkdCD"}
+{"index": { "_index": "treatment", "_id": "PDZ110005"}}
+{"treatmentId": "PDZ110005", "name": "DVD", "path": "제증명수수료/진료기록영상/DVD", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅇㅅDVD", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅇㅕㅇㅅㅏㅇDVD", "engtokor": "wpwmdaudtntnfywlsfyrlfhrdudtkdDVD"}
+{"index": { "_index": "treatment", "_id": "PDZ110006"}}
+{"treatmentId": "PDZ110006", "name": "USB", "path": "제증명수수료/진료기록영상/USB", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㄹㄱㄹㅇㅅUSB", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅣㄴㄹㅛㄱㅣㄹㅗㄱㅇㅕㅇㅅㅏㅇUSB", "engtokor": "wpwmdaudtntnfywlsfyrlfhrdudtkdUSB"}
+{"index": { "_index": "treatment", "_id": "PDZ160000"}}
+{"treatmentId": "PDZ160000", "name": "제증명서 사본", "path": "제증명수수료/제증명서 사본", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㅈㅁㅅㅅㅂ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅔㅈㅡㅇㅁㅕㅇㅅㅓㅅㅏㅂㅗㄴ", "engtokor": "wpwmdaudtntnfywpwmdaudtjtkqhs"}
+{"index": { "_index": "treatment", "_id": "PDZ070001"}}
+{"treatmentId": "PDZ070001", "name": "신체적장애", "path": "제증명수수료/장애 정도 심사용 진단서/신체적장애", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㅇㅈㄷㅅㅅㅇㅈㄷㅅㅅㅊㅈㅈㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅏㅇㅇㅐㅈㅓㅇㄷㅗㅅㅣㅁㅅㅏㅇㅛㅇㅈㅣㄴㄷㅏㄴㅅㅓㅅㅣㄴㅊㅔㅈㅓㄱㅈㅏㅇㅇㅐ", "engtokor": "wpwmdaudtntnfywkddowjdehtlatkdydwlsekstjtlscpwjrwkddo"}
+{"index": { "_index": "treatment", "_id": "PDZ070002"}}
+{"treatmentId": "PDZ070002", "name": "정신적장애", "path": "제증명수수료/장애 정도 심사용 진단서/정신적장애", "chosung": "ㅈㅈㅁㅅㅅㄹㅈㅇㅈㄷㅅㅅㅇㅈㄷㅅㅈㅅㅈㅈㅇ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅈㅏㅇㅇㅐㅈㅓㅇㄷㅗㅅㅣㅁㅅㅏㅇㅛㅇㅈㅣㄴㄷㅏㄴㅅㅓㅈㅓㅇㅅㅣㄴㅈㅓㄱㅈㅏㅇㅇㅐ", "engtokor": "wpwmdaudtntnfywkddowjdehtlatkdydwlsekstjwjdtlswjrwkddo"}
+{"index": { "_index": "treatment", "_id": "PDZ070003"}}
+{"treatmentId": "PDZ070003", "name": "후유장애진단서", "path": "제증명수수료/후유장애진단서", "chosung": "ㅈㅈㅁㅅㅅㄹㅎㅇㅈㅇㅈㄷㅅ", "jamo": "ㅈㅔㅈㅡㅇㅁㅕㅇㅅㅜㅅㅜㄹㅛㅎㅜㅇㅠㅈㅏㅇㅇㅐㅈㅣㄴㄷㅏㄴㅅㅓ", "engtokor": "wpwmdaudtntnfygndbwkddowlsekstj"}

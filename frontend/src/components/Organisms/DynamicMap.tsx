@@ -27,7 +27,6 @@ const DynamicMap: React.FC<MapProps> = ({
   latitude,
   longitude,
   data,
-  scale,
   onClick,
   onLocationChange,
 }) => {

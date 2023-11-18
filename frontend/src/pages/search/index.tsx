@@ -173,6 +173,47 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedPosition(event.target.value);
+    setPageNum(1);
+    console.log(event.target.value);
+    if (event.target.value === "now") {
+      if (selectedSort === "cost") {
+        handlerSortByPriceInfo(
+          id,
+          Number(selectedDist),
+          mapCenter.latitude,
+          mapCenter.longitude,
+          0,
+          12
+        ).then((data) => setInitialData(data));
+      } else {
+        handlerSortByDistInfo(
+          id,
+          Number(selectedDist),
+          mapCenter.latitude,
+          mapCenter.longitude,
+          0,
+          12
+        ).then((data) => setInitialData(data));
+      }
+    } else if (selectedSort === "cost") {
+      handlerSortByPriceInfo(
+        id,
+        Number(selectedDist),
+        currentMapCenter.latitude,
+        currentMapCenter.longitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    } else {
+      handlerSortByDistInfo(
+        id,
+        Number(selectedDist),
+        currentMapCenter.latitude,
+        currentMapCenter.longitude,
+        0,
+        12
+      ).then((data) => setInitialData(data));
+    }
   };
 
   const onSelectDistChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -236,13 +277,25 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
           <div className="search-title">{path} 검색 결과</div>
           <div className="search-result-container">
             <div className="search-map">
-              <DynamicMap
-                latitude={mapCenter.latitude}
-                longitude={mapCenter.longitude}
-                data={initialData.content}
-                onClick={onClick}
-                onLocationChange={onLocationChange}
-              />
+              {selectedPosition === "map" && (
+                <DynamicMap
+                  latitude={currentMapCenter.latitude}
+                  longitude={currentMapCenter.longitude}
+                  data={initialData.content}
+                  onClick={onClick}
+                  onLocationChange={onLocationChange}
+                />
+              )}
+              else
+              {
+                <DynamicMap
+                  latitude={mapCenter.latitude}
+                  longitude={mapCenter.longitude}
+                  data={initialData.content}
+                  onClick={onClick}
+                  onLocationChange={onLocationChange}
+                />
+              }
             </div>
             {detailVisible ? (
               <HospitalDetail

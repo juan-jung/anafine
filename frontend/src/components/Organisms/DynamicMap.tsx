@@ -15,10 +15,19 @@ interface MapProps {
   onLocationChange: (latitude: number, longitude: number) => void;
 }
 
+//반경에 따라 map level 설정함수
+const find_scale  = (scale) => {
+  if(scale == 1000) return 5;
+  else if(scale == 5000) return 6;
+  else if(scale == 10000) return 7;
+  else if(scale == 50000) return 10;
+}
+
 const DynamicMap: React.FC<MapProps> = ({
   latitude,
   longitude,
   data,
+  scale,
   onClick,
   onLocationChange,
 }) => {
@@ -27,13 +36,13 @@ const DynamicMap: React.FC<MapProps> = ({
       const script = document.createElement("script");
       script.async = true;
       script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAOMAP_APPKEY}&autoload=false`;
-
       script.onload = () => {
         window.kakao.maps.load(() => {
           const container = document.getElementById("map");
           const options = {
             center: new window.kakao.maps.LatLng(latitude, longitude),
-            level: 5,
+            // level: find_scale(scale),
+            level : 4,
             mapTypeId: window.kakao.maps.MapTypeId.ROADMAP,
           };
           const map = new window.kakao.maps.Map(container, options);
@@ -53,12 +62,17 @@ const DynamicMap: React.FC<MapProps> = ({
             markerImageSize,
             markerImageOptions
           );
+          
+          //페이지 내 데이터 기준으로 bounds 설정
+          var bounds = new window.kakao.maps.LatLngBounds();
 
           data.forEach((item) => {
-            const markerPosition = new window.kakao.maps.LatLng(
+              const markerPosition = new window.kakao.maps.LatLng(
               item.latitude,
               item.longitude
             );
+
+            bounds.extend(markerPosition)
 
             const marker = new window.kakao.maps.Marker({
               position: markerPosition,
@@ -118,6 +132,8 @@ const DynamicMap: React.FC<MapProps> = ({
               }
             );
           });
+
+          map.setBounds(bounds);
         });
       };
 

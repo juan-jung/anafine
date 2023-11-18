@@ -16,12 +16,12 @@ interface MapProps {
 }
 
 //반경에 따라 map level 설정함수
-const find_scale  = (scale) => {
-  if(scale == 1000) return 5;
-  else if(scale == 5000) return 6;
-  else if(scale == 10000) return 7;
-  else if(scale == 50000) return 10;
-}
+// const find_scale  = (scale) => {
+//   if(scale == 1000) return 5;
+//   else if(scale == 5000) return 6;
+//   else if(scale == 10000) return 7;
+//   else if(scale == 50000) return 10;
+// }
 
 const DynamicMap: React.FC<MapProps> = ({
   latitude,

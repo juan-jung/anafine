@@ -277,7 +277,15 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
           <div className="search-title">{path} 검색 결과</div>
           <div className="search-result-container">
             <div className="search-map">
-              {selectedPosition === "map" && (
+              {selectedPosition === "now" ? (
+                <DynamicMap
+                  latitude={mapCenter.latitude}
+                  longitude={mapCenter.longitude}
+                  data={initialData.content}
+                  onClick={onClick}
+                  onLocationChange={onLocationChange}
+                />
+              ) : (
                 <DynamicMap
                   latitude={currentMapCenter.latitude}
                   longitude={currentMapCenter.longitude}
@@ -286,16 +294,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                   onLocationChange={onLocationChange}
                 />
               )}
-              else
-              {
-                <DynamicMap
-                  latitude={mapCenter.latitude}
-                  longitude={mapCenter.longitude}
-                  data={initialData.content}
-                  onClick={onClick}
-                  onLocationChange={onLocationChange}
-                />
-              }
             </div>
             {detailVisible ? (
               <HospitalDetail

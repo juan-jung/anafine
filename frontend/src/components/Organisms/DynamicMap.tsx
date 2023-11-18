@@ -41,7 +41,7 @@ const DynamicMap: React.FC<MapProps> = ({
           const options = {
             center: new window.kakao.maps.LatLng(latitude, longitude),
             // level: find_scale(scale),
-            level : 4,
+            level: 4,
             mapTypeId: window.kakao.maps.MapTypeId.ROADMAP,
           };
           const map = new window.kakao.maps.Map(container, options);
@@ -61,17 +61,17 @@ const DynamicMap: React.FC<MapProps> = ({
             markerImageSize,
             markerImageOptions
           );
-          
+
           //페이지 내 데이터 기준으로 bounds 설정
-          var bounds = new window.kakao.maps.LatLngBounds();
+          const bounds = new window.kakao.maps.LatLngBounds();
 
           data.forEach((item) => {
-              const markerPosition = new window.kakao.maps.LatLng(
+            const markerPosition = new window.kakao.maps.LatLng(
               item.latitude,
               item.longitude
             );
 
-            bounds.extend(markerPosition)
+            bounds.extend(markerPosition);
 
             const marker = new window.kakao.maps.Marker({
               position: markerPosition,

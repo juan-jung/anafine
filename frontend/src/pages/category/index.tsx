@@ -123,7 +123,7 @@ const MainPage: NextPage<MainPageProps> = ({ category }) => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ backgroundImage: "url('https://spnimage.edaily.co.kr/images/photo/files/NP/S/2023/10/PS23102600106.jpg')" }}>
       <Head>
         <title>A.Na.Fine 카테고리 검색</title>
         <meta

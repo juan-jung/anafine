@@ -240,6 +240,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                 latitude={mapCenter.latitude}
                 longitude={mapCenter.longitude}
                 data={initialData.content}
+                scale={selectedDist}
                 onClick={onClick}
                 onLocationChange={onLocationChange}
               />

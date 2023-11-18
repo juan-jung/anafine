@@ -309,7 +309,7 @@ a {
 }
 
 .category-item.selected {
-  background-color: #0099ff;
+  background-color: rgb(60, 200, 130);
 }
 .category-item:hover {
   cursor: pointer;
@@ -405,7 +405,7 @@ a {
 }
 
 .selected-text {
-  background-color: #0099ff;
+  background-color: rgb(60, 200, 130);
   color: white;
 }
 

@@ -4,7 +4,6 @@ import { Icon } from "@iconify/react";
 import { styled } from "@mui/material";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import React, { useState } from "react";
-import { Button } from "components/atoms/Button";
 import TextArea from "components/atoms/TextArea";
 
 interface CategoryProps {
@@ -55,46 +54,45 @@ const CategoryTextBox: React.FC<CategoryProps> = ({
       {category.map((text, index) => (
         <div key={index} className="text-container">
           <TextArea
-            children={
-              <span>
-                <div className="icon-text-container">
-                  {text.name}
-                  <div className="icon-container">
-                    {text.isLeaf && (
-                      <div
-                        className="main-search-text"
-                        onClick={() => {
-                          window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}`;
-                        }}
-                      >
-                        검색
-                      </div>
-                    )}
-                    &nbsp;
-                    {text.info && (
-                      <div className="icon-wrapper">
-                        <CustomTooltip
-                          className="tooltip"
-                          title={text.info}
-                          placement="bottom"
-                          arrow
-                        >
-                          <Icon
-                            icon="fluent:info-20-regular"
-                            color="#888888"
-                            width="15"
-                            height="15"
-                          />
-                        </CustomTooltip>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </span>
-            }
             onClick={() => onTextAreaClick(index, text.categoryId, text.name)}
             className={selectedTextArea === index ? "selected-text" : ""}
-          />
+          >
+            <span>
+              <div className="icon-text-container">
+                {text.name}
+                <div className="icon-container">
+                  {text.isLeaf && (
+                    <div
+                      className="main-search-text"
+                      onClick={() => {
+                        window.location.href = `/search/?path=${text.path}&id=${text.treatmentId}`;
+                      }}
+                    >
+                      검색
+                    </div>
+                  )}
+                  &nbsp;
+                  {text.info && (
+                    <div className="icon-wrapper">
+                      <CustomTooltip
+                        className="tooltip"
+                        title={text.info}
+                        placement="bottom"
+                        arrow
+                      >
+                        <Icon
+                          icon="fluent:info-20-regular"
+                          color="#888888"
+                          width="15"
+                          height="15"
+                        />
+                      </CustomTooltip>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </span>
+          </TextArea>
         </div>
       ))}
     </div>

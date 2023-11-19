@@ -395,6 +395,11 @@ const Chatbot: React.FC = () => {
                 <h3 className={styles["chatbot-head"]}>AI 일반 대화</h3>
               </div>
               <div className={styles["chat-container"]}>
+                {isProcessing && (
+                  <div>
+                    <div className={styles["loading"]}>Loading</div>
+                  </div>
+                )}
                 {messages.map((msg, index) => (
                   <div
                     key={index}

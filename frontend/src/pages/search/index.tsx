@@ -157,7 +157,6 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
 
   const onClick = (id: string, latitude: number, longitude: number) => {
     setHospitalId(id);
-    setMapCenter({ latitude, longitude });
     setDetailVisible(true);
   };
 

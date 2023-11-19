@@ -9,6 +9,55 @@ const questionsDisease = [
   "통증 부위를 알려주세요.",
   "증상에 대해 알려주세요.",
 ];
+interface DiseasePredictionPopupProps {
+  onClose: () => void;
+  onAgree: () => void;
+}
+
+const DiseasePredictionPopup: React.FC<DiseasePredictionPopupProps> = ({
+  onClose,
+  onAgree,
+}) => {
+  return (
+    <div className={styles["popup"]}>
+      <h2 style={{ textAlign: "center" }}>질병 예측 서비스 이용 약관</h2>
+      <p style={{ textAlign: "left" }}>
+        1. 이 서비스는 전문적인{" "}
+        <span style={{ color: "red" }}>조언을 제공하는 것이 아닌 참고용</span>
+        이며, 정확한 진단이나 치료 방법을 제시하지 않습니다.
+        <br />
+        <br />
+        2. 이 서비스는 전문적인 의료 상담을 대체하지 않습니다. 자세하고{" "}
+        <span style={{ color: "red" }}>
+          정확한 증상을 위해 의료 전문가와 상담할 것을 강력히 권장
+        </span>
+        합니다.
+        <br />
+        <br />
+        3. 사용자가 제공하는 모든 정보는 사용자에게 일반적인 정보를 제공하는데
+        사용됩니다.
+        <br />
+        <br />
+        4. 사용자는 자신이 제공하는 정보를 기반으로 한{" "}
+        <span style={{ color: "red" }}>
+          응답이 의학적 판단이나 진단을 위한 것이 아님을 인지 후 사용
+        </span>
+        해야 합니다.
+        <br />
+        <br />
+      </p>
+      <div style={{ textAlign: "center" }}>
+        <button className={styles["button-agree"]} onClick={onAgree}>
+          동의
+        </button>
+        &nbsp;&nbsp;
+        <button className={styles["button-agree-secondary"]} onClick={onClose}>
+          닫기
+        </button>
+      </div>
+    </div>
+  );
+};
 
 const questionsNormal = ["안녕하세요. 무엇을 도와드릴까요?"];
 
@@ -29,6 +78,10 @@ const Chatbot: React.FC = () => {
   const [content, setContent] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [showDiseasePredictionPopup, setShowDiseasePredictionPopup] =
+    useState(false);
+
+  // useEffect(() => {}, [showDiseasePredictionPopup]);
 
   // 버튼 클릭 핸들러
   const handleModeChange = (mode: string) => {
@@ -192,11 +245,10 @@ const Chatbot: React.FC = () => {
       setIsLoading(true); // 로딩 시작
       const response = await handlerChatBot(sex, age, painArea, currentInput);
 
-      const responseText = `예상 질병: ${response.disease}
-
-      예상 원인: ${response.cause} 
+      const responseText = `예상 원인: ${response.cause} 
       
-      받아볼만한 검사: ${response.recommended_tests}`;
+받아볼만한 검사: ${response.recommended_tests}`;
+      // 예상 질병: ${response.disease}
 
       setMessages((messages) => [
         ...messages,
@@ -227,11 +279,34 @@ const Chatbot: React.FC = () => {
     }
   };
 
+  // 팝업
+  const handleImageClick = () => {
+    if (popupVisible) setShowDiseasePredictionPopup(true);
+    else handleOpenChatbot();
+  };
+
+  const handleAgree = () => {
+    if (popupVisible) {
+      setShowDiseasePredictionPopup(false);
+    }
+    handleOpenChatbot();
+  };
+
+  const handleClosePopup = () => {
+    if (popupVisible) setShowDiseasePredictionPopup(false); // 팝업을 닫기
+  };
+
   return (
     <div>
+      {showDiseasePredictionPopup && (
+        <DiseasePredictionPopup
+          onClose={handleClosePopup}
+          onAgree={handleAgree}
+        />
+      )}
       <div
         className={styles["chatbot-popup-container"]}
-        onClick={handleOpenChatbot}
+        onClick={handleImageClick}
       >
         <img
           src="/infoPic/chatbot.png"

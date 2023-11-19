@@ -10,13 +10,12 @@ const Pagination: React.FC<PaginationProps> = ({
   totalPages,
   onPageChange,
 }) => {
-  const isPprevButtonDisabled = pageNum <= 3;
-  const isPrevButtonDisabled = pageNum <= 1;
-  const isNextButtonDisabled = pageNum >= totalPages;
-  const isNnextButtonDisabled = pageNum >= totalPages - 2;
+  const isPprevButtonDisabled = pageNum - ((pageNum - 1) % 5) === 1;
+  const isPrevButtonDisabled = pageNum - ((pageNum - 1) % 5) - 5 < 1;
+  const isNextButtonDisabled = pageNum - ((pageNum - 1) % 5) + 5 > totalPages;
+  const isNnextButtonDisabled = pageNum - ((pageNum - 1) % 5) === totalPages;
 
-  const startPage = Math.max(pageNum - 2, 1);
-  const endPage = Math.min(pageNum + 2, totalPages);
+  const startPage = pageNum - ((pageNum - 1) % 5);
 
   return (
     <div className="pagination-container">
@@ -24,35 +23,43 @@ const Pagination: React.FC<PaginationProps> = ({
         className={`pagination-arrow ${
           isPprevButtonDisabled ? "disabled" : ""
         }`}
-        onClick={() => onPageChange(1)}
+        onClick={() => (!isPprevButtonDisabled ? onPageChange(1) : null)}
       >
         &lt;&lt;
       </span>
       <span
         className={`pagination-arrow ${isPrevButtonDisabled ? "disabled" : ""}`}
-        onClick={() => onPageChange(pageNum - 1)}
+        onClick={() =>
+          !isPrevButtonDisabled
+            ? onPageChange(pageNum - ((pageNum - 1) % 5) - 5)
+            : null
+        }
       >
         &lt;
       </span>
       <div>
-        {Array.from(
-          { length: endPage - startPage + 1 },
-          (_, i) => startPage + i
-        ).map((page, index) => (
-          <span
-            key={index}
-            className={`pagination-number ${
-              startPage + index === pageNum ? "selected" : ""
-            }`}
-            onClick={() => onPageChange(page)}
-          >
-            {page}
-          </span>
-        ))}
+        {Array.from({ length: 5 }, (_, i) => startPage + i).map(
+          (page, index) =>
+            startPage + index <= totalPages && (
+              <span
+                key={index}
+                className={`pagination-number ${
+                  startPage + index === pageNum ? "selected" : ""
+                }`}
+                onClick={() => onPageChange(page)}
+              >
+                {page}
+              </span>
+            )
+        )}
       </div>
       <span
         className={`pagination-arrow ${isNextButtonDisabled ? "disabled" : ""}`}
-        onClick={() => onPageChange(pageNum + 1)}
+        onClick={() =>
+          !isNextButtonDisabled
+            ? onPageChange(pageNum - ((pageNum - 1) % 5) + 5)
+            : null
+        }
       >
         &gt;
       </span>
@@ -60,7 +67,9 @@ const Pagination: React.FC<PaginationProps> = ({
         className={`pagination-arrow ${
           isNnextButtonDisabled ? "disabled" : ""
         }`}
-        onClick={() => onPageChange(totalPages)}
+        onClick={() =>
+          !isNnextButtonDisabled ? onPageChange(totalPages) : null
+        }
       >
         &gt;&gt;
       </span>

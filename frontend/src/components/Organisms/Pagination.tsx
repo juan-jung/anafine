@@ -10,10 +10,10 @@ const Pagination: React.FC<PaginationProps> = ({
   totalPages,
   onPageChange,
 }) => {
-  const isPprevButtonDisabled = pageNum - ((pageNum - 1) % 5) === 1;
+  const isPprevButtonDisabled = pageNum === 1;
   const isPrevButtonDisabled = pageNum - ((pageNum - 1) % 5) - 5 < 1;
   const isNextButtonDisabled = pageNum - ((pageNum - 1) % 5) + 5 > totalPages;
-  const isNnextButtonDisabled = pageNum - ((pageNum - 1) % 5) === totalPages;
+  const isNnextButtonDisabled = pageNum === totalPages;
 
   const startPage = pageNum - ((pageNum - 1) % 5);
 

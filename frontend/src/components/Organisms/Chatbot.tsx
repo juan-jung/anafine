@@ -44,9 +44,11 @@ const Chatbot: React.FC = () => {
   };
 
   const [popupVisible, setPopupVisible] = useState(true);
+  const [isEnd, setIsEnd] = useState(true);
 
   const normalFocus = useRef<HTMLInputElement>(null);
   const AIFocus = useRef<HTMLInputElement>(null);
+
   useEffect(() => {
     if (normalFocus.current !== null) {
       normalFocus.current.focus();
@@ -95,6 +97,7 @@ const Chatbot: React.FC = () => {
   useEffect(() => {
     // 컴포넌트가 마운트될 때 첫 번째 메시지를 추가
     setMessages([{ text: questionsDisease[0], sender: "bot" }]);
+    setIsEnd(true);
   }, []);
 
   useEffect(() => {
@@ -104,21 +107,25 @@ const Chatbot: React.FC = () => {
         ...prevMessages,
         { text: questionsDisease[currentStep], sender: "bot" },
       ]);
-    } else if (
-      currentStep === questionsDisease.length &&
-      chatMode === "diseasePrediction"
-    ) {
-      // "다시 하시겠습니까?" 메시지 추가
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { text: "다시 하시겠습니까?", sender: "bot" },
-      ]);
+      // } else if (
+      //   currentStep === questionsDisease.length &&
+      //   chatMode === "diseasePrediction"
+      // ) {
+      //   // "다시 하시겠습니까?" 메시지 추가
+      //   setMessages((prevMessages) => [
+      //     ...prevMessages,
+      //     { text: "다시 하시겠습니까?", sender: "bot" },
+      //   ]);
     }
   }, [currentStep, chatMode]);
 
   const handleUserInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUserInput(e.target.value);
   };
+
+  // function wait(seconds, callback) {
+  //   setTimeout(callback, seconds * 1000); // setTimeout은 밀리초 단위이므로 초로 변환
+  // }
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     console.log("클릭");
@@ -148,6 +155,12 @@ const Chatbot: React.FC = () => {
       }
       if (currentStep + 1 >= questionsDisease.length) {
         submitChatBot(userInput);
+        setIsLoading(true);
+        // wait(2, function () {
+        //   console.log("5초");
+        //   setIsEnd(false);
+        //   setIsLoading(false);
+        // });
       }
       setCurrentStep(currentStep + 1);
     }
@@ -169,6 +182,7 @@ const Chatbot: React.FC = () => {
   };
 
   const handleRestart = () => {
+    setIsEnd(true);
     setCurrentStep(0);
     setMessages([{ text: questionsDisease[0], sender: "bot" }]);
   };
@@ -180,9 +194,9 @@ const Chatbot: React.FC = () => {
 
       const responseText = `예상 질병: ${response.disease}
 
-예상 원인: ${response.cause} 
+      예상 원인: ${response.cause} 
       
-받아볼만한 검사: ${response.recommended_tests}`;
+      받아볼만한 검사: ${response.recommended_tests}`;
 
       setMessages((messages) => [
         ...messages,
@@ -190,9 +204,11 @@ const Chatbot: React.FC = () => {
       ]);
 
       setIsLoading(false); // 로딩 종료
+      setIsEnd(false);
     } catch (error) {
       console.error("챗봇 요청 처리 중 오류 발생", error);
       setIsLoading(false); // 로딩 종료
+      setIsEnd(false);
     }
   };
   // 일반 대화 호출도 -> content : userInput
@@ -266,16 +282,22 @@ const Chatbot: React.FC = () => {
                 {isLoading && (
                   <div>
                     <p>1분~3분 가량 소요됩니다...</p>
-                    <div className={styles["loading-bar"]}></div>{" "}
-                    {/* 로딩 바 스타일을 정의해야 함 */}
+                    <div className={styles["loading"]}>Loading</div>
                   </div>
                 )}
-                {currentStep >= questionsDisease.length && (
-                  <div className={styles["flex-container-bottom"]}>
-                    <button onClick={handleRestart}>네</button>
-                    <button onClick={handleOpenChatbotDown}>아니오</button>
-                  </div>
-                )}
+                {!isEnd &&
+                  !isLoading &&
+                  currentStep >= questionsDisease.length && (
+                    <div>
+                      <div style={{ textAlign: "center" }}>
+                        다시 하시겠습니까?
+                      </div>
+                      <div className={styles["flex-container-bottom"]}>
+                        <button onClick={handleRestart}>네</button>
+                        <button onClick={handleOpenChatbotDown}>아니오</button>
+                      </div>
+                    </div>
+                  )}
               </div>
               {/* 입력 필드는 질문이 모두 완료되기 전까지 표시 */}
               {currentStep < questionsDisease.length && (
@@ -289,14 +311,6 @@ const Chatbot: React.FC = () => {
                     onChange={handleUserInput}
                     onKeyPress={handleKeyPress}
                   />
-                  {/* <img
-                    src="/infoPic/next.png"
-                    alt="next Icon"
-                    style={{
-                      width: "8%",
-                      height: "auto",
-                    }}
-                  /> */}
                 </div>
               )}
             </div>
@@ -336,14 +350,6 @@ const Chatbot: React.FC = () => {
                   onKeyPress={handleKeyPressNormal}
                   disabled={isProcessing}
                 />
-                {/* <img
-                  src="/infoPic/next.png"
-                  alt="next Icon"
-                  style={{
-                    width: "8%",
-                    height: "auto",
-                  }}
-                /> */}
               </div>
             </div>
           )}

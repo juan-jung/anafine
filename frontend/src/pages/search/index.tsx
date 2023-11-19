@@ -42,10 +42,10 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
   const [initialData, setInitialData] = useState<any>(data);
   const [detailVisible, setDetailVisible] = useState(false);
   const [hospitalId, setHospitalId] = useState("");
-  const [selectedPosition, setSelectedPosition] = useState("now");
+  // const [selectedPosition, setSelectedPosition] = useState("now");
   const [selectedDist, setSelectedDist] = useState("5000");
   const [selectedSort, setSelectedSort] = useState("cost");
-  const [address, setAddress] = useState("서울 중구 오장동 206-30");
+  // const [address, setAddress] = useState("서울 중구 오장동 206-30");
 
   useEffect(() => {
     const findLocation = () => {
@@ -83,13 +83,13 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
             position.coords.longitude
           );
         })
-        .then((newAddress) => {
-          setAddress(
-            newAddress.road_address?.address_name ||
-              newAddress.address.address_name
-          );
-          console.log(newAddress);
-        })
+        // .then((newAddress) => {
+        //   setAddress(
+        //     newAddress.road_address?.address_name ||
+        //       newAddress.address.address_name
+        //   );
+        //   console.log(newAddress);
+        // })
         .catch((error) => {
           console.error("오류 발생:", error);
         });
@@ -168,52 +168,52 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
     setDetailVisible(false);
   };
 
-  const onSelectPositionChange = (
-    event: React.ChangeEvent<HTMLSelectElement>
-  ) => {
-    setSelectedPosition(event.target.value);
-    setPageNum(1);
-    console.log(event.target.value);
-    if (event.target.value === "now") {
-      if (selectedSort === "cost") {
-        handlerSortByPriceInfo(
-          id,
-          Number(selectedDist),
-          mapCenter.latitude,
-          mapCenter.longitude,
-          0,
-          12
-        ).then((data) => setInitialData(data));
-      } else {
-        handlerSortByDistInfo(
-          id,
-          Number(selectedDist),
-          mapCenter.latitude,
-          mapCenter.longitude,
-          0,
-          12
-        ).then((data) => setInitialData(data));
-      }
-    } else if (selectedSort === "cost") {
-      handlerSortByPriceInfo(
-        id,
-        Number(selectedDist),
-        currentMapCenter.latitude,
-        currentMapCenter.longitude,
-        0,
-        12
-      ).then((data) => setInitialData(data));
-    } else {
-      handlerSortByDistInfo(
-        id,
-        Number(selectedDist),
-        currentMapCenter.latitude,
-        currentMapCenter.longitude,
-        0,
-        12
-      ).then((data) => setInitialData(data));
-    }
-  };
+  // const onSelectPositionChange = (
+  //   event: React.ChangeEvent<HTMLSelectElement>
+  // ) => {
+  //   setSelectedPosition(event.target.value);
+  //   setPageNum(1);
+  //   console.log(event.target.value);
+  //   if (event.target.value === "now") {
+  //     if (selectedSort === "cost") {
+  //       handlerSortByPriceInfo(
+  //         id,
+  //         Number(selectedDist),
+  //         mapCenter.latitude,
+  //         mapCenter.longitude,
+  //         0,
+  //         12
+  //       ).then((data) => setInitialData(data));
+  //     } else {
+  //       handlerSortByDistInfo(
+  //         id,
+  //         Number(selectedDist),
+  //         mapCenter.latitude,
+  //         mapCenter.longitude,
+  //         0,
+  //         12
+  //       ).then((data) => setInitialData(data));
+  //     }
+  //   } else if (selectedSort === "cost") {
+  //     handlerSortByPriceInfo(
+  //       id,
+  //       Number(selectedDist),
+  //       currentMapCenter.latitude,
+  //       currentMapCenter.longitude,
+  //       0,
+  //       12
+  //     ).then((data) => setInitialData(data));
+  //   } else {
+  //     handlerSortByDistInfo(
+  //       id,
+  //       Number(selectedDist),
+  //       currentMapCenter.latitude,
+  //       currentMapCenter.longitude,
+  //       0,
+  //       12
+  //     ).then((data) => setInitialData(data));
+  //   }
+  // };
 
   const onSelectDistChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedDist(event.target.value);
@@ -276,15 +276,15 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
           <div className="search-title">{path} 검색 결과</div>
           <div className="search-result-container">
             <div className="search-map">
-              {selectedPosition === "now" ? (
-                <DynamicMap
-                  latitude={mapCenter.latitude}
-                  longitude={mapCenter.longitude}
-                  data={initialData.content}
-                  onClick={onClick}
-                  onLocationChange={onLocationChange}
-                />
-              ) : (
+              {/* {selectedPosition === "now" ? ( */}
+              <DynamicMap
+                latitude={mapCenter.latitude}
+                longitude={mapCenter.longitude}
+                data={initialData.content}
+                onClick={onClick}
+                onLocationChange={onLocationChange}
+              />
+              {/* ) : (
                 <DynamicMap
                   latitude={currentMapCenter.latitude}
                   longitude={currentMapCenter.longitude}
@@ -292,7 +292,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                   onClick={onClick}
                   onLocationChange={onLocationChange}
                 />
-              )}
+              )}*/}
             </div>
             {detailVisible ? (
               <HospitalDetail
@@ -303,7 +303,7 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
             ) : (
               <div>
                 <div className="search-select">
-                  <div className="search-select-left">기준 위치: {address}</div>
+                  {/* <div className="search-select-left">기준 위치: {address}</div>
                   검색 장소&nbsp;&nbsp;
                   <select
                     id="selectPosition"
@@ -313,7 +313,8 @@ const SearchPage: NextPage<SearchPageProps> = ({ id, path, data }) => {
                     <option value="now">내 위치</option>
                     <option value="map">지도</option>
                   </select>
-                  &nbsp;&nbsp;&nbsp;반경 선택&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp; */}
+                  반경 선택&nbsp;&nbsp;
                   <select
                     id="selectDist"
                     value={selectedDist}

@@ -84,8 +84,13 @@ const SearchBar: React.FC = () => {
           className="search-input"
           ref={inputRef}
         />
-        <Button ver="search" type="submit">
-          <Icon icon="ic:baseline-search" width={30} height={30} />
+        <Button id="button" ver="search" type="submit">
+          <Icon
+            className="search-Icon"
+            icon="ic:baseline-search"
+            width={30}
+            height={30}
+          />
         </Button>
       </form>
       <div className="search-results">

@@ -47,7 +47,7 @@
 }
 
 .chatbot-button {
-  height: 6%;
+  height: 1%;
   position: absolute;
   top: 0px;
   left: -18%; /* 적절한 위치 조정 */
@@ -147,10 +147,6 @@
   box-shadow: 0 2px 10px rgba(150, 37, 37, 0.1);
   overflow: hidden;
   z-index: 1000; /* 다른 요소 위에 표시되도록 z-index 설정 */
-}
-
-.chatbot-button {
-  height: 1%;
 }
 
 .flex-container {

@@ -41,7 +41,9 @@
 .chatbot-input {
   border: 1px solid #888888;
   padding: 1%;
-
+  height: 5vh;
+  font-size: 16px;
+  font-family: "omyu_pretty", sans-serif;
   width: 88%;
   border-radius: 8px; /* 모서리 둥글게 설정 */
 }

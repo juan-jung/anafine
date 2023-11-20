@@ -45,18 +45,17 @@
   font-size: 16px;
   font-family: "omyu_pretty", sans-serif;
   width: 88%;
-  border-radius: 8px; /* 모서리 둥글게 설정 */
+  border-radius: 8px;
 }
 
 .chatbot-button {
-  height: 1%;
+  height: 6%;
   position: absolute;
   top: 0px;
   left: -18%; /* 적절한 위치 조정 */
   background-color: rgb(159, 137, 238);
   padding: 5px 20px; /* 패딩 조정 */
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   min-height: 6%;
   font-family:
@@ -72,6 +71,38 @@
     Droid Sans,
     Helvetica Neue,
     sans-serif !important;
+  z-index: 2;
+}
+
+.chatbot-button::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  border-color: rgb(159, 137, 238) transparent transparent transparent;
+  z-index: 2;
+}
+
+.chatbot-button::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 0;
+  border-color: transparent transparent rgb(159, 137, 238) transparent;
+  z-index: 2;
+}
+.chatbot-button:hover {
+  background-color: rgb(134, 104, 238);
 }
 
 .chatbot-button-normal {
@@ -82,7 +113,6 @@
   background-color: rgb(152, 179, 206);
   padding: 5px 20px; /* 패딩 조정 */
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-family:
     omyu_pretty,
@@ -97,13 +127,38 @@
     Droid Sans,
     Helvetica Neue,
     sans-serif !important;
+  z-index: 2;
+}
+.chatbot-button-normal::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  border-color: rgb(152, 179, 206) transparent transparent transparent;
+  z-index: 2;
+}
+
+.chatbot-button-normal::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 0;
+  border-color: transparent transparent rgb(152, 179, 206) transparent;
+  z-index: 2;
 }
 
 .chatbot-button-normal:hover {
   background-color: #0056b3;
-}
-.chatbot-button:hover {
-  background-color: rgb(134, 104, 238);
 }
 
 .chatbot-head-normal {
@@ -152,7 +207,7 @@
 }
 
 .flex-container {
-  background: rgb(159, 137, 238);
+  background: rgb(134, 104, 238);
   position: relative;
   display: flex;
   align-items: center; /* 세로 중앙 정렬 */

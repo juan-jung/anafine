@@ -42,6 +42,7 @@ a {
     format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* input창 관련 css */

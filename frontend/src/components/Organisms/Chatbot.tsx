@@ -180,7 +180,7 @@ const Chatbot: React.FC = () => {
   //   setTimeout(callback, seconds * 1000); // setTimeout은 밀리초 단위이므로 초로 변환
   // }
 
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     console.log("클릭");
     if (userInput.length === 0) return;
     if (e.key === "Enter") {
@@ -219,7 +219,7 @@ const Chatbot: React.FC = () => {
     }
   };
 
-  const handleKeyPressNormal = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handleKeyDownNormal = (e: React.KeyboardEvent<HTMLInputElement>) => {
     console.log("클릭");
     if (userInput.length === 0) return;
     if (e.key === "Enter") {
@@ -384,7 +384,7 @@ const Chatbot: React.FC = () => {
                     placeholder="답변을 입력하세요"
                     value={userInput}
                     onChange={handleUserInput}
-                    onKeyDown={handleKeyPress}
+                    onKeyDown={handleKeyDown}
                   />
                 </div>
               )}
@@ -427,7 +427,7 @@ const Chatbot: React.FC = () => {
                   placeholder="답변을 입력하세요"
                   value={userInput}
                   onChange={handleUserInput}
-                  onKeyDown={handleKeyPressNormal}
+                  onKeyDown={handleKeyDownNormal}
                   disabled={isProcessing}
                 />
               </div>

@@ -32,7 +32,13 @@ const handlerChatBot = async (
     };
     return result;
   } catch (error) {
-    console.error("요청을 보내는 중 오류가 발생했습니다.", error);
+    console.error(
+      alert(
+        "이 IP는 서비스 이용제한 대상입니다. 이용료 결제 후 사용 바랍니다."
+      ),
+      "이 IP는 서비스 이용제한 대상입니다. 이용료 결제 후 사용 바랍니다.",
+      error
+    );
     throw error;
   }
 };

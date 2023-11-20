@@ -384,7 +384,7 @@ const Chatbot: React.FC = () => {
                     placeholder="답변을 입력하세요"
                     value={userInput}
                     onChange={handleUserInput}
-                    onKeyPress={handleKeyPress}
+                    onKeyDown={handleKeyPress}
                   />
                 </div>
               )}
@@ -427,7 +427,7 @@ const Chatbot: React.FC = () => {
                   placeholder="답변을 입력하세요"
                   value={userInput}
                   onChange={handleUserInput}
-                  onKeyPress={handleKeyPressNormal}
+                  onKeyDown={handleKeyPressNormal}
                   disabled={isProcessing}
                 />
               </div>

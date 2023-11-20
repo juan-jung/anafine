@@ -311,7 +311,7 @@ const Chatbot: React.FC = () => {
         <img
           src="/infoPic/chatbot.png"
           alt="Chat Icon"
-          style={{ width: "85%", height: "auto" }}
+          style={{ width: 45, height: 45 }}
         />
       </div>
       {popupVisible ? null : (
